@@ -150,7 +150,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "speakers",
-            "url": "shopify:\/\/pages\/contact-us",
+            "url": "#shopify-section-template--20544239829270__7115137b-d78f-45e0-a356-8667357e7096",
             "heading": "Audio Equipment",
             "description": "From tube amplifiers to modern equipment, we have all your audio repair needs covered.",
             "button_name": "Learn More"
@@ -161,7 +161,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "chip",
-            "url": "shopify:\/\/pages\/careers",
+            "url": "#shopify-section-template--20544239829270__8ff56e8d-b05d-4548-9a5e-95823f20149d",
             "heading": "Circuit Board Repair",
             "description": "Our team of highly skilled technicians is equipped and ready to repair any type of circuit board you may require assistance with.",
             "button_name": "Learn More"
@@ -172,7 +172,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "box",
-            "url": "shopify:\/\/pages\/get-a-quote",
+            "url": "#shopify-section-template--20544239829270__b8630f45-ee57-4d34-b1d0-d4557e6305d7",
             "heading": "Restorations",
             "description": "Is the plastic on your device discolored or damaged with broken pieces? Allow our expert team to meticulously restore it, bringing it as close to its original condition as possible.",
             "button_name": "Learn More"
@@ -183,7 +183,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "power",
-            "url": "shopify:\/\/pages\/avada-sitemap",
+            "url": "#shopify-section-template--20544239829270__54a50fb0-b974-423f-9fa0-8596ecdca556",
             "heading": "Ultrasonic Cleaning",
             "description": "Our expansive Ultrasonic Cleaning system accommodates items of all sizes and excels in cleaning a vast array of products.",
             "button_name": "Learn More"
@@ -216,7 +216,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "tv",
-            "url": "shopify:\/\/pages\/faqs",
+            "url": "#shopify-section-template--20544239829270__c0d4cd17-f302-4577-8d79-0728fd211fb3",
             "heading": "Custom Arcade Machine Builds",
             "description": "Searching for the ideal cabinet for your room, or perhaps an engaging racing simulator? We have the expertise to make it happen.",
             "button_name": "Learn More"
@@ -227,7 +227,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "tv",
-            "url": "shopify:\/\/pages\/faqs",
+            "url": "#shopify-section-template--20544239829270__57f8f89f-be2b-4478-869c-76a54e842ce8",
             "heading": "Web & App Development",
             "description": "In today's competitive landscape, it is essential for every business to maintain a strong web presence to ensure customers can easily find you.",
             "button_name": "Learn More"
@@ -238,7 +238,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "delivery",
-            "url": "shopify:\/\/pages\/contact-us",
+            "url": "#shopify-section-template--20544239829270__f980a7c7-0221-48f3-a984-35a8ce1dc6ba",
             "heading": "On-Site Service",
             "description": "We provide 24-Hour Emergency Repair services for our commercial clients, including the convenience of on-site appointments.",
             "button_name": "Contact Us"
@@ -249,7 +249,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "delivery",
-            "url": "shopify:\/\/pages\/get-a-quote",
+            "url": "#shopify-section-template--20544239829270__027a4e20-c986-4161-acd9-e5316b18ada9",
             "heading": "Custom PC Builds",
             "description": "From budget-friendly builds to top-of-the-line hardline water-cooled gaming PCs, our skilled team has the expertise to bring your vision to life.",
             "button_name": "Get a Quote"
@@ -930,7 +930,7 @@
         "7e452c66-9cc1-4d51-bc1b-d56ef3982565"
       ],
       "settings": {
-        "url": "shopify:\/\/pages\/get-a-quote",
+        "url": "#shopify-section-template--20544239829270__54a50fb0-b974-423f-9fa0-8596ecdca556",
         "top_spacing": "small",
         "width": "page-width",
         "row_reverse": true,
