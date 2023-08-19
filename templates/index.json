@@ -97,7 +97,7 @@
           "type": "slide",
           "settings": {
             "content_type": "image",
-            "video_url": "",
+            "video_url": "shopify:\/\/pages\/services",
             "image": "shopify:\/\/shop_images\/Commercial_Hero_1.jpg",
             "image_overlay_opacity": 0,
             "image_mobile": "shopify:\/\/shop_images\/Commercial_Hero_mobile.jpg",
