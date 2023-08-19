@@ -128,7 +128,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "laptop",
-            "url": "#TV",
+            "url": "#shopify-section-template--20544239829270__456789e6-4515-42c2-ae88-646164492c64",
             "heading": "Desktop & Laptop Computers",
             "description": "We service any make & model of desktops, laptops, and all-in-one computers.",
             "button_name": "Learn More"
@@ -139,7 +139,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "gaming",
-            "url": "shopify:\/\/pages\/ultra-sonic-cleaning",
+            "url": "#shopify-section-template--20544239829270__2bec9cac-08c4-4748-a985-4fa7856ae20f",
             "heading": "Video Game Systems & Accessories",
             "description": "From Atari consoles to PlayStation 5, we are the preferred destination for quality and affordable repairs.",
             "button_name": "Learn More"
@@ -205,7 +205,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "tv",
-            "url": "shopify:\/\/pages\/faqs",
+            "url": "#shopify-section-template--20544239829270__1fc0ba76-559d-4b8b-93b8-039d1edee4c5",
             "heading": "Monitors & TV's",
             "description": "We service all models of televisions and monitors.  *note we do not repair TV screens or backlights.",
             "button_name": "Learn More"
