@@ -347,13 +347,13 @@
         "template--20039351959830__3340be14-07fc-4d74-84cb-c56587022ac1-brand_image-1": {
           "type": "brand_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Quality_Service_400x180_07ca276c-d9b6-4f79-b8bf-abb759520963.jpg"
+            "image": "shopify:\/\/shop_images\/Quality_Service_Square_8c36930b-05f4-4608-b3d1-2336a4a5d14e.jpg"
           }
         },
         "template--20039351959830__3340be14-07fc-4d74-84cb-c56587022ac1-brand_image-2": {
           "type": "brand_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Competitive_Pricing.jpg"
+            "image": "shopify:\/\/shop_images\/Competitive_Pricing_8c50b0bb-b978-4e3d-9cc9-262ab99204ed.jpg"
           }
         }
       },
@@ -365,7 +365,7 @@
       ],
       "settings": {
         "subheading": "Quality - Honest - Reliable",
-        "heading": "Repair & Restoration Services",
+        "heading": "Repairs & Restorations",
         "description": "<p>Seeking reliable electronic repair services? Choose us for efficient solutions with a guarantee of honesty and quality.<\/p>",
         "heading_aligment": "text-center",
         "top_spacing": "small",
@@ -384,7 +384,7 @@
         "background": "hide",
         "color_background": "rgba(0,0,0,0)",
         "gradient": "",
-        "background_width": "fullwidth",
+        "background_width": "content_width",
         "background_spacing": "normal",
         "remove_bottom_spacing": false
       }
