@@ -8,7 +8,6 @@
           "settings": {
             "content_type": "image",
             "video_url": "shopify:\/\/pages\/services",
-            "image": "shopify:\/\/shop_images\/Computer_Repair_1300x620_f788d002-23d0-4f91-ad3c-e3884e502809.jpg",
             "image_overlay_opacity": 0,
             "image_mobile": "shopify:\/\/shop_images\/Computer_Repair_Hero.jpg",
             "subheading": "",
@@ -68,7 +67,6 @@
           "settings": {
             "content_type": "image",
             "video_url": "shopify:\/\/pages\/services",
-            "image": "shopify:\/\/shop_images\/Custom_Gaming_Hero_1300x620_9e2ac807-50bf-4017-98c5-0636e3c90fca.jpg",
             "image_overlay_opacity": 0,
             "image_mobile": "shopify:\/\/shop_images\/Custom_Gaming_Hero_Mobile.jpg",
             "subheading": "",
@@ -152,7 +150,6 @@
         "template--20039351959830__8ccd9195-a04e-4545-9933-041d2d7d395f-image-3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/PlayStation_Logo_Transparent_250x250_5fe5868f-64e2-45db-a93d-9c93337f3a92.png",
             "url": "",
             "heading": "PlayStation"
           }
@@ -167,7 +164,6 @@
         "template--20039351959830__8ccd9195-a04e-4545-9933-041d2d7d395f-image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Nintendo_Logo_Transparent_250x250_bb96d64e-bb6a-486f-8485-b18907e630a0.png",
             "url": "",
             "heading": "Nintendio"
           }
@@ -175,7 +171,6 @@
         "template--20039351959830__8ccd9195-a04e-4545-9933-041d2d7d395f-image-4": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Microsoft_1_Logo_Transparent_250x250_bc2df7de-da79-44c7-9efb-5beb93413ef7.png",
             "url": "",
             "heading": "Microsoft"
           }
@@ -183,7 +178,6 @@
         "template--20039351959830__8ccd9195-a04e-4545-9933-041d2d7d395f-image-5": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Apple_Logo_Transparent_250x250_215edb5f-029c-4ef2-9532-b6859b96aac0.png",
             "url": "",
             "heading": "Apple"
           }
@@ -191,7 +185,6 @@
         "template--20039351959830__8ccd9195-a04e-4545-9933-041d2d7d395f-image-6": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/HP_Logo_Transparent_250x250_50556d20-0b21-421e-80cd-9b2df99578e8.png",
             "url": "",
             "heading": "HP"
           }
@@ -329,7 +322,7 @@
             "image": "shopify:\/\/shop_images\/Consumer_Electronics_TN.jpg",
             "url": "shopify:\/\/pages\/services",
             "heading": "Consumer Services",
-            "description": "<p>Experience dependable repairs for all types of equipment, from coffee machines to gaming computers. Your local solution for quality fixes. Learn more below. <\/p>",
+            "description": "",
             "button_name": "See All Services"
           }
         },
@@ -340,20 +333,20 @@
             "image": "shopify:\/\/shop_images\/commercial-electronics-tn.jpg",
             "url": "shopify:\/\/pages\/get-a-quote",
             "heading": "Commercial Services",
-            "description": "<p>Trust our local team of experts to deliver top-notch electronics repair services. We specialize in repairing a wide range of commercial devices.<\/p>",
+            "description": "",
             "button_name": "Get A Quote"
           }
         },
         "template--20039351959830__3340be14-07fc-4d74-84cb-c56587022ac1-brand_image-1": {
           "type": "brand_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Quality_Service_Square_8c36930b-05f4-4608-b3d1-2336a4a5d14e.jpg"
+            "image": "shopify:\/\/shop_images\/Quality_Service.jpg"
           }
         },
         "template--20039351959830__3340be14-07fc-4d74-84cb-c56587022ac1-brand_image-2": {
           "type": "brand_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Competitive_Pricing_8c50b0bb-b978-4e3d-9cc9-262ab99204ed.jpg"
+            "image": "shopify:\/\/shop_images\/Competitive_Pricing.jpg"
           }
         }
       },
@@ -366,7 +359,7 @@
       "settings": {
         "subheading": "Quality - Honest - Reliable",
         "heading": "Repairs & Restorations",
-        "description": "<p>Seeking reliable electronic repair services? Choose us for efficient solutions with a guarantee of honesty and quality.<\/p>",
+        "description": "<p>Are you in need of trustworthy electronic repair services? At ETE, we offer dependable solutions backed by our commitment to integrity and excellence.<\/p>",
         "heading_aligment": "text-center",
         "top_spacing": "small",
         "width": "page-width",
