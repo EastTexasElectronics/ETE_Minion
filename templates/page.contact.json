@@ -1,30 +1,5 @@
 {
   "sections": {
-    "6bbf0b6d-ea28-40ed-a5e0-4e59180e62f9": {
-      "type": "text",
-      "settings": {
-        "subheading": "SUBHEADING",
-        "heading": "Text",
-        "description": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
-        "button_name": "Button",
-        "button_url": "",
-        "top_spacing": "normal",
-        "width": "page-width",
-        "texts_aligment": "text-center",
-        "heading_tag": "h2",
-        "description_size": "normal",
-        "color_subheading": "rgba(0,0,0,0)",
-        "color_heading": "rgba(0,0,0,0)",
-        "color_description": "rgba(0,0,0,0)",
-        "color_button": "rgba(0,0,0,0)",
-        "background": "hide",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient": "",
-        "background_width": "fullwidth",
-        "background_spacing": "normal",
-        "remove_bottom_spacing": false
-      }
-    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -36,7 +11,6 @@
     }
   },
   "order": [
-    "6bbf0b6d-ea28-40ed-a5e0-4e59180e62f9",
     "main"
   ]
 }
