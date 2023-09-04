@@ -19,7 +19,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "chat",
-            "url": "shopify:\/\/pages\/get-a-quote",
+            "url": "shopify:\/\/pages\/contact-us",
             "heading": "General Inquiry",
             "description": "Not in need of a quote? Feel free to reach out with any questions.",
             "button_name": "Contact Us"
@@ -30,7 +30,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "money_back",
-            "url": "shopify:\/\/pages\/get-a-quote",
+            "url": "shopify:\/\/pages\/website-quote",
             "heading": "Websites & Apps",
             "description": "Get a quote for your very own custom website or application.",
             "button_name": "Get Your Quote"
