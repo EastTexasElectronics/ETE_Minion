@@ -69,19 +69,10 @@
         "show_heading": false,
         "heading_aligment": "text-center"
       }
-    },
-    "374dac16-f933-4d0a-942e-ee716f296397": {
-      "type": "page",
-      "settings": {
-        "page": "web-app-development-quote",
-        "top_spacing": "small",
-        "width": "page-width"
-      }
     }
   },
   "order": [
     "c16803f0-0e80-49c7-bdd2-55dad8b106a1",
-    "main",
-    "374dac16-f933-4d0a-942e-ee716f296397"
+    "main"
   ]
 }
