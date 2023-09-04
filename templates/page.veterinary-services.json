@@ -128,7 +128,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "laptop",
-            "url": "#shopify-section-template--20544239829270__456789e6-4515-42c2-ae88-646164492c64",
+            "url": "#image-with-text-template--20544239829270__456789e6-4515-42c2-ae88-646164492c64",
             "heading": "Desktop & Laptop Computers",
             "description": "We service any make & model of desktops, laptops, and all-in-one computers.",
             "button_name": "Learn More"
@@ -139,7 +139,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "gaming",
-            "url": "#shopify-section-template--20544239829270__2bec9cac-08c4-4748-a985-4fa7856ae20f",
+            "url": "#image-with-text-template--20544239829270__2bec9cac-08c4-4748-a985-4fa7856ae20f",
             "heading": "Video Game Systems & Accessories",
             "description": "From Atari consoles to PlayStation 5, we are the preferred destination for quality and affordable repairs.",
             "button_name": "Learn More"
@@ -150,7 +150,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "speakers",
-            "url": "#shopify-section-template--20544239829270__7115137b-d78f-45e0-a356-8667357e7096",
+            "url": "#image-with-text-template--20544239829270__7115137b-d78f-45e0-a356-8667357e7096",
             "heading": "Audio Equipment",
             "description": "From tube amplifiers to modern equipment, we have all your audio repair needs covered.",
             "button_name": "Learn More"
@@ -161,7 +161,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "chip",
-            "url": "#shopify-section-template--20544239829270__8ff56e8d-b05d-4548-9a5e-95823f20149d",
+            "url": "#image-with-text-template--20544239829270__8ff56e8d-b05d-4548-9a5e-95823f20149d",
             "heading": "Circuit Board Repair",
             "description": "Our team of highly skilled technicians is equipped and ready to repair any type of circuit board you may require assistance with.",
             "button_name": "Learn More"
@@ -183,7 +183,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "power",
-            "url": "#shopify-section-template--20544239829270__54a50fb0-b974-423f-9fa0-8596ecdca556",
+            "url": "#image-with-text-template--20544239829270__54a50fb0-b974-423f-9fa0-8596ecdca556",
             "heading": "Ultrasonic Cleaning",
             "description": "Our expansive Ultrasonic Cleaning system accommodates items of all sizes and excels in cleaning a vast array of products.",
             "button_name": "Learn More"
@@ -194,7 +194,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "clock",
-            "url": "shopify:\/\/pages\/services",
+            "url": "#image-with-text-template--20544239829270__c0d4cd17-f302-4577-8d79-0728fd211fb3",
             "heading": "Commercial Equipment",
             "description": "We recognize the critical importance of maintaining your business operations without interruption. To support this, we offer same-day on-site visits.",
             "button_name": "Learn More"
@@ -205,7 +205,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "tv",
-            "url": "#shopify-section-template--20544239829270__1fc0ba76-559d-4b8b-93b8-039d1edee4c5",
+            "url": "#image-with-text-template--20544239829270__1fc0ba76-559d-4b8b-93b8-039d1edee4c5",
             "heading": "Monitors & TV's",
             "description": "We service all models of televisions and monitors.  *note we do not repair TV screens or backlights.",
             "button_name": "Learn More"
@@ -216,7 +216,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "tv",
-            "url": "#shopify-section-template--20544239829270__c0d4cd17-f302-4577-8d79-0728fd211fb3",
+            "url": "#image-with-text-template--20544239829270__57f8f89f-be2b-4478-869c-76a54e842ce8",
             "heading": "Custom Arcade Machine Builds",
             "description": "Searching for the ideal cabinet for your room, or perhaps an engaging racing simulator? We have the expertise to make it happen.",
             "button_name": "Learn More"
@@ -227,7 +227,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "tv",
-            "url": "#shopify-section-template--20544239829270__57f8f89f-be2b-4478-869c-76a54e842ce8",
+            "url": "#image-with-text-template--20544239829270__f980a7c7-0221-48f3-a984-35a8ce1dc6ba",
             "heading": "Web & App Development",
             "description": "In today's competitive landscape, it is essential for every business to maintain a strong web presence to ensure customers can easily find you.",
             "button_name": "Learn More"
@@ -238,7 +238,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "delivery",
-            "url": "#shopify-section-template--20544239829270__f980a7c7-0221-48f3-a984-35a8ce1dc6ba",
+            "url": "shopify:\/\/pages\/contact-us",
             "heading": "On-Site Service",
             "description": "We provide 24-Hour Emergency Repair services for our commercial clients, including the convenience of on-site appointments.",
             "button_name": "Contact Us"
@@ -249,7 +249,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "delivery",
-            "url": "#shopify-section-template--20544239829270__027a4e20-c986-4161-acd9-e5316b18ada9",
+            "url": "shopify:\/\/pages\/get-a-quote",
             "heading": "Custom PC Builds",
             "description": "From budget-friendly builds to top-of-the-line hardline water-cooled gaming PCs, our skilled team has the expertise to bring your vision to life.",
             "button_name": "Get a Quote"
