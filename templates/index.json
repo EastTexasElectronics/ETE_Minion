@@ -8,6 +8,7 @@
           "settings": {
             "content_type": "image",
             "video_url": "shopify:\/\/pages\/services",
+            "image": "shopify:\/\/shop_images\/Computer_Repair.jpg",
             "image_overlay_opacity": 0,
             "image_mobile": "shopify:\/\/shop_images\/Computer_Repair_Hero.jpg",
             "subheading": "",
@@ -67,6 +68,7 @@
           "settings": {
             "content_type": "image",
             "video_url": "shopify:\/\/pages\/services",
+            "image": "shopify:\/\/shop_images\/Custom_Gaming_Hero.jpg",
             "image_overlay_opacity": 0,
             "image_mobile": "shopify:\/\/shop_images\/Custom_Gaming_Hero_Mobile.jpg",
             "subheading": "",
@@ -322,7 +324,7 @@
             "image": "shopify:\/\/shop_images\/Consumer_Electronics_TN.jpg",
             "url": "shopify:\/\/pages\/services",
             "heading": "Consumer Services",
-            "description": "",
+            "description": "<p>Explore exceptional repair solutions for various types of equipment.<\/p>",
             "button_name": "See All Services"
           }
         },
@@ -330,10 +332,10 @@
           "type": "blurb",
           "settings": {
             "show_image": "show",
-            "image": "shopify:\/\/shop_images\/commercial-electronics-tn.jpg",
+            "image": "shopify:\/\/shop_images\/Commercial.jpg",
             "url": "shopify:\/\/pages\/get-a-quote",
             "heading": "Commercial Services",
-            "description": "",
+            "description": "<p>Find unparalleled repair services for a wide array of equipment. <\/p>",
             "button_name": "Get A Quote"
           }
         },
