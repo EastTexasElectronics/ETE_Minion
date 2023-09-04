@@ -387,28 +387,12 @@
     "322f00f4-13ef-4ed6-90ba-c36b55408665": {
       "type": "collection-list",
       "blocks": {
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "services",
-            "collection_name": "{{ block.settings.collection.title }}",
-            "custom_link": "shopify:\/\/pages\/services"
-          }
-        },
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-2": {
           "type": "featured_collection",
           "settings": {
             "collection": "on-sale",
             "collection_name": "{{ block.settings.collection.title }}",
             "custom_link": "shopify:\/\/collections\/on-sale"
-          }
-        },
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-3": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "batteries",
-            "collection_name": "{{ block.settings.collection.title }}",
-            "custom_link": "shopify:\/\/collections\/batteries"
           }
         },
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-4": {
@@ -419,12 +403,12 @@
             "custom_link": "shopify:\/\/collections\/funko-pops"
           }
         },
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-5": {
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "capacitors",
-            "collection_name": "",
-            "custom_link": ""
+            "collection": "cables",
+            "collection_name": "{{ block.settings.collection.title }}",
+            "custom_link": "shopify:\/\/pages\/services"
           }
         },
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-6": {
@@ -434,15 +418,31 @@
             "collection_name": "Game Consoles",
             "custom_link": "shopify:\/\/collections\/video-game-consoles"
           }
+        },
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "batteries",
+            "collection_name": "{{ block.settings.collection.title }}",
+            "custom_link": "shopify:\/\/collections\/batteries"
+          }
+        },
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-5": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "capacitors",
+            "collection_name": "",
+            "custom_link": ""
+          }
         }
       },
       "block_order": [
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-1",
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-2",
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-3",
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-4",
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-5",
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-6"
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-1",
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-6",
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-3",
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-5"
       ],
       "settings": {
         "subheading": "",
