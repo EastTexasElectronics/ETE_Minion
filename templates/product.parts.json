@@ -15,7 +15,7 @@
         "1f5e6d17-7cef-4e03-b13d-b19240ced047": {
           "type": "title",
           "settings": {
-            "text_size": "h2"
+            "text_size": "h3"
           }
         },
         "4f8b197f-142b-4618-96c7-abd9de7cc0c4": {
@@ -45,9 +45,9 @@
             "icon_name_2": "truck_sm",
             "content_2": "<p><strong>Same-day <\/strong>shipping on all orders placed before <strong>1pm<\/strong> <strong>CST<\/strong> Monday - Friday<\/p>",
             "icon_name_3": "chat_sm",
-            "content_3": "<p>Product Rating: {{ product.metafields.reviews.rating | metafield_tag }}<\/p>",
-            "icon_name_4": "road_sm",
-            "content_4": "<p><strong>Shipped By: <\/strong>East Texas Electronics LLC. Hallsville, Texas 75650<\/p>",
+            "content_3": "<p><strong>Product Rating:<\/strong> {{ product.metafields.reviews.rating | metafield_tag }}<\/p>",
+            "icon_name_4": "info_sm",
+            "content_4": "<p><strong>Condition: <\/strong><\/p>{{ product.metafields.custom.condition | metafield_tag }}",
             "icon_name_5": "",
             "content_5": ""
           }
@@ -112,7 +112,7 @@
           "settings": {
             "heading": "Shipping Policy",
             "icon_name": "new_sm",
-            "content": "<p>daf<\/p>",
+            "content": "<p>{{ block.settings.page.metafields.custom.shipping_policy | metafield_tag }}<\/p>",
             "page": ""
           }
         },

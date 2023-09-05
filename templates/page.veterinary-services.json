@@ -81,45 +81,6 @@
         "remove_bottom_spacing": false
       }
     },
-    "9a30e730-eab8-49a7-bbc2-817617afa7ac": {
-      "type": "announcement-bar",
-      "blocks": {
-        "template--20039351337238__9a30e730-eab8-49a7-bbc2-817617afa7ac-announcement-1": {
-          "type": "announcement",
-          "settings": {
-            "text": "Commercial and Consumer Services",
-            "link_name": "Get a Quote",
-            "link_url": "shopify:\/\/pages\/get-a-quote",
-            "color_background": "rgba(0,0,0,0)",
-            "color_text": "rgba(0,0,0,0)",
-            "color_link": "rgba(0,0,0,0)"
-          }
-        },
-        "f7512eb4-092e-488a-9f10-6dd55c906afe": {
-          "type": "announcement",
-          "settings": {
-            "text": "ANNOUNCE something here",
-            "link_name": "Consumer Services",
-            "link_url": "",
-            "color_background": "rgba(0,0,0,0)",
-            "color_text": "rgba(0,0,0,0)",
-            "color_link": "rgba(0,0,0,0)"
-          }
-        }
-      },
-      "block_order": [
-        "template--20039351337238__9a30e730-eab8-49a7-bbc2-817617afa7ac-announcement-1",
-        "f7512eb4-092e-488a-9f10-6dd55c906afe"
-      ],
-      "settings": {
-        "top_spacing": "small",
-        "width": "page-width",
-        "text_size": "announcement-text-5",
-        "slider_mode": true,
-        "bar_time": 3,
-        "background_spacing": "xsmall"
-      }
-    },
     "16540890413ee61417": {
       "type": "icon-banners",
       "blocks": {
@@ -1131,7 +1092,6 @@
   "order": [
     "main",
     "a0db958b-bad4-4285-87bc-c9cf7b134ad2",
-    "9a30e730-eab8-49a7-bbc2-817617afa7ac",
     "16540890413ee61417",
     "456789e6-4515-42c2-ae88-646164492c64",
     "2bec9cac-08c4-4748-a985-4fa7856ae20f",
