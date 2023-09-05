@@ -135,7 +135,7 @@
     "blocks": {
       "5d3456c8-ac91-4374-8ac2-075d29d83495": {
         "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/boost-sd\/7fc998ae-a150-4367-bab8-505d8a4503f7",
-        "disabled": true,
+        "disabled": false,
         "settings": {
         }
       },
