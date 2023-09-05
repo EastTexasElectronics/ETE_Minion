@@ -38,7 +38,7 @@
           "settings": {
             "content_type": "image",
             "video_url": "shopify:\/\/pages\/web-development",
-            "image": "shopify:\/\/shop_images\/Wed-Dev_Hero1300x620.jpg",
+            "image": "shopify:\/\/shop_images\/Web_Dev_Hero_1036x780_6ba21bac-3ed4-4d42-baa7-d9f0edf9c252.jpg",
             "image_overlay_opacity": 0,
             "image_mobile": "shopify:\/\/shop_images\/Web_Dev_Hero_Mobile.jpg",
             "subheading": "",
@@ -68,7 +68,7 @@
           "settings": {
             "content_type": "image",
             "video_url": "shopify:\/\/pages\/services",
-            "image": "shopify:\/\/shop_images\/Custom_Gaming_Hero.jpg",
+            "image": "shopify:\/\/shop_images\/Custom_Gaming_Hero_Desktop1036x780.jpg",
             "image_overlay_opacity": 0,
             "image_mobile": "shopify:\/\/shop_images\/Custom_Gaming_Hero_Mobile.jpg",
             "subheading": "",
@@ -98,7 +98,7 @@
           "settings": {
             "content_type": "image",
             "video_url": "shopify:\/\/pages\/services",
-            "image": "shopify:\/\/shop_images\/Commercial_Hero_1.jpg",
+            "image": "shopify:\/\/shop_images\/Commercial_Hero.jpg",
             "image_overlay_opacity": 0,
             "image_mobile": "shopify:\/\/shop_images\/Commercial_Hero_mobile.jpg",
             "subheading": "",
