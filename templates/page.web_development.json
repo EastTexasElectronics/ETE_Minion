@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "top_spacing": "none",
         "width": "page-width",
@@ -16,20 +17,20 @@
           "type": "blurb_icon",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
+            "icon_name": "chip",
             "url": "",
-            "heading": "Heading",
-            "description": "<p>Give customers details about the banner image(s) or content on the template.<\/p>"
+            "heading": "Your Site Your Way",
+            "description": "<p>Our seasoned developers are proficient in a wide array of established platforms and programming languages, ensuring we can tailor solutions to meet your unique requirements.<\/p>"
           }
         },
         "template--20817034117398__4ed58f36-e84c-4653-9b8e-6bb357cc55e1-blurb_icon-2": {
           "type": "blurb_icon",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "advertising",
+            "icon_name": "money_back",
             "url": "",
-            "heading": "Heading",
-            "description": "<p>Give customers details about the banner image(s) or content on the template.<\/p>"
+            "heading": "Budget Friendly",
+            "description": "<p>Looking to establish your online presence without stretching your budget? Our budget-friendly websites offer the same high-quality design and functionality as our premium options—just with a more streamlined set of features<\/p>"
           }
         },
         "template--20817034117398__4ed58f36-e84c-4653-9b8e-6bb357cc55e1-blurb_icon-3": {
@@ -38,8 +39,8 @@
             "show_icon": "svg",
             "icon_name": "phone",
             "url": "",
-            "heading": "Heading",
-            "description": "<p>Give customers details about the banner image(s) or content on the template.<\/p>"
+            "heading": "Quality Support",
+            "description": "<p>Our dedicated support team is committed to resolving your issues in a timely manner. With our free plan, expect a response within 72 hours. Opt for any of our paid plans, and we'll expedite that to a 24-hour response time.<\/p>"
           }
         }
       },
@@ -49,11 +50,11 @@
         "template--20817034117398__4ed58f36-e84c-4653-9b8e-6bb357cc55e1-blurb_icon-3"
       ],
       "settings": {
-        "subheading": "SUBHEADING",
-        "heading": "Text columns with images",
+        "subheading": "Quality - Stability - Support",
+        "heading": "Web & App Development",
         "heading_aligment": "text-center",
-        "button_name": "Button",
-        "button_url": "",
+        "button_name": "Get Your Quote",
+        "button_url": "shopify:\/\/pages\/website-quote",
         "top_spacing": "normal",
         "width": "page-width",
         "grid": "col-4",
