@@ -47,7 +47,7 @@
             "icon_name_3": "chat_sm",
             "content_3": "<p><strong>Product Rating:<\/strong> {{ product.metafields.reviews.rating | metafield_tag }}<\/p>",
             "icon_name_4": "info_sm",
-            "content_4": "<p><strong>Condition: <\/strong><\/p>{{ product.metafields.custom.condition | metafield_tag }}",
+            "content_4": "<p><strong>Condition:<\/strong> {{ product.metafields.custom.condition | metafield_text }}<\/p>",
             "icon_name_5": "",
             "content_5": ""
           }
