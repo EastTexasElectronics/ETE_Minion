@@ -212,7 +212,7 @@
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
+            "icon_name": "PC",
             "text": "<p>Designed to Run Seamlessly on Multiple Platforms: Windows, Mac, iOS, Android, Linux, and Raspbian.<\/p>"
           }
         },
@@ -220,7 +220,7 @@
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
+            "icon_name": "certified",
             "text": "<p>Retain Full Ownership of Your Code, 100% Guaranteed.<\/p>"
           }
         }
