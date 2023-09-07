@@ -182,7 +182,7 @@
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
+            "icon_name": "Chip",
             "text": "<p>Our skilled programmers are well-versed in a diverse array of programming languages, allowing us to tailor solutions precisely to your needs.<\/p>"
           }
         },
@@ -190,7 +190,7 @@
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
+            "icon_name": "power",
             "text": "<p>Engineered for Peak Efficiency and Universal Accessibility.<\/p>"
           }
         },
@@ -204,7 +204,7 @@
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
+            "icon_name": "network",
             "text": "<p>Complimentary Hosting Options Available.<\/p>"
           }
         },
