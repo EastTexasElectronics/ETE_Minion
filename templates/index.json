@@ -228,7 +228,7 @@
         "direction": "ticker-to-left",
         "text_size": "ticker-text-5",
         "url": "",
-        "text": "<p><strong>Free Shipping! <\/strong>— On All Orders $100.00 and Up!<\/p>",
+        "text": "<p><strong>Free Shipping! <\/strong>— On All Orders of At Least $100.00!<\/p>",
         "show_icon": "svg",
         "icon_name": "truck_sm",
         "color_svg": "rgba(0,0,0,0)",
