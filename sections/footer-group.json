@@ -134,31 +134,10 @@
         "color_background": "#242727",
         "gradient": ""
       }
-    },
-    "56335795-2801-4d09-9982-e47dc6a6351c": {
-      "type": "ticker",
-      "settings": {
-        "top_spacing": "none",
-        "ticker_time": 10,
-        "direction": "ticker-to-left",
-        "text_size": "ticker-text-5",
-        "url": "shopify:\/\/collections",
-        "text": "<p><strong>ANNOUNCEMENT <\/strong>— Use this section to include scrolling announcement text<\/p>",
-        "show_icon": "svg",
-        "icon_name": "advertising_sm",
-        "color_svg": "rgba(0,0,0,0)",
-        "color_text": "rgba(0,0,0,0)",
-        "background": "color",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient": "",
-        "background_spacing": "xsmall",
-        "remove_bottom_spacing": false
-      }
     }
   },
   "order": [
     "3ae345e7-2b04-4d0d-8e16-ad8d7eed8f85",
-    "footer",
-    "56335795-2801-4d09-9982-e47dc6a6351c"
+    "footer"
   ]
 }
