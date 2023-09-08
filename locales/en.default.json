@@ -56,7 +56,7 @@
     },
     "accept_terms_checkbox_html": "I agree with the <a href=\"\/\">Terms and Conditions.<\/a>",
     "free_shipping": {
-      "normal_html": "😍Spend <span class=\"strong\">{{ price }}<\/span> to get <span class=\"strong\">FREE SHIPPING!  😍<\/span>",
+      "normal_html": "🚛 Spend <span class=\"strong\">{{ price }}<\/span> to get <span class=\"strong\">FREE SHIPPING!  🚛<\/span>",
       "free_shipping_html": "<span class=\"strong\">FREE SHIPPING<\/span>"
     }
   },
