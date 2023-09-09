@@ -414,7 +414,7 @@
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-6": {
           "type": "featured_collection",
           "settings": {
-            "collection": "video-game-consoles",
+            "collection": "cables-1",
             "collection_name": "Game Consoles",
             "custom_link": "shopify:\/\/collections\/video-game-consoles"
           }
@@ -430,9 +430,9 @@
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-5": {
           "type": "featured_collection",
           "settings": {
-            "collection": "capacitors",
-            "collection_name": "",
-            "custom_link": ""
+            "collection": "cables-1",
+            "collection_name": "{{ block.settings.collection.title }}",
+            "custom_link": "shopify:\/\/collections\/cables-1"
           }
         }
       },
