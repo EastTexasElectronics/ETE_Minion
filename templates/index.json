@@ -406,9 +406,9 @@
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "cables",
+            "collection": "nintendo-parts",
             "collection_name": "{{ block.settings.collection.title }}",
-            "custom_link": "shopify:\/\/pages\/services"
+            "custom_link": "shopify:\/\/collections\/nintendo-parts"
           }
         },
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-6": {
