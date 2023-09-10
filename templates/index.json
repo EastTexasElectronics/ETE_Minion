@@ -37,7 +37,7 @@
           "type": "slide",
           "settings": {
             "content_type": "image",
-            "video_url": "",
+            "video_url": "shopify:\/\/pages\/web-development",
             "image": "shopify:\/\/shop_images\/Web_Dev_Hero_1036x780_result.webp",
             "image_overlay_opacity": 0,
             "subheading": "",
@@ -45,7 +45,7 @@
             "description": "",
             "call_to_action": "one_link_banner",
             "button_primary_name": "",
-            "url": "shopify:\/\/pages\/web-development",
+            "url": "",
             "button_secondary_name": "",
             "button_secondary_url": "",
             "texts_aligment": "text-center",
@@ -321,6 +321,7 @@
             "image": "shopify:\/\/shop_images\/Consumer_Services_result.webp",
             "url": "shopify:\/\/pages\/services",
             "heading": "Consumer Services",
+            "aria-label":"Consumer Services",
             "description": "<p>Explore exceptional repair solutions for various types of equipment.<\/p>",
             "button_name": "See All Services"
           }
@@ -332,6 +333,7 @@
             "image": "shopify:\/\/shop_images\/Commercial_result.webp",
             "url": "shopify:\/\/pages\/get-a-quote",
             "heading": "Commercial Services",
+            "aria-label":"Get A Commercial Services Quote",
             "description": "<p>Reach out to us today to establish your account and unlock a new level of service.<\/p>",
             "button_name": "Get A Quote"
           }
