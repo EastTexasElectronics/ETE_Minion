@@ -77,7 +77,7 @@
         "c103923d-e013-41a1-b43e-151a87948e30": {
           "type": "link_list",
           "settings": {
-            "heading": "QUICK LINKS",
+            "heading": "Quick Links",
             "menu": "footer"
           }
         },
@@ -92,19 +92,19 @@
           "type": "text",
           "settings": {
             "heading": "Contact Information",
-            "subtext": "<p><strong>Phone: <\/strong><\/p><p>(903) 471-1575<\/p><p><strong>Address: <\/strong><\/p><p>205 Renaissance Drive Hallsville, Texas 75650<\/p><p><strong>Email: <\/strong>Contact@EastTexasElectronics.com<\/p>"
+            "subtext": "<p><strong>Phone: <\/strong><\/p><p><a href=\"tel:+19034711575\" target=\"_blank\" title=\"tel:+19034711575\">(903) 471-1575<\/a><\/p><p><strong>Address: <\/strong><\/p><p><a href=\"https:\/\/goo.gl\/maps\/2famfC7gvSjMHCn29\" target=\"_blank\" title=\"Google Maps Link\">205 Renaissance Drive Hallsville, Texas 75650<\/a><\/p><p><strong>Email: <\/strong><a href=\"mailto:Contact@EastTexasElectronics.com\" target=\"_blank\" title=\"Opens Email App to Contact Us\">Contact@EastTexasElectronics.com<\/a><\/p>"
           }
         },
         "359796ef-2c18-41e5-baf4-b897ea8ba40b": {
           "type": "newsletter",
           "settings": {
             "show_newsletter": true,
-            "heading": "NEWSLETTER",
+            "heading": "Newsletter",
             "subtext": "<p>Sign up for our e-mail and be the first who knows our special offers!<\/p>",
             "newsletter_terms": "<p>By clicking the button you agree to the <a href=\"\/policies\/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\"><strong>Privacy Policy<\/strong><\/a> and <a href=\"\/policies\/terms-of-service\" title=\"Terms of Service\"><strong>Terms and Conditions<\/strong><\/a>.<\/p>",
-            "show_social": true,
+            "show_social": false,
             "enable_follow_on_shop": false,
-            "heading_social": "FOLLOW US:"
+            "heading_social": "Follow Us On:"
           }
         }
       },
@@ -118,7 +118,7 @@
         "top_spacing": "none",
         "width": "page-width",
         "show_top_line": true,
-        "heading_tag": "h5",
+        "heading_tag": "h4",
         "description_size": "body2",
         "show_all_text_in_admin": true,
         "enable_accordion": true,
