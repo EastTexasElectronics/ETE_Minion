@@ -392,12 +392,12 @@
             "custom_link": "shopify:\/\/collections\/on-sale"
           }
         },
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-4": {
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-3": {
           "type": "featured_collection",
           "settings": {
-            "collection": "funko-pops",
+            "collection": "xbox-parts-1",
             "collection_name": "{{ block.settings.collection.title }}",
-            "custom_link": "shopify:\/\/collections\/funko-pops"
+            "custom_link": "shopify:\/\/collections\/batteries"
           }
         },
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-1": {
@@ -411,17 +411,17 @@
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-6": {
           "type": "featured_collection",
           "settings": {
-            "collection": "cables-1",
+            "collection": "video-game-consoles",
             "collection_name": "Game Consoles",
             "custom_link": "shopify:\/\/collections\/video-game-consoles"
           }
         },
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-3": {
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-4": {
           "type": "featured_collection",
           "settings": {
-            "collection": "batteries",
+            "collection": "funko-pops",
             "collection_name": "{{ block.settings.collection.title }}",
-            "custom_link": "shopify:\/\/collections\/batteries"
+            "custom_link": "shopify:\/\/collections\/funko-pops"
           }
         },
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-5": {
@@ -435,10 +435,10 @@
       },
       "block_order": [
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-2",
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-4",
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-3",
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-1",
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-6",
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-3",
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-4",
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-5"
       ],
       "settings": {
