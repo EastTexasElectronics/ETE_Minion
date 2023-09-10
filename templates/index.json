@@ -37,7 +37,7 @@
           "type": "slide",
           "settings": {
             "content_type": "image",
-            "video_url": "shopify:\/\/pages\/web-development",
+            "video_url": "",
             "image": "shopify:\/\/shop_images\/Web_Dev_Hero_1036x780_result.webp",
             "image_overlay_opacity": 0,
             "subheading": "",
@@ -45,7 +45,7 @@
             "description": "",
             "call_to_action": "one_link_banner",
             "button_primary_name": "",
-            "url": "",
+            "url": "shopify:\/\/pages\/web-development",
             "button_secondary_name": "",
             "button_secondary_url": "",
             "texts_aligment": "text-center",
