@@ -81,18 +81,18 @@
             "menu": "footer"
           }
         },
-        "988ff1fb-5ae5-4dc4-b17f-ca85a0b9dffb": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Business Information",
-            "menu": "footer2"
-          }
-        },
         "8c2e5d39-2f2a-4ad6-a4d2-5ae2924db17c": {
           "type": "link_list",
           "settings": {
-            "heading": "Personalized Links",
+            "heading": "Policies",
             "menu": "footer3"
+          }
+        },
+        "689e3d93-acf0-4d9b-ad6a-5efbf485e6ad": {
+          "type": "text",
+          "settings": {
+            "heading": "Contact Information",
+            "subtext": "<p><strong>Phone: <\/strong><\/p><p>(903) 471-1575<\/p><p><strong>Address: <\/strong><\/p><p>205 Renaissance Drive Hallsville, Texas 75650<\/p><p><strong>Email: <\/strong>Contact@EastTexasElectronics.com<\/p>"
           }
         },
         "359796ef-2c18-41e5-baf4-b897ea8ba40b": {
@@ -110,8 +110,8 @@
       },
       "block_order": [
         "c103923d-e013-41a1-b43e-151a87948e30",
-        "988ff1fb-5ae5-4dc4-b17f-ca85a0b9dffb",
         "8c2e5d39-2f2a-4ad6-a4d2-5ae2924db17c",
+        "689e3d93-acf0-4d9b-ad6a-5efbf485e6ad",
         "359796ef-2c18-41e5-baf4-b897ea8ba40b"
       ],
       "settings": {
