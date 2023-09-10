@@ -317,7 +317,7 @@
           "type": "blurb",
           "settings": {
             "show_image": "show",
-            "image": "shopify:\/\/shop_images\/Consumer_Services.jpg",
+            "image": "shopify:\/\/shop_images\/Consumer_Services_result.webp",
             "url": "shopify:\/\/pages\/services",
             "heading": "Consumer Services",
             "description": "<p>Explore exceptional repair solutions for various types of equipment.<\/p>",
@@ -328,7 +328,7 @@
           "type": "blurb",
           "settings": {
             "show_image": "show",
-            "image": "shopify:\/\/shop_images\/Commercial.jpg",
+            "image": "shopify:\/\/shop_images\/Commercial_result.webp",
             "url": "shopify:\/\/pages\/get-a-quote",
             "heading": "Commercial Services",
             "description": "<p>Reach out to us today to establish your account and unlock a new level of service.<\/p>",
@@ -338,13 +338,13 @@
         "template--20039351959830__3340be14-07fc-4d74-84cb-c56587022ac1-brand_image-1": {
           "type": "brand_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Quality_Service.jpg"
+            "image": "shopify:\/\/shop_images\/Quality_Service_Square_result.webp"
           }
         },
         "template--20039351959830__3340be14-07fc-4d74-84cb-c56587022ac1-brand_image-2": {
           "type": "brand_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Competitive_Pricing.jpg"
+            "image": "shopify:\/\/shop_images\/Competitive_Pricing_result.webp"
           }
         }
       },
