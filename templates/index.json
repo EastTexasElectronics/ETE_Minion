@@ -95,7 +95,7 @@
           "type": "slide",
           "settings": {
             "content_type": "image",
-            "video_url": "shopify:\/\/pages\/services",
+            "video_url": "",
             "image": "shopify:\/\/shop_images\/Commercial_Hero_result.webp",
             "image_overlay_opacity": 0,
             "subheading": "",
@@ -103,7 +103,7 @@
             "description": "",
             "call_to_action": "one_link_banner",
             "button_primary_name": "",
-            "url": "",
+            "url": "shopify:\/\/pages\/get-a-quote",
             "button_secondary_name": "",
             "button_secondary_url": "",
             "texts_aligment": "text-center",
