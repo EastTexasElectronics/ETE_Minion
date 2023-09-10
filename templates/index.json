@@ -8,9 +8,8 @@
           "settings": {
             "content_type": "image",
             "video_url": "shopify:\/\/pages\/services",
-            "image": "shopify:\/\/shop_images\/Computer_Repair_1036x708_7af3f531-c328-4f2d-b161-00af68fc4b4e.jpg",
+            "image": "shopify:\/\/shop_images\/Computer_Repair_1036x708_result.webp",
             "image_overlay_opacity": 0,
-            "image_mobile": "shopify:\/\/shop_images\/Computer_Repair_Hero.jpg",
             "subheading": "",
             "heading": "",
             "description": "",
@@ -38,9 +37,8 @@
           "settings": {
             "content_type": "image",
             "video_url": "shopify:\/\/pages\/web-development",
-            "image": "shopify:\/\/shop_images\/Web_Dev_Hero_1036x780_6ba21bac-3ed4-4d42-baa7-d9f0edf9c252.jpg",
+            "image": "shopify:\/\/shop_images\/Web_Dev_Hero_1036x780_result.webp",
             "image_overlay_opacity": 0,
-            "image_mobile": "shopify:\/\/shop_images\/Web_Dev_Hero_Mobile.jpg",
             "subheading": "",
             "heading": "",
             "description": "",
@@ -68,9 +66,8 @@
           "settings": {
             "content_type": "image",
             "video_url": "shopify:\/\/pages\/services",
-            "image": "shopify:\/\/shop_images\/Custom_Gaming_Hero_Desktop1036x780.jpg",
+            "image": "shopify:\/\/shop_images\/Custom_Gaming_Hero_Desktop_result.webp",
             "image_overlay_opacity": 0,
-            "image_mobile": "shopify:\/\/shop_images\/Custom_Gaming_Hero_Mobile.jpg",
             "subheading": "",
             "heading": "",
             "description": "",
