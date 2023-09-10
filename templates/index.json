@@ -539,6 +539,7 @@
         "template--20039351959830__c421c31e-7da7-447b-8414-499d90a411f1-text-1",
         "template--20039351959830__c421c31e-7da7-447b-8414-499d90a411f1-button-1"
       ],
+      "disabled": true,
       "settings": {
         "url": "https:\/\/goo.gl\/maps\/m7i477feX6jHaPed9",
         "top_spacing": "small",
