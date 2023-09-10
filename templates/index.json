@@ -388,6 +388,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "on-sale",
+            "image": "shopify:\/\/shop_images\/Mega_Sale_result.webp",
             "collection_name": "{{ block.settings.collection.title }}",
             "custom_link": "shopify:\/\/collections\/on-sale"
           }
