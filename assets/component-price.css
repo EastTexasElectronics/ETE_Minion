@@ -6,6 +6,8 @@
 }
 .price__sale{
   color: var(--color-old-price);
+  display: inline-block;
+  margin-right: 10px; 
 }
 .product-card .unit-price{
   display: inline-flex;
