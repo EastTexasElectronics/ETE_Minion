@@ -45,7 +45,7 @@
             "icon_name_2": "truck_sm",
             "content_2": "<p><strong>Same-day <\/strong>shipping on all orders placed before <strong>1pm<\/strong> <strong>CST<\/strong> Monday - Friday<\/p>",
             "icon_name_3": "chat_sm",
-            "content_3": "<p><strong>Product Rating:<\/strong> {{ product.metafields.reviews.rating | metafield_tag }}<\/p>",
+            "content_3": "<p><strong>Product Rating:<\/strong> {{ product.metafields.reviews.rating | metafield_tag }}{{ product.metafields.reviews.rating_count.value }}{{ product.metafields[\"shopify--discovery--product_recommendation\"].related_products_display.value }}<\/p>",
             "icon_name_4": "info_sm",
             "content_4": "<p><strong>Condition:<\/strong> {{ product.metafields.custom.condition | metafield_text }}<\/p>",
             "icon_name_5": "",
