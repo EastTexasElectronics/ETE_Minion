@@ -6,7 +6,7 @@
 }
 .price__sale{
   color: var(--color-old-price);
-  display: inline-block;
+  display: inline-block !important; 
   margin-right: 10px; 
 }
 .product-card .unit-price{
