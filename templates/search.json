@@ -2,7 +2,6 @@
   "sections": {
     "main": {
       "type": "main-search",
-      "disabled": true,
       "settings": {
         "top_spacing": "normal",
         "width": "page-width",
@@ -38,7 +37,6 @@
     },
     "06577607-efb6-45a9-aac7-2ef023080490": {
       "type": "newsletter",
-      "disabled": true,
       "settings": {
         "subheading": "SUBHEADING",
         "heading": "Newsletter",
@@ -60,27 +58,10 @@
         "background_spacing": "normal",
         "remove_bottom_spacing": false
       }
-    },
-    "5193bb3f-60a9-4153-822f-6d1cafd4e47a": {
-      "type": "apps",
-      "blocks": {
-        "87aa7d87-3ff0-44a9-8137-3d5fdd72084a": {
-          "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/product-filter\/7fc998ae-a150-4367-bab8-505d8a4503f7",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "87aa7d87-3ff0-44a9-8137-3d5fdd72084a"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
-    "5193bb3f-60a9-4153-822f-6d1cafd4e47a",
     "main",
     "06577607-efb6-45a9-aac7-2ef023080490"
-  ],
-  "wrapper": ".boost-sd__product-filter-fallback"
+  ]
 }
