@@ -133,12 +133,6 @@
 
     ],
     "blocks": {
-      "5d3456c8-ac91-4374-8ac2-075d29d83495": {
-        "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/boost-sd\/7fc998ae-a150-4367-bab8-505d8a4503f7",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "6544682535036668446": {
         "type": "shopify:\/\/apps\/pumper-bundle-quantity-break\/blocks\/app-embed\/0856870d-2aca-4b1e-a662-cf1797f61270",
         "disabled": false,
