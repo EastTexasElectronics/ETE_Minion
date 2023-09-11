@@ -1,5 +1,22 @@
 {
   "sections": {
+    "111132b8-a43c-4ecb-9c09-572664fbdaa0": {
+      "type": "apps",
+      "blocks": {
+        "8f2a7ba0-c2b0-430c-9ec3-c225ec58afe9": {
+          "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/product-filter\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "8f2a7ba0-c2b0-430c-9ec3-c225ec58afe9"
+      ],
+      "settings": {
+        "top_spacing": "normal",
+        "width": "page-width"
+      }
+    },
     "heading": {
       "type": "main-collection-banner",
       "blocks": {
@@ -40,7 +57,6 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
-      "disabled": true,
       "settings": {
         "top_spacing": "medium",
         "width": "page-width",
@@ -50,18 +66,18 @@
         "enable_sorting": true,
         "enable_sticky_filter_button": true,
         "enable_products_count": true,
-        "pagination_aligment": "text-left",
+        "pagination_aligment": "text-center",
         "product_limit": 18,
         "image_ratio": "1",
         "show_secondary_image": true,
         "texts_aligment": "text-center",
         "product_name_size": "normal",
         "show_vendor": true,
-        "show_type": true,
-        "show_rating": false,
+        "show_type": false,
+        "show_rating": true,
         "show_price": true,
-        "truncate_product_name": false,
-        "hover_underline": false,
+        "truncate_product_name": true,
+        "hover_underline": true,
         "button_type_product": "show",
         "show_button_quickview": false,
         "show_badge_on_sale": true,
@@ -96,21 +112,6 @@
         "color_subheading": "rgba(0,0,0,0)",
         "color_heading": "rgba(0,0,0,0)",
         "color_meta": "rgba(0,0,0,0)"
-      }
-    },
-    "111132b8-a43c-4ecb-9c09-572664fbdaa0": {
-      "type": "apps",
-      "blocks": {
-        "8f2a7ba0-c2b0-430c-9ec3-c225ec58afe9": {
-          "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/product-filter\/7fc998ae-a150-4367-bab8-505d8a4503f7",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "8f2a7ba0-c2b0-430c-9ec3-c225ec58afe9"
-      ],
-      "settings": {
       }
     }
   },
