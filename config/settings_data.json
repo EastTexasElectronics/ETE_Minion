@@ -37,7 +37,7 @@
     "variants_names": "Color",
     "css_colors": "black:#000000,\nwhite:#FFFFFF,\nbeige:#CFB695,\nred:#F44336,\npink:#E91E63,\npurple:#9C27B0,\ndeep purple:#673AB7,\nviolet:#C11FDD,\nindigo:#3F51B5,\nblue:#2196F3,\nlight blue:#03A9F4,\ncyan:#00BCD4,\nteal:#009688,\ngreen:#4CAF50,\nlight green:#8BC34A,\nlime:#CDDC39,\nyellow:#FFEB3B,\namber:#FFC107,\nAorange:#FF9800,\ndeep orange:#FF5722,\nbrown:#795548,\ngrey:#9E9E9E,\nblue grey:#607D8B",
     "enable_color_swatches": true,
-    "cart_icon": "basket",
+    "cart_icon": "bag",
     "cart_type": "drawer",
     "show_vendor": true,
     "show_cart_note": true,
