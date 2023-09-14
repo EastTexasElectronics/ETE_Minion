@@ -369,13 +369,13 @@
         "template--20039351959830__3340be14-07fc-4d74-84cb-c56587022ac1-brand_image-1": {
           "type": "brand_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Quality_Service_Square_result.webp"
+            "image": "shopify:\/\/shop_images\/Quality_Service_Square.webp"
           }
         },
         "template--20039351959830__3340be14-07fc-4d74-84cb-c56587022ac1-brand_image-2": {
           "type": "brand_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Competitive_Pricing_result.webp"
+            "image": "shopify:\/\/shop_images\/Competitive_Pricing.webp"
           }
         }
       },
