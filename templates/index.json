@@ -131,7 +131,7 @@
         "top_spacing": "none",
         "bottom_spacing": "normal",
         "width": "page-width",
-        "image_size": "auto",
+        "image_size": "fixed",
         "desktop_image_height": 600,
         "texts_aligment_mobile": "text-center-mobile",
         "desktop_navigation": "dots_arrows",
