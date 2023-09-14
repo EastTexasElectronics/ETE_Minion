@@ -116,6 +116,22 @@
             "collection_name": "",
             "custom_link": ""
           }
+        },
+        "076b06f6-35c0-4263-b222-3720f785c0ba": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "atari-parts",
+            "collection_name": "",
+            "custom_link": ""
+          }
+        },
+        "d971f171-551e-44bd-bc75-f678635c7cbc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "collection_name": "",
+            "custom_link": ""
+          }
         }
       },
       "block_order": [
@@ -131,7 +147,9 @@
         "8669f608-f571-4fde-a615-d9796b31c492",
         "f4fa15ab-d9d3-4fda-987d-b95184c55ede",
         "0f1d7c8a-346f-43a0-a350-e623f9efc350",
-        "390b07f4-c1aa-466b-bb5f-090e4ba04db7"
+        "390b07f4-c1aa-466b-bb5f-090e4ba04db7",
+        "076b06f6-35c0-4263-b222-3720f785c0ba",
+        "d971f171-551e-44bd-bc75-f678635c7cbc"
       ],
       "settings": {
         "subheading": "",
