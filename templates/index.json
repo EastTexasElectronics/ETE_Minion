@@ -3,12 +3,41 @@
     "1662640935ca798dff": {
       "type": "slideshow",
       "blocks": {
+        "90679457-5e0b-41c5-81b2-1d851ee98dd2": {
+          "type": "slide",
+          "settings": {
+            "content_type": "image",
+            "video_url": "",
+            "image": "shopify:\/\/shop_images\/Cover_Image_1920x1080_7f5fcba8-275d-487b-8087-cca0afe2a0d1.webp",
+            "image_overlay_opacity": 0,
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "call_to_action": "one_link_banner",
+            "button_primary_name": "",
+            "url": "shopify:\/\/pages\/services",
+            "button_secondary_name": "",
+            "button_secondary_url": "",
+            "texts_aligment": "text-center",
+            "heading_tag": "h1",
+            "description_size": "normal",
+            "content_aligment": "align-items-center justify-content-center",
+            "show_background": false,
+            "hover_underline": false,
+            "color_subheading": "rgba(0,0,0,0)",
+            "color_heading": "rgba(0,0,0,0)",
+            "color_description": "rgba(0,0,0,0)",
+            "button_primary_bg": "rgba(0,0,0,0)",
+            "button_secondary_bg": "rgba(0,0,0,0)",
+            "color_background": "rgba(0,0,0,0)"
+          }
+        },
         "166264093577412f3d-0": {
           "type": "slide",
           "settings": {
             "content_type": "image",
             "video_url": "",
-            "image": "shopify:\/\/shop_images\/Computer_Repair.png",
+            "image": "shopify:\/\/shop_images\/Custom_Gaming_Hero_Desktop.webp",
             "image_overlay_opacity": 0,
             "image_mobile": "shopify:\/\/shop_images\/Computer_Repair_1036x708_500_x_500_px__result.webp",
             "subheading": "",
@@ -38,7 +67,7 @@
           "settings": {
             "content_type": "image",
             "video_url": "shopify:\/\/pages\/web-development",
-            "image": "shopify:\/\/shop_images\/Web_Dev_Hero_1036x780_result.webp",
+            "image": "shopify:\/\/shop_images\/Computer_Repair.webp",
             "image_overlay_opacity": 0,
             "subheading": "",
             "heading": "",
@@ -62,41 +91,12 @@
             "color_background": "rgba(0,0,0,0)"
           }
         },
-        "90679457-5e0b-41c5-81b2-1d851ee98dd2": {
-          "type": "slide",
-          "settings": {
-            "content_type": "image",
-            "video_url": "",
-            "image": "shopify:\/\/shop_images\/Custom_Gaming_Hero_Desktop_result.webp",
-            "image_overlay_opacity": 0,
-            "subheading": "",
-            "heading": "",
-            "description": "",
-            "call_to_action": "one_link_banner",
-            "button_primary_name": "",
-            "url": "shopify:\/\/pages\/services",
-            "button_secondary_name": "",
-            "button_secondary_url": "",
-            "texts_aligment": "text-center",
-            "heading_tag": "h1",
-            "description_size": "normal",
-            "content_aligment": "align-items-center justify-content-center",
-            "show_background": false,
-            "hover_underline": false,
-            "color_subheading": "rgba(0,0,0,0)",
-            "color_heading": "rgba(0,0,0,0)",
-            "color_description": "rgba(0,0,0,0)",
-            "button_primary_bg": "rgba(0,0,0,0)",
-            "button_secondary_bg": "rgba(0,0,0,0)",
-            "color_background": "rgba(0,0,0,0)"
-          }
-        },
         "5e4610f0-b57b-40d6-a097-4b7c0156eab1": {
           "type": "slide",
           "settings": {
             "content_type": "image",
             "video_url": "",
-            "image": "shopify:\/\/shop_images\/Commercial_Hero_result.webp",
+            "image": "shopify:\/\/shop_images\/Commercial_Hero.webp",
             "image_overlay_opacity": 0,
             "subheading": "",
             "heading": "",
@@ -119,13 +119,43 @@
             "button_secondary_bg": "rgba(0,0,0,0)",
             "color_background": "rgba(0,0,0,0)"
           }
+        },
+        "1334641d-5242-47d3-ba34-7afce2874d63": {
+          "type": "slide",
+          "settings": {
+            "content_type": "image",
+            "video_url": "",
+            "image": "shopify:\/\/shop_images\/Cover_Image_1920x1080_7f5fcba8-275d-487b-8087-cca0afe2a0d1.webp",
+            "image_overlay_opacity": 0,
+            "subheading": "SUBHEADING",
+            "heading": "Slide",
+            "description": "Some descriptive text for your slide. For better alignment, it is better to use text in several lines.",
+            "call_to_action": "one_link_banner",
+            "button_primary_name": "Button",
+            "url": "",
+            "button_secondary_name": "Button",
+            "button_secondary_url": "",
+            "texts_aligment": "text-center",
+            "heading_tag": "h1",
+            "description_size": "normal",
+            "content_aligment": "align-items-center justify-content-center",
+            "show_background": false,
+            "hover_underline": false,
+            "color_subheading": "rgba(0,0,0,0)",
+            "color_heading": "rgba(0,0,0,0)",
+            "color_description": "rgba(0,0,0,0)",
+            "button_primary_bg": "rgba(0,0,0,0)",
+            "button_secondary_bg": "rgba(0,0,0,0)",
+            "color_background": "rgba(0,0,0,0)"
+          }
         }
       },
       "block_order": [
+        "90679457-5e0b-41c5-81b2-1d851ee98dd2",
         "166264093577412f3d-0",
         "69cbccf2-3651-4207-afeb-d5def55ce1c3",
-        "90679457-5e0b-41c5-81b2-1d851ee98dd2",
-        "5e4610f0-b57b-40d6-a097-4b7c0156eab1"
+        "5e4610f0-b57b-40d6-a097-4b7c0156eab1",
+        "1334641d-5242-47d3-ba34-7afce2874d63"
       ],
       "settings": {
         "top_spacing": "none",
