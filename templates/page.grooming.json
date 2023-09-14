@@ -13,6 +13,22 @@
     "24dee948-1b82-46d3-bab6-1b3abbf2b4f2": {
       "type": "collection-list",
       "blocks": {
+        "076b06f6-35c0-4263-b222-3720f785c0ba": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "atari-parts",
+            "collection_name": "",
+            "custom_link": ""
+          }
+        },
+        "d971f171-551e-44bd-bc75-f678635c7cbc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "audio-equipment",
+            "collection_name": "",
+            "custom_link": ""
+          }
+        },
         "template--20544239730966__24dee948-1b82-46d3-bab6-1b3abbf2b4f2-featured_collection-1": {
           "type": "featured_collection",
           "settings": {
@@ -77,34 +93,10 @@
             "custom_link": ""
           }
         },
-        "02c6a683-03ca-40d1-a309-72ca6c833305": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "video-game-consoles",
-            "collection_name": "",
-            "custom_link": ""
-          }
-        },
         "8669f608-f571-4fde-a615-d9796b31c492": {
           "type": "featured_collection",
           "settings": {
             "collection": "nintendo-parts",
-            "collection_name": "",
-            "custom_link": ""
-          }
-        },
-        "f4fa15ab-d9d3-4fda-987d-b95184c55ede": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "xbox-parts-1",
-            "collection_name": "",
-            "custom_link": ""
-          }
-        },
-        "0f1d7c8a-346f-43a0-a350-e623f9efc350": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "television-parts",
             "collection_name": "",
             "custom_link": ""
           }
@@ -117,24 +109,34 @@
             "custom_link": ""
           }
         },
-        "076b06f6-35c0-4263-b222-3720f785c0ba": {
+        "0f1d7c8a-346f-43a0-a350-e623f9efc350": {
           "type": "featured_collection",
           "settings": {
-            "collection": "atari-parts",
+            "collection": "television-parts",
             "collection_name": "",
             "custom_link": ""
           }
         },
-        "d971f171-551e-44bd-bc75-f678635c7cbc": {
+        "02c6a683-03ca-40d1-a309-72ca6c833305": {
           "type": "featured_collection",
           "settings": {
-            "collection": "audio-equipment",
+            "collection": "video-game-consoles",
+            "collection_name": "",
+            "custom_link": ""
+          }
+        },
+        "f4fa15ab-d9d3-4fda-987d-b95184c55ede": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "xbox-parts-1",
             "collection_name": "",
             "custom_link": ""
           }
         }
       },
       "block_order": [
+        "076b06f6-35c0-4263-b222-3720f785c0ba",
+        "d971f171-551e-44bd-bc75-f678635c7cbc",
         "template--20544239730966__24dee948-1b82-46d3-bab6-1b3abbf2b4f2-featured_collection-1",
         "template--20544239730966__24dee948-1b82-46d3-bab6-1b3abbf2b4f2-featured_collection-2",
         "template--20544239730966__24dee948-1b82-46d3-bab6-1b3abbf2b4f2-featured_collection-3",
@@ -143,13 +145,11 @@
         "template--20544239730966__24dee948-1b82-46d3-bab6-1b3abbf2b4f2-featured_collection-6",
         "8b2ed3fd-8b9b-4e0e-b70a-9b0718751859",
         "79ecc927-b7c7-4446-b1cb-5bf515537989",
-        "02c6a683-03ca-40d1-a309-72ca6c833305",
         "8669f608-f571-4fde-a615-d9796b31c492",
-        "f4fa15ab-d9d3-4fda-987d-b95184c55ede",
-        "0f1d7c8a-346f-43a0-a350-e623f9efc350",
         "390b07f4-c1aa-466b-bb5f-090e4ba04db7",
-        "076b06f6-35c0-4263-b222-3720f785c0ba",
-        "d971f171-551e-44bd-bc75-f678635c7cbc"
+        "0f1d7c8a-346f-43a0-a350-e623f9efc350",
+        "02c6a683-03ca-40d1-a309-72ca6c833305",
+        "f4fa15ab-d9d3-4fda-987d-b95184c55ede"
       ],
       "settings": {
         "subheading": "",
