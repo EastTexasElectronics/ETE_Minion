@@ -132,6 +132,14 @@
             "collection_name": "",
             "custom_link": ""
           }
+        },
+        "f974de26-9a25-4948-aa82-f17e024ed267": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "network-cables-components",
+            "collection_name": "Network Components",
+            "custom_link": ""
+          }
         }
       },
       "block_order": [
@@ -149,7 +157,8 @@
         "390b07f4-c1aa-466b-bb5f-090e4ba04db7",
         "0f1d7c8a-346f-43a0-a350-e623f9efc350",
         "02c6a683-03ca-40d1-a309-72ca6c833305",
-        "f4fa15ab-d9d3-4fda-987d-b95184c55ede"
+        "f4fa15ab-d9d3-4fda-987d-b95184c55ede",
+        "f974de26-9a25-4948-aa82-f17e024ed267"
       ],
       "settings": {
         "subheading": "",
