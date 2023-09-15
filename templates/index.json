@@ -132,7 +132,7 @@
       ],
       "settings": {
         "top_spacing": "none",
-        "bottom_spacing": "normal",
+        "bottom_spacing": "small",
         "width": "page-width",
         "image_size": "auto",
         "desktop_image_height": 600,
