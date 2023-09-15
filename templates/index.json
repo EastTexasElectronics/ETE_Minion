@@ -447,7 +447,7 @@
       "settings": {
         "subheading": "",
         "heading": "Featured Collections",
-        "heading_aligment": "text-left",
+        "heading_aligment": "text-center",
         "link_name": "Browse All Collections",
         "link_url": "shopify:\/\/collections",
         "top_spacing": "small",
