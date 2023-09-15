@@ -524,7 +524,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "Chip",
-            "text": "<p>Comsumer Devices:<\/p>"
+            "text": "<p><strong>Consumer Devices:<\/strong> Ranging from Motherboards to Remote-Controlled Cars.<\/p>"
           }
         },
         "dcb59bd1-eaeb-462f-ba4e-88528e8cedf2": {
@@ -532,7 +532,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "memory",
-            "text": "<p>Consumer Devices:<\/p>"
+            "text": "<p><strong>Commercial Devices: <\/strong>All Sizes, All Types.<\/p>"
           }
         },
         "8383b724-b3d6-4447-8b2a-ff859c8766b9": {
@@ -606,24 +606,24 @@
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
-            "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
+            "icon_name": "box",
+            "text": "<p><strong>Restore: <\/strong>Transform your aging device into a condition that closely resembles its original, new state.<\/p>"
           }
         },
         "3419b3bf-8684-4455-95d6-c800182b2868": {
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
-            "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
+            "icon_name": "lightning",
+            "text": "<p>Extend the Lifespan of Your Device Without Compromising on Aesthetics.<\/p>"
           }
         },
         "b6968e8f-7331-4cd8-858f-c9da4cff6da0": {
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
-            "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
+            "icon_name": "",
+            "text": ""
           }
         },
         "8aa6d1f3-1186-4dd1-9343-32502d3d6ac1": {
@@ -689,24 +689,24 @@
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
-            "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
+            "icon_name": "new",
+            "text": "<p><strong>Functionality:<\/strong> Restore Your Device to Its Original Appearance and Performance.<\/p>"
           }
         },
         "e1d979d3-4cdb-47dc-9468-757ab0b3b96f": {
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
-            "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
+            "icon_name": "Eco",
+            "text": "<p><strong>Safe<\/strong>: For most unpainted materials and products including IC chips<\/p>"
           }
         },
         "f4f88bc4-b4df-4287-8e51-545aacdbb75d": {
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
-            "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
+            "icon_name": "no_artificial",
+            "text": "<p><strong>Eliminates:<\/strong> Rust, Paint, Grease, Dirt, Dust, and More<\/p>"
           }
         },
         "33e37a49-c234-4fe8-9730-8b45a1fe6df3": {
@@ -772,24 +772,24 @@
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
-            "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
+            "icon_name": "Chip",
+            "text": "<p><strong>PCBs:<\/strong> Offering Repair or Replacement Services for Circuit Boards in Your TV\/Monitor.<\/p>"
           }
         },
         "050b80f1-5db3-4efb-9e12-c87017819240": {
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
-            "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
+            "icon_name": "monitor",
+            "text": "<p><strong>Monitors:<\/strong> We Offer Screen Replacements, but Please Note that TV Screens and Backlights Are Not Included in Our Services.<\/p>"
           }
         },
         "3ef3baad-7a99-499c-b837-5970e8f7dd5f": {
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
-            "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
+            "icon_name": "gaming",
+            "text": "<p><strong>Remote Controllers:<\/strong> Specializing in the Repair and Servicing of a Wide Range of Controllers.<\/p>"
           }
         },
         "02314184-cf60-4216-830c-95ab8e9ffd25": {
@@ -855,24 +855,24 @@
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
-            "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
+            "icon_name": "Face_id",
+            "text": "<p><strong>Tailored Solutions: <\/strong>Catering to Organizations of All Sizes, No Matter How Small or Large.<\/p>"
           }
         },
         "ad9bea4f-68ec-46db-a506-e5ac15ed763f": {
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
-            "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
+            "icon_name": "lightning",
+            "text": "<p><strong>Expedited: <\/strong>Priority Service Available for All Commercial Customers.<\/p>"
           }
         },
         "62a15287-921b-4633-a5ae-8e5e026ffa11": {
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
-            "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
+            "icon_name": "certified",
+            "text": "<p><strong>Reliable:<\/strong> Count on Us for Accurate and Efficient Service Execution.<\/p>"
           }
         },
         "7e452c66-9cc1-4d51-bc1b-d56ef3982565": {
@@ -939,7 +939,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "check",
-            "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
+            "text": "<p>Tailored: From a 1 player bartop arcade to a 4 person <\/p>"
           }
         },
         "676fc66a-793a-4ba9-a6c0-36b904c3dfdd": {
