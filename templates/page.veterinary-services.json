@@ -938,24 +938,24 @@
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
-            "text": "<p>Tailored: From a 1 player bartop arcade to a 4 person <\/p>"
+            "icon_name": "Info",
+            "text": "<p><strong>Tailored: <\/strong>Accommodating Devices of Any Size, Shape, and Gaming Capability.<\/p>"
           }
         },
         "676fc66a-793a-4ba9-a6c0-36b904c3dfdd": {
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
-            "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
+            "icon_name": "certified",
+            "text": "<p><strong>Quality:<\/strong> Engineered for Longevity with Premium Components and Stable Software.<\/p>"
           }
         },
         "7177c7a2-5722-43f1-9040-b0aa17cfb42a": {
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
-            "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
+            "icon_name": "Smile",
+            "text": "<p><strong>User-Friendly:<\/strong> Intuitive Design Ensures Enjoyment for Users of All Ages, Including Children.<\/p>"
           }
         },
         "2557817e-2859-44fc-ae2d-c16a1971ce89": {
@@ -1021,24 +1021,24 @@
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
-            "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
+            "icon_name": "monitor",
+            "text": "<p><strong>Websites:<\/strong> Offering Solutions Ranging from Personal Portfolios to Comprehensive eCommerce Platforms.<\/p>"
           }
         },
         "42de696c-8d2c-4b3a-97a1-cdae34505144": {
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
-            "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
+            "icon_name": "smartphone",
+            "text": "<p><strong>Applications:<\/strong> Regardless of Platform or Scale, We Have the Expertise to Bring Your Dream App to Life.<\/p>"
           }
         },
         "07222486-f72c-4dd6-b834-3aebc02445e6": {
           "type": "text",
           "settings": {
             "show_icon": "svg",
-            "icon_name": "check",
-            "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
+            "icon_name": "Face_id",
+            "text": "<p><strong>Your Way: <\/strong>Whether Utilizing Your Existing Platform or Identifying a New One, We Tailor Solutions to Meet Your Specific Needs.<\/p>"
           }
         },
         "9d7cb4de-5bf3-4eb3-b783-d0d256e7170f": {
