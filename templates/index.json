@@ -564,6 +564,7 @@
     },
     "eb943663-1dd2-412a-875e-a6107a50c4e4": {
       "type": "blog-posts",
+      "disabled": true,
       "settings": {
         "blog": "guides",
         "subheading": "",
