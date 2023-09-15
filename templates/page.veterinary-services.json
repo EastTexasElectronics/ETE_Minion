@@ -1057,7 +1057,7 @@
         "9d7cb4de-5bf3-4eb3-b783-d0d256e7170f"
       ],
       "settings": {
-        "url": "shopify:\/\/pages\/get-a-quote",
+        "url": "shopify:\/\/pages\/website-quote",
         "top_spacing": "small",
         "width": "page-width",
         "row_reverse": true,
