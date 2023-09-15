@@ -13,7 +13,7 @@
         "heading_tag": "h4",
         "excerpt_size": "normal",
         "show_image": true,
-        "truncate_post_heading": true,
+        "truncate_post_heading": false,
         "hover_underline": true,
         "showtags": true,
         "show_date": true,
