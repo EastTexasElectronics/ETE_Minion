@@ -188,7 +188,7 @@
           "settings": {
             "show_icon": "svg",
             "icon_name": "tv",
-            "url": "#image-with-text-template--20544239829270__f980a7c7-0221-48f3-a984-35a8ce1dc6ba",
+            "url": "shopify:\/\/pages\/web-development",
             "heading": "Web & App Development",
             "description": "In today's competitive landscape, it is essential for every business to maintain a strong web presence to ensure customers can easily find you.",
             "button_name": "Learn More"
@@ -1057,7 +1057,7 @@
         "9d7cb4de-5bf3-4eb3-b783-d0d256e7170f"
       ],
       "settings": {
-        "url": "shopify:\/\/pages\/website-quote",
+        "url": "shopify:\/\/pages\/get-a-quote",
         "top_spacing": "small",
         "width": "page-width",
         "row_reverse": true,
