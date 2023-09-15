@@ -53,7 +53,7 @@
         "show_secondary_image": true,
         "texts_aligment": "text-center",
         "product_name_size": "normal",
-        "show_vendor": true,
+        "show_vendor": false,
         "show_type": false,
         "show_rating": true,
         "show_price": true,
