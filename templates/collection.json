@@ -30,6 +30,7 @@
     },
     "description": {
       "type": "main-collection-description",
+      "disabled": true,
       "settings": {
         "top_spacing": "small",
         "width": "page-width",
