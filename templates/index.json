@@ -146,80 +146,6 @@
         "play_button_enabled": true
       }
     },
-    "8ccd9195-a04e-4545-9933-041d2d7d395f": {
-      "type": "brands",
-      "blocks": {
-        "template--20039351959830__8ccd9195-a04e-4545-9933-041d2d7d395f-image-3": {
-          "type": "image",
-          "settings": {
-            "url": "",
-            "heading": "PlayStation"
-          }
-        },
-        "template--20039351959830__8ccd9195-a04e-4545-9933-041d2d7d395f-image-2": {
-          "type": "image",
-          "settings": {
-            "url": "",
-            "heading": "Xbox"
-          }
-        },
-        "template--20039351959830__8ccd9195-a04e-4545-9933-041d2d7d395f-image-1": {
-          "type": "image",
-          "settings": {
-            "url": "",
-            "heading": "Nintendio"
-          }
-        },
-        "template--20039351959830__8ccd9195-a04e-4545-9933-041d2d7d395f-image-4": {
-          "type": "image",
-          "settings": {
-            "url": "",
-            "heading": "Microsoft"
-          }
-        },
-        "template--20039351959830__8ccd9195-a04e-4545-9933-041d2d7d395f-image-5": {
-          "type": "image",
-          "settings": {
-            "url": "",
-            "heading": "Apple"
-          }
-        },
-        "template--20039351959830__8ccd9195-a04e-4545-9933-041d2d7d395f-image-6": {
-          "type": "image",
-          "settings": {
-            "url": "",
-            "heading": "HP"
-          }
-        }
-      },
-      "block_order": [
-        "template--20039351959830__8ccd9195-a04e-4545-9933-041d2d7d395f-image-3",
-        "template--20039351959830__8ccd9195-a04e-4545-9933-041d2d7d395f-image-2",
-        "template--20039351959830__8ccd9195-a04e-4545-9933-041d2d7d395f-image-1",
-        "template--20039351959830__8ccd9195-a04e-4545-9933-041d2d7d395f-image-4",
-        "template--20039351959830__8ccd9195-a04e-4545-9933-041d2d7d395f-image-5",
-        "template--20039351959830__8ccd9195-a04e-4545-9933-041d2d7d395f-image-6"
-      ],
-      "disabled": true,
-      "settings": {
-        "subheading": "",
-        "heading": "",
-        "heading_aligment": "text-center",
-        "link_name": "",
-        "link_url": "",
-        "top_spacing": "none",
-        "width": "page-width",
-        "grid": "col-st-4 col-2",
-        "mobile_grid": "12",
-        "swipe_on_mobile": true,
-        "text_aligment": "text-center",
-        "hide_text": true,
-        "hover_underline": true,
-        "color_subheading": "rgba(0,0,0,0)",
-        "color_heading": "rgba(0,0,0,0)",
-        "color_link": "rgba(0,0,0,0)"
-      }
-    },
     "b1d9d2ec-f907-4526-93e1-13817f8aa965": {
       "type": "ticker",
       "settings": {
@@ -238,80 +164,6 @@
         "gradient": "",
         "background_spacing": "small",
         "remove_bottom_spacing": false
-      }
-    },
-    "b6689530-d4e1-4c30-8894-97e83a3e921c": {
-      "type": "icon-banners",
-      "blocks": {
-        "template--20039351959830__b6689530-d4e1-4c30-8894-97e83a3e921c-banner-2": {
-          "type": "banner",
-          "settings": {
-            "show_icon": "svg",
-            "icon_name": "exchange",
-            "url": "",
-            "heading": "Buy, Sell, & Trade",
-            "description": "We accept trades for our time and labor, as well as select inventory.",
-            "button_name": "Learn more"
-          }
-        },
-        "template--20039351959830__b6689530-d4e1-4c30-8894-97e83a3e921c-banner-1": {
-          "type": "banner",
-          "settings": {
-            "show_icon": "svg",
-            "icon_name": "bag",
-            "url": "",
-            "heading": "New, Refurbished, & Used Products",
-            "description": "Quality products to fit any budget.",
-            "button_name": "Learn more"
-          }
-        },
-        "32dc9b45-5590-4220-a013-42f97596668b": {
-          "type": "banner",
-          "settings": {
-            "show_icon": "svg",
-            "icon_name": "partners",
-            "url": "",
-            "heading": "Consignment",
-            "description": "Don't know where to even begin selling your items?  Lets us help take the stress out.",
-            "button_name": "Learn more"
-          }
-        },
-        "template--20039351959830__b6689530-d4e1-4c30-8894-97e83a3e921c-banner-3": {
-          "type": "banner",
-          "settings": {
-            "show_icon": "svg",
-            "icon_name": "box",
-            "url": "shopify:\/\/pages\/contact-us",
-            "heading": "Recycle & Dontations",
-            "description": "One of our top priorities is to keep E-Waste out of the landfill.",
-            "button_name": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--20039351959830__b6689530-d4e1-4c30-8894-97e83a3e921c-banner-2",
-        "template--20039351959830__b6689530-d4e1-4c30-8894-97e83a3e921c-banner-1",
-        "32dc9b45-5590-4220-a013-42f97596668b",
-        "template--20039351959830__b6689530-d4e1-4c30-8894-97e83a3e921c-banner-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "subheading": "",
-        "heading": "",
-        "heading_aligment": "text-center",
-        "top_spacing": "none",
-        "width": "page-width",
-        "grid": "grid-columns-4",
-        "swipe_on_mobile": false,
-        "texts_aligment": "text-center",
-        "heading_tag": "h4",
-        "description_size": "normal",
-        "hover_underline": true,
-        "color_subheading": "rgba(0,0,0,0)",
-        "color_heading": "rgba(0,0,0,0)",
-        "color_svg": "rgba(0,0,0,0)",
-        "color_heading_banner": "rgba(0,0,0,0)",
-        "color_button": "rgba(0,0,0,0)"
       }
     },
     "3340be14-07fc-4d74-84cb-c56587022ac1": {
@@ -504,64 +356,6 @@
         "color_button_product": "rgba(0,0,0,0)"
       }
     },
-    "c421c31e-7da7-447b-8414-499d90a411f1": {
-      "type": "map",
-      "blocks": {
-        "template--20039351959830__c421c31e-7da7-447b-8414-499d90a411f1-image-1": {
-          "type": "image",
-          "settings": {
-            "api_key": "AIzaSyCm9NxEvZqhQBBIXgbs0RpiVeY4YZmeJZw",
-            "map_address": "205 Renaissance Dr. Hallsville, Tx 75650",
-            "show_pin": true,
-            "map_zoom_level": 14,
-            "image": "shopify:\/\/shop_images\/Google_Map.png"
-          }
-        },
-        "template--20039351959830__c421c31e-7da7-447b-8414-499d90a411f1-heading-1": {
-          "type": "heading",
-          "settings": {
-            "subheading": "East Texas Electronics LLC.",
-            "heading": "Location & Hours"
-          }
-        },
-        "template--20039351959830__c421c31e-7da7-447b-8414-499d90a411f1-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Address:<\/strong><br\/>205 Renaissance Drive Hallsville, Texas 75650<\/p><p><strong>Hours:<\/strong><br\/>Sunday-Monday: <strong>Closed<\/strong><br\/>Tuesday-Saturday: <strong>10:00am - 6:00pm<\/strong><\/p><p><strong>Phone:<\/strong> <a href=\"tel:+19034711575\" target=\"_blank\" title=\"tel:+19034711575\"><strong>(903) 471-1575<\/strong><\/a><\/p>"
-          }
-        },
-        "template--20039351959830__c421c31e-7da7-447b-8414-499d90a411f1-button-1": {
-          "type": "button",
-          "settings": {
-            "button_name": "Get Directions"
-          }
-        }
-      },
-      "block_order": [
-        "template--20039351959830__c421c31e-7da7-447b-8414-499d90a411f1-image-1",
-        "template--20039351959830__c421c31e-7da7-447b-8414-499d90a411f1-heading-1",
-        "template--20039351959830__c421c31e-7da7-447b-8414-499d90a411f1-text-1",
-        "template--20039351959830__c421c31e-7da7-447b-8414-499d90a411f1-button-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "url": "https:\/\/goo.gl\/maps\/m7i477feX6jHaPed9",
-        "top_spacing": "small",
-        "width": "page-width",
-        "desktop_content_height": 500,
-        "row_reverse": false,
-        "content_aligment": "align-self-start",
-        "texts_aligment": "text-center",
-        "heading_tag": "h2",
-        "text_size": "normal",
-        "hover_underline": false,
-        "color_subheading": "rgba(0,0,0,0)",
-        "color_heading": "rgba(0,0,0,0)",
-        "color_text": "rgba(0,0,0,0)",
-        "color_button": "rgba(0,0,0,0)",
-        "color_background": "#eaeaea"
-      }
-    },
     "eb943663-1dd2-412a-875e-a6107a50c4e4": {
       "type": "blog-posts",
       "settings": {
@@ -605,13 +399,10 @@
   },
   "order": [
     "1662640935ca798dff",
-    "8ccd9195-a04e-4545-9933-041d2d7d395f",
     "b1d9d2ec-f907-4526-93e1-13817f8aa965",
-    "b6689530-d4e1-4c30-8894-97e83a3e921c",
     "3340be14-07fc-4d74-84cb-c56587022ac1",
     "322f00f4-13ef-4ed6-90ba-c36b55408665",
     "cdbe8034-0ec1-4387-9ebe-29f1303fb8b1",
-    "c421c31e-7da7-447b-8414-499d90a411f1",
     "eb943663-1dd2-412a-875e-a6107a50c4e4"
   ]
 }

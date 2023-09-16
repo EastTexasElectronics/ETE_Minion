@@ -133,12 +133,6 @@
 
     ],
     "blocks": {
-      "6544682535036668446": {
-        "type": "shopify:\/\/apps\/pumper-bundle-quantity-break\/blocks\/app-embed\/0856870d-2aca-4b1e-a662-cf1797f61270",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "13768625480086291342": {
         "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": true,
