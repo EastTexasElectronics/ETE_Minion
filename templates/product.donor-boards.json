@@ -44,12 +44,12 @@
             "content_1": "",
             "icon_name_2": "truck_sm",
             "content_2": "<p><strong>Same-day <\/strong>shipping on all orders placed before <strong>1pm<\/strong> <strong>CST<\/strong> Monday - Friday<\/p>",
-            "icon_name_3": "chat_sm",
-            "content_3": "<p>Donor Boards are either Untested or Defective and are sold AS-IS with no returns.  Boards may be missing components such as HDMI Ports.  <\/p>",
+            "icon_name_3": "",
+            "content_3": "",
             "icon_name_4": "info_sm",
             "content_4": "<p><strong>Condition:<\/strong> {{ product.metafields.custom.condition | metafield_text }}<\/p>",
-            "icon_name_5": "Info_sm",
-            "content_5": "<p>If you need a specific component on your board please mention which component you need to make sure is on the board<\/p>"
+            "icon_name_5": "",
+            "content_5": ""
           }
         },
         "63512f11-eb4b-4c33-97df-b07dfa205e23": {
@@ -57,13 +57,13 @@
           "settings": {
             "text_size": "small",
             "icon_name_1": "check_sm",
-            "content_1": "<p>Short content about your product.<\/p>",
+            "content_1": "<p>Donor Boards are either Untested or Defective and are sold AS-IS with no returns.  Boards may be missing components such as HDMI Ports.  <\/p>",
             "icon_name_2": "check_sm",
-            "content_2": "<p>Short content about your product.<\/p>",
+            "content_2": "<p>If you need a specific component on your board please mention which component you need to make sure is on the board<\/p>",
             "icon_name_3": "",
             "content_3": "<p>Icons are optional<\/p>",
             "icon_name_4": "check",
-            "content_4": "<p><strong>USE RICH TEXT EDITOR<br\/><\/strong>And big icons to highlight the product sale point<\/p>",
+            "content_4": "",
             "icon_name_5": "",
             "content_5": ""
           }
