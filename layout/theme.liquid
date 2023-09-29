@@ -1,3 +1,4 @@
+{%- capture avada-seo-original -%}
 <!doctype html>
 <html class="no-js{% if settings.minion_rtl %} minion-rtl{% endif %}" lang="{{ request.locale.iso_code }}" data-role="{{ theme.role }}">
   <head>
@@ -33,9 +34,9 @@
 
     {% render 'meta-tags' %}
 
-    <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'constants.aio.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'pubsub.aio.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'global.aio.min.js' | asset_url }}" defer="defer"></script>
     
     
     
@@ -323,8 +324,8 @@
     
     {% endstyle %}
 
-    {{ 'base.css' | asset_url | stylesheet_tag }}
-    {% if settings.minion_rtl %}{{ 'base-rtl.css' | asset_url | stylesheet_tag }}{% endif %}
+    {{ 'base.aio.min.css' | asset_url | stylesheet_tag }}
+    {% if settings.minion_rtl %}{{ 'base-rtl.aio.min.css' | asset_url | stylesheet_tag }}{% endif %}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -334,7 +335,7 @@
     {%- endunless -%}
 
     {%- if settings.predictive_search_enabled -%}
-      <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
+      <link rel="stylesheet" href="{{ 'component-predictive-search.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
     {%- endif -%}
 
     <script>
@@ -430,11 +431,21 @@
     </script>
 
     {%- if settings.predictive_search_enabled -%}
-      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'predictive-search.aio.min.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     {%- if settings.enable_recently_viewed_products -%}
       <recently-viewed-products-record data-count="{{ settings.recently_viewed_products_limit }}"></recently-viewed-products-record>
-      <script src="{{ 'component-recently-viewed-products.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'component-recently-viewed-products.aio.min.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
   </body>
 </html>
+
+{%- endcapture avada-seo-original -%}
+{%- capture avada-seo-minified -%}
+{%- include 'avada-seo-minifier', content: avada-seo-original -%}
+{%- endcapture -%}
+{%- if avada-seo-minified contains 'Liquid error' -%}
+{{ avada-seo-original }}
+{%- else -%}
+{{ avada-seo-minified }}
+{%- endif -%}

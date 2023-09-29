@@ -1,5 +1,5 @@
-{{ 'component-inputs.css' | asset_url | stylesheet_tag }}
-{{ 'component-cart.css' | asset_url | stylesheet_tag }}
+{{ 'component-inputs.aio.min.css' | asset_url | stylesheet_tag }}
+{{ 'component-cart.aio.min.css' | asset_url | stylesheet_tag }}
 
 <div class="top-spacing-{{ section.settings.top_spacing }} cart__footer{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
   <div class="{{ section.settings.width }}">
