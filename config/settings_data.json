@@ -144,6 +144,19 @@
         "disabled": true,
         "settings": {
         }
+      },
+      "9010622670419788200": {
+        "type": "shopify:\/\/apps\/avada-seo-suite\/blocks\/avada-site-verification\/15507c6e-1aa3-45d3-b698-7e175e033440",
+        "disabled": false,
+        "settings": {
+          "google_search_console": "google-site-verification=W_guS7FzBPpLQJBxrYaS8FR7p78rH_f6XhB-Ya6-VbI",
+          "bing_webmaster_tools": "",
+          "pinterest": "",
+          "yandex_webmaster_tools": "",
+          "baidu_webmaster_tools": "",
+          "alexa": "",
+          "norton": "<meta name=\"norton-safeweb-site-verification\" content=\"r9h197f1j--kfq3s8fclhp09b8bgehzxygklzbj4hnmier5j28uub-q87gf-93f5rvvcnzgn1mab5g704a2c5tehrqpqpr0s13pkbiwl3r-4m6oo43isrdpo5lthej4u\">"
+        }
       }
     }
   },
