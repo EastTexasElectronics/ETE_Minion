@@ -14,7 +14,7 @@ assign css_banner = true
 -%}
 
 {%- if settings.animate_content_show -%}
-<link rel="stylesheet" href="{{ 'section-banners.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'section-banners.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'section-banners.css' | asset_url | stylesheet_tag }}</noscript>
 {%- else -%}
 {{ 'section-banners.css' | asset_url | stylesheet_tag }}
@@ -29,14 +29,14 @@ assign css_products = true
 -%}
 
 {%- if settings.animate_content_show -%}
-<link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-rating.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-product-card.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-price.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-rating.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-product-card.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rating.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-product-card.css' | asset_url | stylesheet_tag }}</noscript>
 {%- if settings.swatches_design != 'none' and settings.enable_color_swatches -%}
-<link rel="stylesheet" href="{{ 'product-card-variants.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'product-card-variants.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'product-card-variants.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%}
 {%- else -%}
@@ -57,7 +57,7 @@ assign css_collections = true
 -%}
 
 {%- if settings.animate_content_show -%}
-<link rel="stylesheet" href="{{ 'section-collection-list.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'section-collection-list.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'section-collection-list.css' | asset_url | stylesheet_tag }}</noscript>
 {%- else -%}
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
@@ -72,7 +72,7 @@ assign css_video = true
 -%}
 
 {%- if settings.animate_content_show -%}
-<link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-deferred-media.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}</noscript>
 {%- else -%}
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
@@ -82,7 +82,7 @@ assign css_video = true
 {%- endfor -%}
 
 {%- if settings.animate_content_show -%}
-<link rel="stylesheet" href="{{ 'section-collage.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'section-collage.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'section-collage.css' | asset_url | stylesheet_tag }}</noscript>
 {%- else -%}
 {{ 'section-collage.css' | asset_url | stylesheet_tag }}

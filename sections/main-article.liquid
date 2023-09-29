@@ -1,5 +1,5 @@
-{{ 'section-blog-post-article.css' | asset_url | stylesheet_tag }}
-{{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
+{{ 'section-blog-post-article.aio.min.css' | asset_url | stylesheet_tag }}
+{{ 'section-blog-post.aio.min.css' | asset_url | stylesheet_tag }}
 
 <style>
   {%- if section.settings.image_ratio == "fixed" and section.settings.show_featured_image -%}
@@ -125,7 +125,7 @@
               </div>
             </details>
           </share-button>
-          <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+          <script src="{{ 'share.aio.min.js' | asset_url }}" defer="defer"></script>
         </div>
         {%- endif -%}
         
