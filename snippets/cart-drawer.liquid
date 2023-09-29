@@ -6,11 +6,11 @@
 {% endcomment %}
 
 {%- if settings.animate_content_show -%}
-<link rel="stylesheet" href="{{ 'component-toggle.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-cart.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-cart-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-toggle.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-cart.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-cart-items.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-slider.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-cart-drawer.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-toggle.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-cart.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
@@ -24,7 +24,7 @@
 {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
 
-<script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'cart.aio.min.js' | asset_url }}" defer="defer"></script>
 
 <style>
   .cart-drawer-container {

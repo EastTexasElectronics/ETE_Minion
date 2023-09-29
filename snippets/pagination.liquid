@@ -12,7 +12,7 @@
 	- aligment: {String} values: text-left, text-center or empty, text-right; default empty
 {% endcomment %}
 
-<link rel="stylesheet" href="{{ 'component-pagination.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-pagination.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-pagination.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- if paginate.parts.size > 0 -%}
