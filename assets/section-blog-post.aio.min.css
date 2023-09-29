@@ -1,0 +1,5 @@
+/*
+Generated time: September 29, 2023 16:34
+This file was created by the app developer. Feel free to contact the original developer with any questions. It was minified (compressed) by AVADA. AVADA do NOT own this script.
+*/
+.blog-posts{position:relative}.blog-posts__meta{display:flex;flex-wrap:wrap;align-items:center;color:var(--color-base)}.blog-posts .blog-posts__meta{margin-top:-10px!important}.blog-posts__meta>li{display:inline-flex;flex-wrap:wrap;align-items:center;margin-top:10px}.blog-posts__meta>li:not(:first-child):before{content:'';display:inline-block;width:1px;height:16px;background:var(--color-base);opacity:.3;margin:0 15px}.text-center .blog-posts__meta{justify-content:center}
