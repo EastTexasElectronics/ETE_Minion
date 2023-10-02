@@ -1,0 +1,72 @@
+.pricing-table {
+  text-align: center;
+}
+
+.table-small td,
+.table-small th {
+  padding: 8px;
+}
+
+.table-medium td,
+.table-medium th {
+  padding: 16px;
+}
+
+.table-large td,
+.table-large th {
+  padding: 24px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .pricing-table table {
+    width: 100%;
+  }
+}
+
+/* Dynamic cell coloring */
+.pricing-table table[data-pattern="single"] td,
+.pricing-table table[data-pattern="single"] th {
+  background-color: attr(data-color1);
+}
+
+.pricing-table table[data-pattern="dual"] td:nth-child(even),
+.pricing-table table[data-pattern="dual"] th:nth-child(even) {
+  background-color: attr(data-color1);
+}
+
+.pricing-table table[data-pattern="dual"] td:nth-child(odd),
+.pricing-table table[data-pattern="dual"] th:nth-child(odd) {
+  background-color: attr(data-color2);
+}
+
+.pricing-table
+  table[data-pattern="checker"]
+  tr:nth-child(even)
+  td:nth-child(even),
+.pricing-table
+  table[data-pattern="checker"]
+  tr:nth-child(odd)
+  td:nth-child(odd) {
+  background-color: attr(data-color1);
+}
+
+.pricing-table
+  table[data-pattern="checker"]
+  tr:nth-child(even)
+  td:nth-child(odd),
+.pricing-table
+  table[data-pattern="checker"]
+  tr:nth-child(odd)
+  td:nth-child(even) {
+  background-color: attr(data-color2);
+}
+
+/* Accessibility */
+.pricing-table [role="region"] {
+  outline: none;
+}
+
+.pricing-table [role="grid"] {
+  outline: none;
+}

@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "brew": "^0.0.8",
+    "shopify-cli": "^1.0.11"
+  },
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.3.0",
+    "prettier": "^3.0.3"
+  }
+}

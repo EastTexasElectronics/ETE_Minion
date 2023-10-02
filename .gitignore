@@ -1,0 +1,30 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore config files that may contain sensitive information
+config.yml
+config/settings_data.json
+
+# Ignore node modules
+node_modules/
+
+# Ignore build and distribution directories
+dist/
+build/
+
+# Ignore Sass cache
+.sass-cache/
+
+# Ignore logs
+*.log
+
+# Ignore temporary files
+*.swp
+*.swo
+*.swn
+*.bak
+
+# Ignore files related to code editor
+.idea/
+.vscode/

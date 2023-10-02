@@ -1,0 +1,98 @@
+{% schema %}
+{
+  "name": "Pricing Table",
+  "settings": [
+    {
+      "type": "number",
+      "id": "num_columns",
+      "label": "Number of Columns",
+      "default": 2,
+      "min": 1,
+      "max": 5
+    },
+    {
+      "type": "number",
+      "id": "num_rows",
+      "label": "Number of Rows",
+      "default": 5,
+      "min": 1,
+      "max": 10
+    },
+    {
+      "type": "text",
+      "id": "table_title",
+      "label": "Table Title",
+      "default": "Pricing Table"
+    },
+    {
+      "type": "textarea",
+      "id": "table_description",
+      "label": "Table Description",
+      "default": "Description here"
+    },
+    {
+      "type": "select",
+      "id": "box_size",
+      "label": "Box Size",
+      "options": [
+        { "value": "small", "label": "Small" },
+        { "value": "medium", "label": "Medium" },
+        { "value": "large", "label": "Large" }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "color",
+      "id": "cell_color_1",
+      "label": "Cell Color 1",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "cell_color_2",
+      "label": "Cell Color 2",
+      "default": "#f0f0f0"
+    },
+    {
+      "type": "select",
+      "id": "color_pattern",
+      "label": "Color Pattern",
+      "options": [
+        { "value": "single", "label": "Single Color" },
+        { "value": "dual", "label": "Two Colors by Column" },
+        { "value": "checker", "label": "Checker Pattern" }
+      ],
+      "default": "single"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="pricing-table" role="region" aria-label="Pricing Table">
+  <h1>{{ section.settings.table_title }}</h1>
+  <p>{{ section.settings.table_description }}</p>
+  <table
+    class="table-{{ section.settings.box_size }}"
+    data-pattern="{{ section.settings.color_pattern }}"
+    data-color1="{{ section.settings.cell_color_1 }}"
+    data-color2="{{ section.settings.cell_color_2 }}"
+    role="grid"
+  >
+    <thead>
+      <tr>
+        {% for i in (1..section.settings.num_columns) %}
+          <th scope="col">Column {{ i }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in (1..section.settings.num_rows) %}
+        <tr>
+          {% for j in (1..section.settings.num_columns) %}
+            <td>Row {{ i }} Col {{ j }}</td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
