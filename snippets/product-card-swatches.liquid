@@ -66,7 +66,7 @@
   {%- assign image_original_size = image_src | replace: '240x.', '800x.' -%}
   {%- assign color = css_colors | split: color_swatch | last | split: ',' | first -%}
   {%- assign variant_url = get_product_images_from_variants_options | split: color_swatch | last | split: ',' | first | split: '_%%_' | last -%}
-  <a href="{{ variant_url }}" class="product-card__variant-item{% if values_size > mobile_grid and forloop.index >= mobile_grid %} hide-on-mobile{% endif %} clear-underline{% if grop_options_type == 'image' and image_src != blank %} product-card__variant-item--image{% endif %}"
+  <a href="{{ variant_url }}" class="product-card__variant-item{% if values_size > mobile_grid and forloop.index >= mobile_grid %} hide-on-mobile{% endif %} clear-underline{% if grop_options_type == 'image' and image_src != blank %} product-card__variant-item--image{% endif %}{% if settings_image_ratio == '1, round-image' %} border__radius--circle-swatch{% endif %}"
      aria-label="{{ value }}"
      data-image-src="{{ image_original_size }}"
      style="--background:{{ color }};">
@@ -86,7 +86,7 @@
   {%- assign count_text = '+' | append: count -%}
   {%- assign count_mobile_text = '+' | append: count_mobile -%}
   <a href="{{ product_card_product.url }}"
-     class="product-card__variant-count btn-medium btn-medium--icon btn-medium--type-small color-accent-to-base{% if count <= 1 %} hide-on-desktop{% endif %}{% if count_mobile <= 1 %} hide-on-mobile{% endif %}"
+     class="product-card__variant-count btn-medium btn-medium--icon btn-medium--type-small color-accent-to-base{% if count <= 1 %} hide-on-desktop{% endif %}{% if count_mobile <= 1 %} hide-on-mobile{% endif %}{% if settings_image_ratio == '1, round-image' %} border__radius--circle-swatch{% endif %}"
      aria-label="{{ count_text }}"
      >
     <span class="product-card__variant-count__value" data-value="{{ count_text }}" data-value--mobile="{{ count_mobile_text }}" style="--height: 1px;"></span>

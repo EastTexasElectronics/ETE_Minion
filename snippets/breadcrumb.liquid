@@ -4,7 +4,7 @@ and improve the discoverability of a website’s sections and pages. Like all Sh
 {%- endcomment -%}
 
 {%- if template != 'index' and settings.enable_breadcrumb -%}
-<div class="breadcrumb">
+<div class="breadcrumb{% if header contains 'opened-search' %} breadcrumb--no-mt{% endif %}">
   <div class="{% if header contains 'data-header-wide' %}page-wide{% else %}page-width{% endif %} body3">
     <ul class="unstyle-ul">
       <li><a href="{{ routes.root_url }}" class="clear-underline color-base animation-underline animation-underline--thin">{{ 'general.breadcrumb.main_page_name' | t }}</a>{% render "icon-arrow-right-small" %}</li>
