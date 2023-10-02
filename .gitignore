@@ -1,3 +1,4 @@
+shopify theme dev --store=east-texas-electronics-llc.myshopify.com
 # Ignore system files
 .DS_Store
 Thumbs.db
