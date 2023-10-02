@@ -495,6 +495,7 @@
         "template--21235113459990__90aaee88-bd55-4380-b6c0-555bb7c30c31-tab_grid-2",
         "template--21235113459990__90aaee88-bd55-4380-b6c0-555bb7c30c31-tab_grid-3"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "SUBHEADING",
         "heading_aligment": "text-center",
@@ -532,14 +533,14 @@
     "acfcb8bb-7ccb-43af-99a2-0a0167543ddb": {
       "type": "recently-viewed-products",
       "settings": {
-        "subheading": "SUBHEADING",
-        "heading": "Recently viewed products",
-        "heading_aligment": "text-center",
-        "top_spacing": "normal",
+        "subheading": "TEST",
+        "heading": "TEST",
+        "heading_aligment": "text-left",
+        "top_spacing": "small",
         "width": "page-width",
-        "grid": "col-md-4 col-one_fifth",
-        "mobile_grid": "12",
-        "swipe_on_mobile": false,
+        "grid": "col-6",
+        "mobile_grid": "6",
+        "swipe_on_mobile": true,
         "image_ratio": "1",
         "show_secondary_image": true,
         "texts_aligment": "text-center",
