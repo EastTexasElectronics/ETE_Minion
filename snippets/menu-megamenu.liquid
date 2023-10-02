@@ -85,11 +85,13 @@
 -->
 {%- endcapture -%}
 {%- endif -%}
-
+{%- capture page_width -%}
+{% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %}
+{%- endcapture -%}
 <div class="megamenu-container" {{ megamenu_block.shopify_attributes }}>
   {%- if fullwidth_menu -%}
   <div class="submenu-design__megamenu submenu--no-radius">
-    <div class="{{ section.settings.width }}">
+    <div class="{{ page_width }}">
       {%- if megamenu_block.settings.show_banner -%}
       <div class="grid megamenu_show_banner">
         <div class="col-four_fifth">
@@ -105,7 +107,7 @@
     </div>
   </div>
   {%- else -%}
-  <div class="submenu-design__megamenu {{ section.settings.width }}">
+  <div class="submenu-design__megamenu {{ page_width }}">
     {%- if megamenu_block.settings.show_banner -%}
     <div class="grid megamenu_show_banner">
       <div class="col-four_fifth">

@@ -21,6 +21,7 @@
 	- section_id: {String} The ID of the section that contains this card.
     - hide_product_card_swatches: {Boolean} Show product card swatches. Default: false
     - disable_image_zoom: {Boolean} Show product card swatches. Default: false
+    - image_zoom_internal: {Boolean} Zoom type is internal. Default: false
 
     Usage:
     {% render 'product-card', show_vendor: section.settings.show_vendor %}
@@ -45,13 +46,14 @@ endif
 
 {%- capture product_card_swatches -%}
 {%- unless hide_product_card_swatches  -%}
-{%- render "product-card-swatches" product_card_product:product_card_product, image_ratio:image_ratio -%}
+{%- render "product-card-swatches" product_card_product:product_card_product, image_ratio:image_ratio, settings_image_ratio:settings_image_ratio -%}
 {%- endunless -%}
 {%- endcapture -%}
 
 {%- assign last_characters = 'general.abbreviation_of_text_in_a_section.last_characters' | t -%}
-
-<div class="product-card{% if product_card_swatches == blank %} btn-quickview-hover{% endif %}{% if settings.enable_zoom_animation and disable_image_zoom == blank %} image-hover-scaling-up{% endif %} position-relative hover-area{% if settings.product_card_image_resize == "contain" %} product-card-image--contain{% endif %}">
+{%- assign image = product_card_product.featured_media -%}
+    
+<div class="product-card{% if product_card_swatches == blank %} btn-quickview-hover{% endif %}{% if settings.enable_zoom_animation and disable_image_zoom == blank %} image-hover-scaling-up{% endif %} position-relative hover-area{% if settings.product_card_image_resize == "contain" %} product-card-image--contain{% endif %}{% if settings.product_card_align_buttons %} product-card__align-buttons{% endif %}">
   {%- capture badges -%}
   {%- if product_card_product.available == false and show_badge_sold_out -%}
   <span class="badge badge--sold_out">{{ 'products.product.sold_out' | t }}</span>
@@ -64,11 +66,10 @@ endif
   {%- endcapture -%}
   <div id="badge__container-{{ section_id }}" class="badge__container badge--fixed">{{- badges -}}</div>
 
-  <div class="product-card__image-holder mb15">
-    {%- assign image = product_card_product.featured_media -%}
+  <div class="product-card__image-holder mb15{% if image_zoom_internal and image != blank and settings.enable_zoom_animation and disable_image_zoom == blank %} image-hover-scaling-internal{% if settings_image_ratio == '1, round-image' %} border__radius--circle{% endif %}{% endif %}">
     {%- if image != blank -%}
     <a href="{{ product_card_product.url }}" class="product-card__image image-hover-scaling__image border__radius {% if settings_image_ratio == '1, round-image' %} border__radius--circle{% endif %}"
-         style="--aspect-ratio: {{ image_ratio }};" {{ settings_image_ratio }}
+         style="--aspect-ratio: {{ image_ratio }};"
          >
       <img srcset="{%- if image.width >= 180 -%}{{ image | image_url: width: 180 }} 180w,{%- endif -%}
                    {%- if image.width >= 400 -%}{{ image | image_url: width: 390 }} 400w,{%- endif -%}
@@ -126,6 +127,7 @@ endif
               type="submit"
               name="add"
               class="quick-add__submit btn btn_zoom btn-quickview"
+              aria-label="{{ "general.aria_label.info" | t }}"
               aria-haspopup="dialog"
               aria-labelledby="{{ product_form_id }}-submit-quickview title-{{ section_id }}-{{ product_card_product.id }}"
               data-product-url="{{ product_card_product.url }}"

@@ -1,15 +1,10 @@
-{%- capture avada-seo-original -%}
 <!doctype html>
 <html class="no-js{% if settings.minion_rtl %} minion-rtl{% endif %}" lang="{{ request.locale.iso_code }}" data-role="{{ theme.role }}">
   <head>
-	<!-- Added by AVADA SEO Suite -->
-	{% include 'avada-seo' %}
-	<!-- /Added by AVADA SEO Suite -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
-    <meta name="norton-safeweb-site-verification" content="r9h197f1j--kfq3s8fclhp09b8bgehzxygklzbj4hnmier5j28uub-q87gf-93f5rvvcnzgn1mab5g704a2c5tehrqpqpr0s13pkbiwl3r-4m6oo43isrdpo5lthej4u" />
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
@@ -34,11 +29,9 @@
 
     {% render 'meta-tags' %}
 
-    <script src="{{ 'constants.aio.min.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'pubsub.aio.min.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'global.aio.min.js' | asset_url }}" defer="defer"></script>
-    
-    
+    <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     
     {{ content_for_header }}
 
@@ -162,10 +155,11 @@
     	{%- endif -%}
 
         --radius: {{ settings.roundness }}px;
-    	--radius-input: {{ settings.roundness_input_buttons }}px;
-    	--radius-button: {{ settings.roundness_input_buttons }}px;
+    	--radius-input: {{ settings.roundness_input }}px;
+    	--radius-button: {{ settings.roundness_buttons }}px;
     	--radius-badge:{% if settings.roundness == 0 %}0{% else %}3px{% endif %};
     	--radius-checkbox:{% if settings.roundness == 0 %}0{% else %}4px{% endif %};
+        --radius-menu: {{ settings.roundness_menu_submenu }}px;
 
         --color-badge-1:{{ settings.color_save_badge }};
     	{%- assign accent_brightness = settings.color_save_badge | color_extract: 'lightness' -%}
@@ -196,16 +190,16 @@
     	--color-error: {{ settings.color_alert }};
     
         --form_field-height: 50px;
-
+        
         --page-width: {{ settings.page_width }}px;
         --page-padding: {{ settings.spacing_grid_horizontal }}px;
 
-        --sections-top-spacing: 100px;
-    	--sections-top-spacing-mobile: 80px;
-		--sections-top-spacing--medium: 80px;
-    	--sections-top-spacing--medium-mobile: 60px;
-		--sections-top-spacing--small: 40px;
-    	--sections-top-spacing--small-mobile: 40px;
+        --sections-top-spacing:{{settings.top_normal_desktop}}px;
+    	--sections-top-spacing-mobile:{{settings.top_normal_mobile}}px;
+		--sections-top-spacing--medium:{{settings.top_medium_desktop}}px;
+    	--sections-top-spacing--medium-mobile:{{settings.top_medium_mobile}}px;
+		--sections-top-spacing--small:{{settings.top_small_desktop}}px;
+    	--sections-top-spacing--small-mobile:{{settings.top_small_mobile}}px;
 
         --padding1: 10px;
         --padding2: 20px;
@@ -324,8 +318,8 @@
     
     {% endstyle %}
 
-    {{ 'base.aio.min.css' | asset_url | stylesheet_tag }}
-    {% if settings.minion_rtl %}{{ 'base-rtl.aio.min.css' | asset_url | stylesheet_tag }}{% endif %}
+    {{ 'base.css' | asset_url | stylesheet_tag }}
+    {% if settings.minion_rtl %}{{ 'base-rtl.css' | asset_url | stylesheet_tag }}{% endif %}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -335,7 +329,7 @@
     {%- endunless -%}
 
     {%- if settings.predictive_search_enabled -%}
-      <link rel="stylesheet" href="{{ 'component-predictive-search.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+      <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
     {%- endif -%}
 
     <script>
@@ -348,8 +342,7 @@
         setTimeout(function(){document.querySelector('footer').classList.add('footer-loaded')}, 700);
       });
     </script>
-    {% render 'rapid-search-settings' %}
-</head>
+  </head>
 
   <body>
     <a class="skip-to-content-link btn visually-hidden" href="#MainContent">
@@ -431,21 +424,11 @@
     </script>
 
     {%- if settings.predictive_search_enabled -%}
-      <script src="{{ 'predictive-search.aio.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     {%- if settings.enable_recently_viewed_products -%}
       <recently-viewed-products-record data-count="{{ settings.recently_viewed_products_limit }}"></recently-viewed-products-record>
-      <script src="{{ 'component-recently-viewed-products.aio.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'component-recently-viewed-products.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
   </body>
 </html>
-
-{%- endcapture avada-seo-original -%}
-{%- capture avada-seo-minified -%}
-{%- include 'avada-seo-minifier', content: avada-seo-original -%}
-{%- endcapture -%}
-{%- if avada-seo-minified contains 'Liquid error' -%}
-{{ avada-seo-original }}
-{%- else -%}
-{{ avada-seo-minified }}
-{%- endif -%}
