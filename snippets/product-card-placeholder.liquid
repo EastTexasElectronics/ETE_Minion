@@ -11,6 +11,7 @@
     - show_price: {Boolean} Show the product price. Default: true
     - button_type_product: {String} Size of the product image card. Values are "hide", "show", "show only text" and "show only icon". Default is "show"
 	- placeholder_name: {String}  {{ placeholder_name | placeholder_svg_tag: 'placeholder-svg' }}
+    - image_zoom_internal: {Boolean} Zoom type is internal. Default: false
 
     Usage:
     {% render 'product-card-placeholder', show_vendor: section.settings.show_vendor %}
@@ -28,9 +29,11 @@
   endcapture
   endif
   -%}
-  
-  <div class="image-hover-scaling__image placeholder__svg--bg border__radius mb15 position-relative{% if settings_image_ratio == '1, round-image' %} border__radius--circle{% endif %}"{% if settings_image_ratio != 'auto' %} style="--aspect-ratio: {{ image_ratio }};"{% endif %}>
-    {%- render "icons-placeholder-product", icon_name:placeholder_name -%}
+
+  <div class="mb15{% if image_zoom_internal and settings.enable_zoom_animation %} image-hover-scaling-internal{% if settings_image_ratio == '1, round-image' %} border__radius--circle{% endif %}{% endif %}">
+    <div class="image-hover-scaling__image placeholder__svg--bg border__radius position-relative{% if settings_image_ratio == '1, round-image' %} border__radius--circle{% endif %}"{% if settings_image_ratio != 'auto' %} style="--aspect-ratio: {{ image_ratio }};"{% endif %}>
+      {%- render "icons-placeholder-product", icon_name:placeholder_name -%}
+    </div>
   </div>
   <div class="product-card__container mt--first-child-0">
     {%- if show_vendor -%}

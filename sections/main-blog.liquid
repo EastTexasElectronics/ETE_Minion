@@ -1,7 +1,8 @@
-{{ 'section-blog-post.aio.min.css' | asset_url | stylesheet_tag }}
+{{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 {%- assign last_characters = 'general.abbreviation_of_text_in_a_section.last_characters' | t -%}
+{%- capture page_width -%}{%- if section.settings.width != "default" %}{{ section.settings.width }}{%- else -%}{{ settings.page_width_main }}{%- endif -%}{%- endcapture -%}
 <div class="top-spacing-{{ section.settings.top_spacing }}">
-  <div class="{{ section.settings.width }} mb--last-child-0">
+  <div class="{{ page_width }} mb--last-child-0">
 
     <div class="grid{% if section.settings.heading_aligment == "text-center" %} justify-content-center{% endif %} heading--mb">      
       <div class="col-st-12 col-6 mb--last-child-0 {{ section.settings.heading_aligment }}">
@@ -36,7 +37,7 @@
 
               <div class="border__radius{% if section.settings.image_ratio == '1, round-image' %} border__radius--circle{% endif %}" style="--aspect-ratio: {{image_ratio}};">
                 {%- liquid
-                    if section.settings.width == "page-width"
+                    if page_width == "page-width"
                     assign page_is_wide = false
                     else
                     assign page_is_wide = true
@@ -180,6 +181,10 @@
         "id": "width",
         "options": [
           {
+            "value": "default",
+            "label": "t:sections.general.settings.width.options__default.label"
+          },
+          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -188,7 +193,7 @@
             "label": "t:sections.general.settings.width.options__wide.label"
           }
         ],
-        "default": "page-width",
+        "default": "default",
         "label": "t:sections.general.settings.width.label",
 		"info": "t:sections.general.settings.width.info"
       },

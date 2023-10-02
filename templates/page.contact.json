@@ -1,16 +1,1 @@
-{
-  "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "top_spacing": "none",
-        "width": "page-width",
-        "show_heading": false,
-        "heading_aligment": "text-center"
-      }
-    }
-  },
-  "order": [
-    "main"
-  ]
-}
+{"sections":{"main":{"type":"main-page","settings":{"top_spacing":"none","width":"page-width","show_heading":false,"heading_aligment":"text-center"}}},"order":["main"]}

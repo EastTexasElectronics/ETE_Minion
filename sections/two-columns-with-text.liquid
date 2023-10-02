@@ -71,10 +71,10 @@
   }
   {{ section_styles }}
 </style>
-
+{%- capture page_width -%}{%- if section.settings.width != "default" %}{{ section.settings.width }}{%- else -%}{{ settings.page_width_main }}{%- endif -%}{%- endcapture -%}
 <div id="two-columns-text-{{ section.id }}" class="top-spacing-{{ section.settings.top_spacing }}{% if section.settings.background != 'hide' and section.settings.background_width == "fullwidth" %} section-background section-background--{{ section.settings.background_spacing }}{% endif %}"
      data-section-name="two-columns-with-text">
-  <div class="{{ section.settings.width }}">
+  <div class="{{ page_width }}">
     {% if section.settings.background != 'hide' and section.settings.background_width == "content_width" %}<div class="section-background section-background--{{ section.settings.background_spacing }} border__radius">{%- endif -%}
     
     <div class="grid">
@@ -132,6 +132,7 @@
       <div class="col-sp-12 col-st-6 col-4 two-columns-text__container{% if brand_images != blank %} two-columns-text--st-mt60{% endif %}" {{ block.shopify_attributes }}>
         
         <div class="two-columns-text mt--first-child-0 mb--last-child-0 hover-area {{ section.settings.texts_aligment }}{% if settings.enable_zoom_animation %} image-hover-scaling-up{% endif %}">
+          <div class="mb20 {% if section.settings.image_zoom_internal %} image-hover-scaling-internal{% if section.settings.image_ratio == '1, round-image' %} border__radius--circle{% endif %}{% endif %}">
           {%- if block.settings.show_image == 'show' -%}
           {%- if block.settings.url != blank -%}
           {%- assign html_tag_open = '<a' | append: ' href="' | append: block.settings.url | append:'"' -%}
@@ -141,7 +142,7 @@
           {%- assign html_tag_close = '</div>' -%}
           {%- endif -%}
 
-          {{ html_tag_open }} class="mb20 image-hover-scaling__image{% if block.settings.url == blank %} image-hover-scaling-up--disabled{% endif %}"
+          {{ html_tag_open }} class="image-hover-scaling__image{% if block.settings.url == blank %} image-hover-scaling-up--disabled{% endif %}"
           					  {% if block.settings.url != blank %} aria-label="{{ 'general.aria_label.link' | t }}"{% endif %}
           					  >
           {%- if block.settings.image == blank -%}
@@ -164,7 +165,7 @@
 
           <div class="border__radius{% if section.settings.image_ratio == '1, round-image' %} border__radius--circle{% endif %}" style="--aspect-ratio: {{image_ratio}};">
             {%- liquid
-                if section.settings.width == "page-wide"
+                if page_width == "page-wide"
                 assign page_is_wide = true
                 else
                 assign page_is_wide = false
@@ -193,6 +194,7 @@
           {%- endif -%}
           {{ html_tag_close }}
           {%- endif -%}
+          </div>
 
           {%- if block.settings.heading != blank -%}
           {{ '<' | append: section.settings.heading_tag }} class="mt0 mb0 two-columns-text__heading{% if section.settings.hover_underline and block.settings.url != blank %} animation-underline{% endif %}">
@@ -302,6 +304,10 @@
         "id": "width",
         "options": [
           {
+            "value": "default",
+            "label": "t:sections.general.settings.width.options__default.label"
+          },
+          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -310,7 +316,7 @@
             "label": "t:sections.general.settings.width.options__wide.label"
           }
         ],
-        "default": "page-width",
+        "default": "default",
         "label": "t:sections.general.settings.width.label",
 		"info": "t:sections.general.settings.width.info"
       },
@@ -345,6 +351,12 @@
         ],
         "default": "auto",
         "label": "t:sections.general.settings.image_ratio.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "image_zoom_internal",
+        "default": false,
+		"label": "t:sections.general.settings.image_zoom_internal.label"
       },
       {
         "type": "select",

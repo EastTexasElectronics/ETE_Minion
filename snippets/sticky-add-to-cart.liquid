@@ -34,7 +34,7 @@
 {%- endcase -%}
 
 <sticky-cart-modal class="sticky-cart-modal" id="sticky-cart-{{ section.id }}" data-section="{{ section.id }}">
-  <div class="{{ section.settings.width }} sticky-cart">
+  <div class="{% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %} sticky-cart">
     <p class="mt0 h5 sticky-cart__heading">{{ product.title | escape }}</p>
     
     <div class="sticky-cart-right {{ right_column }}">

@@ -42,7 +42,7 @@
       {% case filter.type %}
       {% when 'list' %}
       
-      <details class="chm-toggle toggle-opening" open>
+      <details class="chm-toggle{% if section.settings.enable_filtering != "enable_closed" %} toggle-opening{% endif %}"{% if section.settings.enable_filtering != "enable_closed" %} open{% endif %}>
         <summary class="chm-toggle__button">
           <span class="h5">{{ filter.label | escape }}</span>
           {%- render "icon-arrow-down-small" -%}
@@ -136,7 +136,7 @@
          endif
       %}
 
-      <details class="chm-toggle toggle-opening" open>
+      <details class="chm-toggle{% if section.settings.enable_filtering != "enable_closed" %} toggle-opening{% endif %}"{% if section.settings.enable_filtering != "enable_closed" %} open{% endif %}>
         <summary class="chm-toggle__button">
           <span class="h5">{{ filter.label | escape }}</span>
           {%- render "icon-arrow-down-small" -%}

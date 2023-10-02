@@ -16,7 +16,7 @@
 
 {%- if section.settings.enable_sticky_filter_button -%}
 {%- if enable_filtering or enable_sorting -%}
-<sticky-filter-modal class="page-width">
+<sticky-filter-modal class="{{ settings.page_width_main }}">
   <button class="link btn btn--secondary w-full-sp">
     {%- render "icon-filter" -%}
     <span>

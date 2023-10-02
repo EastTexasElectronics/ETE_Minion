@@ -156,4 +156,17 @@
     display: none;
   }
 }
-
+.product-card__align-buttons{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.product-card__align-buttons .product-card__container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.product-card__align-buttons .product-card__container modal-opener,
+.product-card__align-buttons .product-card__container product-form{
+    margin-top: auto;
+}
