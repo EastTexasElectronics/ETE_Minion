@@ -1,4 +1,4 @@
-{% comment %} {% schema %}
+{% schema %}
 {
   "name": "Pricing Table",
   "settings": [
@@ -6,17 +6,13 @@
       "type": "number",
       "id": "num_columns",
       "label": "Number of Columns",
-      "default": 2,
-      "min": 1,
-      "max": 5
+      "default": 2
     },
     {
       "type": "number",
       "id": "num_rows",
       "label": "Number of Rows",
-      "default": 5,
-      "min": 1,
-      "max": 10
+      "default": 5
     },
     {
       "type": "text",
@@ -95,4 +91,4 @@
       {% endfor %}
     </tbody>
   </table>
-</div> {% endcomment %}
+</div>
