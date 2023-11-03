@@ -105,7 +105,8 @@
             "api_key": "AIzaSyCm9NxEvZqhQBBIXgbs0RpiVeY4YZmeJZw",
             "map_address": "205 Renaissance Dr. Hallsville, TX 75650",
             "show_pin": true,
-            "map_zoom_level": 14
+            "map_zoom_level": 14,
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-11-03_150919.png"
           }
         },
         "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-heading-1": {
