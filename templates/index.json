@@ -529,34 +529,6 @@
         "color_meta": "rgba(0,0,0,0)",
         "color_button_product": "rgba(0,0,0,0)"
       }
-    },
-    "acfcb8bb-7ccb-43af-99a2-0a0167543ddb": {
-      "type": "recently-viewed-products",
-      "settings": {
-        "subheading": "TEST",
-        "heading": "TEST",
-        "heading_aligment": "text-left",
-        "top_spacing": "small",
-        "width": "page-width",
-        "grid": "col-6",
-        "mobile_grid": "6",
-        "swipe_on_mobile": true,
-        "image_ratio": "1",
-        "show_secondary_image": true,
-        "texts_aligment": "text-center",
-        "product_name_size": "normal",
-        "show_vendor": true,
-        "show_price": true,
-        "truncate_product_name": true,
-        "hover_underline": true,
-        "show_button_quickview": true,
-        "show_badge_on_sale": true,
-        "show_badge_sold_out": true,
-        "show_badge_feature": true,
-        "color_subheading": "rgba(0,0,0,0)",
-        "color_heading": "rgba(0,0,0,0)",
-        "color_meta": "rgba(0,0,0,0)"
-      }
     }
   },
   "order": [
@@ -566,7 +538,6 @@
     "322f00f4-13ef-4ed6-90ba-c36b55408665",
     "cdbe8034-0ec1-4387-9ebe-29f1303fb8b1",
     "eb943663-1dd2-412a-875e-a6107a50c4e4",
-    "90aaee88-bd55-4380-b6c0-555bb7c30c31",
-    "acfcb8bb-7ccb-43af-99a2-0a0167543ddb"
+    "90aaee88-bd55-4380-b6c0-555bb7c30c31"
   ]
 }
