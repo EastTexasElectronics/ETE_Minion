@@ -1,5 +1,62 @@
 {
   "sections": {
+    "cfda5bd9-6071-4076-9332-b20f1af26312": {
+      "type": "map",
+      "blocks": {
+        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-image-1": {
+          "type": "image",
+          "settings": {
+            "api_key": "AIzaSyCm9NxEvZqhQBBIXgbs0RpiVeY4YZmeJZw",
+            "map_address": "205 Renaissance Dr. Hallsville, TX 75650",
+            "show_pin": true,
+            "map_zoom_level": 14,
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-11-03_150919.png"
+          }
+        },
+        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-heading-1": {
+          "type": "heading",
+          "settings": {
+            "subheading": "East Texas Electronics LLC.",
+            "heading": "Location & Hours"
+          }
+        },
+        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Address:<\/strong> 205 Renaissance Dr.<br\/>Hallsville, Texas 75650<br\/><br\/><strong>Phone:<\/strong> (903) 471-1575<\/p><p><strong>Email: <\/strong>Contact@EastTexasElectronics.com<\/p><p><strong>Sun-Mon:<\/strong> CLOSED<br\/><strong>Tues-Sat:<\/strong> 10:00am - 6:00pm<br\/><\/p>"
+          }
+        },
+        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-button-1": {
+          "type": "button",
+          "settings": {
+            "button_name": "Get direction"
+          }
+        }
+      },
+      "block_order": [
+        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-image-1",
+        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-heading-1",
+        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-text-1",
+        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-button-1"
+      ],
+      "settings": {
+        "url": "",
+        "top_spacing": "none",
+        "width": "page-width",
+        "desktop_content_height": 500,
+        "row_reverse": false,
+        "content_aligment": "align-self-start",
+        "texts_aligment": "text-center",
+        "heading_tag": "h1",
+        "text_size": "normal",
+        "hover_underline": true,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_background": "rgba(0,0,0,0)"
+      }
+    },
     "c16803f0-0e80-49c7-bdd2-55dad8b106a1": {
       "type": "icon-banners",
       "blocks": {
@@ -79,7 +136,7 @@
         "heading": "Contact Form",
         "text": "Have a Question? Need a Quote?  Want to Chat?  Fill out the form below and we will reach back out to you ASAP.",
         "heading_aligment": "text-center",
-        "top_spacing": "none",
+        "top_spacing": "small",
         "width": "page-width",
         "description_size": "normal",
         "color_subheading": "rgba(0,0,0,0)",
@@ -95,69 +152,12 @@
         "background_spacing": "normal",
         "remove_bottom_spacing": false
       }
-    },
-    "cfda5bd9-6071-4076-9332-b20f1af26312": {
-      "type": "map",
-      "blocks": {
-        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-image-1": {
-          "type": "image",
-          "settings": {
-            "api_key": "AIzaSyCm9NxEvZqhQBBIXgbs0RpiVeY4YZmeJZw",
-            "map_address": "205 Renaissance Dr. Hallsville, TX 75650",
-            "show_pin": true,
-            "map_zoom_level": 14,
-            "image": "shopify:\/\/shop_images\/Screenshot_2023-11-03_150919.png"
-          }
-        },
-        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-heading-1": {
-          "type": "heading",
-          "settings": {
-            "subheading": "East Texas Electronics LLC.",
-            "heading": "Location & Hours"
-          }
-        },
-        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Address:<\/strong> 205 Renaissance Dr.<br\/>Hallsville, Texas 75650<br\/><br\/><strong>Phone:<\/strong> (903) 471-1575<\/p><p><strong>Email: <\/strong>Contact@EastTexasElectronics.com<\/p><p><strong>Sun-Mon:<\/strong> CLOSED<br\/><strong>Tues-Sat:<\/strong> 10:00am - 6:00pm<br\/><\/p>"
-          }
-        },
-        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-button-1": {
-          "type": "button",
-          "settings": {
-            "button_name": "Get direction"
-          }
-        }
-      },
-      "block_order": [
-        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-image-1",
-        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-heading-1",
-        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-text-1",
-        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-button-1"
-      ],
-      "settings": {
-        "url": "",
-        "top_spacing": "normal",
-        "width": "page-width",
-        "desktop_content_height": 500,
-        "row_reverse": false,
-        "content_aligment": "align-self-start",
-        "texts_aligment": "text-left",
-        "heading_tag": "h2",
-        "text_size": "normal",
-        "hover_underline": false,
-        "color_subheading": "rgba(0,0,0,0)",
-        "color_heading": "rgba(0,0,0,0)",
-        "color_text": "rgba(0,0,0,0)",
-        "color_button": "rgba(0,0,0,0)",
-        "color_background": "rgba(0,0,0,0)"
-      }
     }
   },
   "order": [
+    "cfda5bd9-6071-4076-9332-b20f1af26312",
     "c16803f0-0e80-49c7-bdd2-55dad8b106a1",
     "main",
-    "77243e12-1f4d-4f19-9d5d-fbbcfa3e17be",
-    "cfda5bd9-6071-4076-9332-b20f1af26312"
+    "77243e12-1f4d-4f19-9d5d-fbbcfa3e17be"
   ]
 }
