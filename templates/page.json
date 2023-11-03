@@ -23,7 +23,7 @@
         "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Address:<\/strong> 205 Renaissance Dr.<br\/>Hallsville, Texas 75650<br\/><br\/><strong>Phone:<\/strong> (903) 471-1575<\/p><p><strong>Email: <\/strong>Contact@EastTexasElectronics.com<\/p><p><strong>Sun-Mon:<\/strong> CLOSED<br\/><strong>Tues-Sat:<\/strong> 10:00am - 6:00pm<br\/><\/p>"
+            "text": "<p><strong>Address:<\/strong> 205 Renaissance Dr.<br\/>Hallsville, Texas 75650<br\/><br\/><strong>Phone:<\/strong> <a href=\"tel: +19034711575\" title=\"(903) 471-1575\">(903) 471-1575<\/a><\/p><p><strong>Email: <\/strong><a href=\"mailto:Contact@EastTexasElectronics.com\" target=\"_blank\" title=\"Contact@EastTexasElectronics.com\">Contact@EastTexasElectronics.com<\/a><\/p><p><strong>Sun-Mon:<\/strong> CLOSED<br\/><strong>Tues-Sat:<\/strong> 10:00am - 6:00pm<br\/><\/p>"
           }
         },
         "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-button-1": {
