@@ -29,7 +29,7 @@
         "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-button-1": {
           "type": "button",
           "settings": {
-            "button_name": "Get direction"
+            "button_name": "Get Directions"
           }
         }
       },
@@ -40,7 +40,7 @@
         "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-button-1"
       ],
       "settings": {
-        "url": "",
+        "url": "https:\/\/maps.app.goo.gl\/7M7FRLLYChLecJ8n8",
         "top_spacing": "none",
         "width": "page-width",
         "desktop_content_height": 500,
