@@ -118,6 +118,34 @@
       <div class="col-st-12 col-6">
         {%- form 'contact', id: 'ContactForm' -%}
         <div class="grid">
+            <!-- Request Type Dropdown -->
+  <div class="col-12 mt20">
+    <div class="field field-with-icon w-full">
+      <label for="request-type" class="field__label">What is this regarding?</label>
+      <div class="select-wrapper">
+        <select id="request-type" name="contact[request_type]" class="field__input">
+          <option value="returns">Returns</option>
+          <option value="shipping">Shipping</option>
+          <option value="custom_order">Custom order</option>
+          <option value="other">Other</option>
+        </select>
+        <div class="field__icon">
+          {% render "icon-chevron-down" %}
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Contact Method Radio Buttons -->
+  <div class="col-12 mt20">
+    <div class="field">
+      <label class="field__label">How do you want us to contact you?</label>
+      <div class="contact-method">
+        <input type="radio" name="contact[contact_method]" value="email" id="email" class="radio-button"><label for="email" class="radio-label">Email</label><br>
+        <input type="radio" name="contact[contact_method]" value="phone" id="phone" class="radio-button"><label for="phone" class="radio-label">Phone</label><br>
+        <input type="radio" name="contact[contact_method]" value="text_message" id="text" class="radio-button"><label for="text" class="radio-label">Text message</label>
+      </div>
+    </div>
+  </div>
           <div class="col-sp-12 col-6">
             <div class="field field-with-icon w-full">
               <input class="field__input"
