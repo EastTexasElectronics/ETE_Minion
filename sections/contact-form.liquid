@@ -115,99 +115,135 @@
     {%- endif -%}
 
     <div class="grid justify-content-center">
-      <div class="col-st-12 col-6">
-        {%- form 'contact', id: 'ContactForm' -%}
-        <div class="grid">
-          <div class="col-sp-12 col-6">
-            <div class="field field-with-icon w-full">
-              <input class="field__input"
-                     autocomplete="name"
-                     type="text"
-                     id="ContactForm-name"
-                     name="contact[{{ 'templates.contact.form.name' | t }}]"
-                     value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
-                     placeholder="{{ 'templates.contact.form.name' | t }}"
-                     required
-                     >
-              <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
-              <div class="field__icon">
-                {% render "icon-account" %}
-              </div>
+  <div class="col-st-12 col-6">
+    {%- form 'contact', id: 'ContactForm' -%}
+    <div class="grid">
+
+      <!-- Request Type Dropdown -->
+      <div class="col-12 mt20">
+        <div class="field field-with-icon w-full">
+          <label for="request-type" class="field__label">What is this regarding?</label>
+          <div class="select-wrapper">
+            <select id="request-type" name="contact[request_type]" class="field__input">
+              <option value="returns">Returns</option>
+              <option value="shipping">Shipping</option>
+              <option value="custom_order">Custom order</option>
+              <option value="other">Other</option>
+            </select>
+            <div class="field__icon">
+              <!-- Replace with your theme's dropdown icon -->
             </div>
-          </div>
-          
-          <div class="col-sp-12 col-6 contact-form__field">
-            <div class="field field-with-icon w-full">
-              <input class="field__input"
-                     autocomplete="email"
-                     type="email"
-                     id="ContactForm-email"
-                     name="contact[email]"
-                     value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-                     aria-required="true"
-                     {% if form.errors contains 'email' %}
-                     aria-invalid="true"
-                     aria-describedby="ContactForm-email-error"
-                     {% endif %}
-                     placeholder="{{ 'templates.contact.form.email' | t }}"
-                     required
-                     >
-              {%- if form.errors contains 'email' -%}
-              <label class="field__label field__label--error" for="ContactForm-email-error">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</label>
-              {%- else -%}
-              <label class="field__label" for="ContactForm-email">{{ 'templates.contact.form.email' | t }}</label>
-              {%- endif -%}
-              <div class="field__icon">
-                {% render "icon-mail" %}
-              </div>
-            </div>
-          </div>
-          <div class="col-12 mt20">
-            <div class="field field-with-icon w-full">
-              <input class="field__input"
-                     autocomplete="tel"
-                     type="tel"
-                     id="ContactForm-phone"
-                     name="contact[{{ 'templates.contact.form.phone' | t }}]"
-                     pattern="[0-9\-]*"
-                     value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
-                     placeholder="{{ 'templates.contact.form.phone' | t }}"
-                     >
-              <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
-              <div class="field__icon">
-                {% render "icon-phone" %}
-              </div>
-            </div>
-          </div>
-          <div class="col-12 mt20">
-            <div class="field field--text-area">
-              <textarea rows="10"
-                        id="ContactForm-body"
-                        class="text-area field__input"
-                        name="contact[{{ 'templates.contact.form.comment' | t }}]"
-                        placeholder="{{ 'templates.contact.form.comment' | t }}"
-                        >
-                {{- form.body -}}
-              </textarea>
-              <label class="field__label" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}</label>
-            </div>
-          </div>
-          <div class="col-12 text-center mt30">
-            <button type="submit" class="btn btn_zoom btn--secondary w-full-sp">
-              <span>{{ 'templates.contact.form.send' | t }}</span>
-            </button>
-            {%- if form.posted_successfully? -%}
-            <p class="form__message h5 mt40" tabindex="-1" autofocus>{{ 'templates.contact.form.post_success' | t }}</p>
-            {%- endif -%}
           </div>
         </div>
-        {%- endform -%}
+      </div>
+
+      <!-- Contact Method Radio Buttons -->
+      <div class="col-12 mt20">
+        <div class="field">
+          <label class="field__label">How do you want us to contact you?</label>
+          <div class="contact-method">
+            <input type="radio" name="contact[contact_method]" value="email" id="email" class="radio-button"><label for="email" class="radio-label">Email</label><br>
+            <input type="radio" name="contact[contact_method]" value="phone" id="phone" class="radio-button"><label for="phone" class="radio-label">Phone</label><br>
+            <input type="radio" name="contact[contact_method]" value="text_message" id="text" class="radio-button"><label for="text" class="radio-label">Text message</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Name Field -->
+      <div class="col-sp-12 col-6">
+        <div class="field field-with-icon w-full">
+          <input class="field__input"
+                 autocomplete="name"
+                 type="text"
+                 id="ContactForm-name"
+                 name="contact[{{ 'templates.contact.form.name' | t }}]"
+                 value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+                 placeholder="{{ 'templates.contact.form.name' | t }}"
+                 required
+                 >
+          <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+          <div class="field__icon">
+            {% render "icon-account" %}
+          </div>
+        </div>
+      </div>
+
+      <!-- Email Field -->
+      <div class="col-sp-12 col-6 contact-form__field">
+        <div class="field field-with-icon w-full">
+          <input class="field__input"
+                 autocomplete="email"
+                 type="email"
+                 id="ContactForm-email"
+                 name="contact[email]"
+                 value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                 aria-required="true"
+                 {% if form.errors contains 'email' %}
+                 aria-invalid="true"
+                 aria-describedby="ContactForm-email-error"
+                 {% endif %}
+                 placeholder="{{ 'templates.contact.form.email' | t }}"
+                 required
+                 >
+          {%- if form.errors contains 'email' -%}
+          <label class="field__label field__label--error" for="ContactForm-email-error">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</label>
+          {%- else -%}
+          <label class="field__label" for="ContactForm-email">{{ 'templates.contact.form.email' | t }}</label>
+          {%- endif -%}
+          <div class="field__icon">
+            {% render "icon-mail" %}
+          </div>
+        </div>
+      </div>
+
+      <!-- Phone Field -->
+      <div class="col-12 mt20">
+        <div class="field field-with-icon w-full">
+          <input class="field__input"
+                 autocomplete="tel"
+                 type="tel"
+                 id="ContactForm-phone"
+                 name="contact[{{ 'templates.contact.form.phone' | t }}]"
+                 pattern="[0-9\-]*"
+                 value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+                 placeholder="{{ 'templates.contact.form.phone' | t }}"
+                 >
+          <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
+          <div class="field__icon">
+            {% render "icon-phone" %}
+          </div>
+        </div>
+      </div>
+
+      <!-- Comment Field -->
+      <div class="col-12 mt20">
+        <div class="field field--text-area">
+          <textarea rows="10"
+                    id="ContactForm-body"
+                    class="text-area field__input"
+                    name="contact[{{ 'templates.contact.form.comment' | t }}]"
+                    placeholder="{{ 'templates.contact.form.comment' | t }}"
+                    required>
+            {{- form.body -}}
+          </textarea>
+          <label class="field__label" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}</label>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="col-12 text-center mt30">
+        <button type="submit" class="btn btn_zoom btn--secondary w-full-sp">
+          <span>{{ 'templates.contact.form.send' | t }}</span>
+        </button>
+        {%- if form.posted_successfully? -%}
+        <p class="form__message h5 mt40" tabindex="-1" autofocus>{{ 'templates.contact.form.post_success' | t }}</p>
+        {%- endif -%}
       </div>
     </div>
-
-    {% if section.settings.background != 'hide' and section.settings.background_width == "content_width" %}</div>{%- endif -%}
+    {%- endform -%}
   </div>
 </div>
+
 
 {% schema %}
   {
