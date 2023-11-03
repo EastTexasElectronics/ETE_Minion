@@ -118,7 +118,7 @@
         "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>205 Renaissance Dr.<br\/>Hallsville, Texas<\/p><p><strong>Sun-Mon:<\/strong> CLOSED<br\/><strong>Tues-Sat:<\/strong> 10:00am - 6:00pm<br\/><\/p>"
+            "text": "<p>205 Renaissance Dr.<br\/>Hallsville, Texas<br\/><br\/><strong>Phone:<\/strong> (903) 471-1575<\/p><p><strong>Sun-Mon:<\/strong> CLOSED<br\/><strong>Tues-Sat:<\/strong> 10:00am - 6:00pm<br\/><\/p>"
           }
         },
         "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-button-1": {
