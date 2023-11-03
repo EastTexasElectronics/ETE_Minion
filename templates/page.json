@@ -95,11 +95,68 @@
         "background_spacing": "normal",
         "remove_bottom_spacing": false
       }
+    },
+    "cfda5bd9-6071-4076-9332-b20f1af26312": {
+      "type": "map",
+      "blocks": {
+        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-image-1": {
+          "type": "image",
+          "settings": {
+            "api_key": "",
+            "map_address": "",
+            "show_pin": true,
+            "map_zoom_level": 14
+          }
+        },
+        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-heading-1": {
+          "type": "heading",
+          "settings": {
+            "subheading": "East Texas Electronics LLC.",
+            "heading": "Location & Hours"
+          }
+        },
+        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>205 Renaissance Dr.<br\/>Hallsville, Texas<\/p><p><strong>Sun-Mon:<\/strong> CLOSED<br\/><strong>Tues-Sat:<\/strong> 10:00am - 6:00pm<br\/><\/p>"
+          }
+        },
+        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-button-1": {
+          "type": "button",
+          "settings": {
+            "button_name": "Get direction"
+          }
+        }
+      },
+      "block_order": [
+        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-image-1",
+        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-heading-1",
+        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-text-1",
+        "template--20544238944534__cfda5bd9-6071-4076-9332-b20f1af26312-button-1"
+      ],
+      "settings": {
+        "url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "desktop_content_height": 500,
+        "row_reverse": false,
+        "content_aligment": "align-self-start",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_background": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
     "c16803f0-0e80-49c7-bdd2-55dad8b106a1",
     "main",
-    "77243e12-1f4d-4f19-9d5d-fbbcfa3e17be"
+    "77243e12-1f4d-4f19-9d5d-fbbcfa3e17be",
+    "cfda5bd9-6071-4076-9332-b20f1af26312"
   ]
 }
