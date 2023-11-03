@@ -529,6 +529,62 @@
         "color_meta": "rgba(0,0,0,0)",
         "color_button_product": "rgba(0,0,0,0)"
       }
+    },
+    "2a0ab57a-c000-433a-87a0-98b4da23d646": {
+      "type": "map",
+      "blocks": {
+        "template--20544239665430__2a0ab57a-c000-433a-87a0-98b4da23d646-image-1": {
+          "type": "image",
+          "settings": {
+            "api_key": "",
+            "map_address": "",
+            "show_pin": true,
+            "map_zoom_level": 14
+          }
+        },
+        "template--20544239665430__2a0ab57a-c000-433a-87a0-98b4da23d646-heading-1": {
+          "type": "heading",
+          "settings": {
+            "subheading": "SUBHEADING",
+            "heading": "Map"
+          }
+        },
+        "template--20544239665430__2a0ab57a-c000-433a-87a0-98b4da23d646-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>301 Central Street<br\/>City, Country<\/p><p>Mon - Fri, 8:30am - 10:30pm<br\/>Saturday, 8:30am - 10:30pm<br\/>Sunday, 8:30am - 10:30pm<\/p>"
+          }
+        },
+        "template--20544239665430__2a0ab57a-c000-433a-87a0-98b4da23d646-button-1": {
+          "type": "button",
+          "settings": {
+            "button_name": "Get direction"
+          }
+        }
+      },
+      "block_order": [
+        "template--20544239665430__2a0ab57a-c000-433a-87a0-98b4da23d646-image-1",
+        "template--20544239665430__2a0ab57a-c000-433a-87a0-98b4da23d646-heading-1",
+        "template--20544239665430__2a0ab57a-c000-433a-87a0-98b4da23d646-text-1",
+        "template--20544239665430__2a0ab57a-c000-433a-87a0-98b4da23d646-button-1"
+      ],
+      "settings": {
+        "url": "https:\/\/maps.app.goo.gl\/7M7FRLLYChLecJ8n8",
+        "top_spacing": "small",
+        "width": "page-width",
+        "desktop_content_height": 500,
+        "row_reverse": false,
+        "content_aligment": "align-self-start",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_background": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -538,6 +594,7 @@
     "322f00f4-13ef-4ed6-90ba-c36b55408665",
     "cdbe8034-0ec1-4387-9ebe-29f1303fb8b1",
     "eb943663-1dd2-412a-875e-a6107a50c4e4",
-    "90aaee88-bd55-4380-b6c0-555bb7c30c31"
+    "90aaee88-bd55-4380-b6c0-555bb7c30c31",
+    "2a0ab57a-c000-433a-87a0-98b4da23d646"
   ]
 }
