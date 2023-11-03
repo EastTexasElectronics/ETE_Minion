@@ -15,13 +15,13 @@
 }
 {%- endif -%}
 {%- liquid
-	capture color
-	if section.settings.background == 'color'
+  capture color
+  if section.settings.background == 'color'
     echo section.settings.color_background
-    else
+  else
     echo section.settings.gradient
-    endif
-    endcapture
+  endif
+  endcapture
 -%}
 {%- if color != "rgba(0,0,0,0)" and color != blank -%}
 #contact-form-{{ section.id }}{
@@ -86,7 +86,30 @@
     }
   }
   {{ section_styles }}
+
+  /* Additional styles for new features */
+  #contact-form-{{ section.id }} .select-wrapper {
+    position: relative;
+    display: block;
+  }
+  #contact-form-{{ section.id }} .select-wrapper:after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Add icon for dropdown */
+  }
+  #contact-form-{{ section.id }} .contact-method label.radio-label {
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  #contact-form-{{ section.id }} .contact-method input.radio-button {
+    margin-right: 5px;
+  }
 </style>
+
 
 <div id="contact-form-{{ section.id }}" class="contact-form top-spacing-{{ section.settings.top_spacing }}{% if section.settings.background != 'hide' and section.settings.background_width == "fullwidth" %} section-background section-background--{{ section.settings.background_spacing }}{% endif %}"
      data-section-name="contact-form">
