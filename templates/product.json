@@ -169,19 +169,11 @@
         "enable_image_zoom": true
       }
     },
-    "1648018242bd6448c3": {
-      "type": "apps",
-      "settings": {
-        "top_spacing": "normal",
-        "width": "page-width"
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
-      "disabled": true,
       "settings": {
-        "subheading": "BEST SELLING PRODUCTS",
-        "heading": "Product recommendations",
+        "subheading": "RELATED",
+        "heading": "Product Recommendations",
         "heading_aligment": "text-center",
         "top_spacing": "normal",
         "width": "page-width",
@@ -211,7 +203,6 @@
     },
     "d9e76fef-44b1-4d90-8089-0ec23f11533b": {
       "type": "recently-viewed-products",
-      "disabled": true,
       "settings": {
         "subheading": "SUBHEADING",
         "heading": "Recently viewed products",
@@ -237,12 +228,29 @@
         "color_heading": "rgba(0,0,0,0)",
         "color_meta": "rgba(0,0,0,0)"
       }
+    },
+    "1648018242bd6448c3": {
+      "type": "apps",
+      "blocks": {
+        "179b4ee7-7239-4617-afe0-ad79e61b89de": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "179b4ee7-7239-4617-afe0-ad79e61b89de"
+      ],
+      "settings": {
+        "top_spacing": "normal",
+        "width": "page-width"
+      }
     }
   },
   "order": [
     "main",
-    "1648018242bd6448c3",
     "product-recommendations",
-    "d9e76fef-44b1-4d90-8089-0ec23f11533b"
+    "d9e76fef-44b1-4d90-8089-0ec23f11533b",
+    "1648018242bd6448c3"
   ]
 }
