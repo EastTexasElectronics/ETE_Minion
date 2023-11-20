@@ -158,7 +158,7 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "subheading": "BEST SELLING",
+        "subheading": "RELATED",
         "heading": "Product Recommendations",
         "heading_aligment": "text-center",
         "top_spacing": "normal",
