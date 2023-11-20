@@ -47,9 +47,9 @@
             "icon_name_3": "chat_sm",
             "content_3": "<p><strong>Refurbished: <\/strong>This product has refurbished to as close to a like new condition as possible. Refurbished products may have minor cosmetic blemishes but are in great working condition.<\/p>",
             "icon_name_4": "info_sm",
-            "content_4": "<p><strong>90-Day Warranty:<\/strong> All refurbished products come with a 90-day free warranty.<\/p>",
-            "icon_name_5": "",
-            "content_5": ""
+            "content_4": "<p><strong>Warranty:<\/strong> {{ product.metafields.custom.warranty.value }}<\/p>",
+            "icon_name_5": "pc_sm",
+            "content_5": "<p><strong>Condition: <\/strong><\/p>{{ product.metafields.custom.used_refurbished_condition | metafield_tag }}"
           }
         },
         "22f92dfa-de40-4d8a-b823-e2ce09e7b494": {
