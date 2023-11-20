@@ -127,6 +127,7 @@
         },
         "6d434407-5ff9-4345-9c2b-9e5f78283589": {
           "type": "complementary",
+          "disabled": true,
           "settings": {
             "heading": "Complementary products",
             "icon_name": "union_sm",
