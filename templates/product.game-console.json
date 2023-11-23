@@ -120,7 +120,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Returns & Refunds",
-            "icon_name": "new_sm",
+            "icon_name": "exchange_sm",
             "content": "<p>Returns: 14 Days<br\/>Warranty: 180 Days<br\/><br\/><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"Refund Policy\">Detailed Refund, Warranty, and Exchange Policy.<\/a><\/p><p><\/p>",
             "page": ""
           }
