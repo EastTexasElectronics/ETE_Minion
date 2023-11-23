@@ -127,8 +127,8 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping Policy",
-            "icon_name": "new_sm",
-            "content": "<p>At East Texas Electronics LLC, we strive to provide timely and affordable shipping options for our customers. The following outlines our shipping policy:<\/p><ul><li>Packages weighing under 15.6 oz will be shipped via USPS Retail and should arrive within 3-5 business days from the date of shipment.<\/li><li>Media items, such as books, CDs, DVDs, and other similar products, will be sent via USPS Media Mail and should arrive within 3-5 business days from the date of shipment.<\/li><li>Packages weighing over 15.6 oz may be shipped via FedEx, UPS, or USPS, depending on which carrier can offer the most reasonable rate at the time of shipment. The shipping method chosen will be at our discretion, but we will always aim to select the most cost-effective option for our customers.<\/li><\/ul><p>Once your order has been shipped, we will provide you with a tracking number, so you can track your package's progress and delivery status. We typically ship all orders within 1-2 business days of receiving them. However, please note that shipping times may vary based on the carrier and your location.<\/p><p>We do not offer international shipping at this time, and we apologize for any inconvenience this may cause.<\/p><p>If you have any questions or concerns about our shipping policy, please do not hesitate to contact us.<\/p>",
+            "icon_name": "truck_sm",
+            "content": "<p><a href=\"\/policies\/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">Detailed Shipping Policy<\/a><\/p>",
             "page": ""
           }
         },
