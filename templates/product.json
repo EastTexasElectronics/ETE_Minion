@@ -111,8 +111,8 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping Policy",
-            "icon_name": "new_sm",
-            "content": "<p>daf<\/p>",
+            "icon_name": "truck_sm",
+            "content": "<p><a href=\"\/policies\/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">Shipping Policy<\/a><\/p>",
             "page": ""
           }
         },
@@ -120,7 +120,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Returns & Refunds",
-            "icon_name": "exchange_Sm",
+            "icon_name": "exchange_sm",
             "content": "<p><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"Refund Policy\">Detailed Return And Warranty Policy<\/a><\/p>",
             "page": ""
           }
