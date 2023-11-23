@@ -56,9 +56,9 @@
           "type": "text",
           "settings": {
             "text_size": "small",
-            "icon_name_1": "check_sm",
+            "icon_name_1": "service_sm",
             "content_1": "<p>Donor Boards are either Untested or Defective and are sold AS-IS with no returns.  Boards may be missing components such as HDMI Ports.  <\/p>",
-            "icon_name_2": "check_sm",
+            "icon_name_2": "mail_sm",
             "content_2": "<p>If you need a specific component on your board please mention which component you need to make sure is on the board please mention that in your order instructions ad checkout.<\/p>",
             "icon_name_3": "",
             "content_3": "",
