@@ -40,32 +40,16 @@
           "type": "text",
           "settings": {
             "text_size": "small",
-            "icon_name_1": "",
-            "content_1": "",
+            "icon_name_1": "info_sm",
+            "content_1": "<p><strong>Condition:<\/strong> {{ product.metafields.custom.condition | metafield_text }}<\/p>",
             "icon_name_2": "truck_sm",
             "content_2": "<p><strong>Same-day <\/strong>shipping on all orders placed before <strong>1pm<\/strong> <strong>CST<\/strong> Monday - Friday<\/p>",
-            "icon_name_3": "",
-            "content_3": "",
-            "icon_name_4": "info_sm",
-            "content_4": "<p><strong>Condition:<\/strong> {{ product.metafields.custom.condition | metafield_text }}<\/p>",
-            "icon_name_5": "",
-            "content_5": ""
-          }
-        },
-        "63512f11-eb4b-4c33-97df-b07dfa205e23": {
-          "type": "text",
-          "settings": {
-            "text_size": "small",
-            "icon_name_1": "service_sm",
-            "content_1": "<p>Donor Boards are either Untested or Defective and are sold AS-IS with no returns.  Boards may be missing components such as HDMI Ports.  <\/p>",
-            "icon_name_2": "mail_sm",
-            "content_2": "<p>If you need a specific component on your board please mention which component you need to make sure is on the board please mention that in your order instructions ad checkout.<\/p>",
-            "icon_name_3": "",
-            "content_3": "",
+            "icon_name_3": "service_sm",
+            "content_3": "<p>Donor Boards are either Untested or Defective and are sold AS-IS with no returns.  Boards may be missing components such as HDMI Ports.  <\/p>",
             "icon_name_4": "",
             "content_4": "",
-            "icon_name_5": "",
-            "content_5": ""
+            "icon_name_5": "mail_sm",
+            "content_5": "<p>If you need a specific component on your board please mention which component you need to make sure is on the board please mention that in your order instructions ad checkout.<\/p>"
           }
         },
         "22f92dfa-de40-4d8a-b823-e2ce09e7b494": {
@@ -149,7 +133,6 @@
         "36032345-aea2-4f92-821a-d5ca441bfc03",
         "ae34e2b1-9301-41fa-90ba-334a896aea64",
         "a593bf72-1978-43ec-9d69-7b6cf499eb6c",
-        "63512f11-eb4b-4c33-97df-b07dfa205e23",
         "22f92dfa-de40-4d8a-b823-e2ce09e7b494",
         "1b8b6108-97d1-4af6-bfc4-13bdc10f6046",
         "1a749470-1b54-4c8f-a333-5b8486e63386",
