@@ -120,8 +120,8 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Returns & Refunds",
-            "icon_name": "new_sm",
-            "content": "<p>daf<\/p>",
+            "icon_name": "exchange_Sm",
+            "content": "<p><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"Refund Policy\">Detailed Return And Warranty Policy<\/a><\/p>",
             "page": ""
           }
         },
