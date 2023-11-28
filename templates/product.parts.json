@@ -76,6 +76,36 @@
             "page_6": ""
           }
         },
+        "5ce8b348-17ca-4f4c-baf1-f83d51372837": {
+          "type": "shopify:\/\/apps\/alert-me-restock-alerts\/blocks\/product-form\/88d8595d-225a-4087-b3c0-661d0d859357",
+          "settings": {
+            "form_bg_color": "#FEFEFE",
+            "border_color": "#EEEEEE",
+            "border_width": 1,
+            "form_padding": 15,
+            "text_color": "#000000",
+            "text_size": 14,
+            "text_alignment": "center",
+            "intro_text": "Sign up for restock notifications",
+            "placeholder_text": "Enter your email for restock notifications",
+            "button_text": "Notify Me",
+            "success_text": "Thanks for signing up for restock notifications!",
+            "error_text": "There was an error signing up for restock notifications. Please try again.",
+            "input_border_color": "#000000",
+            "input_padding": 10,
+            "button_bg_color": "#000000",
+            "button_text_color": "#FFFFFF",
+            "button_text_size": 14,
+            "button_text_alignment": "center",
+            "button_padding": 10,
+            "marketing_optin_text_size": 10,
+            "marketing_optin_text_color": "#333333",
+            "alert_msg_bg_success": "#EDF7ED",
+            "alert_msg_text_color_success": "#254C27",
+            "alert_msg_bg_error": "#FDEDED",
+            "alert_msg_text_color_error": "#8E5D5C"
+          }
+        },
         "1b8b6108-97d1-4af6-bfc4-13bdc10f6046": {
           "type": "buy_buttons",
           "settings": {
@@ -134,6 +164,7 @@
         "ae34e2b1-9301-41fa-90ba-334a896aea64",
         "a593bf72-1978-43ec-9d69-7b6cf499eb6c",
         "22f92dfa-de40-4d8a-b823-e2ce09e7b494",
+        "5ce8b348-17ca-4f4c-baf1-f83d51372837",
         "1b8b6108-97d1-4af6-bfc4-13bdc10f6046",
         "1a749470-1b54-4c8f-a333-5b8486e63386",
         "03273730-7345-42ca-900c-d5d4b561aa65",
@@ -153,6 +184,13 @@
         "enable_sticky_info": true,
         "enable_video_looping": false,
         "enable_image_zoom": true
+      }
+    },
+    "16905932895079682f": {
+      "type": "apps",
+      "settings": {
+        "top_spacing": "normal",
+        "width": "page-width"
       }
     },
     "product-recommendations": {
@@ -203,19 +241,12 @@
         "top_spacing": "normal",
         "width": "page-width"
       }
-    },
-    "16905932895079682f": {
-      "type": "apps",
-      "settings": {
-        "top_spacing": "normal",
-        "width": "page-width"
-      }
     }
   },
   "order": [
     "main",
+    "16905932895079682f",
     "product-recommendations",
-    "16944506658c4ffe9d",
-    "16905932895079682f"
+    "16944506658c4ffe9d"
   ]
 }
