@@ -260,7 +260,7 @@
           "settings": {
             "collection": "microsoft-consoles",
             "collection_name": "{{ block.settings.collection.title }}",
-            "custom_link": "shopify:\/\/collections\/nintendo-parts"
+            "custom_link": "shopify:\/\/collections\/microsoft-consoles"
           }
         },
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-5": {
