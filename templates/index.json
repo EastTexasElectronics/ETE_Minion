@@ -263,6 +263,14 @@
             "custom_link": "shopify:\/\/collections\/nintendo-parts"
           }
         },
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-5": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "playstation-consoles",
+            "collection_name": "{{ block.settings.collection.title }}",
+            "custom_link": "shopify:\/\/collections\/playstation-consoles"
+          }
+        },
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-6": {
           "type": "featured_collection",
           "settings": {
@@ -278,23 +286,15 @@
             "collection_name": "{{ block.settings.collection.title }}",
             "custom_link": "shopify:\/\/collections\/funko-pops"
           }
-        },
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-5": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "playstation-consoles",
-            "collection_name": "{{ block.settings.collection.title }}",
-            "custom_link": "shopify:\/\/collections\/cables-1"
-          }
         }
       },
       "block_order": [
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-2",
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-3",
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-1",
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-5",
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-6",
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-4",
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-5"
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-4"
       ],
       "settings": {
         "subheading": "",
