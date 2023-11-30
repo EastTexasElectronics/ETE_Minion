@@ -247,12 +247,12 @@
             "custom_link": "shopify:\/\/collections\/on-sale"
           }
         },
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-3": {
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-4": {
           "type": "featured_collection",
           "settings": {
-            "collection": "nintendo-consoles",
+            "collection": "funko-pops",
             "collection_name": "{{ block.settings.collection.title }}",
-            "custom_link": "shopify:\/\/collections\/nintendo-consoles"
+            "custom_link": "shopify:\/\/collections\/funko-pops"
           }
         },
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-1": {
@@ -263,14 +263,6 @@
             "custom_link": "shopify:\/\/collections\/microsoft-consoles"
           }
         },
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-5": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "playstation-consoles",
-            "collection_name": "{{ block.settings.collection.title }}",
-            "custom_link": "shopify:\/\/collections\/playstation-consoles"
-          }
-        },
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-6": {
           "type": "featured_collection",
           "settings": {
@@ -279,22 +271,30 @@
             "custom_link": "shopify:\/\/collections\/video-game-consoles"
           }
         },
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-4": {
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-5": {
           "type": "featured_collection",
           "settings": {
-            "collection": "funko-pops",
+            "collection": "playstation-consoles",
             "collection_name": "{{ block.settings.collection.title }}",
-            "custom_link": "shopify:\/\/collections\/funko-pops"
+            "custom_link": "shopify:\/\/collections\/playstation-consoles"
+          }
+        },
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nintendo-consoles",
+            "collection_name": "{{ block.settings.collection.title }}",
+            "custom_link": "shopify:\/\/collections\/nintendo-consoles"
           }
         }
       },
       "block_order": [
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-2",
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-3",
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-4",
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-1",
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-5",
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-6",
-        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-4"
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-5",
+        "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-3"
       ],
       "settings": {
         "subheading": "",
@@ -306,7 +306,7 @@
         "width": "page-width",
         "grid": "col-md-4 col-2",
         "mobile_grid": "6",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "design_type": "text-below-image",
         "image_ratio": "1",
         "texts_aligment": "text-center",
