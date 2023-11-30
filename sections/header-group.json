@@ -39,9 +39,9 @@
         "6ff79c47-1cd4-42b8-a54e-7e942f400a12"
       ],
       "settings": {
-        "header_layout": "header-layout-classic",
+        "header_layout": "header-layout-tiles",
         "menu": "main-menu",
-        "secondary_menu": "collections",
+        "secondary_menu": "main-menu",
         "width": "page-width",
         "show_search": true,
         "open_search": true,
