@@ -252,7 +252,7 @@
           "settings": {
             "collection": "nintendo-consoles",
             "collection_name": "{{ block.settings.collection.title }}",
-            "custom_link": "shopify:\/\/collections\/batteries"
+            "custom_link": "shopify:\/\/collections\/nintendo-consoles"
           }
         },
         "template--20039351959830__322f00f4-13ef-4ed6-90ba-c36b55408665-featured_collection-1": {
