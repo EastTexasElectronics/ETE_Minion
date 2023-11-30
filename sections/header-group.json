@@ -41,7 +41,7 @@
       "settings": {
         "header_layout": "header-layout-classic",
         "menu": "main-menu",
-        "secondary_menu": "",
+        "secondary_menu": "collections",
         "width": "page-width",
         "show_search": true,
         "open_search": true,
