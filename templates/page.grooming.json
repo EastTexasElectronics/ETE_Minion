@@ -13,6 +13,14 @@
     "24dee948-1b82-46d3-bab6-1b3abbf2b4f2": {
       "type": "collection-list",
       "blocks": {
+        "ca0d9b08-78e4-4c59-94e1-8b667a429aaa": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "atari-consoles",
+            "collection_name": "",
+            "custom_link": ""
+          }
+        },
         "076b06f6-35c0-4263-b222-3720f785c0ba": {
           "type": "featured_collection",
           "settings": {
@@ -93,6 +101,14 @@
             "custom_link": ""
           }
         },
+        "4c24f4e8-0f08-4a91-bab9-bbeb55c69db0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nintendo-consoles",
+            "collection_name": "",
+            "custom_link": ""
+          }
+        },
         "8669f608-f571-4fde-a615-d9796b31c492": {
           "type": "featured_collection",
           "settings": {
@@ -101,10 +117,42 @@
             "custom_link": ""
           }
         },
+        "f974de26-9a25-4948-aa82-f17e024ed267": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "network-cables-components",
+            "collection_name": "Network Components",
+            "custom_link": ""
+          }
+        },
+        "68242ee8-56ef-4813-8e4b-bf41281ddfb7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "playstation-consoles",
+            "collection_name": "",
+            "custom_link": ""
+          }
+        },
         "390b07f4-c1aa-466b-bb5f-090e4ba04db7": {
           "type": "featured_collection",
           "settings": {
             "collection": "playstation-parts",
+            "collection_name": "",
+            "custom_link": ""
+          }
+        },
+        "071b0900-a4c7-4e09-8d5a-1a8f80cddac9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sega-consoles",
+            "collection_name": "",
+            "custom_link": ""
+          }
+        },
+        "97d4a852-7e79-441a-88dd-d9c633b87bb2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sega-parts",
             "collection_name": "",
             "custom_link": ""
           }
@@ -133,46 +181,6 @@
             "custom_link": ""
           }
         },
-        "f974de26-9a25-4948-aa82-f17e024ed267": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "network-cables-components",
-            "collection_name": "Network Components",
-            "custom_link": ""
-          }
-        },
-        "ca0d9b08-78e4-4c59-94e1-8b667a429aaa": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "atari-consoles",
-            "collection_name": "",
-            "custom_link": ""
-          }
-        },
-        "4c24f4e8-0f08-4a91-bab9-bbeb55c69db0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "nintendo-consoles",
-            "collection_name": "",
-            "custom_link": ""
-          }
-        },
-        "68242ee8-56ef-4813-8e4b-bf41281ddfb7": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "playstation-consoles",
-            "collection_name": "",
-            "custom_link": ""
-          }
-        },
-        "071b0900-a4c7-4e09-8d5a-1a8f80cddac9": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "sega-consoles",
-            "collection_name": "",
-            "custom_link": ""
-          }
-        },
         "d453f28a-dc70-40ae-8660-74f3632d1e0b": {
           "type": "featured_collection",
           "settings": {
@@ -180,17 +188,10 @@
             "collection_name": "",
             "custom_link": ""
           }
-        },
-        "a8d236ef-a6a1-4f72-9f84-e10f09e8dd9e": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "collection_name": "",
-            "custom_link": ""
-          }
         }
       },
       "block_order": [
+        "ca0d9b08-78e4-4c59-94e1-8b667a429aaa",
         "076b06f6-35c0-4263-b222-3720f785c0ba",
         "d971f171-551e-44bd-bc75-f678635c7cbc",
         "template--20544239730966__24dee948-1b82-46d3-bab6-1b3abbf2b4f2-featured_collection-1",
@@ -201,18 +202,17 @@
         "template--20544239730966__24dee948-1b82-46d3-bab6-1b3abbf2b4f2-featured_collection-6",
         "8b2ed3fd-8b9b-4e0e-b70a-9b0718751859",
         "79ecc927-b7c7-4446-b1cb-5bf515537989",
+        "4c24f4e8-0f08-4a91-bab9-bbeb55c69db0",
         "8669f608-f571-4fde-a615-d9796b31c492",
+        "f974de26-9a25-4948-aa82-f17e024ed267",
+        "68242ee8-56ef-4813-8e4b-bf41281ddfb7",
         "390b07f4-c1aa-466b-bb5f-090e4ba04db7",
+        "071b0900-a4c7-4e09-8d5a-1a8f80cddac9",
+        "97d4a852-7e79-441a-88dd-d9c633b87bb2",
         "0f1d7c8a-346f-43a0-a350-e623f9efc350",
         "02c6a683-03ca-40d1-a309-72ca6c833305",
         "f4fa15ab-d9d3-4fda-987d-b95184c55ede",
-        "f974de26-9a25-4948-aa82-f17e024ed267",
-        "ca0d9b08-78e4-4c59-94e1-8b667a429aaa",
-        "4c24f4e8-0f08-4a91-bab9-bbeb55c69db0",
-        "68242ee8-56ef-4813-8e4b-bf41281ddfb7",
-        "071b0900-a4c7-4e09-8d5a-1a8f80cddac9",
-        "d453f28a-dc70-40ae-8660-74f3632d1e0b",
-        "a8d236ef-a6a1-4f72-9f84-e10f09e8dd9e"
+        "d453f28a-dc70-40ae-8660-74f3632d1e0b"
       ],
       "settings": {
         "subheading": "",
