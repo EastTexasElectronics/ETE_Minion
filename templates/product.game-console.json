@@ -239,6 +239,108 @@
         "enable_image_zoom": true
       }
     },
+    "a996f94b-aba1-4aa8-bafa-952b7982f5a7": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "template--21558134931734__a996f94b-aba1-4aa8-bafa-952b7982f5a7-blurb_icon-1": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "",
+            "url": "",
+            "heading": "Grade A+ - Like New",
+            "description": "<ul><li><strong>Console Condition:<\/strong> This grade represents consoles that are in excellent, like-new condition.<\/li><li><strong>Exterior:<\/strong> Minimal to no visible scratches or blemishes.<\/li><li><strong>Functionality:<\/strong> All components and features work flawlessly.<\/li><li><strong>Manufacturer Stickers: <\/strong>Original manufacturer stickers are intact.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<\/li><\/ul>"
+          }
+        },
+        "template--21558134931734__a996f94b-aba1-4aa8-bafa-952b7982f5a7-blurb_icon-2": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "",
+            "url": "",
+            "heading": "Grade A - Very Good",
+            "description": "<ul><li><strong>Console Condition:<\/strong> These consoles are in very good condition.<\/li><li><strong>Exterior: <\/strong>Minor, superficial scratches or blemishes may be present.<\/li><li><strong>Functionality:<\/strong> All components and features are fully functional.<\/li><li><strong>Manufacturer Stickers: <\/strong>May have some wear or missing stickers.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<\/li><\/ul>"
+          }
+        },
+        "template--21558134931734__a996f94b-aba1-4aa8-bafa-952b7982f5a7-blurb_icon-3": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "",
+            "url": "",
+            "heading": "Grade B - Good",
+            "description": "<ul><li><strong>Console Condition:<\/strong> Consoles in good condition.<\/li><li><strong>Exterior:<\/strong> Noticeable scratches and blemishes but no major damage.<\/li><li><strong>Functionality:<\/strong> All components and features are fully functional.<\/li><li><strong>Manufacturer Stickers:<\/strong> Likely to have worn or missing stickers.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<\/li><\/ul>"
+          }
+        },
+        "163293f8-66d5-4760-a2c2-22ea37fbd281": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "",
+            "url": "",
+            "heading": "Grade C - Acceptable",
+            "description": "<ul><li><strong>Console Condition: <\/strong>Acceptable condition with visible signs of wear.<\/li><li><strong>Exterior: <\/strong>Significant scratches and blemishes but no major damage.<\/li><li><strong>Functionality: <\/strong>All components and features are fully functional.<\/li><li><strong>Manufacturer Stickers: <\/strong>Often worn or missing.<\/li><li><strong>Accessories: <\/strong>Comes with all new or aftermarket cables.<\/li><\/ul>"
+          }
+        },
+        "56d55d64-b662-43d4-9915-62d8a6c34486": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "",
+            "url": "",
+            "heading": "Grade D - Fair",
+            "description": "<ul><li><strong>Console Condition:<\/strong> Fair condition with considerable wear.<\/li><li><strong>Exterior:<\/strong> Substantial scratches, blemishes, and signs of use.<\/li><li><strong>Functionality: <\/strong>All components and features are fully functional.<\/li><li><strong>Manufacturer Stickers: <\/strong>Likely to be missing or heavily worn.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<\/li><\/ul>"
+          }
+        },
+        "e7c951d3-8220-4fb8-a9c6-6c539e14f372": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "",
+            "url": "",
+            "heading": "Grade F - Parts\/Not Working",
+            "description": "<ul><li><strong>Console Condition:<\/strong> This grade is for consoles that are not in working condition and are sold for parts or repair purposes.<\/li><li><strong>Exterior: <\/strong>May have significant physical damage, heavy wear, or missing parts.<\/li><li><strong>Functionality:<\/strong> The console is non-functional or has critical issues.<\/li><li><strong>Manufacturer Stickers: <\/strong>Stickers are likely to be missing or heavily worn.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21558134931734__a996f94b-aba1-4aa8-bafa-952b7982f5a7-blurb_icon-1",
+        "template--21558134931734__a996f94b-aba1-4aa8-bafa-952b7982f5a7-blurb_icon-2",
+        "template--21558134931734__a996f94b-aba1-4aa8-bafa-952b7982f5a7-blurb_icon-3",
+        "163293f8-66d5-4760-a2c2-22ea37fbd281",
+        "56d55d64-b662-43d4-9915-62d8a6c34486",
+        "e7c951d3-8220-4fb8-a9c6-6c539e14f372"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "Refurbished Grading System",
+        "heading_aligment": "text-center",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "small",
+        "width": "page-width",
+        "grid": "col-4",
+        "swipe_on_mobile": false,
+        "image_ratio": "auto",
+        "texts_aligment": "text-left",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "hover_underline": true,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "small",
+        "remove_bottom_spacing": false
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -310,6 +412,7 @@
   "order": [
     "b6db8cd5-6d0c-4965-8007-c52bac8e3071",
     "main",
+    "a996f94b-aba1-4aa8-bafa-952b7982f5a7",
     "product-recommendations",
     "07b1e9af-22e2-4fc9-aeb9-45a9cc17d0ec",
     "16944506658c4ffe9d"
