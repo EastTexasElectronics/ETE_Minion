@@ -1,5 +1,79 @@
 {
   "sections": {
+    "b6db8cd5-6d0c-4965-8007-c52bac8e3071": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21558134931734__b6db8cd5-6d0c-4965-8007-c52bac8e3071-image-1": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "image": "shopify:\/\/shop_images\/Refurbished.png",
+            "image_ratio": "1",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "template--21558134931734__b6db8cd5-6d0c-4965-8007-c52bac8e3071-heading-1": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Console Refurbishment Process:"
+          }
+        },
+        "template--21558134931734__b6db8cd5-6d0c-4965-8007-c52bac8e3071-text-1": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "",
+            "text": "<ol><li><strong>Ultrasonic Cleaning:<\/strong> We meticulously clean both the interior and exterior of each console using an ultrasonic cleaning process. This effectively removes dust, dirt, spills, and sanitizes all surfaces.<\/li><li><strong>Disk Drive Belt Replacement (Where Applicable):<\/strong> If necessary, we replace disk drive belts to ensure smooth and reliable operation.<\/li><li><strong>Repairs:<\/strong> We perform any necessary repairs that may be required to restore the console to optimal working condition.<\/li><li><strong>Capacitor Replacement:<\/strong> We identify and replace any faulty capacitors to prevent potential electrical issues in the future.<\/li><li><strong>HDD Life Expectancy Test (Where Applicable):<\/strong> We assess the life expectancy of the hard disk drive (HDD) to ensure its reliability.<\/li><li><strong>Comprehensive Testing:<\/strong> Each console undergoes a rigorous testing process to ensure that every component is functioning correctly. This includes checking controllers, ports, buttons, and more.<\/li><li><strong>Exterior Polishing:<\/strong> We apply an anti-UV and oxidation cream to the exterior, restoring its shine and protecting it from environmental factors.<\/li><li><strong>Warranty:<\/strong> All refurbished consoles come with a 180 day warranty, due to non damage related issues.<\/li><\/ol>"
+          }
+        },
+        "template--21558134931734__b6db8cd5-6d0c-4965-8007-c52bac8e3071-text-2": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "",
+            "text": ""
+          }
+        },
+        "template--21558134931734__b6db8cd5-6d0c-4965-8007-c52bac8e3071-button-1": {
+          "type": "button",
+          "settings": {
+            "button_name": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21558134931734__b6db8cd5-6d0c-4965-8007-c52bac8e3071-image-1",
+        "template--21558134931734__b6db8cd5-6d0c-4965-8007-c52bac8e3071-heading-1",
+        "template--21558134931734__b6db8cd5-6d0c-4965-8007-c52bac8e3071-text-1",
+        "template--21558134931734__b6db8cd5-6d0c-4965-8007-c52bac8e3071-text-2",
+        "template--21558134931734__b6db8cd5-6d0c-4965-8007-c52bac8e3071-button-1"
+      ],
+      "settings": {
+        "url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "row_reverse": false,
+        "heading_aligment": "text-center",
+        "content_aligment": "align-self-start",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -40,14 +114,14 @@
           "type": "text",
           "settings": {
             "text_size": "small",
-            "icon_name_1": "pc_sm",
+            "icon_name_1": "certified_sm",
             "content_1": "<p><strong>Warranty Included: <\/strong>{{ product.metafields.custom.warranty.value }}<\/p>",
-            "icon_name_2": "truck_sm",
-            "content_2": "<p><strong>Same-day <\/strong>shipping on all orders placed before <strong>1pm<\/strong> <strong>CST<\/strong> Monday - Friday<\/p>",
-            "icon_name_3": "chat_sm",
-            "content_3": "<p><strong>Product Rating:<\/strong> {{ product.metafields.reviews.rating | metafield_tag }}<\/p>",
+            "icon_name_2": "service_sm",
+            "content_2": "<p><strong>Refurbished Disclaimer: <\/strong>Please Read Below*<\/p>",
+            "icon_name_3": "",
+            "content_3": "",
             "icon_name_4": "info_sm",
-            "content_4": "<p><strong>Condition:<\/strong> {{ product.metafields.custom.condition | metafield_text }}<\/p>",
+            "content_4": "<p><strong>Refurbished Condition:<\/strong> <\/p>{{ product.metafields.custom.used_refurbished_condition | metafield_tag }}<p><\/p>",
             "icon_name_5": "",
             "content_5": ""
           }
@@ -107,6 +181,15 @@
             "icon_name": "Info_sm"
           }
         },
+        "e8a5a1ea-cb3c-4a5e-999b-7f926a526c04": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Refurbished Disclaimer*",
+            "icon_name": "info_sm",
+            "content": "<p>Please note that the product you receive may vary slightly from the one shown in the photos but will be of the same grade. Refurbished consoles may exhibit minor blemishes such as scratches and could have worn or missing manufacturer stickers. Rest assured that we have thoroughly cleaned, tested, and repaired each console to ensure it operates at its best. Your satisfaction is our priority, and we stand by the quality of our refurbished consoles.<\/p>",
+            "page": ""
+          }
+        },
         "64bcad80-f315-441e-b1a9-67c6bcc66a4b": {
           "type": "collapsible_tab",
           "settings": {
@@ -138,6 +221,7 @@
         "1a749470-1b54-4c8f-a333-5b8486e63386",
         "03273730-7345-42ca-900c-d5d4b561aa65",
         "891d0f6f-5a37-4358-a93f-d49c92004bef",
+        "e8a5a1ea-cb3c-4a5e-999b-7f926a526c04",
         "64bcad80-f315-441e-b1a9-67c6bcc66a4b",
         "0cb1bc8a-c0db-4826-a838-166830ccc6ca"
       ],
@@ -189,25 +273,97 @@
     },
     "16944506658c4ffe9d": {
       "type": "apps",
-      "blocks": {
-        "df82df4b-8c9f-4d26-a2f7-97c4ef207c12": {
-          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "df82df4b-8c9f-4d26-a2f7-97c4ef207c12"
-      ],
       "settings": {
         "top_spacing": "normal",
         "width": "page-width"
       }
+    },
+    "8dd8105d-97b4-483f-9ab9-2fada2826a53": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "22f5c395-498c-4ad6-90be-839dedb57de3": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "check",
+            "url": "",
+            "heading": "Disclaimer",
+            "description": "<p>Please note that the product you receive may vary slightly from the one shown in the photos but will be of the same grade. Refurbished consoles may exhibit minor blemishes such as scratches and could have worn or missing manufacturer stickers. Rest assured that we have thoroughly cleaned, tested, and repaired each console to ensure it operates at its best. Your satisfaction is our priority, and we stand by the quality of our refurbished consoles.<\/p>"
+          }
+        },
+        "template--21558134931734__8dd8105d-97b4-483f-9ab9-2fada2826a53-blurb_icon-1": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "check",
+            "url": "",
+            "heading": "Cleaning",
+            "description": "<p>Give customers details about the banner image(s) or content on the template.<\/p>"
+          }
+        },
+        "template--21558134931734__8dd8105d-97b4-483f-9ab9-2fada2826a53-blurb_icon-2": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "advertising",
+            "url": "",
+            "heading": "Repairs",
+            "description": "<p>Give customers details about the banner image(s) or content on the template.<\/p>"
+          }
+        },
+        "template--21558134931734__8dd8105d-97b4-483f-9ab9-2fada2826a53-blurb_icon-3": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "phone",
+            "url": "",
+            "heading": "Testing",
+            "description": "<p>Give customers details about the banner image(s) or content on the template.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "22f5c395-498c-4ad6-90be-839dedb57de3",
+        "template--21558134931734__8dd8105d-97b4-483f-9ab9-2fada2826a53-blurb_icon-1",
+        "template--21558134931734__8dd8105d-97b4-483f-9ab9-2fada2826a53-blurb_icon-2",
+        "template--21558134931734__8dd8105d-97b4-483f-9ab9-2fada2826a53-blurb_icon-3"
+      ],
+      "settings": {
+        "subheading": "SUBHEADING",
+        "heading": "Text columns with images",
+        "heading_aligment": "text-center",
+        "button_name": "Button",
+        "button_url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-md-6 col-3",
+        "swipe_on_mobile": true,
+        "image_ratio": "auto",
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
     }
   },
   "order": [
+    "b6db8cd5-6d0c-4965-8007-c52bac8e3071",
     "main",
     "product-recommendations",
-    "16944506658c4ffe9d"
+    "16944506658c4ffe9d",
+    "8dd8105d-97b4-483f-9ab9-2fada2826a53"
   ]
 }
