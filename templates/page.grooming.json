@@ -176,7 +176,7 @@
         "d453f28a-dc70-40ae-8660-74f3632d1e0b": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
+            "collection": "services",
             "collection_name": "",
             "custom_link": ""
           }
