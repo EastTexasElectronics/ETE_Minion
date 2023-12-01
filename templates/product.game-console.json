@@ -121,7 +121,7 @@
             "icon_name_3": "",
             "content_3": "",
             "icon_name_4": "info_sm",
-            "content_4": "<p><strong>Refurbished Condition:<\/strong>{{ product.metafields.custom.used_refurbished_condition | metafield_text }}<\/p><p><\/p><p><\/p>",
+            "content_4": "<p><strong>Refurbished Condition: <\/strong>{{ product.metafields.custom.used_refurbished_condition | metafield_text }}<\/p><p><\/p><p><\/p>",
             "icon_name_5": "",
             "content_5": ""
           }
