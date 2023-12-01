@@ -1,5 +1,5 @@
 {%- if settings.animate_content_show -%}
-<link rel="stylesheet" href="{{ 'component-inputs.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-inputs.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-inputs.css' | asset_url | stylesheet_tag }}</noscript>
 {%- else -%}
 {{ 'component-inputs.css' | asset_url | stylesheet_tag }}
