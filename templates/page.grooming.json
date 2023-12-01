@@ -176,7 +176,15 @@
         "d453f28a-dc70-40ae-8660-74f3632d1e0b": {
           "type": "featured_collection",
           "settings": {
-            "collection": "services",
+            "collection": "microsoft-consoles",
+            "collection_name": "",
+            "custom_link": ""
+          }
+        },
+        "a8d236ef-a6a1-4f72-9f84-e10f09e8dd9e": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
             "collection_name": "",
             "custom_link": ""
           }
@@ -203,7 +211,8 @@
         "4c24f4e8-0f08-4a91-bab9-bbeb55c69db0",
         "68242ee8-56ef-4813-8e4b-bf41281ddfb7",
         "071b0900-a4c7-4e09-8d5a-1a8f80cddac9",
-        "d453f28a-dc70-40ae-8660-74f3632d1e0b"
+        "d453f28a-dc70-40ae-8660-74f3632d1e0b",
+        "a8d236ef-a6a1-4f72-9f84-e10f09e8dd9e"
       ],
       "settings": {
         "subheading": "",
