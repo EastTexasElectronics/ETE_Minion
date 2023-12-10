@@ -306,7 +306,6 @@
     table thead th,
     h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
       text-transform: uppercase;
-      word-wrap: normal;
     }
     .cart-item__heading{
       text-transform: none;
@@ -435,12 +434,12 @@
   </body>
 </html>
 
-{%- endcapture avada-seo-original -%}
+{%- endcapture -%}
 {%- capture avada-seo-minified -%}
 {%- include 'avada-seo-minifier', content: avada-seo-original -%}
 {%- endcapture -%}
 {%- if avada-seo-minified contains 'Liquid error' -%}
-{{ avada-seo-original }}
+  {{ avada-seo-original }}
 {%- else -%}
-{{ avada-seo-minified }}
+  {{ avada-seo-minified }}
 {%- endif -%}
