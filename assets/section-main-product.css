@@ -121,8 +121,8 @@
   font-weight: var(--font-button-weight);
   cursor: pointer;
   color: var(--color-base);
-  word-wrap: normal !important;
-  word-break: normal !important;
+
+  word-break: keep-all !important;
   transition: color var(--duration-medium) var(--animation-bezier);
 }
 .product-form__item label.color__swatch--image{
