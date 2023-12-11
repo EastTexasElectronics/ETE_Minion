@@ -185,6 +185,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Refurbished Disclaimer*",
+            "collapsible_tab_default_open": true,
             "icon_name": "info_sm",
             "content": "<p>Please note that the product you receive may vary slightly from the one shown in the photos but will be of the same grade. Refurbished consoles may exhibit minor blemishes such as scratches and could have worn or missing manufacturer stickers. Rest assured that we have thoroughly cleaned, tested, and repaired each console to ensure it operates at its best. Your satisfaction is our priority, and we stand by the quality of our refurbished consoles.<\/p>",
             "page": ""
@@ -194,6 +195,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping Policy",
+            "collapsible_tab_default_open": false,
             "icon_name": "truck_sm",
             "content": "<p><a href=\"\/policies\/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">Detailed Shipping Policy<\/a><\/p>",
             "page": ""
@@ -203,6 +205,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Returns & Refunds",
+            "collapsible_tab_default_open": false,
             "icon_name": "exchange_sm",
             "content": "<p>Returns: 14 Days<br\/>Warranty: 180 Days<br\/><br\/><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"Refund Policy\">Detailed Refund, Warranty, and Exchange Policy.<\/a><\/p><p><\/p>",
             "page": ""
