@@ -793,11 +793,11 @@
         {%- endcase -%}
         {%- endfor -%}
 
-        {%- if section.settings.use_accordion -%}
-        {%- render "main-product-tabs--accordion" section: section, product: product -%}
-        {%- else -%}
-        {%- render "main-product-tabs" section: section, product: product -%}
-        {%- endif -%}
+     {%- if section.settings.use_accordion -%}
+  {%- render "main-product-tabs--accordion", section: section, product: product, default_open: section.settings.default_accordion_open -%}
+{%- else -%}
+  {%- render "main-product-tabs", section: section, product: product -%}
+{%- endif -%}
 
         {% assign complementary = section.blocks | where: "type", "complementary" %}
         {%- for block in complementary -%}
@@ -1712,6 +1712,12 @@
             "default": "Collapsible row",
             "info": "t:sections.main-product.blocks.collapsible_tab.settings.heading.info",
             "label": "t:sections.main-product.blocks.collapsible_tab.settings.heading.label"
+          },
+          {
+          "type": "checkbox",
+          "id": "collapsible_tab_default_open",
+          "label": "Open by default",
+          "default": false
           },
           {
             "type": "text",
