@@ -122,6 +122,7 @@
   cursor: pointer;
   color: var(--color-base);
   word-break: keep-all !important;
+  word-wrap: nowrap;
   transition: color var(--duration-medium) var(--animation-bezier);
 }
 .product-form__item label.color__swatch--image{
