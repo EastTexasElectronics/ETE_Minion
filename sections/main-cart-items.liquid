@@ -1,7 +1,7 @@
-{{ 'component-inputs.aio.min.css' | asset_url | stylesheet_tag }}
-{{ 'component-cart-items.aio.min.css' | asset_url | stylesheet_tag }}
+{{ 'component-inputs.css' | asset_url | stylesheet_tag }}
+{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}
 
-<script src="{{ 'cart.aio.min.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 
 <div class="top-spacing-{{ section.settings.top_spacing }}">
   <cart-items class="{{ section.settings.width }}{% if cart == empty %} is-empty{% endif %}">

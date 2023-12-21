@@ -1,8 +1,8 @@
 {%- if section.settings.design_type == "text-below-image" -%}
-{%- assign css_file = 'section-collection-list.aio.min.css' -%}
+{%- assign css_file = 'section-collection-list.css' -%}
 {%- assign colection_type = 'type1' -%}
 {%- else -%}
-{%- assign css_file = 'section-collection-list-type2.aio.min.css' -%}
+{%- assign css_file = 'section-collection-list-type2.css' -%}
 {%- assign colection_type = 'type2' -%}
 {%- endif -%}
 
@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="{{ css_file | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ css_file | asset_url | stylesheet_tag }}</noscript>
 {%- if section.settings.swipe_on_mobile -%}
-<link rel="stylesheet" href="{{ 'component-slider.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%}
 {%- else -%}

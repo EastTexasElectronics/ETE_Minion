@@ -1,8 +1,8 @@
 {%- if settings.animate_content_show -%}
-<link rel="stylesheet" href="{{ 'section-blog-post.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'section-blog-post.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'section-blog-post.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 {%- if section.settings.swipe_on_mobile -%}
-<link rel="stylesheet" href="{{ 'component-slider.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%}
 {%- else -%}

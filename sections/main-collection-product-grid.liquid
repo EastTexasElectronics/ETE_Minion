@@ -14,33 +14,33 @@ endif
 
 {%- if settings.animate_content_show -%}
 
-<link rel="stylesheet" href="{{ 'component-price.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-rating.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-product-card.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-rating.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-product-card.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-price.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rating.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-product-card.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 {%- if settings.swatches_design != 'none' and settings.enable_color_swatches -%}
-<link rel="stylesheet" href="{{ 'product-card-variants.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'product-card-variants.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'product-card-variants.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%}
 {%- if enable_sorting -%}
-<link rel="stylesheet" href="{{ 'component-inputs.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'disclosure.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-inputs.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'disclosure.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-inputs.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'disclosure.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%}
 
 {%- if enable_sorting or enable_filtering -%}
-<link rel="stylesheet" href="{{ 'component-facets.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-facets.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-facets.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%}
 {%- if enable_filtering and horizontal_filters -%}
-<link rel="stylesheet" href="{{ 'component-facets--horizontal.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-facets--horizontal.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-facets--horizontal.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 {%- elsif enable_filtering -%}
-{{ 'component-facets--vertical.aio.min.css' | asset_url | stylesheet_tag }}
-<link rel="stylesheet" href="{{ 'component-toggle.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+{{ 'component-facets--vertical.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'component-toggle.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-toggle.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%}
 
@@ -69,7 +69,7 @@ endif
 {%- endif -%}
 
 {%- if enable_sorting or enable_filtering -%}
-<script src="{{ 'facets.aio.min.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
 <div class="top-spacing-{{ section.settings.top_spacing }} {{ section.settings.width }}">
