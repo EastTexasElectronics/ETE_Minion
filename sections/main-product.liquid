@@ -1,24 +1,24 @@
 <section id="MainProduct-{{ section.id }}" data-section="{{ section.id }}" data-product-handle="{{ product.handle }}">
   {%- if settings.animate_content_show -%}
-  <link rel="stylesheet" href="{{ 'section-main-product.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="{{ 'component-price.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="{{ 'component-rating.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="{{ 'component-rating-form.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="{{ 'component-inputs.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'section-main-product.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'component-rating.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'component-rating-form.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'component-inputs.css' | asset_url }}" media="print" onload="this.media='all'">
   <noscript>{{ 'section-main-product.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
   <noscript>{{ 'component-price.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
   <noscript>{{ 'component-rating.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
   <noscript>{{ 'component-rating-form.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
   <noscript>{{ 'component-inputs.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
   {%- if section.settings.use_accordion -%}
-  <link rel="stylesheet" href="{{ 'component-toggle.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'component-toggle.css' | asset_url }}" media="print" onload="this.media='all'">
   <noscript>{{ 'component-toggle.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
   {%- else -%}
-  <link rel="stylesheet" href="{{ 'component-main-product-tabs.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'component-main-product-tabs.css' | asset_url }}" media="print" onload="this.media='all'">
   <noscript>{{ 'component-main-product-tabs.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
   {%- endif -%}
-  <link rel="stylesheet" href="{{ 'component-deferred-media.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="{{ 'component-slider.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
   <noscript>{{ 'component-deferred-media.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
   <noscript>{{ 'component-slider.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 
@@ -56,13 +56,13 @@
   {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
   {%- if first_3d_model -%}
   	{%- if settings.animate_content_show -%}
-	<link rel="stylesheet" href="{{ 'component-product-model.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="{{ 'component-product-model.css' | asset_url }}" media="print" onload="this.media='all'">
   	<noscript>{{ 'component-product-model.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
   	{%- else -%}
   	{{ 'component-product-model.css' | asset_url | stylesheet_tag }}
   	{%- endif -%}
     <link id="ModelViewerStyle" rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'">
-    <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+    <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
   {%- endif -%}
 
   {%- assign current_variant = product.selected_or_first_available_variant -%}
@@ -664,7 +664,7 @@
         </div>
 
         {%- if settings.animate_content_show -%}
-        <link rel="stylesheet" href="{{ 'component-pickup-availability.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="{{ 'component-pickup-availability.css' | asset_url }}" media="print" onload="this.media='all'">
         <noscript>{{ 'component-pickup-availability.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
         {%- else -%}
         {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
@@ -689,7 +689,7 @@
             </pickup-availability-preview>
           </template>
         </pickup-availability>
-        <script src="{{ 'pickup-availability.aio.min.js' | asset_url }}" defer="defer"></script>
+        <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
 
         {%- when "share" -%}
         <share-button id="Share-{{ section.id }}" class="share-button" {{ block.shopify_attributes }}>
@@ -733,7 +733,7 @@
             </div>
           </details>
         </share-button>
-        <script src="{{ 'share.aio.min.js' | asset_url }}" defer="defer"></script>
+        <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
 
         {%- when "inventory" -%}
           {%- capture invertory -%}
@@ -1056,7 +1056,7 @@
   {% endjavascript %}
 
   {% if product.media.size > 0 %}
-    <script src="{{ 'media-gallery.aio.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script>
   {% endif %}
 
   {%- if first_3d_model -%}
@@ -1064,7 +1064,7 @@
       {{ product.media | where: 'media_type', 'model' | json }}
     </script>
 
-    <script src="{{ 'product-model.aio.min.js' | asset_url }}" defer></script>
+    <script src="{{ 'product-model.js' | asset_url }}" defer></script>
   {%- endif -%}
 
   {%- liquid

@@ -74,27 +74,27 @@
   {%- endif -%}
 </style>
 
-<link rel="stylesheet" href="{{ 'component-inputs.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-menu-drawer.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-menu-submenu.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-list-menu.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'section-header.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-inputs.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-menu-submenu.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'section-header.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-inputs.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-menu-drawer.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-menu-submenu.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-list-menu.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'section-header.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 {%- if settings.show_free_delivery -%}
-<link rel="stylesheet" href="{{ 'component-free-delivery-bar.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-free-delivery-bar.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-free-delivery-bar.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%}
 
 {%- case section.settings.header_layout -%}
 {%- when 'header-layout-vertical' -%}
-<link rel="stylesheet" href="{{ 'component-vertical-menu.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-vertical-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-vertical-menu.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 {%- when 'header-layout-tiles' -%}
-<link rel="stylesheet" href="{{ 'component-tiles-menu.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-tiles-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-tiles-menu.aio.min.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endcase -%}
 
@@ -158,10 +158,10 @@
 {%- endif -%}
 
 
-<link rel="stylesheet" href="{{ 'component-cart-notification.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-modal.aio.min.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-modal.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- if settings.cart_type == "drawer" -%}
-  {{ 'component-cart-drawer.aio.min.css' | asset_url | stylesheet_tag }}
+  {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
 
 {%- assign mega_menu_index = '|' -%}
@@ -177,9 +177,9 @@
 {%- endfor -%}
 {%- assign visible_items_count = section.settings.visible_items_count | plus: 0 -%}
 
-<script src="{{ 'details-disclosure.aio.min.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 {%- if section.settings.header_layout == 'header-layout-vertical' and section.settings.menu != blank -%}
-<script src="{{ 'vertical-menu.aio.min.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'vertical-menu.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
 {%- if section.settings.show_color_line -%}
@@ -453,10 +453,10 @@
 {%- if settings.cart_type == "notification" -%}
   {% render 'cart-notification' %}
 {%- endif -%}
-<script src="{{ 'product-form.aio.min.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'cart-notification.aio.min.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
 {%- if settings.cart_type == "drawer" -%}
-  <script src="{{ 'cart-drawer.aio.min.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
 {% if request.design_mode and template == 'index' %}
