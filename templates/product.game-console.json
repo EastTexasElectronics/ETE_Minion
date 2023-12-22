@@ -130,9 +130,9 @@
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
-            "variant_name_1": "Size",
-            "content_1": "Add an additional description to your product option. Ex: Size guides, and other common questions.",
-            "page_1": "",
+            "variant_name_1": "Condition",
+            "content_1": "This system has been professionally refurbished. The appearance of the exterior may differ between units. For clarity on the condition and quality of each grade, please refer to the detailed Grading System information provided below.",
+            "page_1": "ultra-sonic-cleaning",
             "variant_name_2": "Color",
             "content_2": "Add an additional description to your product option. Ex: Size guides, and other common questions.",
             "page_2": "",
