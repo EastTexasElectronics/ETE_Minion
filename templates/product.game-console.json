@@ -115,13 +115,13 @@
           "settings": {
             "text_size": "small",
             "icon_name_1": "certified_sm",
-            "content_1": "<p><strong>Warranty Included: <\/strong>{{ product.metafields.custom.warranty.value }}<\/p>",
+            "content_1": "<p><strong>Warranty Included: <\/strong>1 year<\/p>",
             "icon_name_2": "service_sm",
             "content_2": "<p><strong>Refurbished Disclaimer: <\/strong>Please Read Below*<\/p>",
             "icon_name_3": "",
             "content_3": "",
             "icon_name_4": "info_sm",
-            "content_4": "<p><strong>Refurbished Condition: <\/strong>{{ product.metafields.custom.used_refurbished_condition | metafield_text }}<\/p><p><\/p><p><\/p>",
+            "content_4": "<p><strong>Condition: <\/strong>{{ product.metafields.custom.condition | metafield_text }} <strong>(Please take note of selected condition below)<\/strong><\/p>",
             "icon_name_5": "",
             "content_5": ""
           }
