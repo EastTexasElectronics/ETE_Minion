@@ -132,7 +132,7 @@
             "picker_type": "button",
             "variant_name_1": "Condition",
             "content_1": "This system has been professionally refurbished. The appearance of the exterior may differ between units. For clarity on the condition and quality of each grade, please refer to the detailed Grading System information provided below.",
-            "page_1": "ultra-sonic-cleaning",
+            "page_1": "",
             "variant_name_2": "Color",
             "content_2": "Add an additional description to your product option. Ex: Size guides, and other common questions.",
             "page_2": "",
@@ -252,7 +252,7 @@
             "icon_name": "",
             "url": "",
             "heading": "Grade A+ - Like New",
-            "description": "<ul><li><strong>Console Condition:<\/strong> This grade represents consoles that are in excellent, like-new condition.<\/li><li><strong>Exterior:<\/strong> Minimal to no visible scratches or blemishes.<\/li><li><strong>Functionality:<\/strong> All components and features work flawlessly.<\/li><li><strong>Manufacturer Stickers: <\/strong>Original manufacturer stickers are intact.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<\/li><\/ul>"
+            "description": "<p><\/p><ul><li><strong>Exterior:<\/strong> Minimal to no visible scratches or blemishes.<\/li><li><strong>Functionality:<\/strong> All components and features work flawlessly.<\/li><li><strong>Manufacturer Stickers: <\/strong>Original manufacturer stickers are intact.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<\/li><\/ul>"
           }
         },
         "template--21558134931734__a996f94b-aba1-4aa8-bafa-952b7982f5a7-blurb_icon-2": {
@@ -262,7 +262,7 @@
             "icon_name": "",
             "url": "",
             "heading": "Grade A - Very Good",
-            "description": "<ul><li><strong>Console Condition:<\/strong> These consoles are in very good condition.<\/li><li><strong>Exterior: <\/strong>Minor, superficial scratches or blemishes may be present.<\/li><li><strong>Functionality:<\/strong> All components and features are fully functional.<\/li><li><strong>Manufacturer Stickers: <\/strong>May have some wear or missing stickers.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<\/li><\/ul>"
+            "description": "<p><\/p><ul><li><strong>Exterior: <\/strong>Minor, superficial scratches or blemishes may be present.<\/li><li><strong>Functionality:<\/strong> All components and features are fully functional.<\/li><li><strong>Manufacturer Stickers: <\/strong>May have some wear or missing stickers.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<\/li><\/ul>"
           }
         },
         "template--21558134931734__a996f94b-aba1-4aa8-bafa-952b7982f5a7-blurb_icon-3": {
@@ -272,7 +272,7 @@
             "icon_name": "",
             "url": "",
             "heading": "Grade B - Good",
-            "description": "<ul><li><strong>Console Condition:<\/strong> Consoles in good condition.<\/li><li><strong>Exterior:<\/strong> Noticeable scratches and blemishes but no major damage.<\/li><li><strong>Functionality:<\/strong> All components and features are fully functional.<\/li><li><strong>Manufacturer Stickers:<\/strong> Likely to have worn or missing stickers.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<\/li><\/ul>"
+            "description": "<p><\/p><ul><li><strong>Exterior:<\/strong> Noticeable scratches and blemishes but no major damage.<\/li><li><strong>Functionality:<\/strong> All components and features are fully functional.<\/li><li><strong>Manufacturer Stickers:<\/strong> Likely to have worn or missing stickers.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<\/li><\/ul>"
           }
         },
         "163293f8-66d5-4760-a2c2-22ea37fbd281": {
@@ -282,7 +282,7 @@
             "icon_name": "",
             "url": "",
             "heading": "Grade C - Acceptable",
-            "description": "<ul><li><strong>Console Condition: <\/strong>Acceptable condition with visible signs of wear.<\/li><li><strong>Exterior: <\/strong>Significant scratches and blemishes but no major damage.<\/li><li><strong>Functionality: <\/strong>All components and features are fully functional.<\/li><li><strong>Manufacturer Stickers: <\/strong>Often worn or missing.<\/li><li><strong>Accessories: <\/strong>Comes with all new or aftermarket cables.<\/li><\/ul>"
+            "description": "<p><\/p><ul><li><strong>Exterior: <\/strong>Significant scratches and blemishes but no major damage.<\/li><li><strong>Functionality: <\/strong>All components and features are fully functional.<\/li><li><strong>Manufacturer Stickers: <\/strong>Often worn or missing.<\/li><li><strong>Accessories: <\/strong>Comes with all new or aftermarket cables.<\/li><\/ul>"
           }
         },
         "56d55d64-b662-43d4-9915-62d8a6c34486": {
@@ -292,7 +292,7 @@
             "icon_name": "",
             "url": "",
             "heading": "Grade D - Fair",
-            "description": "<ul><li><strong>Console Condition:<\/strong> Fair condition with considerable wear.<\/li><li><strong>Exterior:<\/strong> Substantial scratches, blemishes, and signs of use.<\/li><li><strong>Functionality: <\/strong>All components and features are fully functional.<\/li><li><strong>Manufacturer Stickers: <\/strong>Likely to be missing or heavily worn.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<\/li><\/ul>"
+            "description": "<p><\/p><ul><li><strong>Exterior:<\/strong> Substantial scratches, blemishes, and signs of use.<\/li><li><strong>Functionality: <\/strong>All components and features are fully functional.<\/li><li><strong>Manufacturer Stickers: <\/strong>Likely to be missing or heavily worn.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<\/li><\/ul>"
           }
         },
         "e7c951d3-8220-4fb8-a9c6-6c539e14f372": {
@@ -302,7 +302,7 @@
             "icon_name": "",
             "url": "",
             "heading": "Grade F - Parts\/Not Working",
-            "description": "<ul><li><strong>Console Condition:<\/strong> This grade is for consoles that are not in working condition and are sold for parts or repair purposes.<\/li><li><strong>Exterior: <\/strong>May have significant physical damage, heavy wear, or missing parts.<\/li><li><strong>Functionality:<\/strong> The console is non-functional or has critical issues.<\/li><li><strong>Manufacturer Stickers: <\/strong>Stickers are likely to be missing or heavily worn.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<\/li><\/ul>"
+            "description": "<p><\/p><ul><li><strong>Exterior: <\/strong>May have significant physical damage, heavy wear, or missing parts.<\/li><li><strong>Functionality:<\/strong> The console is non-functional or has critical issues.<\/li><li><strong>Manufacturer Stickers: <\/strong>Stickers are likely to be missing or heavily worn.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<\/li><\/ul>"
           }
         }
       },
