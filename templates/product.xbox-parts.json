@@ -78,6 +78,7 @@
         },
         "5ce8b348-17ca-4f4c-baf1-f83d51372837": {
           "type": "shopify:\/\/apps\/alert-me-restock-alerts\/blocks\/product-form\/88d8595d-225a-4087-b3c0-661d0d859357",
+          "disabled": true,
           "settings": {
             "form_bg_color": "#fefefe",
             "border_color": "#eeeeee",
@@ -239,6 +240,7 @@
       "block_order": [
         "df82df4b-8c9f-4d26-a2f7-97c4ef207c12"
       ],
+      "disabled": true,
       "settings": {
         "top_spacing": "normal",
         "width": "page-width"
@@ -312,6 +314,47 @@
         "background_spacing": "normal",
         "remove_bottom_spacing": false
       }
+    },
+    "72e3b172-938c-4378-9933-7d00e78e038f": {
+      "type": "blog-posts",
+      "disabled": true,
+      "settings": {
+        "blog": "news",
+        "subheading": "Compare All Models",
+        "heading": "Xbox Version Guides",
+        "heading_aligment": "text-center",
+        "link_name": "Show All",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-4",
+        "swipe_on_mobile": false,
+        "post_limit": 3,
+        "image_ratio": "auto",
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "excerpt_size": "normal",
+        "show_image": true,
+        "truncate_post_heading": false,
+        "hover_underline": true,
+        "showtags": true,
+        "show_date": true,
+        "show_author": true,
+        "show_comment_count": true,
+        "excerpt": "show",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_link": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_author_date_comments": "rgba(0,0,0,0)",
+        "color_heading_post": "rgba(0,0,0,0)",
+        "color_excerpt": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
     }
   },
   "order": [
@@ -319,6 +362,7 @@
     "16905932895079682f",
     "product-recommendations",
     "16944506658c4ffe9d",
-    "b4c6d9c3-be4f-4dec-be15-0775c94ac84c"
+    "b4c6d9c3-be4f-4dec-be15-0775c94ac84c",
+    "72e3b172-938c-4378-9933-7d00e78e038f"
   ]
 }
