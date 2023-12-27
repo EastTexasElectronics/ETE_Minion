@@ -159,9 +159,9 @@
         "settings": {
           "button_color": "#304ec9",
           "button_icon": "chat_bubble",
+          "button_text": "contact",
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "higher",
-          "button_text": "contact",
           "greeting_message": "👋 Hello! Feel free to reach out with any inquiries you might have. We're here to assist you!"
         }
       }

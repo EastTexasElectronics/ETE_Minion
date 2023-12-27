@@ -48,8 +48,8 @@
             "content_3": "<p><strong>Product Rating:<\/strong> {{ product.metafields.reviews.rating | metafield_tag }}<\/p>",
             "icon_name_4": "info_sm",
             "content_4": "<p><strong>Condition:<\/strong> {{ product.metafields.custom.condition | metafield_text }}<\/p>",
-            "icon_name_5": "",
-            "content_5": ""
+            "icon_name_5": "check_sm",
+            "content_5": "<p><strong>Compatibility: <\/strong>This part may only work with specific version please ensure compatibility with your devciem<\/p>"
           }
         },
         "22f92dfa-de40-4d8a-b823-e2ce09e7b494": {
@@ -79,8 +79,8 @@
         "5ce8b348-17ca-4f4c-baf1-f83d51372837": {
           "type": "shopify:\/\/apps\/alert-me-restock-alerts\/blocks\/product-form\/88d8595d-225a-4087-b3c0-661d0d859357",
           "settings": {
-            "form_bg_color": "#FEFEFE",
-            "border_color": "#EEEEEE",
+            "form_bg_color": "#fefefe",
+            "border_color": "#eeeeee",
             "border_width": 1,
             "form_padding": 15,
             "text_color": "#000000",
@@ -94,16 +94,16 @@
             "input_border_color": "#000000",
             "input_padding": 10,
             "button_bg_color": "#000000",
-            "button_text_color": "#FFFFFF",
+            "button_text_color": "#ffffff",
             "button_text_size": 14,
             "button_text_alignment": "center",
             "button_padding": 10,
             "marketing_optin_text_size": 10,
             "marketing_optin_text_color": "#333333",
-            "alert_msg_bg_success": "#EDF7ED",
-            "alert_msg_text_color_success": "#254C27",
-            "alert_msg_bg_error": "#FDEDED",
-            "alert_msg_text_color_error": "#8E5D5C"
+            "alert_msg_bg_success": "#edf7ed",
+            "alert_msg_text_color_success": "#254c27",
+            "alert_msg_bg_error": "#fdeded",
+            "alert_msg_text_color_error": "#8e5d5c"
           }
         },
         "1b8b6108-97d1-4af6-bfc4-13bdc10f6046": {
@@ -141,6 +141,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping Policy",
+            "collapsible_tab_default_open": false,
             "icon_name": "truck_sm",
             "content": "<p><a href=\"\/policies\/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">Detailed Shipping Policy<\/a><\/p>",
             "page": ""
@@ -150,6 +151,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Returns & Refunds",
+            "collapsible_tab_default_open": false,
             "icon_name": "exchange_sm",
             "content": "<p><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"Refund Policy\">Detailed Return & Warranty Policies<\/a><\/p>",
             "page": ""
@@ -241,12 +243,82 @@
         "top_spacing": "normal",
         "width": "page-width"
       }
+    },
+    "b4c6d9c3-be4f-4dec-be15-0775c94ac84c": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "template--21777976819990__b4c6d9c3-be4f-4dec-be15-0775c94ac84c-blurb_icon-1": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "check",
+            "url": "",
+            "heading": "Combability",
+            "description": "<p>To receive the correct component for your needs, please verify its compatibility with your device's model.<\/p>"
+          }
+        },
+        "template--21777976819990__b4c6d9c3-be4f-4dec-be15-0775c94ac84c-blurb_icon-2": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "advertising",
+            "url": "",
+            "heading": "Condition",
+            "description": "<p>Our inventory includes both used and refurbished components. You can choose the version you prefer during the checkout process.<\/p>"
+          }
+        },
+        "template--21777976819990__b4c6d9c3-be4f-4dec-be15-0775c94ac84c-blurb_icon-3": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "phone",
+            "url": "",
+            "heading": "Questions?",
+            "description": "<p>For inquiries about compatibility or any other concerns, please feel free to <a href=\"\/pages\/contact-us\" target=\"_blank\" title=\"Contact Us\">Contact Us<\/a>. with any questions your may have. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21777976819990__b4c6d9c3-be4f-4dec-be15-0775c94ac84c-blurb_icon-1",
+        "template--21777976819990__b4c6d9c3-be4f-4dec-be15-0775c94ac84c-blurb_icon-2",
+        "template--21777976819990__b4c6d9c3-be4f-4dec-be15-0775c94ac84c-blurb_icon-3"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "Xbox Components",
+        "heading_aligment": "text-center",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-4",
+        "swipe_on_mobile": false,
+        "image_ratio": "auto",
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
     }
   },
   "order": [
     "main",
     "16905932895079682f",
     "product-recommendations",
-    "16944506658c4ffe9d"
+    "16944506658c4ffe9d",
+    "b4c6d9c3-be4f-4dec-be15-0775c94ac84c"
   ]
 }
