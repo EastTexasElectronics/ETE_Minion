@@ -1,5 +1,59 @@
 {
   "sections": {
+    "3b27e21d-f030-4ada-99a7-9f0805820f52": {
+      "type": "two-columns-with-text",
+      "blocks": {
+        "template--20544239665430__3b27e21d-f030-4ada-99a7-9f0805820f52-blurb-1": {
+          "type": "blurb",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "",
+            "description": "",
+            "button_name": "Request a Repair"
+          }
+        },
+        "template--20544239665430__3b27e21d-f030-4ada-99a7-9f0805820f52-blurb-2": {
+          "type": "blurb",
+          "settings": {
+            "show_image": "show",
+            "url": "",
+            "heading": "",
+            "description": "",
+            "button_name": "Repair Tracker"
+          }
+        }
+      },
+      "block_order": [
+        "template--20544239665430__3b27e21d-f030-4ada-99a7-9f0805820f52-blurb-1",
+        "template--20544239665430__3b27e21d-f030-4ada-99a7-9f0805820f52-blurb-2"
+      ],
+      "settings": {
+        "subheading": "Save Time & Track Your Repair",
+        "heading": "Book an Appointment",
+        "description": "<p>Save time by filling out our quick Repair Request form before you arrive.  This will also give you access to our complementary repair tracker that provides status updates via email on your service progress.<\/p>",
+        "heading_aligment": "text-center",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "image_ratio": "auto",
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description_blurb": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
     "1662640935ca798dff": {
       "type": "slideshow",
       "blocks": {
@@ -618,6 +672,7 @@
     }
   },
   "order": [
+    "3b27e21d-f030-4ada-99a7-9f0805820f52",
     "1662640935ca798dff",
     "b1d9d2ec-f907-4526-93e1-13817f8aa965",
     "3340be14-07fc-4d74-84cb-c56587022ac1",
