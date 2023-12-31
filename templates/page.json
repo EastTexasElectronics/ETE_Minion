@@ -1,5 +1,13 @@
 {
   "sections": {
+    "5f2e875a-9765-48e6-b753-907eef891083": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<iframe src=\"https:\/\/bookings.hubtiger.com\/bikes?shop=HUB.BB6C3F047E004144BAD025698A2B65658B182D9764A143F6880ED99FAEE55F07.TIGER&lang=en\" frameborder=\"0\" allow=\"geolocation\" style=\"width: 100%; height: 825px;\"><\/iframe>",
+        "top_spacing": "normal",
+        "width": "page-width"
+      }
+    },
     "cfda5bd9-6071-4076-9332-b20f1af26312": {
       "type": "map",
       "blocks": {
@@ -131,6 +139,7 @@
     },
     "77243e12-1f4d-4f19-9d5d-fbbcfa3e17be": {
       "type": "contact-form",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "heading": "Contact Form",
@@ -155,6 +164,7 @@
     }
   },
   "order": [
+    "5f2e875a-9765-48e6-b753-907eef891083",
     "cfda5bd9-6071-4076-9332-b20f1af26312",
     "c16803f0-0e80-49c7-bdd2-55dad8b106a1",
     "main",
