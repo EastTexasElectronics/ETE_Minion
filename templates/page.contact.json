@@ -91,8 +91,8 @@
         "image_dgHDwb": {
           "type": "image",
           "settings": {
-            "api_key": "",
-            "map_address": "",
+            "api_key": "AIzaSyCm9NxEvZqhQBBIXgbs0RpiVeY4YZmeJZw",
+            "map_address": "https:\/\/maps.app.goo.gl\/7M7FRLLYChLecJ8n8",
             "show_pin": true,
             "map_zoom_level": 14
           }
@@ -100,20 +100,20 @@
         "heading_aYrcaW": {
           "type": "heading",
           "settings": {
-            "subheading": "SUBHEADING",
-            "heading": "Map"
+            "subheading": "",
+            "heading": "Location & Hours"
           }
         },
         "text_FjCkWy": {
           "type": "text",
           "settings": {
-            "text": "<p>301 Central Street<br\/>City, Country<\/p><p>Mon - Fri, 8:30am - 10:30pm<br\/>Saturday, 8:30am - 10:30pm<br\/>Sunday, 8:30am - 10:30pm<\/p>"
+            "text": "<p>205 Renaissance Dr. <br\/>Hallsville, TX 75650<\/p><p>(903) 471-1575<\/p><p>Tues - Sat, 10:00am - 6:00pm<br\/>Sun-Mon, Closed<\/p>"
           }
         },
         "button_EQFfpC": {
           "type": "button",
           "settings": {
-            "button_name": "Get direction"
+            "button_name": "Get Directions"
           }
         }
       },
