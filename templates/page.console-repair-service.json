@@ -9,9 +9,37 @@
         "show_heading": false,
         "heading_aligment": "text-center"
       }
+    },
+    "announcement_bar_w9Gbf9": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_Pz49Kf": {
+          "type": "announcement",
+          "settings": {
+            "text": "ANNOUNCE something here",
+            "link_name": "Learn more",
+            "link_url": "",
+            "color_background": "rgba(0,0,0,0)",
+            "color_text": "rgba(0,0,0,0)",
+            "color_link": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_Pz49Kf"
+      ],
+      "settings": {
+        "top_spacing": "normal",
+        "width": "page-fullwidth",
+        "text_size": "announcement-text-5",
+        "slider_mode": true,
+        "bar_time": 3,
+        "background_spacing": "xsmall"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "announcement_bar_w9Gbf9"
   ]
 }
