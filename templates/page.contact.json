@@ -64,7 +64,7 @@
     "contact_form_Yr3xNK": {
       "type": "contact-form",
       "settings": {
-        "subheading": "SUBHEADING",
+        "subheading": "",
         "heading": "Contact form",
         "text": "Got a question or just want to chat?",
         "heading_aligment": "text-center",
