@@ -32,7 +32,7 @@
         "text_pzQCf4": {
           "type": "text",
           "settings": {
-            "text": "<p>For any inquiries, issues, or feedback, we welcome you to contact us. Our support team is available from Monday to Saturday, 10 AM to 6 PM CST. You can reach us through the following channels:<\/p><ul><li><strong>Online Chat:<\/strong> <a href=\"https:\/\/chat.openai.com\/c\/8c707203-d201-4f5d-8a7b-e192bf5aac49#\">Start a chat<\/a><\/li><li><strong>Contact Information:<\/strong> <a href=\"https:\/\/chat.openai.com\/c\/8c707203-d201-4f5d-8a7b-e192bf5aac49#\">Location & contact Info<\/a><\/li><li><strong>Contact Form:<\/strong> <a href=\"https:\/\/chat.openai.com\/c\/8c707203-d201-4f5d-8a7b-e192bf5aac49#\">Fill out our contact form<\/a><\/li><li><strong>Request a Repair:<\/strong> <a href=\"\/pages\/request-a-repair\" target=\"_blank\" title=\"Request A Repair\">Submit a repair request<\/a><\/li><\/ul><p>Don't hesitate to get in touch with us for assistance. We're here to help!<\/p>"
+            "text": "<p>For any inquiries, issues, or feedback, we welcome you to contact us. Our support team is available from Monday to Saturday, 10 AM to 6 PM CST. You can reach us through the following channels:<\/p><ul><li><strong>Online Chat:<\/strong> <a href=\"https:\/\/chat.openai.com\/c\/8c707203-d201-4f5d-8a7b-e192bf5aac49#\">Click the \"Contact\" blue bubble in the bottom right of your screen.<\/a><\/li><li><strong>Contact Information:<\/strong> <a href=\"https:\/\/chat.openai.com\/c\/8c707203-d201-4f5d-8a7b-e192bf5aac49#\">Location & contact Info<\/a><\/li><li><strong>Contact Form:<\/strong> <a href=\"https:\/\/chat.openai.com\/c\/8c707203-d201-4f5d-8a7b-e192bf5aac49#\">Fill out our contact form<\/a><\/li><li><strong>Request a Repair:<\/strong> <a href=\"\/pages\/request-a-repair\" target=\"_blank\" title=\"Request A Repair\">Submit a repair request<\/a><\/li><\/ul><p>Don't hesitate to get in touch with us for assistance. We're here to help!<\/p>"
           }
         }
       },
@@ -84,11 +84,68 @@
         "background_spacing": "normal",
         "remove_bottom_spacing": false
       }
+    },
+    "map_GYzCFR": {
+      "type": "map",
+      "blocks": {
+        "image_dgHDwb": {
+          "type": "image",
+          "settings": {
+            "api_key": "",
+            "map_address": "",
+            "show_pin": true,
+            "map_zoom_level": 14
+          }
+        },
+        "heading_aYrcaW": {
+          "type": "heading",
+          "settings": {
+            "subheading": "SUBHEADING",
+            "heading": "Map"
+          }
+        },
+        "text_FjCkWy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>301 Central Street<br\/>City, Country<\/p><p>Mon - Fri, 8:30am - 10:30pm<br\/>Saturday, 8:30am - 10:30pm<br\/>Sunday, 8:30am - 10:30pm<\/p>"
+          }
+        },
+        "button_EQFfpC": {
+          "type": "button",
+          "settings": {
+            "button_name": "Get direction"
+          }
+        }
+      },
+      "block_order": [
+        "image_dgHDwb",
+        "heading_aYrcaW",
+        "text_FjCkWy",
+        "button_EQFfpC"
+      ],
+      "settings": {
+        "url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "desktop_content_height": 500,
+        "row_reverse": false,
+        "content_aligment": "align-self-start",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_background": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
     "main",
     "image_with_text_type2_LeNDe3",
-    "contact_form_Yr3xNK"
+    "contact_form_Yr3xNK",
+    "map_GYzCFR"
   ]
 }
