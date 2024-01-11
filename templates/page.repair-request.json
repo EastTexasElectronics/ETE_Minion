@@ -72,6 +72,178 @@
         "heading_aligment": "text-center"
       }
     },
+    "two_columns_with_text_ex4Bj9": {
+      "type": "two-columns-with-text",
+      "blocks": {
+        "blurb_Gezw78": {
+          "type": "blurb",
+          "settings": {
+            "show_image": "show",
+            "image": "shopify:\/\/shop_images\/1_Year_1.png",
+            "url": "",
+            "heading": "Mail-In",
+            "description": "<p>Live too far to drop off your device?  Not to worry you can still experience our great prices and services with our mail-in services!<\/p>",
+            "button_name": "Learn More"
+          }
+        },
+        "blurb_AU9DjC": {
+          "type": "blurb",
+          "settings": {
+            "show_image": "show",
+            "image": "shopify:\/\/shop_images\/1_Year_6.png",
+            "url": "",
+            "heading": "Drop-Off",
+            "description": "<p>Stop by Tuesday-Saturday 10am-6pm or book an appointment and we can get you your free repair quote!<\/p>",
+            "button_name": "Learn More"
+          }
+        },
+        "brand_image_fwDhGH": {
+          "type": "brand_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_Year.png"
+          }
+        },
+        "brand_image_XkmX3G": {
+          "type": "brand_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_Year_4.png"
+          }
+        }
+      },
+      "block_order": [
+        "blurb_Gezw78",
+        "blurb_AU9DjC",
+        "brand_image_fwDhGH",
+        "brand_image_XkmX3G"
+      ],
+      "settings": {
+        "subheading": "Near & Far",
+        "heading": "Repairs Your Way",
+        "description": "<p>Give customers details about the banner image(s) or content on the template.<\/p>",
+        "heading_aligment": "text-center",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "image_ratio": "auto",
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description_blurb": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "text_columns_with_images_bePxnp": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "blurb_icon_NbzzJH": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "clock",
+            "url": "",
+            "heading": "Book an Appointment",
+            "description": "<p>Book your appoint through our online request form.  We will contact you within 24-48 hours and provide a pre-paid shipping label for your repair via the email your provide<\/p>"
+          }
+        },
+        "blurb_icon_XdHCWx": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "box",
+            "url": "",
+            "heading": "Pack & Ship",
+            "description": "<p>Securley Package your device and slap our pre-paid label on there.  Drop it off at your nearest FedEx Shipping location. <\/p>"
+          }
+        },
+        "blurb_icon_e4YN9w": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "mail",
+            "url": "",
+            "heading": "Receive a Free Repair Quote",
+            "description": "<p>After we recieve your device we will contact you by email with a detailed quote on your repair.  Once this is approved your repair will begin. <\/p>"
+          }
+        },
+        "blurb_icon_YnhVCD": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "chat",
+            "url": "",
+            "heading": "Stay Up-to-Date with Status Updates",
+            "description": "<p>We provide text & email status updates the along the whole repair journey so you know exactly what is going on. <\/p>"
+          }
+        },
+        "blurb_icon_VYt3X4": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "money_back",
+            "url": "",
+            "heading": "Payment",
+            "description": "<p>We will send you a mobile invoice via email.  <br\/><br\/>*Note: If special parts need to be ordered for your repair a deposit equal to the value of the parts must be paid before they are ordered. <\/p>"
+          }
+        },
+        "blurb_icon_M7TeCL": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "delivery",
+            "url": "",
+            "heading": "We Mail Back Your Device",
+            "description": "<p>After your payment has cleared we will securely package and mail your device back to you using FedEx. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "blurb_icon_NbzzJH",
+        "blurb_icon_XdHCWx",
+        "blurb_icon_e4YN9w",
+        "blurb_icon_YnhVCD",
+        "blurb_icon_VYt3X4",
+        "blurb_icon_M7TeCL"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "Mail-In Service Process",
+        "heading_aligment": "text-center",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-4",
+        "swipe_on_mobile": false,
+        "image_ratio": "auto",
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
     "d1c01dac-0713-42b1-85c7-1742843534e2": {
       "type": "custom-liquid",
       "settings": {
@@ -84,6 +256,8 @@
   "order": [
     "c16803f0-0e80-49c7-bdd2-55dad8b106a1",
     "main",
+    "two_columns_with_text_ex4Bj9",
+    "text_columns_with_images_bePxnp",
     "d1c01dac-0713-42b1-85c7-1742843534e2"
   ]
 }
