@@ -43,7 +43,7 @@
       ],
       "settings": {
         "url": "",
-        "top_spacing": "normal",
+        "top_spacing": "none",
         "width": "page-width",
         "content_size": "auto",
         "desktop_content_height": 440,
@@ -81,7 +81,7 @@
         "color_background": "rgba(0,0,0,0)",
         "gradient": "",
         "background_width": "fullwidth",
-        "background_spacing": "normal",
+        "background_spacing": "small",
         "remove_bottom_spacing": false
       }
     },
@@ -107,7 +107,7 @@
         "text_FjCkWy": {
           "type": "text",
           "settings": {
-            "text": "<p>205 Renaissance Dr. <br\/>Hallsville, TX 75650<\/p><p>(903) 471-1575<\/p><p>Tues - Sat, 10:00am - 6:00pm<br\/>Sun-Mon, Closed<\/p>"
+            "text": "<p>205 Renaissance Dr. <br\/>Hallsville, TX 75650<\/p><p>(903) 471-1575<\/p><p>Contact@EastTexasElectronics.com<\/p><p>Tues - Sat, 10:00am - 6:00pm<br\/>Sun-Mon, Closed<\/p>"
           }
         },
         "button_EQFfpC": {
@@ -124,16 +124,16 @@
         "button_EQFfpC"
       ],
       "settings": {
-        "url": "",
-        "top_spacing": "normal",
+        "url": "https:\/\/maps.app.goo.gl\/7M7FRLLYChLecJ8n8",
+        "top_spacing": "small",
         "width": "page-width",
         "desktop_content_height": 500,
         "row_reverse": false,
-        "content_aligment": "align-self-start",
-        "texts_aligment": "text-left",
-        "heading_tag": "h2",
+        "content_aligment": "align-self-center",
+        "texts_aligment": "text-center",
+        "heading_tag": "h1",
         "text_size": "normal",
-        "hover_underline": false,
+        "hover_underline": true,
         "color_subheading": "rgba(0,0,0,0)",
         "color_heading": "rgba(0,0,0,0)",
         "color_text": "rgba(0,0,0,0)",
