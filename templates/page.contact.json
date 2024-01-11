@@ -2,15 +2,99 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "top_spacing": "none",
         "width": "page-width",
         "show_heading": false,
         "heading_aligment": "text-center"
       }
+    },
+    "image_with_text_type2_LeNDe3": {
+      "type": "image-with-text-type2",
+      "blocks": {
+        "image_tYVzqb": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "heading_KyzqLG": {
+          "type": "heading",
+          "settings": {
+            "subheading": "SUBHEADING",
+            "heading": "Full height media with text"
+          }
+        },
+        "text_pzQCf4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This section allows you to set a text box background.<\/p>"
+          }
+        },
+        "button_Ni9Yk7": {
+          "type": "button",
+          "settings": {
+            "button_name": "Button"
+          }
+        }
+      },
+      "block_order": [
+        "image_tYVzqb",
+        "heading_KyzqLG",
+        "text_pzQCf4",
+        "button_Ni9Yk7"
+      ],
+      "settings": {
+        "url": "",
+        "top_spacing": "normal",
+        "width": "page-fullwidth",
+        "content_size": "fullscreen",
+        "desktop_content_height": 440,
+        "row_reverse": false,
+        "content_aligment": "align-self-center",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "play_background": "rgba(0,0,0,0)",
+        "color_background": "rgba(0,0,0,0)"
+      }
+    },
+    "contact_form_Yr3xNK": {
+      "type": "contact-form",
+      "settings": {
+        "subheading": "SUBHEADING",
+        "heading": "Contact form",
+        "text": "Got a question or just want to chat?",
+        "heading_aligment": "text-center",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_input_bg": "rgba(0,0,0,0)",
+        "color_input_bg_active": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_with_text_type2_LeNDe3",
+    "contact_form_Yr3xNK"
   ]
 }
