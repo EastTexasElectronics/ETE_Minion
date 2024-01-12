@@ -83,7 +83,7 @@
             "url": "",
             "heading": "Mail-In",
             "description": "<p>Live too far to drop off your device?  Not to worry you can still experience our great prices and services with our mail-in services!<\/p>",
-            "button_name": "Learn More"
+            "button_name": ""
           }
         },
         "blurb_AU9DjC": {
@@ -94,7 +94,7 @@
             "url": "",
             "heading": "Drop-Off",
             "description": "<p>Stop by Tuesday-Saturday 10am-6pm or book an appointment and we can get you your free repair quote!<\/p>",
-            "button_name": "Learn More"
+            "button_name": ""
           }
         },
         "brand_image_fwDhGH": {
@@ -102,19 +102,12 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/1_Year.png"
           }
-        },
-        "brand_image_XkmX3G": {
-          "type": "brand_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1_Year_4.png"
-          }
         }
       },
       "block_order": [
         "blurb_Gezw78",
         "blurb_AU9DjC",
-        "brand_image_fwDhGH",
-        "brand_image_XkmX3G"
+        "brand_image_fwDhGH"
       ],
       "settings": {
         "subheading": "Near & Far",
