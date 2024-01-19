@@ -116,8 +116,8 @@
             "text_size": "small",
             "icon_name_1": "certified_sm",
             "content_1": "<p><strong>Warranty Included: <\/strong>1 year<\/p>",
-            "icon_name_2": "service_sm",
-            "content_2": "<p><strong>Refurbished Disclaimer: <\/strong>Please Read Below*<\/p>",
+            "icon_name_2": "",
+            "content_2": "",
             "icon_name_3": "",
             "content_3": "",
             "icon_name_4": "info_sm",
@@ -178,7 +178,7 @@
           "type": "description",
           "settings": {
             "heading": "Product description",
-            "icon_name": "Info_sm"
+            "icon_name": "new_sm"
           }
         },
         "e8a5a1ea-cb3c-4a5e-999b-7f926a526c04": {
@@ -206,7 +206,7 @@
           "settings": {
             "heading": "Refurbished Grading System",
             "collapsible_tab_default_open": false,
-            "icon_name": "new_sm",
+            "icon_name": "service_sm",
             "content": "<h4>Grade A+ - Like New<\/h4><ul><li><strong>Exterior:<\/strong> Minimal to no visible scratches or blemishes.<\/li><li><strong>Functionality:<\/strong> All components and features work flawlessly.<\/li><li><strong>Manufacturer Stickers: <\/strong>Original manufacturer stickers are intact.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<br\/><\/li><\/ul><h4>Grade A - Very Good<\/h4><ul><li><strong>Exterior: <\/strong>Minor, superficial scratches or blemishes may be present.<\/li><li><strong>Functionality:<\/strong> All components and features are fully functional.<\/li><li><strong>Manufacturer Stickers: <\/strong>May have some wear or missing stickers.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<\/li><\/ul><h4>Grade B - Good<\/h4><ul><li><strong>Exterior:<\/strong> Noticeable scratches and blemishes but no major damage.<\/li><li><strong>Functionality:<\/strong> All components and features are fully functional.<\/li><li><strong>Manufacturer Stickers:<\/strong> Likely to have worn or missing stickers.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<\/li><\/ul><h4>Grade C - Acceptable<\/h4><ul><li><strong>Exterior: <\/strong>Significant scratches and blemishes but no major damage.<\/li><li><strong>Functionality: <\/strong>All components and features are fully functional.<\/li><li><strong>Manufacturer Stickers: <\/strong>Often worn or missing.<\/li><li><strong>Accessories: <\/strong>Comes with all new or aftermarket cables.<\/li><\/ul><h4>Grade D - Fair<\/h4><ul><li><strong>Exterior:<\/strong> Substantial scratches, blemishes, and signs of use.<\/li><li><strong>Functionality: <\/strong>All components and features are fully functional.<\/li><li><strong>Manufacturer Stickers: <\/strong>Likely to be missing or heavily worn.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<\/li><\/ul><h4>Grade F - Parts\/Not Working<\/h4><ul><li><strong>Exterior: <\/strong>May have significant physical damage, heavy wear, or missing parts.<\/li><li><strong>Functionality:<\/strong> The console is non-functional or has critical issues.<\/li><li><strong>Manufacturer Stickers: <\/strong>Stickers are likely to be missing or heavily worn.<\/li><li><strong>Accessories:<\/strong> Comes with all new or aftermarket cables.<br\/><\/li><\/ul><p><\/p>",
             "page": ""
           }
