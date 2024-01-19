@@ -242,6 +242,76 @@
         "enable_image_zoom": true
       }
     },
+    "two_columns_with_text_AfprEx": {
+      "type": "two-columns-with-text",
+      "blocks": {
+        "blurb_PX3jM4": {
+          "type": "blurb",
+          "settings": {
+            "show_image": "show",
+            "image": "shopify:\/\/shop_images\/033f83cc-7868-4aa2-b8f8-12dc50ef4049-Results.webp",
+            "url": "shopify:\/\/products\/console-ssd-storage-upgrade",
+            "heading": "SSD - Performance & Capacity",
+            "description": "<p>SSD's offer siginificantly higher transfer speeds, however at larger capacities the cost can be significant. <\/p>",
+            "button_name": "Learn More"
+          }
+        },
+        "blurb_mVDdyK": {
+          "type": "blurb",
+          "settings": {
+            "show_image": "show",
+            "image": "shopify:\/\/shop_images\/3d265f02-dad8-4254-8c06-3c90951836e0-Results.webp",
+            "url": "shopify:\/\/products\/console-hard-drive-storage-upgrade-hdd-500gb-1tb-2tb",
+            "heading": "HDD - Capacity on a Budget",
+            "description": "<p>Max out your consoles storage capacity with high quality HDD that give you plenty of room for all those saves.<\/p>",
+            "button_name": "Learn More"
+          }
+        },
+        "brand_image_xyrbrf": {
+          "type": "brand_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9a24e79a-c271-40a4-ac55-939f2fb2e08c.webp"
+          }
+        },
+        "brand_image_Ud6eNV": {
+          "type": "brand_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9e40c47e-e7da-4526-a826-b0eaf96a915c.webp"
+          }
+        }
+      },
+      "block_order": [
+        "blurb_PX3jM4",
+        "blurb_mVDdyK",
+        "brand_image_xyrbrf",
+        "brand_image_Ud6eNV"
+      ],
+      "settings": {
+        "subheading": "Speed & Capacity",
+        "heading": "Storage Upgrades",
+        "description": "<p>Give customers details about the banner image(s) or content on the template.<\/p>",
+        "heading_aligment": "text-center",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "image_ratio": "auto",
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description_blurb": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -308,80 +378,14 @@
         "top_spacing": "normal",
         "width": "page-width"
       }
-    },
-    "two_columns_with_text_AfprEx": {
-      "type": "two-columns-with-text",
-      "blocks": {
-        "blurb_PX3jM4": {
-          "type": "blurb",
-          "settings": {
-            "show_image": "show",
-            "url": "",
-            "heading": "Heading",
-            "description": "<p>Give customers details about the banner image(s) or content on the template.<\/p>",
-            "button_name": "Button"
-          }
-        },
-        "blurb_mVDdyK": {
-          "type": "blurb",
-          "settings": {
-            "show_image": "show",
-            "url": "",
-            "heading": "Heading",
-            "description": "<p>Give customers details about the banner image(s) or content on the template.<\/p>",
-            "button_name": "Button"
-          }
-        },
-        "brand_image_xyrbrf": {
-          "type": "brand_image",
-          "settings": {
-          }
-        },
-        "brand_image_Ud6eNV": {
-          "type": "brand_image",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "blurb_PX3jM4",
-        "blurb_mVDdyK",
-        "brand_image_xyrbrf",
-        "brand_image_Ud6eNV"
-      ],
-      "settings": {
-        "subheading": "SUBHEADING",
-        "heading": "Two columns with text",
-        "description": "<p>Give customers details about the banner image(s) or content on the template.<\/p>",
-        "heading_aligment": "text-center",
-        "top_spacing": "normal",
-        "width": "page-width",
-        "image_ratio": "auto",
-        "texts_aligment": "text-center",
-        "heading_tag": "h4",
-        "description_size": "normal",
-        "hover_underline": false,
-        "color_subheading": "rgba(0,0,0,0)",
-        "color_heading": "rgba(0,0,0,0)",
-        "color_description": "rgba(0,0,0,0)",
-        "color_heading_blurb": "rgba(0,0,0,0)",
-        "color_description_blurb": "rgba(0,0,0,0)",
-        "color_button": "rgba(0,0,0,0)",
-        "background": "hide",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient": "",
-        "background_width": "fullwidth",
-        "background_spacing": "normal",
-        "remove_bottom_spacing": false
-      }
     }
   },
   "order": [
     "b6db8cd5-6d0c-4965-8007-c52bac8e3071",
     "main",
+    "two_columns_with_text_AfprEx",
     "product-recommendations",
     "07b1e9af-22e2-4fc9-aeb9-45a9cc17d0ec",
-    "16944506658c4ffe9d",
-    "two_columns_with_text_AfprEx"
+    "16944506658c4ffe9d"
   ]
 }
