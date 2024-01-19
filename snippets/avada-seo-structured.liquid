@@ -69,6 +69,17 @@
 }
 {%- endif -%}
 
+{% assign countAverage = product.metafields.scm_review_importer.reviewsData.reviewCountInfo.average | plus: 0 %}
+{%- if countAverage > 0 %}
+,
+"review": {{ product.metafields.scm_review_importer.reviewsData.seoReviews }},
+"aggregateRating": {
+  "@type": "AggregateRating",
+  "ratingValue": "{{ product.metafields.scm_review_importer.reviewsData.reviewCountInfo.average }}",
+  "ratingCount": "{{ product.metafields.scm_review_importer.reviewsData.reviewCountInfo.total }}"
+}
+{%- endif -%}
+
 }
 {%- endif -%}
 
@@ -184,31 +195,26 @@
   {%- if settings.social_twitter_link and settings.social_twitter_link != '' -%}
   {%- assign sameLinks = sameLinks | append: ':::' -%}
   {%- assign sameLinks = sameLinks | append: settings.social_twitter_link -%}
-  
   {%- endif -%}
 
   {%- if settings.social_facebook_link and settings.social_facebook_link != '' -%}
   {%- assign sameLinks = sameLinks | append: ':::' -%}
   {%- assign sameLinks = sameLinks | append: settings.social_facebook_link -%}
-  
   {%- endif -%}
 
   {%- if settings.social_pinterest_link and settings.social_pinterest_link != '' -%}
   {%- assign sameLinks = sameLinks | append: ':::' -%}
   {%- assign sameLinks = sameLinks | append: settings.social_pinterest_link -%}
-  
   {%- endif -%}
 
   {%- if settings.social_instagram_link and settings.social_instagram_link != '' -%}
   {%- assign sameLinks = sameLinks | append: ':::' -%}
   {%- assign sameLinks = sameLinks | append: settings.social_instagram_link -%}
-  
   {%- endif -%}
 
   {%- if settings.social_tumblr_link and settings.social_tumblr_link != '' -%}
   {%- assign sameLinks = sameLinks | append: ':::' -%}
   {%- assign sameLinks = sameLinks | append: settings.social_tumblr_link -%}
-  
   {%- endif -%}
 
   {%- if settings.social_snapchat_link -%}
@@ -219,7 +225,6 @@
   {%- if settings.social_youtube_link and settings.social_youtube_link != '' -%}
   {%- assign sameLinks = sameLinks | append: ':::' -%}
   {%- assign sameLinks = sameLinks | append: settings.social_youtube_link -%}
-  
   {%- endif -%}
 
   {%- if settings.social_vimeo_link -%}
@@ -227,11 +232,6 @@
   {%- assign sameLinks = sameLinks | append: settings.social_vimeo_link -%}
   {%- endif -%}
 
-  
-  
-  
-  
-  
 
   {%- assign sameLinks = sameLinks | split: ':::' -%}
 

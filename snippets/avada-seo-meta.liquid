@@ -1,3 +1,10 @@
+{% if request.page_type == 'product' %}
+{%- unless avada_seo_ovr_product_ids contains product.id -%}
+{%- capture avada_seo_meta_title -%}{{ product.title }}{%- endcapture -%}
+{%- capture avada_seo_meta_description -%}⚡️Check reviews and buy {{ product.title }} today.{%- endcapture -%}
+{% endunless %}
+{% endif %}
+
 {% if request.page_type == 'article' %}
 {%- unless avada_seo_ovr_article_ids contains article.id -%}
 {%- capture avada_seo_meta_title -%}{{ article.title }}{%- endcapture -%}
