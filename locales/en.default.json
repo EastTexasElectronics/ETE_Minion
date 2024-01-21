@@ -9,7 +9,7 @@
       "login_form_submit": "Enter",
       "modal": "Password modal",
       "admin_link_html": "Are you the store owner? <a href=\"\/admin\" class=\"strong\">Log in here<\/a>",
-      "powered_by_shopify_html": "This shop will be powered by Shopify"
+      "powered_by_shopify_html": "Thanks for stopping by 😁"
     },
     "social": {
       "alt_text": {
@@ -56,7 +56,7 @@
     },
     "accept_terms_checkbox_html": "I agree with the <a href=\"\/\">Terms and Conditions.<\/a>",
     "free_shipping": {
-      "normal_html": "Spend <span class=\"strong\">{{ price }}<\/span> to <span class=\"strong\">FREE SHIPPING<\/span>",
+      "normal_html": "Spend <span class=\"strong\">{{ price }}<\/span> to get <span class=\"strong\">FREE SHIPPING<\/span>",
       "free_shipping_html": "<span class=\"strong\">FREE SHIPPING<\/span>"
     }
   },
@@ -179,7 +179,6 @@
       "label": "Media gallery"
     },
     "facets": {
-      "filter_and_operator_subtitle": "Match all",
       "apply": "Apply",
       "clear": "Clear",
       "clear_all": "Clear all",
@@ -205,8 +204,8 @@
       "sort_by_label": "Sort by:",
       "to": "To",
       "clear_filter": "Clear filter",
-      "show_all": "+ Show more",
-      "hide": "- Show less"
+      "show_all": "Show all",
+      "hide": "Hide"
     }
   },
   "templates": {
@@ -460,5 +459,15 @@
     "description": "You must be of legal drinking age to purchase wines.",
     "button_1_name": "Yes",
     "button_2_name": "Exit"
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "autocomplete_powered_by_google": "Thanks for stopping by 😁"
+      }
+    },
+    "links": {
+      "powered_by_shopify": "Thanks for stopping by 😁"
+    }
   }
 }
