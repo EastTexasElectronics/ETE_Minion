@@ -1,7 +1,5 @@
 header{
   opacity: 1;
-}
-.shopify-section-header-sticky:not(.shopify-section-first-hide){
   background: var(--color-body-background);
 }
 .header__secondary-menu{
@@ -10,7 +8,7 @@ header{
 }
 .header__icons{
   justify-content: flex-end;
-  gap: 10px 20px;
+  gap: 20px;
 }
 .header__icons__customer{
   display: flex;
@@ -191,73 +189,4 @@ header{
 }
 .shopify-section-header-sticky:not(.shopify-section-header-hidden) .opened-search{
   padding-bottom: 20px;
-}
-
-
-.header-phone-number__desktop{
-  text-align:right;
-}
-.header-phone-number__desktop svg{
-  width:20px;
-  height:20px;
-  flex: 0 0 auto;
-}
-.header-phone-number__mobile svg{
-  width:20px;
-  height:20px;
-}
-.header-phone-number__desktop+*{
-  margin-left:20px;
-}
-.header-phone-number__icon{
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-.header-phone-number__desktop .header-phone-number__icon{
-  justify-content:flex-end;
-}
-.header-phone-number__mobile__top-line{
-  height:1px;
-  border-top: 1px solid var(--color-base);
-  opacity: .3;
-  padding-bottom:15px;
-}
-.header-phone-number__mobile{
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-areas: 
-    "a b"
-    "c d"
-    ". e";
-  column-gap: 10px;
-}
-.header-phone-number__mobile>*{
-  display:flex;
-  align-items:center;
-}
-.header-phone-number__mobile .phone_area1{
-  grid-area: a;
-}
-.header-phone-number__mobile .phone_area2{
-  grid-area: b;
-}
-.header-phone-number__mobile .phone_area3{
-  grid-area: c;
-}
-.header-phone-number__mobile .phone_area4{
-  grid-area: d;
-}
-.header-phone-number__mobile .phone_area5{
-  grid-area: e;
-}
-@media (min-width: 577px) and (max-width: 992px){
-  .header-phone-number__mobile__box{
-    padding:0 30px 20px;
-  }
-}
-@media (max-width: 576px){
-  .header-phone-number__mobile__box{
-    padding:0 20px 20px;
-  }
 }

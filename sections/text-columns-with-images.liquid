@@ -82,10 +82,9 @@
   {{ section_styles }}
 </style>
 
-{%- capture page_width -%}{%- if section.settings.width != "default" %}{{ section.settings.width }}{%- else -%}{{ settings.page_width_main }}{%- endif -%}{%- endcapture -%}
 <div id="text-columns-img-{{ section.id }}" class="top-spacing-{{ section.settings.top_spacing }}{% if section.settings.background != 'hide' and section.settings.background_width == "fullwidth" %} section-background section-background--{{ section.settings.background_spacing }}{% endif %}"
      data-section-name="text-columns-with-images">
-  <div class="{{ page_width }} mb--last-child-0">
+  <div class="{{ section.settings.width }} mb--last-child-0">
     {% if section.settings.background != 'hide' and section.settings.background_width == "content_width" %}<div class="section-background section-background--{{ section.settings.background_spacing }} border__radius mb--last-child-0">{%- endif -%}
     
     {%- render "section-heading" section:section -%}
@@ -142,7 +141,6 @@
         {%- when 'blurb_image' -%}
         
         <div class="text-columns-img mt--first-child-0 mb--last-child-0{% if settings.enable_zoom_animation %} image-hover-scaling-up{% endif %} hover-area">
-          <div class="mb20 {% if section.settings.image_zoom_internal %} image-hover-scaling-internal{% if section.settings.image_ratio == '1, round-image' %} border__radius--circle{% endif %}{% endif %}">
           {%- if block.settings.show_image == 'show' -%}
           {%- if block.settings.url != blank -%}
           {%- assign html_tag_open = '<a' | append: ' href="' | append: block.settings.url | append:'"' -%}
@@ -152,12 +150,12 @@
           {%- assign html_tag_close = '</div>' -%}
           {%- endif -%}
 
-          {{ html_tag_open }} class="image-hover-scaling__image{% if block.settings.url == blank %} image-hover-scaling-up--disabled{% endif %}"
+          {{ html_tag_open }} class="mb20 image-hover-scaling__image{% if block.settings.url == blank %} image-hover-scaling-up--disabled{% endif %}"
           					  {% if block.settings.url != blank %} aria-label="{{ 'general.aria_label.link' | t }}"{% endif %}
           				      >
           {%- if block.settings.image == blank -%}
 
-          <div class="placeholder__svg--bg border__radius{% if section.settings.image_ratio == '1, round-image' %} border__radius--circle{% endif %}"{% if section.settings.image_ratio != 'auto' %} style="--aspect-ratio: {{section.settings.image_ratio | split: ',' | first}};"{% endif %}>
+          <div class="placeholder__svg--bg border__radius{% if section.settings.image_ratio == '1, round-image' %} border__radius--circle{% endif %}"{% if section.settings.image_ratio != 'auto' %} style="--aspect-ratio: {{section.settings.image_ratio}};"{% endif %}>
             {%- render "icons-placeholder-other", icon_name:'image-1' -%}
           </div>
 
@@ -175,7 +173,7 @@
 
           <div class="border__radius{% if section.settings.image_ratio == '1, round-image' %} border__radius--circle{% endif %}" style="--aspect-ratio: {{image_ratio}};">
             {%- liquid
-                if page_width == "page-wide"
+                if section.settings.width == "page-wide"
                 assign page_is_wide = true
                 else
                 assign page_is_wide = false
@@ -204,7 +202,6 @@
           {%- endif -%}
           {{ html_tag_close }}
           {%- endif -%}
-          </div>
 
           {%- if block.settings.heading != blank -%}
           {{ '<' | append: section.settings.heading_tag }} class="text-columns-img__heading mt0 mb0{% if section.settings.hover_underline and block.settings.url != blank %} animation-underline{% endif %}">
@@ -343,10 +340,6 @@
         "id": "width",
         "options": [
           {
-            "value": "default",
-            "label": "t:sections.general.settings.width.options__default.label"
-          },
-          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -355,7 +348,7 @@
             "label": "t:sections.general.settings.width.options__wide.label"
           }
         ],
-        "default": "default",
+        "default": "page-width",
         "label": "t:sections.general.settings.width.label",
 		"info": "t:sections.general.settings.width.info"
       },
@@ -424,12 +417,6 @@
         ],
         "default": "auto",
         "label": "t:sections.general.settings.image_ratio.label"
-      },
-      {
-        "type": "checkbox",
-        "id": "image_zoom_internal",
-        "default": false,
-		"label": "t:sections.general.settings.image_zoom_internal.label"
       },
       {
         "type": "select",

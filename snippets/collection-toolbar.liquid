@@ -51,18 +51,6 @@
               {{ 'products.facets.sort_button' | t }}
               {%- endif -%}
             </h3>
-            <p class="mobile-facets__count body2">
-              {%- if results.results_count -%}
-                {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
-              {%- elsif results.products_count == results.all_products_count -%}
-                {{ 'products.facets.product_count_simple' | t: count: results.products_count }}
-              {%- else -%}
-                {{
-                  'products.facets.product_count'
-                  | t: product_count: results.products_count, count: results.all_products_count
-                }}
-              {%- endif -%}
-            </p>
           </div>
 
           <div class="mobile-facets__main">
@@ -70,20 +58,6 @@
 
               {%- if enable_filtering -%}
               {%- for filter in results.filters -%}
-              {% liquid
-                assign total_active_values = total_active_values | plus: filter.active_values.size
-                case filter.presentation
-                  when 'swatch'
-                    assign has_visual_display = true
-                  else
-                    assign has_visual_display = false
-                endcase
-                assign filters_data = "," | append:settings.filter_tabs | append:"," | downcase
-                assign current_data = "," | append:filter.label | append: "," | downcase
-                if filters_data contains current_data
-                assign has_visual_display = true
-                endif
-              %}
               <details id="Details-Mobile-{{ forloop.index }}-{{ section.id }}" class="js-filter" data-index="mobile-{{ forloop.index }}">
                 <summary>
                   <div class="mobile-facets__item h5">
@@ -92,29 +66,17 @@
                   </div>
                 </summary>
                 <div id="FacetMobile-{{ forloop.index }}-{{ section.id }}" class="mobile-facets__submenu">
-                  <button class="mobile-facets__back-button mobile-facets__item link" aria-expanded="true" type="button">
-                    {%- render "icon-arrow-left" -%}
-                    <span>{{ filter.label | escape }}</span>
-                  </button>
-                  {%- if filter.operator == 'AND' -%}
-                  <div class="mobile_filter_operator body2">{{ 'products.facets.filter_and_operator_subtitle' | t }}</div>
-                  {%- endif -%}
-                  <ul class="unstyle-ul facets-wrap mobile-facets__list{% if has_visual_display %} parent-visual-display{% endif %}">
+                  <ul class="unstyle-ul mobile-facets__list">
+                    <li>
+                      <button class="mobile-facets__back-button mobile-facets__item link" aria-expanded="true" type="button">
+                        {%- render "icon-arrow-left" -%}
+                        <span>{{ filter.label | escape }}</span>
+                      </button>
+                    </li>
                     {% case filter.type %}
-                    {% when 'boolean', 'list' %}
-                    {%- liquid
-                      assign sorted_values = filter.values
-                      # Keep the selected values grouped together when operator is AND
-                      if filter.operator == 'AND'
-                        assign active_filter_values = filter.values | where: 'active', true
-                        assign inactive_filter_values = filter.values | where: 'active', false
-                        assign sorted_values = active_filter_values | concat: inactive_filter_values
-                      endif
-                    -%}
-                    {%- for value in sorted_values -%}
-                    <li {% unless has_visual_display %}class="facets__item"{% endunless %}
-                        {% if has_visual_display %} data-filter-type="{% if value.display.type == "colors" %}colors{% elsif value.display.type == "image" %}image{% else %}buttons{% endif %}"{% endif %}
-                        {% if has_visual_display and value.display.type == "image" %}data-grid="{{ settings.filter_image_grid }}"{% endif %}>
+                    {% when 'list' %}
+                    {%- for value in filter.values -%}
+                    <li class="facets__item">
                       <label for="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}" class="facet-checkbox facet-checkbox--mobile mobile-facets__item body2{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}">
                         <input type="checkbox"
                                name="{{ value.param_name }}"
@@ -123,15 +85,6 @@
                                {% if value.active %}checked{% endif %}
                                {% if value.count == 0 and value.active == false %}disabled{% endif %}
                                >
-                        {% if has_visual_display %}
-                          {% render 'visual-display',
-                            type: value.display.type,
-                            value: value.display.value,
-                            value_main: value,
-                            presentation: filter.presentation,
-                            enable_products_count:enable_products_count
-                          %}
-                        {% else %}
                         <div class="facet-checkbox__checkmark">
                           <div class="facet-checkbox__flip btn--secondary">
                             <div class="facet-checkbox__front"></div>
@@ -142,7 +95,6 @@
                         </div>
                         <span>{{ value.label | escape }}</span>
                         {%- if enable_products_count -%}<span class="facet-checkbox__count">{{ value.count }}</span>{%- endif -%}
-                        {% endif %}
                       </label>
                     </li>
                     {%- endfor -%}
@@ -287,37 +239,19 @@
         {%- endunless -%}
 
         {%- for filter in results.filters -%}
-        {% liquid
-          assign total_active_values = total_active_values | plus: filter.active_values.size
-          case filter.presentation
-            when 'swatch'
-              assign has_visual_display = true
-            else
-              assign has_visual_display = false
-          endcase
-          assign filters_data = "," | append:settings.filter_tabs | append:"," | downcase
-          assign current_data = "," | append:filter.label | append: "," | downcase
-          if filters_data contains current_data
-          assign has_visual_display = true
-          endif
-        %}
+        {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
         {% case filter.type %}
-        {% when 'boolean', 'list' %}
-        <details id="Details-{{ forloop.index }}-{{ section.id }}" class="disclosure-has-popup facets__disclosure js-filter body2" data-index="{{ forloop.index }}">
+        {% when 'list' %}
+        <details class="disclosure-has-popup facets__disclosure js-filter body2" data-index="{{ forloop.index }}">
           <summary>
             <div class="btn-medium btn-medium--icon color-accent-to-base">
               <span>{{ filter.label | escape }}</span>
               {% render 'icon-arrow-down-small' %}
             </div>
           </summary>
-          <div class="facets__display{% if has_visual_display %} parent-visual-display-parent{% endif %}">
+          <div class="facets__display">
             <div class="facets__header">
-              <div class="facets__selected__box">
-                <span class="facets__selected no-js-hidden">{{ 'products.facets.filters_selected' | t: count: filter.active_values.size }}</span>
-                {%- if filter.operator == 'AND' -%}
-                <span class="body3">{{ 'products.facets.filter_and_operator_subtitle' | t }}</span>
-                {%- endif -%}
-              </div>
+              <span class="facets__selected no-js-hidden">{{ 'products.facets.filters_selected' | t: count: filter.active_values.size }}</span>
               <facet-remove>
                 <a href="{{ filter.url_to_remove }}" class="btn-small color-accent-to-base">
                   {{ 'products.facets.reset' | t }}
@@ -325,20 +259,9 @@
               </facet-remove>
             </div>
 			<div class="facets__display__content">
-              <ul class="unstyle-ul facets-wrap{% if has_visual_display %} parent-visual-display{% endif %}" role="list">
-                {%- liquid
-                  assign sorted_values = filter.values
-                  # Keep the selected values grouped together when operator is AND
-                  if filter.operator == 'AND'
-                    assign active_filter_values = filter.values | where: 'active', true
-                    assign inactive_filter_values = filter.values | where: 'active', false
-                    assign sorted_values = active_filter_values | concat: inactive_filter_values
-                  endif
-                -%}
-                {%- for value in sorted_values -%}
-                <li {% unless has_visual_display %}class="facets__item"{% endunless %}
-                    {% if has_visual_display %} data-filter-type="{% if value.display.type == "colors" %}colors{% elsif value.display.type == "image" %}image{% else %}buttons{% endif %}"{% endif %}
-                    {% if has_visual_display and value.display.type == "image" %}data-grid="{{ settings.filter_image_grid }}"{% endif %}>
+              <ul class="unstyle-ul" role="list">
+                {%- for value in filter.values -%}
+                <li class="facets__item">
                   <label for="Filter-{{ filter.label | escape }}-{{ forloop.index }}" class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}">
                     <input type="checkbox"
                            name="{{ value.param_name }}"
@@ -347,26 +270,17 @@
                            {% if value.active %}checked{% endif %}
                            {% if value.count == 0 and value.active == false %}disabled{% endif %}
                            >
-                    {% if has_visual_display %}
-                      {% render 'visual-display',
-                        type: value.display.type,
-                        value: value.display.value,
-                        value_main: value,
-                        presentation: filter.presentation,
-                        enable_products_count:enable_products_count
-                      %}
-                    {% else %}
-                      <div class="facet-checkbox__checkmark">
-                        <div class="facet-checkbox__flip btn--secondary">
-                          <div class="facet-checkbox__front"></div>
-                          <div class="facet-checkbox__back">
-                            {%- render "icon-checkmark" -%}
-                          </div>
+                    <div class="facet-checkbox__checkmark">
+                      <div class="facet-checkbox__flip btn--secondary">
+                        <div class="facet-checkbox__front"></div>
+                        <div class="facet-checkbox__back">
+                          {%- render "icon-checkmark" -%}
                         </div>
                       </div>
-                      <span>{{ value.label | escape }}</span>
-                      {% if enable_products_count %}<span class="facet-checkbox__count">{{ value.count }}</span>{% endif %}
-                    {% endif %}
+                    </div>
+                    
+                    <span>{{ value.label | escape }}</span>
+                    {% if enable_products_count %}<span class="facet-checkbox__count">{{ value.count }}</span>{% endif %}
                   </label>
                 </li>
                 {%- endfor -%}

@@ -1,7 +1,4 @@
 #FacetsWrapperDesktop .chm-toggle[open].toggle-opening .chm-toggle__button {
-  margin-bottom: 14px;
-}
-#FacetsWrapperDesktop .chm-toggle[open].toggle-opening .chm-toggle__button.chm-toggle__button--mb20 {
   margin-bottom: 20px;
 }
 #FacetsWrapperDesktop .chm-toggle:first-child {
@@ -19,7 +16,7 @@
   background: var(--color-lines-borders);
 }
 #FacetsWrapperDesktop{
-  padding-bottom: 0;
+  padding-bottom: 30px;
   display: block;
   border-bottom: 1px solid var(--color-lines-borders);
 }
@@ -49,9 +46,6 @@ show-all-facets:after{
 .facets__selected{
   padding-right: 20px;
 }
-.facets__header__filter_and_operator .operator-visual-display{
-  padding-bottom:6px;
-}
 @media (min-width: 993px) and (max-width: 1439px){
   .facets__price{
     flex-wrap: wrap;
@@ -69,24 +63,6 @@ show-all-facets:after{
     justify-content: space-between;
     align-items: center;
   }
-  .facets__form .chm-toggle[open] .chm-toggle__content {
-    padding: 20px;
-    margin: -20px -20px 10px -20px;
-  }
-}
-#FacetFiltersForm #FacetsWrapperDesktop>.chm-toggle:last-child .chm-toggle__button{
-  padding-bottom: 30px;
-}
-#FacetFiltersForm #FacetsWrapperDesktop>.chm-toggle[open]:last-child .chm-toggle__button{
-  padding-bottom: 0px;
-}
-#FacetFiltersForm #FacetsWrapperDesktop>.chm-toggle[open]:last-child .chm-toggle__content{
-  margin-bottom: 10px;
-}
-#FacetsWrapperDesktop.admin-panel--no-js .chm-toggle[open] .chm-toggle__content,
-.no-js #FacetsWrapperDesktop .chm-toggle[open] .chm-toggle__content{
-  margin-top:-20px;
-  margin-bottom:10px;
 }
 /*.facets__items--show-first li:nth-child(n+var(--show-first-count)):not(:last-child){*/
 html:not(.no-js) .facets__display__content:not(.show-all-items) .facets__items--hide-latest~*:not(:last-child){

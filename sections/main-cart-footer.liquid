@@ -2,7 +2,7 @@
 {{ 'component-cart.css' | asset_url | stylesheet_tag }}
 
 <div class="top-spacing-{{ section.settings.top_spacing }} cart__footer{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
-  <div class="{% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %}">
+  <div class="{{ section.settings.width }}">
     <div class="grid el_mt_60">
       <div class="col-sp-12 col-6">
         {%- if section.settings.show_cart_note -%}
@@ -175,10 +175,6 @@
       "id": "width",
       "options": [
         {
-          "value": "default",
-          "label": "t:sections.general.settings.width.options__default.label"
-        },
-        {
           "value": "page-width",
           "label": "t:sections.general.settings.width.options__boxed.label"
         },
@@ -187,9 +183,9 @@
           "label": "t:sections.general.settings.width.options__wide.label"
         }
       ],
-      "default": "default",
+      "default": "page-width",
       "label": "t:sections.general.settings.width.label",
-      "info": "t:sections.general.settings.width.info"
+	  "info": "t:sections.general.settings.width.info"
     },
     {
       "type": "checkbox",

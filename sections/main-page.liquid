@@ -1,4 +1,4 @@
-<div class="top-spacing-{{ section.settings.top_spacing }} {% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %}">
+<div class="top-spacing-{{ section.settings.top_spacing }} {{ section.settings.width }}">
   <div class="grid justify-content-center">
     <div class="col-md-12 col-6">
       {%- if section.settings.show_heading -%}<h1 class="mt0 {% if page.content == blank %}mb0{% endif %} page-section__bottom-pading {{ section.settings.heading_aligment }}">{{ page.title }}</h1>{%- endif -%}
@@ -45,10 +45,6 @@
         "id": "width",
         "options": [
           {
-            "value": "default",
-            "label": "t:sections.general.settings.width.options__default.label"
-          },
-          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -57,7 +53,7 @@
             "label": "t:sections.general.settings.width.options__wide.label"
           }
         ],
-        "default": "default",
+        "default": "page-width",
         "label": "t:sections.general.settings.width.label",
 		"info": "t:sections.general.settings.width.info"
       },

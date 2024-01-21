@@ -78,10 +78,10 @@
 {%- if section_styles != blank -%}
 <style>{{ section_styles }}</style>
 {%- endif -%}
-{%- capture page_width -%}{%- if section.settings.width != "default" %}{{ section.settings.width }}{%- else -%}{{ settings.page_width_main }}{%- endif -%}{%- endcapture -%}
+
 <div id="image-with-text2-{{ section.id }}" class="image-with-text2 top-spacing-{{ section.settings.top_spacing }}"
      data-section-name="image-with-text-type2">
-  <div class="{{ page_width }} hover-area">
+  <div class="{{ section.settings.width }} hover-area">
 
     {%- liquid
       if section.settings.content_size == 'fullscreen'
@@ -125,7 +125,7 @@
               {% assign imagesize = block.settings.image.width | append: 'x' %}
               {%- if block.settings.image_mobile == blank -%}
               {%- liquid
-                  if page_width == "page-width"
+                  if section.settings.width == "page-width"
 				  assign page_is_wide = false
                   else
                   assign page_is_wide = true
@@ -308,10 +308,6 @@
         "id": "width",
         "options": [
           {
-            "value": "default",
-            "label": "t:sections.general.settings.width.options__default.label"
-          },
-          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -324,7 +320,7 @@
             "label": "t:sections.general.settings.width.options__fullwidth.label"
           }
         ],
-        "default": "default",
+        "default": "page-width",
         "label": "t:sections.general.settings.width.label",
 		"info": "t:sections.general.settings.width.info"
       },
@@ -345,7 +341,7 @@
 			"label": "t:sections.image-with-text-type2.settings.content_size.options__fullscreen.label"
           }
         ],
-        "default": "auto",
+        "default": "fullscreen",
 		"label": "t:sections.image-with-text-type2.settings.content_size.label"
       },
 	  {

@@ -2,7 +2,7 @@
 {%- for block in section.blocks -%}
 {%- case block.type -%}
 {%- when 'description' -%}
-{%- if product.description != blank and block.settings.description_property == "group" -%}
+{%- if product.description != blank -%}
 <details class="chm-toggle{% if forloop.first %} toggle-opening{% endif %}"{% if forloop.first %} open{% endif %} {{ block.shopify_attributes }}>
   <summary>
     <div class="chm-toggle__button">

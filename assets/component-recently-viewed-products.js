@@ -71,15 +71,12 @@ class recentlyViewedProducts extends recordRecentlyViewedProducts {
   }
   getProducts(currentproducts){
     var _this = this;
-    fetch(`${window.shopUrl}/collections/all?view=ajax_recently_viewed&sort_by=${currentproducts}||${this.config().settings}`)
+    fetch(`${window.shopUrl}/collections/all?view=ajax_recently_viewed&constraint=${currentproducts}||${this.config().settings}`)
       .then((response) => response.text())
       .then((responseText) => {
         _this.classList.remove("hide");
         var html = _this.querySelector('.recently-viewed-products-content').innerHTML;
         _this.querySelector('.recently-viewed-products-content').innerHTML = html + responseText;
-        
-          console.log("her");
-          initImageScale();
       });
   }
 }

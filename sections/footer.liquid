@@ -40,13 +40,9 @@ footer{
   --color-lines-borders: {{ section.settings.color_text }};
   opacity: .3;
 }
-footer, footer .form__message{
+footer{
   --color-lines-borders: {{ section.settings.color_text | color_modify: 'alpha', 0.3 }};
   color: {{ section.settings.color_text }};
-}
-.footer-newsletter__box,
-.footer-block__content{
-  --color-base: {{ section.settings.color_text }};
 }
 .footer__menu a{
   --color-base: {{ section.settings.color_text }};
@@ -116,7 +112,7 @@ footer .field{
 
 <footer class="footer top-spacing-{{ section.settings.top_spacing }}{% if section.settings.background != 'hide' %} section-background{% endif %} footer__softali-theme-dev"
         data-role="{{ theme.role }}">
-  <div class="{% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %}">
+  <div class="{{ section.settings.width }}">
     {%- if section.settings.show_top_line -%}
     <div class="grid footer__accordion__no-line">
       <div class="col-12"><div class="footer__content-line"></div></div>
@@ -139,7 +135,7 @@ footer .field{
         {%- case block.type -%}
         {%- when 'text' -%}
         {%- if block.settings.subtext != blank -%}
-        <div class="footer-block__mt{% if section.settings.enable_accordion %} footer__accordion__content{% endif %} footer-block__content">
+        <div class="footer-block__mt{% if section.settings.enable_accordion %} footer__accordion__content{% endif %}">
           {{ block.settings.subtext }}
         </div>
         {%- endif -%}
@@ -163,7 +159,7 @@ footer .field{
           {%- if section.settings.enable_accordion -%}{%- render "icon-arrow-down-small" -%}{%- endif -%}
         </div>
         {%- endif -%}
-        <div class="footer-block__mt{% if section.settings.enable_accordion %} footer__accordion__content{% endif %} footer-newsletter__box">
+        <div class="footer-block__mt{% if section.settings.enable_accordion %} footer__accordion__content{% endif %}">
         {%- if block.settings.subtext != blank -%}
         {{ block.settings.subtext }}
         {%- endif -%}
@@ -500,10 +496,6 @@ footer .field{
         "id": "width",
         "options": [
           {
-            "value": "default",
-            "label": "t:sections.general.settings.width.options__default.label"
-          },
-          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -512,7 +504,7 @@ footer .field{
             "label": "t:sections.general.settings.width.options__wide.label"
           }
         ],
-        "default": "default",
+        "default": "page-width",
         "label": "t:sections.general.settings.width.label",
 		"info": "t:sections.general.settings.width.info"
       },

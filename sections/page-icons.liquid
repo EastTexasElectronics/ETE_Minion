@@ -40,7 +40,7 @@
     margin-top: 5px;
   }
 </style>
-<div class="{{ settings.page_width_main }} top-spacing-medium">
+<div class="page-width top-spacing-medium">
   <h2 class="mt0 mb60 text-center">General</h2>
   <div class="icons__container">
     {% assign icon_list = "advertising,arrow_down,arrow_left,arrow_right,arrow_up,back,bag,basket,box,brand,calendar,cart,certified,chat,check,clock,delivery,exchange,free,info,lightning,location,mail,money_back,new,number_1,number_2,number_3,number_4,number_5,number_6,nutritional,parking,partners,phone,question,sale,search,service,share,smile,truck" %}
@@ -62,10 +62,10 @@
     {%- endfor -%}
   </div>
 </div>
-<div class="{{ settings.page_width_main }} top-spacing-medium">
+<div class="page-width top-spacing-medium">
   <h2 class="mt0 mb60 text-center">Pets</h2>
   <div class="icons__container">
-    {% assign icon_list = "bird,box_cat,cat,cat_care,cat_fur,cat_toy,chicken,coat,cow,dental,de-shedding,dog,dog_fur,eco,fish,flea,food,goat,grooming,hotel,hotel_cat,jaws,litter_box,meat,mouse,no_artificial,paw,pharmacy,pig,rabbit,scissors,sheep,smell,snake,stomach,sun,surgery,turkey,vaccinations,vet_clinic,virus,wart" %}
+    {% assign icon_list = "bird,box_cat,cat,cat_care,cat_fur,cat_toy,chicken,coat,de-shedding,dental,dog,dog_fur,eco,fish,flea,food,grooming,hotel,hotel_cat,jaws,litter_box,meat,mouse,no_artificial,paw,pharmacy,scissors,smell,snake,stomach,sun,surgery,vaccinations,vet_clinic,virus,wart" %}
     {% assign icon_list = icon_list | split: ',' %}
     {%- for icon_name in icon_list -%}
     {%- assign icon_name_small = icon_name | append: '_sm' -%}  
@@ -84,10 +84,10 @@
     {%- endfor -%}
   </div>
 </div>
-<div class="{{ settings.page_width_main }} top-spacing-medium">
+<div class="page-width top-spacing-medium">
   <h2 class="mt0 mb60 text-center">Electronics</h2>
   <div class="icons__container">
-    {% assign icon_list = "4g,5g,battery,cable,camera,camera_system,charging,chip,drone,face_id,fitness_tracker,gaming,gyro_scooter,hard_drive,hard_drive-2,headphones,home_appliances,keyboard,label,laptop,memory,memory_ssd,monitor,network,pc,pc_mouse,pendrive,photo_camera,portable_speakers,power,powerbank,printer,road,scooter,screen_size-laptop,screen_size-monitor,screen_size-smartphone,screen_size-tablet,screen_size-tv,smart_watch,smartphone,speakers,speed,tablet,touch-id,touchscreen,tv,webcam,wireless_headphones" %}
+    {% assign icon_list = "5g,battery,cable,camera,camera_system,charging,chip,drone,face_id,fitness_tracker,gaming,gyro_scooter,hard_drive,hard_drive-2,headphones,home_appliances,keyboard,label,laptop,memory,memory_ssd,monitor,network,pc,pc_mouse,pendrive,photo_camera,portable_speakers,power,powerbank,printer,road,scooter,screen_size-laptop,screen_size-monitor,screen_size-smartphone,screen_size-tablet,screen_size-tv,smart_watch,smartphone,speakers,speed,tablet,touchscreen,tv,webcam,wireless_headphones" %}
     {% assign icon_list = icon_list | split: ',' %}
     {%- for icon_name in icon_list -%}
     {%- assign icon_name_small = icon_name | append: '_sm' -%}  

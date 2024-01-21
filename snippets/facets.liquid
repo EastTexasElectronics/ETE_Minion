@@ -38,66 +38,29 @@
     {%- endif -%}
     <toggle-component id="FacetsWrapperDesktop"{% if request.design_mode %} class="admin-panel--no-js"{% endif %}>
       {%- for filter in results.filters -%}
-      {% liquid
-        assign total_active_values = total_active_values | plus: filter.active_values.size
-        case filter.presentation
-          when 'swatch'
-            assign has_visual_display = true
-          else
-            assign has_visual_display = false
-        endcase
-        assign filters_data = "," | append:settings.filter_tabs | append:"," | downcase
-        assign current_data = "," | append:filter.label | append: "," | downcase
-        if filters_data contains current_data
-        assign has_visual_display = true
-        endif
-      %}
+      {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
       {% case filter.type %}
-      {% when 'boolean', 'list' %}
-      <details class="chm-toggle {% if section.settings.enable_filtering != "enable_closed" %} toggle-opening{% endif %}"{% if section.settings.enable_filtering != "enable_closed" %} open{% endif %}>
-        <summary class="chm-toggle__button{% if has_visual_display %} chm-toggle__button--mb20{% endif %}">
+      {% when 'list' %}
+      
+      <details class="chm-toggle{% if section.settings.enable_filtering != "enable_closed" %} toggle-opening{% endif %}"{% if section.settings.enable_filtering != "enable_closed" %} open{% endif %}>
+        <summary class="chm-toggle__button">
           <span class="h5">{{ filter.label | escape }}</span>
           {%- render "icon-arrow-down-small" -%}
         </summary>
-        <div id="Details-{{ forloop.index }}-{{ section.id }}" class="mt0 chm-toggle__content mt--first-child-0 js-filter" data-index="{{ forloop.index }}">
-          {%- if filter.operator == 'AND' -%}
-          <div class="facets__header facets__header__filter_and_operator">
-            <p class="mt0 body2{% if has_visual_display %} operator-visual-display{% endif %}">{{ 'products.facets.filter_and_operator_subtitle' | t }}</p>
+        <div class="mt0 chm-toggle__content mt--first-child-0 js-filter" data-index="{{ forloop.index }}">
+          <div class="facets__header">
+            <span class="facets__selected no-js-hidden">{{ 'products.facets.filters_selected' | t: count: filter.active_values.size }}</span>
+            <facet-remove>
+              <a href="{{ filter.url_to_remove }}" class="btn-small color-accent-to-base">
+                {{ 'products.facets.reset' | t }}
+              </a>
+            </facet-remove>
           </div>
-          {%- endif -%}
           <div class="facets__display__content">
-            <ul class="unstyle-ul facets-wrap{% if has_visual_display %} parent-visual-display{% endif %}" role="list">
-              {%- liquid
-                assign sorted_values = filter.values
-                # Keep the selected values grouped together when operator is AND
-                if filter.operator == 'AND'
-                  assign active_filter_values = filter.values | where: 'active', true
-                  assign inactive_filter_values = filter.values | where: 'active', false
-                  assign sorted_values = active_filter_values | concat: inactive_filter_values
-                endif
-              -%}
-        
-              {%- for value in sorted_values -%}
-              {%- liquid
-                assign main_count = 10
-                if has_visual_display
-                if value.display.type == "colors"
-                assign main_count = 20
-                elsif value.display.type == "image"
-                if settings.filter_image_grid == "3"
-                assign main_count = 6
-                elsif settings.filter_image_grid == "4"
-                assign main_count = 12
-                endif
-                else
-                assign main_count = 8
-                endif
-                endif
-              -%}
-              {%- if forloop.index <= main_count -%}
-              <li class="{% unless has_visual_display %}facets__item{% endunless %}{% if forloop.index == main_count %} facets__items--hide-latest{% endif %}"
-                  {% if has_visual_display %} data-filter-type="{% if value.display.type == "colors" %}colors{% elsif value.display.type == "image" %}image{% else %}buttons{% endif %}"{% endif %}
-                  {% if has_visual_display and value.display.type == "image" %}data-grid="{{ settings.filter_image_grid }}"{% endif %}>
+            <ul class="unstyle-ul" role="list">
+              {%- for value in filter.values -%}
+              {%- if forloop.index <= 10 -%}
+              <li class="facets__item{% if forloop.index == 10 %} facets__items--hide-latest{% endif %}">
                 <label for="Filter-{{ filter.label | escape }}-{{ forloop.index }}" class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}">
                   <input type="checkbox"
                          name="{{ value.param_name }}"
@@ -106,15 +69,7 @@
                          {% if value.active %}checked{% endif %}
                          {% if value.count == 0 and value.active == false %}disabled{% endif %}
                          >
-                  {%- if has_visual_display -%}
-                    {% render 'visual-display',
-                      type: value.display.type,
-                      value: value.display.value,
-                      value_main: value,
-                      presentation: filter.presentation,
-                      enable_products_count:enable_products_count
-                    %}
-                  {%- else -%}
+                  
                   <div class="facet-checkbox__checkmark">
                     <div class="facet-checkbox__flip btn--secondary">
                       <div class="facet-checkbox__front"></div>
@@ -123,15 +78,13 @@
                       </div>
                     </div>
                   </div>
+
                   <span>{{ value.label | escape }}</span>
                   {% if enable_products_count %}<span class="facet-checkbox__count">{{ value.count }}</span>{% endif %}
-                  {%- endif -%}
                 </label>
               </li>
               {%- else -%}
-              <li {% unless has_visual_display %}class="facets__item"{% endunless %}
-                  {% if has_visual_display %} data-filter-type="{% if value.display.type == "colors" %}colors{% elsif value.display.type == "image" %}image{% else %}buttons{% endif %}"{% endif %}
-                  {% if has_visual_display and value.display.type == "image" %}data-grid="{{ settings.filter_image_grid }}"{% endif %}>
+              <li class="facets__item">
                 <label for="Filter-{{ filter.label | escape }}-{{ forloop.index }}" class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}">
                   <input type="checkbox"
                          name="{{ value.param_name }}"
@@ -140,15 +93,6 @@
                          {% if value.active %}checked{% endif %}
                          {% if value.count == 0 and value.active == false %}disabled{% endif %}
                          >
-                  {%- if has_visual_display -%}
-                    {% render 'visual-display',
-                      type: value.display.type,
-                      value: value.display.value,
-                      value_main: value,
-                      presentation: filter.presentation,
-                      enable_products_count:enable_products_count
-                    %}
-                  {%- else -%}
                   <div class="facet-checkbox__checkmark">
                     <div class="facet-checkbox__flip btn--secondary">
                       <div class="facet-checkbox__front"></div>
@@ -159,12 +103,11 @@
                   </div>
                   <span>{{ value.label | escape }}</span>
                   {% if enable_products_count %}<span class="facet-checkbox__count">{{ value.count }}</span>{% endif %}
-                  {%- endif -%}
                 </label>
               </li>
               {%- endif -%}
               {%- endfor -%}
-              {%- if filter.values.size > main_count -%}
+              {%- if filter.values.size > 10 -%}
               <li class="facets__item facets__button-show-all">
                 <show-all-facets class="btn-small color-accent-to-base"
                                  data-show="{{ 'products.facets.show_all' | t }}"

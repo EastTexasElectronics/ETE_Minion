@@ -4,7 +4,7 @@
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 
 <div class="top-spacing-{{ section.settings.top_spacing }}">
-  <cart-items class="{% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %}{% if cart == empty %} is-empty{% endif %}">
+  <cart-items class="{{ section.settings.width }}{% if cart == empty %} is-empty{% endif %}">
 
     <div class="title-wrapper-with-link heading--mb {{ section.settings.heading_aligment }}">
       <a href="{% if settings.continue_shopping_link == blank %}{{ routes.all_products_collection_url }}{% else %}{{ settings.continue_shopping_link }}{% endif %}" class="btn-medium btn-medium--icon color-accent-to-base">
@@ -343,10 +343,6 @@
         "id": "width",
         "options": [
           {
-            "value": "default",
-            "label": "t:sections.general.settings.width.options__default.label"
-          },
-          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -355,7 +351,7 @@
             "label": "t:sections.general.settings.width.options__wide.label"
           }
         ],
-        "default": "default",
+        "default": "page-width",
         "label": "t:sections.general.settings.width.label",
 		"info": "t:sections.general.settings.width.info"
       },

@@ -60,12 +60,9 @@ details[open] .drawer__outer-background{
   margin-top: var(--padding2);
 }
 .drawer__container{
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
   position: relative;
+  height: 100%;
   overflow-x: hidden;
-  z-index:0;
 }
 .drawer__content{
   display: grid;

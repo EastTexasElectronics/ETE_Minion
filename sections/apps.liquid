@@ -1,5 +1,5 @@
 <div class="top-spacing-{{ section.settings.top_spacing }}">
-  <div class="{% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %}">
+  <div class="{{ section.settings.width }}">
     {%- for block in section.blocks -%}
     {% render block %}
     {%- endfor -%}
@@ -45,10 +45,6 @@
         "id": "width",
         "options": [
           {
-            "value": "default",
-            "label": "t:sections.general.settings.width.options__default.label"
-          },
-          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -57,9 +53,8 @@
             "label": "t:sections.general.settings.width.options__wide.label"
           }
         ],
-        "default": "default",
-        "label": "t:sections.general.settings.width.label",
-		"info": "t:sections.general.settings.width.info"
+        "default": "page-width",
+        "label": "t:sections.general.settings.width.label"
       }
   ],
   "blocks": [

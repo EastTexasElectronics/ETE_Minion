@@ -1,1 +1,1108 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"top_spacing":"none","width":"default","show_heading":true,"heading_aligment":"text-center"}},"1654077391cbc4d1c4":{"type":"slideshow","blocks":{"b586aadd-8bd9-4b4a-81c4-a5002ff68872":{"type":"slide","settings":{"content_type":"image","video_url":"","image_overlay_opacity":0,"subheading":"SUBHEADING","heading":"Slide","description":"Some descriptive text for your slide. For better alignment, it is better to use text in several lines.","call_to_action":"one_link_banner","button_primary_name":"Button","url":"","button_secondary_name":"Button","button_secondary_url":"","content_aligment":"align-items-center justify-content-center","texts_aligment":"text-center","heading_tag":"h1","description_size":"normal","show_background":false,"hover_underline":false,"color_subheading":"rgba(0,0,0,0)","color_heading":"rgba(0,0,0,0)","color_description":"rgba(0,0,0,0)","button_primary_bg":"rgba(0,0,0,0)","button_secondary_bg":"rgba(0,0,0,0)","color_background":"rgba(0,0,0,0)"}}},"block_order":["b586aadd-8bd9-4b4a-81c4-a5002ff68872"],"settings":{"top_spacing":"none","bottom_spacing":"normal","width":"default","image_size":"fullscreen","desktop_image_height":440,"texts_aligment_mobile":"text-center-mobile","desktop_navigation":"dots_arrows","mobile_navigation":"dots_arrows","dots_desktop_position":"center","autoplay_enabled":true,"autoplay_time":5,"video_slide_mode":"autoplay_muted","play_button_enabled":true}},"16540890413ee61417":{"type":"icon-banners","blocks":{"16540890413a2fd1cd-0":{"type":"banner","settings":{"show_icon":"svg","icon_name":"check","url":"","heading":"Heading","description":"Short content about your store","button_name":"Learn more"}},"16540890413a2fd1cd-1":{"type":"banner","settings":{"show_icon":"svg","icon_name":"check","url":"","heading":"Heading","description":"Short content about your store","button_name":"Learn more"}},"16540890413a2fd1cd-2":{"type":"banner","settings":{"show_icon":"svg","icon_name":"check","url":"","heading":"Heading","description":"Short content about your store","button_name":"Learn more"}},"8b236a71-ddb4-454e-9cd4-14a68d0f6179":{"type":"banner","settings":{"show_icon":"svg","icon_name":"check","url":"","heading":"Heading","description":"Short content about your store","button_name":"Learn more"}},"abc5d0f5-e92e-4d0c-865a-21cbafaf2f81":{"type":"banner","settings":{"show_icon":"svg","icon_name":"check","url":"","heading":"Heading","description":"Short content about your store","button_name":"Learn more"}},"cb08c1d1-b681-457a-a5b7-994d8e3e2484":{"type":"banner","settings":{"show_icon":"svg","icon_name":"check","url":"","heading":"Heading","description":"Short content about your store","button_name":"Learn more"}},"fb5f85b5-e7be-4ea4-89d2-7edc98227c54":{"type":"banner","settings":{"show_icon":"svg","icon_name":"check","url":"","heading":"Heading","description":"Short content about your store","button_name":"Learn more"}},"bd1be297-7c65-4b16-86a1-78200c064b51":{"type":"banner","settings":{"show_icon":"svg","icon_name":"check","url":"","heading":"Heading","description":"Short content about your store","button_name":"Learn more"}}},"block_order":["16540890413a2fd1cd-0","16540890413a2fd1cd-1","16540890413a2fd1cd-2","8b236a71-ddb4-454e-9cd4-14a68d0f6179","abc5d0f5-e92e-4d0c-865a-21cbafaf2f81","cb08c1d1-b681-457a-a5b7-994d8e3e2484","fb5f85b5-e7be-4ea4-89d2-7edc98227c54","bd1be297-7c65-4b16-86a1-78200c064b51"],"settings":{"subheading":"SUBHEADING","heading":"Icon banners","heading_aligment":"text-center","top_spacing":"normal","width":"default","grid":"grid-columns-4","swipe_on_mobile":false,"texts_aligment":"text-center","heading_tag":"h4","description_size":"normal","hover_underline":false,"color_subheading":"rgba(0,0,0,0)","color_heading":"rgba(0,0,0,0)","color_svg":"rgba(0,0,0,0)","color_heading_banner":"rgba(0,0,0,0)","color_button":"rgba(0,0,0,0)"}},"165407778035a997bf":{"type":"text","settings":{"subheading":"SUBHEADING","heading":"Text","description":"<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>","button_name":"Button","button_url":"","top_spacing":"normal","width":"default","texts_aligment":"text-center","heading_tag":"h2","description_size":"normal","color_subheading":"rgba(0,0,0,0)","color_heading":"rgba(0,0,0,0)","color_description":"rgba(0,0,0,0)","color_button":"rgba(0,0,0,0)","background":"color","color_background":"rgba(0,0,0,0)","gradient":"","background_width":"content_width","background_spacing":"normal","remove_bottom_spacing":false}},"1654435654616dbd9f":{"type":"image-with-text","blocks":{"16544356545fbed05c-0":{"type":"image","settings":{"content_type":"video","image_ratio":"1.333333","video_url":"https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc","description":""}},"16544356545fbed05c-1":{"type":"heading","settings":{"subheading":"SUBHEADING","heading":"Media with text"}},"16544356545fbed05c-2":{"type":"text","settings":{"show_icon":"svg","icon_name":"","text":"<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"}},"16544356545fbed05c-4":{"type":"button","settings":{"button_name":"Button"}}},"block_order":["16544356545fbed05c-0","16544356545fbed05c-1","16544356545fbed05c-2","16544356545fbed05c-4"],"settings":{"url":"","top_spacing":"normal","width":"default","row_reverse":true,"heading_aligment":"text-center","content_aligment":"align-self-center","texts_aligment":"text-left","heading_tag":"h2","text_size":"normal","hover_underline":false,"color_subheading":"rgba(0,0,0,0)","color_heading":"rgba(0,0,0,0)","color_svg":"rgba(0,0,0,0)","color_text":"rgba(0,0,0,0)","color_button":"rgba(0,0,0,0)","background":"hide","color_background":"rgba(0,0,0,0)","gradient":"","background_width":"fullwidth","background_spacing":"normal","remove_bottom_spacing":false}},"16544356311229759e":{"type":"image-with-text","blocks":{"165443563118791ecc-0":{"type":"image","settings":{"content_type":"image","image_ratio":"1.333333","video_url":"https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc","description":""}},"165443563118791ecc-1":{"type":"heading","settings":{"subheading":"SUBHEADING","heading":"Media with text"}},"165443563118791ecc-2":{"type":"text","settings":{"show_icon":"svg","icon_name":"check","text":"<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"}},"165443563118791ecc-3":{"type":"text","settings":{"show_icon":"svg","icon_name":"check","text":"<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"}},"165443563118791ecc-4":{"type":"button","settings":{"button_name":"Button"}}},"block_order":["165443563118791ecc-0","165443563118791ecc-1","165443563118791ecc-2","165443563118791ecc-3","165443563118791ecc-4"],"settings":{"url":"","top_spacing":"normal","width":"default","row_reverse":false,"heading_aligment":"text-center","content_aligment":"align-self-center","texts_aligment":"text-left","heading_tag":"h2","text_size":"normal","hover_underline":false,"color_subheading":"rgba(0,0,0,0)","color_heading":"rgba(0,0,0,0)","color_svg":"rgba(0,0,0,0)","color_text":"rgba(0,0,0,0)","color_button":"rgba(0,0,0,0)","background":"hide","color_background":"rgba(0,0,0,0)","gradient":"","background_width":"fullwidth","background_spacing":"normal","remove_bottom_spacing":false}},"1654077942191deb02":{"type":"accordion","blocks":{"16540779429952a0de-0":{"type":"text","settings":{"heading":"Frequently asked question","description":"<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"}},"16540779429952a0de-1":{"type":"text","settings":{"heading":"Frequently asked question","description":"<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"}},"16540779429952a0de-2":{"type":"text","settings":{"heading":"Frequently asked question","description":"<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"}}},"block_order":["16540779429952a0de-0","16540779429952a0de-1","16540779429952a0de-2"],"settings":{"show_all_text_in_admin":false,"subheading":"SUBHEADING","heading":"Accordion","heading_aligment":"text-center","top_spacing":"normal","width":"default","disable_accordion":false,"heading_tag":"h4","description_size":"normal","color_subheading":"rgba(0,0,0,0)","color_heading":"rgba(0,0,0,0)","color_heading_accordion":"rgba(0,0,0,0)","color_text":"rgba(0,0,0,0)","color_lines":"rgba(0,0,0,0)","background":"color","color_background":"rgba(0,0,0,0)","gradient":"","background_width":"content_width","background_spacing":"normal","remove_bottom_spacing":false}},"16540782121b6cf775":{"type":"slideshow","blocks":{"9a57b661-148a-4990-9ad0-f5944fa1389a":{"type":"slide","settings":{"content_type":"image","video_url":"","image_overlay_opacity":0,"subheading":"SUBHEADING","heading":"Slide","description":"Some descriptive text for your slide. For better alignment, it is better to use text in several lines.","call_to_action":"one_link_banner","button_primary_name":"Button","url":"","button_secondary_name":"Button","button_secondary_url":"","content_aligment":"align-items-center justify-content-center","texts_aligment":"text-center","heading_tag":"h1","description_size":"normal","show_background":false,"hover_underline":false,"color_subheading":"rgba(0,0,0,0)","color_heading":"rgba(0,0,0,0)","color_description":"rgba(0,0,0,0)","button_primary_bg":"rgba(0,0,0,0)","button_secondary_bg":"rgba(0,0,0,0)","color_background":"rgba(0,0,0,0)"}}},"block_order":["9a57b661-148a-4990-9ad0-f5944fa1389a"],"settings":{"top_spacing":"normal","bottom_spacing":"none","width":"default","image_size":"fullscreen","desktop_image_height":440,"texts_aligment_mobile":"text-center-mobile","desktop_navigation":"dots_arrows","mobile_navigation":"dots_arrows","dots_desktop_position":"center","autoplay_enabled":true,"autoplay_time":5,"video_slide_mode":"autoplay_muted","play_button_enabled":true}}},"order":["main","1654077391cbc4d1c4","16540890413ee61417","165407778035a997bf","1654435654616dbd9f","16544356311229759e","1654077942191deb02","16540782121b6cf775"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "top_spacing": "none",
+        "width": "page-width",
+        "show_heading": true,
+        "heading_aligment": "text-center"
+      }
+    },
+    "a0db958b-bad4-4285-87bc-c9cf7b134ad2": {
+      "type": "two-columns-with-text",
+      "blocks": {
+        "template--20039351337238__a0db958b-bad4-4285-87bc-c9cf7b134ad2-blurb-1": {
+          "type": "blurb",
+          "settings": {
+            "show_image": "show",
+            "image": "shopify:\/\/shop_images\/software-developer-on-php-code.jpg",
+            "url": "",
+            "heading": "Hardware & Software Issues",
+            "description": "<p>No matter your device or issue we are here to find a solution for you.  We work on almost anything including custom projects.  If we have the tools, and ability we make it work! The only devices we do not work on are phones, tablets, smart watches, and wireless earbuds.<\/p>",
+            "button_name": "Button"
+          }
+        },
+        "template--20039351337238__a0db958b-bad4-4285-87bc-c9cf7b134ad2-blurb-2": {
+          "type": "blurb",
+          "settings": {
+            "show_image": "show",
+            "image": "shopify:\/\/shop_images\/yellow-cleaning-supply-flatlay.jpg",
+            "url": "",
+            "heading": "Deep Cleaning & Restoration",
+            "description": "<p>Give customers details about the banner image(s) or content on the template.<\/p>",
+            "button_name": "Button"
+          }
+        },
+        "template--20039351337238__a0db958b-bad4-4285-87bc-c9cf7b134ad2-brand_image-1": {
+          "type": "brand_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/screw-driver-tool-bits.jpg"
+          }
+        },
+        "template--20039351337238__a0db958b-bad4-4285-87bc-c9cf7b134ad2-brand_image-2": {
+          "type": "brand_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/woman-replaces-fine-saw-blade.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--20039351337238__a0db958b-bad4-4285-87bc-c9cf7b134ad2-blurb-1",
+        "template--20039351337238__a0db958b-bad4-4285-87bc-c9cf7b134ad2-blurb-2",
+        "template--20039351337238__a0db958b-bad4-4285-87bc-c9cf7b134ad2-brand_image-1",
+        "template--20039351337238__a0db958b-bad4-4285-87bc-c9cf7b134ad2-brand_image-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "heading": "Repairs & Restorations",
+        "description": "",
+        "heading_aligment": "text-center",
+        "top_spacing": "small",
+        "width": "page-width",
+        "image_ratio": "auto",
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description_blurb": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "16540890413ee61417": {
+      "type": "icon-banners",
+      "blocks": {
+        "16540890413a2fd1cd-0": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "laptop",
+            "url": "#image-with-text-template--20544239829270__456789e6-4515-42c2-ae88-646164492c64",
+            "heading": "Desktop & Laptop Computers",
+            "description": "We service any make & model of desktops, laptops, and all-in-one computers.",
+            "button_name": "Learn More"
+          }
+        },
+        "16540890413a2fd1cd-1": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "gaming",
+            "url": "#image-with-text-template--20544239829270__2bec9cac-08c4-4748-a985-4fa7856ae20f",
+            "heading": "Video Game Systems & Accessories",
+            "description": "From Atari consoles to PlayStation 5, we are the preferred destination for quality and affordable repairs.",
+            "button_name": "Learn More"
+          }
+        },
+        "16540890413a2fd1cd-2": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "speakers",
+            "url": "#image-with-text-template--20544239829270__7115137b-d78f-45e0-a356-8667357e7096",
+            "heading": "Audio Equipment",
+            "description": "From tube amplifiers to modern equipment, we have all your audio repair needs covered.",
+            "button_name": "Learn More"
+          }
+        },
+        "8b236a71-ddb4-454e-9cd4-14a68d0f6179": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "chip",
+            "url": "#image-with-text-template--20544239829270__8ff56e8d-b05d-4548-9a5e-95823f20149d",
+            "heading": "Circuit Board Repair",
+            "description": "Our team of highly skilled technicians is equipped and ready to repair any type of circuit board you may require assistance with.",
+            "button_name": "Learn More"
+          }
+        },
+        "abc5d0f5-e92e-4d0c-865a-21cbafaf2f81": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "box",
+            "url": "#shopify-section-template--20544239829270__b8630f45-ee57-4d34-b1d0-d4557e6305d7",
+            "heading": "Restorations",
+            "description": "Is the plastic on your device discolored or damaged with broken pieces? Allow our expert team to meticulously restore it, bringing it as close to its original condition as possible.",
+            "button_name": "Learn More"
+          }
+        },
+        "cb08c1d1-b681-457a-a5b7-994d8e3e2484": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "power",
+            "url": "#image-with-text-template--20544239829270__54a50fb0-b974-423f-9fa0-8596ecdca556",
+            "heading": "Ultrasonic Cleaning",
+            "description": "Our expansive Ultrasonic Cleaning system accommodates items of all sizes and excels in cleaning a vast array of products.",
+            "button_name": "Learn More"
+          }
+        },
+        "fb5f85b5-e7be-4ea4-89d2-7edc98227c54": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "clock",
+            "url": "#image-with-text-template--20544239829270__c0d4cd17-f302-4577-8d79-0728fd211fb3",
+            "heading": "Commercial Equipment",
+            "description": "We recognize the critical importance of maintaining your business operations without interruption. To support this, we offer same-day on-site visits.",
+            "button_name": "Learn More"
+          }
+        },
+        "bd1be297-7c65-4b16-86a1-78200c064b51": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "tv",
+            "url": "#image-with-text-template--20544239829270__1fc0ba76-559d-4b8b-93b8-039d1edee4c5",
+            "heading": "Monitors & TV's",
+            "description": "We service all models of televisions and monitors.  *note we do not repair TV screens or backlights.",
+            "button_name": "Learn More"
+          }
+        },
+        "54e850ee-da5c-41be-9d4e-4e4d21e4f4a6": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "tv",
+            "url": "#image-with-text-template--20544239829270__57f8f89f-be2b-4478-869c-76a54e842ce8",
+            "heading": "Custom Arcade Machine Builds",
+            "description": "Searching for the ideal cabinet for your room, or perhaps an engaging racing simulator? We have the expertise to make it happen.",
+            "button_name": "Learn More"
+          }
+        },
+        "25ce2953-d2b4-4570-bbac-fbcfc0228632": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "tv",
+            "url": "shopify:\/\/pages\/web-development",
+            "heading": "Web & App Development",
+            "description": "In today's competitive landscape, it is essential for every business to maintain a strong web presence to ensure customers can easily find you.",
+            "button_name": "Learn More"
+          }
+        },
+        "e5036780-2fa5-4009-afad-f38385ac1ca9": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "delivery",
+            "url": "shopify:\/\/pages\/contact-us",
+            "heading": "On-Site Service",
+            "description": "We provide 24-Hour Emergency Repair services for our commercial clients, including the convenience of on-site appointments.",
+            "button_name": "Contact Us"
+          }
+        },
+        "e8a448d9-2cbd-4b6e-a690-738dffd13f9b": {
+          "type": "banner",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "delivery",
+            "url": "shopify:\/\/pages\/get-a-quote",
+            "heading": "Custom PC Builds",
+            "description": "From budget-friendly builds to top-of-the-line hardline water-cooled gaming PCs, our skilled team has the expertise to bring your vision to life.",
+            "button_name": "Get a Quote"
+          }
+        }
+      },
+      "block_order": [
+        "16540890413a2fd1cd-0",
+        "16540890413a2fd1cd-1",
+        "16540890413a2fd1cd-2",
+        "8b236a71-ddb4-454e-9cd4-14a68d0f6179",
+        "abc5d0f5-e92e-4d0c-865a-21cbafaf2f81",
+        "cb08c1d1-b681-457a-a5b7-994d8e3e2484",
+        "fb5f85b5-e7be-4ea4-89d2-7edc98227c54",
+        "bd1be297-7c65-4b16-86a1-78200c064b51",
+        "54e850ee-da5c-41be-9d4e-4e4d21e4f4a6",
+        "25ce2953-d2b4-4570-bbac-fbcfc0228632",
+        "e5036780-2fa5-4009-afad-f38385ac1ca9",
+        "e8a448d9-2cbd-4b6e-a690-738dffd13f9b"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_aligment": "text-center",
+        "top_spacing": "none",
+        "width": "page-width",
+        "grid": "grid-columns-4",
+        "swipe_on_mobile": true,
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "hover_underline": true,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_heading_banner": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)"
+      }
+    },
+    "456789e6-4515-42c2-ae88-646164492c64": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20039351337238__456789e6-4515-42c2-ae88-646164492c64-image-1": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "image": "shopify:\/\/shop_images\/Computer_Service.webp",
+            "image_ratio": "1.333333",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "template--20039351337238__456789e6-4515-42c2-ae88-646164492c64-heading-1": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Computer Services"
+          }
+        },
+        "template--20039351337238__456789e6-4515-42c2-ae88-646164492c64-text-1": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "chip",
+            "text": "<p><strong>Hardware Issues:<\/strong> Encountering problems with your hardware? Our expert team is here to diagnose and resolve your issues efficiently.<\/p>"
+          }
+        },
+        "template--20039351337238__456789e6-4515-42c2-ae88-646164492c64-text-2": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "hard_drive-2",
+            "text": "<p><strong>Software:<\/strong> Whether it's full operating system formatting, virus scanning, or malware removal, our experienced team has you covered.<\/p>"
+          }
+        },
+        "325b5f5a-1282-4461-973e-d1535a77c102": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "service",
+            "text": "<p><strong>Cleaning Services: <\/strong>Internal dirt in computers can lead to poor airflow, overheating, and reduced performance, or even permanent damage. Our specialized cleaning ensures optimal functionality.<\/p>"
+          }
+        },
+        "template--20039351337238__456789e6-4515-42c2-ae88-646164492c64-button-1": {
+          "type": "button",
+          "settings": {
+            "button_name": "Get a Quote"
+          }
+        }
+      },
+      "block_order": [
+        "template--20039351337238__456789e6-4515-42c2-ae88-646164492c64-image-1",
+        "template--20039351337238__456789e6-4515-42c2-ae88-646164492c64-heading-1",
+        "template--20039351337238__456789e6-4515-42c2-ae88-646164492c64-text-1",
+        "template--20039351337238__456789e6-4515-42c2-ae88-646164492c64-text-2",
+        "325b5f5a-1282-4461-973e-d1535a77c102",
+        "template--20039351337238__456789e6-4515-42c2-ae88-646164492c64-button-1"
+      ],
+      "settings": {
+        "url": "shopify:\/\/pages\/get-a-quote",
+        "top_spacing": "small",
+        "width": "page-width",
+        "row_reverse": false,
+        "heading_aligment": "text-center",
+        "content_aligment": "align-self-start",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "hover_underline": true,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "2bec9cac-08c4-4748-a985-4fa7856ae20f": {
+      "type": "image-with-text",
+      "blocks": {
+        "ffd28cc2-860f-4181-b733-062c4c7b98b3": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "image": "shopify:\/\/shop_images\/Console_Service.webp",
+            "image_ratio": "1.333333",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "ae55b7b7-dc43-4c03-8604-712877610217": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Gaming Systems & Accessories"
+          }
+        },
+        "cea448a3-4870-4520-aec1-a67d806ff76e": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "gaming",
+            "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
+          }
+        },
+        "c83b5def-10e7-4431-adf5-cc46083ae0d7": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "speed",
+            "text": "<p><strong>Disk Repair:<\/strong> Experiencing scratches or issues with your game disk? We can restore it to near-new condition!<\/p>"
+          }
+        },
+        "c91388f3-fddc-437a-baeb-c5172645924d": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "service",
+            "text": "<p><strong>Cleaning Services:<\/strong> Internal dirt in systems can lead to poor airflow, overheating, and reduced performance, or even permanent damage. Our specialized cleaning ensures optimal functionality.<\/p>"
+          }
+        },
+        "0957c633-5846-4641-9c37-3ed0b3284de7": {
+          "type": "button",
+          "settings": {
+            "button_name": "Get a Quote"
+          }
+        }
+      },
+      "block_order": [
+        "ffd28cc2-860f-4181-b733-062c4c7b98b3",
+        "ae55b7b7-dc43-4c03-8604-712877610217",
+        "cea448a3-4870-4520-aec1-a67d806ff76e",
+        "c83b5def-10e7-4431-adf5-cc46083ae0d7",
+        "c91388f3-fddc-437a-baeb-c5172645924d",
+        "0957c633-5846-4641-9c37-3ed0b3284de7"
+      ],
+      "settings": {
+        "url": "shopify:\/\/pages\/get-a-quote",
+        "top_spacing": "small",
+        "width": "page-width",
+        "row_reverse": true,
+        "heading_aligment": "text-center",
+        "content_aligment": "align-self-start",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "7115137b-d78f-45e0-a356-8667357e7096": {
+      "type": "image-with-text",
+      "blocks": {
+        "2dfd827f-5fbb-4c07-8bb4-3b944ef8886c": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "image": "shopify:\/\/shop_images\/Audio_Service.webp",
+            "image_ratio": "1.333333",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "c7ee1b49-c71e-46d4-b7d8-b0da9d9f3dce": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Audio Gear"
+          }
+        },
+        "d3105504-f79e-40e0-9dbc-2de0c6fc49a1": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "speakers",
+            "text": "<p><strong>Speakers: <\/strong>While we do not provide cone repairs, our team is readily available to assist with any other speaker-related issues.<\/p>"
+          }
+        },
+        "b0db5920-aa46-4659-b1a5-58367f600a87": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "portable_speakers",
+            "text": "<p><strong>Amplifiers:<\/strong> Whether dealing with car amplifiers or top-of-the-line professional models, we are prepared to restore them to peak performance.<\/p>"
+          }
+        },
+        "97f8701b-0cb6-4ed5-a65f-922aa380a029": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "service",
+            "text": "<p><strong>Capacitor Upgrades:<\/strong> If you're looking to replace or upgrade the old capacitors in your devices, our expert team is here to provide seamless service.<\/p>"
+          }
+        },
+        "1712c967-593f-4993-9605-2165f94beec6": {
+          "type": "button",
+          "settings": {
+            "button_name": "Get a Quote"
+          }
+        }
+      },
+      "block_order": [
+        "2dfd827f-5fbb-4c07-8bb4-3b944ef8886c",
+        "c7ee1b49-c71e-46d4-b7d8-b0da9d9f3dce",
+        "d3105504-f79e-40e0-9dbc-2de0c6fc49a1",
+        "b0db5920-aa46-4659-b1a5-58367f600a87",
+        "97f8701b-0cb6-4ed5-a65f-922aa380a029",
+        "1712c967-593f-4993-9605-2165f94beec6"
+      ],
+      "settings": {
+        "url": "shopify:\/\/pages\/get-a-quote",
+        "top_spacing": "small",
+        "width": "page-width",
+        "row_reverse": false,
+        "heading_aligment": "text-center",
+        "content_aligment": "align-self-start",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "8ff56e8d-b05d-4548-9a5e-95823f20149d": {
+      "type": "image-with-text",
+      "blocks": {
+        "2e67ec08-261c-4a6b-9c49-3f5544c6dc8d": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "image": "shopify:\/\/shop_images\/PCB_Service.webp",
+            "image_ratio": "1.333333",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "7f4b2604-8832-4dad-89b0-7cd400a2e2c0": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Circuit Board Repair"
+          }
+        },
+        "20053b57-7cfc-4df6-9607-3bc9e48abf27": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "Chip",
+            "text": "<p><strong>Consumer Devices:<\/strong> Ranging from Motherboards to Remote-Controlled Cars.<\/p>"
+          }
+        },
+        "dcb59bd1-eaeb-462f-ba4e-88528e8cedf2": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "memory",
+            "text": "<p><strong>Commercial Devices: <\/strong>All Sizes, All Types.<\/p>"
+          }
+        },
+        "8383b724-b3d6-4447-8b2a-ff859c8766b9": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "certified",
+            "text": "<p><strong>Quality Parts:<\/strong> In repairing your devices, we utilize only the highest-quality components, ensuring durability and an extended lifespan.<\/p>"
+          }
+        },
+        "b8d095d6-49d7-452a-8c81-1adb29b787e8": {
+          "type": "button",
+          "settings": {
+            "button_name": "Get a Quote"
+          }
+        }
+      },
+      "block_order": [
+        "2e67ec08-261c-4a6b-9c49-3f5544c6dc8d",
+        "7f4b2604-8832-4dad-89b0-7cd400a2e2c0",
+        "20053b57-7cfc-4df6-9607-3bc9e48abf27",
+        "dcb59bd1-eaeb-462f-ba4e-88528e8cedf2",
+        "8383b724-b3d6-4447-8b2a-ff859c8766b9",
+        "b8d095d6-49d7-452a-8c81-1adb29b787e8"
+      ],
+      "settings": {
+        "url": "shopify:\/\/pages\/get-a-quote",
+        "top_spacing": "small",
+        "width": "page-width",
+        "row_reverse": true,
+        "heading_aligment": "text-center",
+        "content_aligment": "align-self-start",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "b8630f45-ee57-4d34-b1d0-d4557e6305d7": {
+      "type": "image-with-text",
+      "blocks": {
+        "09546f02-0c34-44a1-aa7e-bf26e19932e3": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "image": "shopify:\/\/shop_images\/Commercial_Service_b92df21f-b2fc-4165-b138-2db1190d26db.webp",
+            "image_ratio": "1.333333",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "1ca6cc90-4ff0-43e4-a449-acf173347dfa": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Restorations"
+          }
+        },
+        "133876a5-6be4-4842-b285-39b9df22470a": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "box",
+            "text": "<p><strong>Restore: <\/strong>Transform your aging device into a condition that closely resembles its original, new state.<\/p>"
+          }
+        },
+        "3419b3bf-8684-4455-95d6-c800182b2868": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "lightning",
+            "text": "<p>Extend the Lifespan of Your Device Without Compromising on Aesthetics.<\/p>"
+          }
+        },
+        "b6968e8f-7331-4cd8-858f-c9da4cff6da0": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "",
+            "text": ""
+          }
+        },
+        "8aa6d1f3-1186-4dd1-9343-32502d3d6ac1": {
+          "type": "button",
+          "settings": {
+            "button_name": "Get a Quote"
+          }
+        }
+      },
+      "block_order": [
+        "09546f02-0c34-44a1-aa7e-bf26e19932e3",
+        "1ca6cc90-4ff0-43e4-a449-acf173347dfa",
+        "133876a5-6be4-4842-b285-39b9df22470a",
+        "3419b3bf-8684-4455-95d6-c800182b2868",
+        "b6968e8f-7331-4cd8-858f-c9da4cff6da0",
+        "8aa6d1f3-1186-4dd1-9343-32502d3d6ac1"
+      ],
+      "settings": {
+        "url": "shopify:\/\/pages\/get-a-quote",
+        "top_spacing": "small",
+        "width": "page-width",
+        "row_reverse": false,
+        "heading_aligment": "text-center",
+        "content_aligment": "align-self-start",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "54a50fb0-b974-423f-9fa0-8596ecdca556": {
+      "type": "image-with-text",
+      "blocks": {
+        "d3d746b5-8216-44f9-89e7-a2fe5406cb67": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "image": "shopify:\/\/shop_images\/Ultra_Sonic_Service.webp",
+            "image_ratio": "1.333333",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "3228a9ef-2a8f-4c08-a804-bbbe4915f1ab": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Ultra Sonic Cleaning"
+          }
+        },
+        "36fb5df1-8e51-4b61-b8f2-56abade17c89": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "new",
+            "text": "<p><strong>Functionality:<\/strong> Restore Your Device to Its Original Appearance and Performance.<\/p>"
+          }
+        },
+        "e1d979d3-4cdb-47dc-9468-757ab0b3b96f": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "Eco",
+            "text": "<p><strong>Safe<\/strong>: For most unpainted materials and products including IC chips<\/p>"
+          }
+        },
+        "f4f88bc4-b4df-4287-8e51-545aacdbb75d": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "no_artificial",
+            "text": "<p><strong>Eliminates:<\/strong> Rust, Paint, Grease, Dirt, Dust, and More<\/p>"
+          }
+        },
+        "33e37a49-c234-4fe8-9730-8b45a1fe6df3": {
+          "type": "button",
+          "settings": {
+            "button_name": "Get a Quote"
+          }
+        }
+      },
+      "block_order": [
+        "d3d746b5-8216-44f9-89e7-a2fe5406cb67",
+        "3228a9ef-2a8f-4c08-a804-bbbe4915f1ab",
+        "36fb5df1-8e51-4b61-b8f2-56abade17c89",
+        "e1d979d3-4cdb-47dc-9468-757ab0b3b96f",
+        "f4f88bc4-b4df-4287-8e51-545aacdbb75d",
+        "33e37a49-c234-4fe8-9730-8b45a1fe6df3"
+      ],
+      "settings": {
+        "url": "shopify:\/\/pages\/get-a-quote",
+        "top_spacing": "small",
+        "width": "page-width",
+        "row_reverse": true,
+        "heading_aligment": "text-center",
+        "content_aligment": "align-self-start",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "1fc0ba76-559d-4b8b-93b8-039d1edee4c5": {
+      "type": "image-with-text",
+      "blocks": {
+        "f6d1714c-9943-4d6c-97b6-839bde6c806b": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "image": "shopify:\/\/shop_images\/TV_Service.webp",
+            "image_ratio": "1.333333",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "78bd2b91-4fc8-4980-85af-f0e2ee20ae3a": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Monitors & TV's"
+          }
+        },
+        "7d883a8c-73de-464a-b814-c4c2c6c80095": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "Chip",
+            "text": "<p><strong>PCBs:<\/strong> Offering Repair or Replacement Services for Circuit Boards in Your TV\/Monitor.<\/p>"
+          }
+        },
+        "050b80f1-5db3-4efb-9e12-c87017819240": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "monitor",
+            "text": "<p><strong>Monitors:<\/strong> We Offer Screen Replacements, but Please Note that TV Screens and Backlights Are Not Included in Our Services.<\/p>"
+          }
+        },
+        "3ef3baad-7a99-499c-b837-5970e8f7dd5f": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "gaming",
+            "text": "<p><strong>Remote Controllers:<\/strong> Specializing in the Repair and Servicing of a Wide Range of Controllers.<\/p>"
+          }
+        },
+        "02314184-cf60-4216-830c-95ab8e9ffd25": {
+          "type": "button",
+          "settings": {
+            "button_name": "Get a Quote"
+          }
+        }
+      },
+      "block_order": [
+        "f6d1714c-9943-4d6c-97b6-839bde6c806b",
+        "78bd2b91-4fc8-4980-85af-f0e2ee20ae3a",
+        "7d883a8c-73de-464a-b814-c4c2c6c80095",
+        "050b80f1-5db3-4efb-9e12-c87017819240",
+        "3ef3baad-7a99-499c-b837-5970e8f7dd5f",
+        "02314184-cf60-4216-830c-95ab8e9ffd25"
+      ],
+      "settings": {
+        "url": "shopify:\/\/pages\/get-a-quote",
+        "top_spacing": "small",
+        "width": "page-width",
+        "row_reverse": false,
+        "heading_aligment": "text-center",
+        "content_aligment": "align-self-start",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "c0d4cd17-f302-4577-8d79-0728fd211fb3": {
+      "type": "image-with-text",
+      "blocks": {
+        "866bdca2-1dfb-400f-b95b-44f126afd842": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "image": "shopify:\/\/shop_images\/Commercial_Service.webp",
+            "image_ratio": "1.333333",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "58b69eb2-27f7-46ec-b3e8-528975cc0c0f": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Commercial Services"
+          }
+        },
+        "9d36ffe1-0b57-4b05-be60-31c0de6b9aa5": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "Face_id",
+            "text": "<p><strong>Tailored Solutions: <\/strong>Catering to Organizations of All Sizes, No Matter How Small or Large.<\/p>"
+          }
+        },
+        "ad9bea4f-68ec-46db-a506-e5ac15ed763f": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "lightning",
+            "text": "<p><strong>Expedited: <\/strong>Priority Service Available for All Commercial Customers.<\/p>"
+          }
+        },
+        "62a15287-921b-4633-a5ae-8e5e026ffa11": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "certified",
+            "text": "<p><strong>Reliable:<\/strong> Count on Us for Accurate and Efficient Service Execution.<\/p>"
+          }
+        },
+        "7e452c66-9cc1-4d51-bc1b-d56ef3982565": {
+          "type": "button",
+          "settings": {
+            "button_name": "Get a Quote"
+          }
+        }
+      },
+      "block_order": [
+        "866bdca2-1dfb-400f-b95b-44f126afd842",
+        "58b69eb2-27f7-46ec-b3e8-528975cc0c0f",
+        "9d36ffe1-0b57-4b05-be60-31c0de6b9aa5",
+        "ad9bea4f-68ec-46db-a506-e5ac15ed763f",
+        "62a15287-921b-4633-a5ae-8e5e026ffa11",
+        "7e452c66-9cc1-4d51-bc1b-d56ef3982565"
+      ],
+      "settings": {
+        "url": "#shopify-section-template--20544239829270__54a50fb0-b974-423f-9fa0-8596ecdca556",
+        "top_spacing": "small",
+        "width": "page-width",
+        "row_reverse": true,
+        "heading_aligment": "text-center",
+        "content_aligment": "align-self-start",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "57f8f89f-be2b-4478-869c-76a54e842ce8": {
+      "type": "image-with-text",
+      "blocks": {
+        "9e23af6b-d36e-47e4-bb4e-d07c76210c1b": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "image": "shopify:\/\/shop_images\/Arcade_Service.webp",
+            "image_ratio": "1.333333",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "4b6d7761-35c9-4d10-826e-f97b669cccda": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Custom Arcade Builds"
+          }
+        },
+        "4c515347-6ce6-430f-9e47-b1fdd8570d5b": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "Info",
+            "text": "<p><strong>Tailored: <\/strong>Accommodating Devices of Any Size, Shape, and Gaming Capability.<\/p>"
+          }
+        },
+        "676fc66a-793a-4ba9-a6c0-36b904c3dfdd": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "certified",
+            "text": "<p><strong>Quality:<\/strong> Engineered for Longevity with Premium Components and Stable Software.<\/p>"
+          }
+        },
+        "7177c7a2-5722-43f1-9040-b0aa17cfb42a": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "Smile",
+            "text": "<p><strong>User-Friendly:<\/strong> Intuitive Design Ensures Enjoyment for Users of All Ages, Including Children.<\/p>"
+          }
+        },
+        "2557817e-2859-44fc-ae2d-c16a1971ce89": {
+          "type": "button",
+          "settings": {
+            "button_name": "Get a Quote"
+          }
+        }
+      },
+      "block_order": [
+        "9e23af6b-d36e-47e4-bb4e-d07c76210c1b",
+        "4b6d7761-35c9-4d10-826e-f97b669cccda",
+        "4c515347-6ce6-430f-9e47-b1fdd8570d5b",
+        "676fc66a-793a-4ba9-a6c0-36b904c3dfdd",
+        "7177c7a2-5722-43f1-9040-b0aa17cfb42a",
+        "2557817e-2859-44fc-ae2d-c16a1971ce89"
+      ],
+      "settings": {
+        "url": "shopify:\/\/pages\/get-a-quote",
+        "top_spacing": "small",
+        "width": "page-width",
+        "row_reverse": false,
+        "heading_aligment": "text-center",
+        "content_aligment": "align-self-start",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "f980a7c7-0221-48f3-a984-35a8ce1dc6ba": {
+      "type": "image-with-text",
+      "blocks": {
+        "971142ad-759e-4c9a-bb37-6accfb43ae25": {
+          "type": "image",
+          "settings": {
+            "content_type": "image",
+            "image": "shopify:\/\/shop_images\/webdesign_service.webp",
+            "image_ratio": "1.333333",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": ""
+          }
+        },
+        "db3eb261-ee9f-4670-8d5e-ca2b75a0d4c7": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Website & Application Design"
+          }
+        },
+        "fdc60e27-7311-44df-b56e-b5c2d11644c2": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "monitor",
+            "text": "<p><strong>Websites:<\/strong> Offering Solutions Ranging from Personal Portfolios to Comprehensive eCommerce Platforms.<\/p>"
+          }
+        },
+        "42de696c-8d2c-4b3a-97a1-cdae34505144": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "smartphone",
+            "text": "<p><strong>Applications:<\/strong> Regardless of Platform or Scale, We Have the Expertise to Bring Your Dream App to Life.<\/p>"
+          }
+        },
+        "07222486-f72c-4dd6-b834-3aebc02445e6": {
+          "type": "text",
+          "settings": {
+            "show_icon": "svg",
+            "icon_name": "Face_id",
+            "text": "<p><strong>Your Way: <\/strong>Whether Utilizing Your Existing Platform or Identifying a New One, We Tailor Solutions to Meet Your Specific Needs.<\/p>"
+          }
+        },
+        "9d7cb4de-5bf3-4eb3-b783-d0d256e7170f": {
+          "type": "button",
+          "settings": {
+            "button_name": "Get a Quote"
+          }
+        }
+      },
+      "block_order": [
+        "971142ad-759e-4c9a-bb37-6accfb43ae25",
+        "db3eb261-ee9f-4670-8d5e-ca2b75a0d4c7",
+        "fdc60e27-7311-44df-b56e-b5c2d11644c2",
+        "42de696c-8d2c-4b3a-97a1-cdae34505144",
+        "07222486-f72c-4dd6-b834-3aebc02445e6",
+        "9d7cb4de-5bf3-4eb3-b783-d0d256e7170f"
+      ],
+      "settings": {
+        "url": "shopify:\/\/pages\/get-a-quote",
+        "top_spacing": "small",
+        "width": "page-width",
+        "row_reverse": true,
+        "heading_aligment": "text-center",
+        "content_aligment": "align-self-start",
+        "texts_aligment": "text-left",
+        "heading_tag": "h2",
+        "text_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
+    "027a4e20-c986-4161-acd9-e5316b18ada9": {
+      "type": "page",
+      "settings": {
+        "page": "",
+        "top_spacing": "normal",
+        "width": "page-width"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a0db958b-bad4-4285-87bc-c9cf7b134ad2",
+    "16540890413ee61417",
+    "456789e6-4515-42c2-ae88-646164492c64",
+    "2bec9cac-08c4-4748-a985-4fa7856ae20f",
+    "7115137b-d78f-45e0-a356-8667357e7096",
+    "8ff56e8d-b05d-4548-9a5e-95823f20149d",
+    "b8630f45-ee57-4d34-b1d0-d4557e6305d7",
+    "54a50fb0-b974-423f-9fa0-8596ecdca556",
+    "1fc0ba76-559d-4b8b-93b8-039d1edee4c5",
+    "c0d4cd17-f302-4577-8d79-0728fd211fb3",
+    "57f8f89f-be2b-4478-869c-76a54e842ce8",
+    "f980a7c7-0221-48f3-a984-35a8ce1dc6ba",
+    "027a4e20-c986-4161-acd9-e5316b18ada9"
+  ]
+}
