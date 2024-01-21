@@ -54,6 +54,13 @@
 .product-card__variant-item.product-card__variant-item--image{
   --radius-button: var(--radius);
 }
+.product-card__variant-item.border__radius--circle-swatch,
+.product-card__variant-item.product-card__variant-item--image.border__radius--circle-swatch{
+  --radius-button: 50%;
+}
+.border__radius--circle-swatch.product-card__variant-item:after{
+  border-radius: 100%;
+}
 .product-card__variant-item__color{
   aspect-ratio: 1;
   background: var(--background);

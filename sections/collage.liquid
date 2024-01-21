@@ -30,10 +30,8 @@ assign css_products = true
 
 {%- if settings.animate_content_show -%}
 <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-rating.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-product-card.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-rating.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-product-card.css' | asset_url | stylesheet_tag }}</noscript>
 {%- if settings.swatches_design != 'none' and settings.enable_color_swatches -%}
 <link rel="stylesheet" href="{{ 'product-card-variants.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -41,7 +39,6 @@ assign css_products = true
 {%- endif -%}
 {%- else -%}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
-{{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-product-card.css' | asset_url | stylesheet_tag }}
 {%- if settings.swatches_design != 'none' and settings.enable_color_swatches -%}
 {{ 'product-card-variants.css' | asset_url | stylesheet_tag }}
@@ -137,11 +134,12 @@ assign css_video = true
     opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.00 }};
   }
   {%- endif -%}
-  {%- if block.settings.show_background and block.settings.color_background != "rgba(0,0,0,0)" -%}
   #collage-banner-block-{{ block.id }} .image-banner__content--bg>*:before{
+    opacity: {{ block.settings.background_overlay_opacity | divided_by: 100.00 }};
+    {%- if block.settings.show_background and block.settings.color_background != "rgba(0,0,0,0)" -%}
     background: {{ block.settings.color_background }};
+    {%- endif -%}
   }
-  {%- endif -%}
   {%- if block.settings.button_primary_bg != "rgba(0,0,0,0)" -%}
   {%- assign accent_brightness = block.settings.button_primary_bg | color_extract: 'lightness' -%}
   #collage-banner-block-{{ block.id }} .btn:not(.btn--secondary){
@@ -176,8 +174,9 @@ assign css_video = true
 {%- if section_styles != blank -%}
 <style>{{ section_styles }}</style>
 {%- endif -%}
+{%- capture page_width -%}{%- if section.settings.width != "default" %}{{ section.settings.width }}{%- else -%}{{ settings.page_width_main }}{%- endif -%}{%- endcapture -%}
 {%- liquid
-    if section.settings.width == "page-wide"
+    if page_width == "page-wide"
     assign page_is_wide = true
     else
     assign page_is_wide = false
@@ -185,7 +184,7 @@ assign css_video = true
 -%}
 
 <div class="top-spacing-{{ section.settings.top_spacing }}">
-  <div class="{{ section.settings.width }}">
+  <div class="{{ page_width }}">
 
     
     {%- assign areas_container = "" -%}
@@ -230,6 +229,9 @@ assign css_video = true
           if settings.enable_zoom_animation and check_link
           echo 'image-hover-scaling-up'
           endif
+          if section.settings.image_zoom_internal and check_link
+          echo ' image-hover-scaling-internal'
+          endif
           endcapture
         -%}
         
@@ -247,9 +249,16 @@ assign css_video = true
       {{ block.settings.image_ratio }}
       {%- endif -%}
       {%- endcapture -%}    
-    
-      <div class="image-hover-scaling__image border__radius" style="--aspect-ratio: {{image_ratio}};">
+
+      {%- liquid
+          assign image_ratio_mobile = ''
+          if block.settings.image_mobile != blank
+          assign image_ratio_mobile = '--aspect-ratio-mobile:' | append: block.settings.image_mobile.aspect_ratio | append: ';'
+          endif
+          -%}
+      <div class="image-hover-scaling__image border__radius" style="--aspect-ratio: {{image_ratio}};{{ image_ratio_mobile }}">
         {%- assign image = block.settings.image -%}
+        {%- if block.settings.image_mobile == blank -%}
         {%- capture sizes -%}
         (min-width: 1440px) {% if page_is_wide %}calc((100vw - {{ settings.spacing_grid_horizontal }}px) / 2){% else %}calc(({{ settings.page_width }}px - 20px) / 2){% endif %},(min-width: 993px) calc((100vw - 140px) / 2),(min-width: 577px) calc((100vw - 40px - {{ settings.spacing_grid_horizontal }}px) / 2),calc((100vw - 40px - {{ settings.spacing_grid_horizontal }}px) / 2)
         {%- endcapture -%}
@@ -267,6 +276,28 @@ assign css_video = true
             widths: '400, 470, 620, 1240',
             onload: animate_image_show
         }}
+        {%- else -%}
+        {%- assign imagesize = block.settings.image.width | append: 'x' -%}
+        {%- assign imagesize_mobile = block.settings.image_mobile.width | append: 'x' -%}
+        <picture>
+          <source srcset="{{ block.settings.image_mobile | img_url: imagesize_mobile }} 1x, {{ block.settings.image_mobile | img_url: imagesize_mobile, scale: 2 }} 2x" media="(max-width: 992px) and (min-width: 534px)">
+          <source srcset="{{ block.settings.image_mobile | image_url: width: 533 }}" media="(max-width: 533px)">
+          <source srcset="{{ block.settings.image | img_url: imagesize }} 1x, {{ block.settings.image | img_url: imagesize, scale: 2 }} 2x" media="(min-width: 993px)">
+          {%- assign image = block.settings.image -%}
+          {%- capture image_class -%}{% if settings.animate_image_show %}image-show--fadein{% endif %}{%- endcapture -%}
+          {%- capture animate_image_show -%}{% if settings.animate_image_show %}this.classList.add('image-loaded');{% endif %}{%- endcapture -%}              
+          {{
+            image
+            | image_url: width: image.width
+            | image_tag:
+              loading: 'lazy',
+              width: image.width,
+              height: image.height,
+              class: image_class,
+              onload: animate_image_show
+          }}
+        </picture>
+        {%- endif -%}
       </div>
 
       {%- endif -%}
@@ -285,7 +316,7 @@ assign css_video = true
         <div class="mt--first-child-0 {{ block.settings.texts_aligment }} {{ block.settings.texts_aligment_mobile }}">
           {%- if block.settings.subheading != blank -%}<div class="h5 image-banner__subheading">{{ block.settings.subheading }}</div>{%- endif -%}
           {%- if block.settings.heading != blank -%}
-          {{ '<' | append: block.settings.heading_tag }} class="image-banner__heading mt20 mb0{% if block.settings.hover_underline %} animation-underline{% endif %}">
+          {{ '<' | append: block.settings.heading_tag }} class="image-banner__heading mt20 mb0{% if block.settings.hover_underline %} animation-underline{% endif %} {{ block.settings.heading_tag_mobile }}">
           {%- if heading_link_url != "" -%}<a href="{{ heading_link_url }}" class="clear-underline">{%- endif -%}
           {{ block.settings.heading }}
           {%- if heading_link_url != "" -%}</a>{%- endif -%}
@@ -345,10 +376,10 @@ assign css_video = true
             product_name_size: block.settings.product_name_size,
             hover_underline: block.settings.hover_underline,
             truncate_product_name: block.settings.truncate_product_name,
-            show_rating: block.settings.show_rating,
             show_price: block.settings.show_price,
             button_type_product: "hide",
-        	page_is_wide: page_is_wide
+        	page_is_wide: page_is_wide,
+            image_zoom_internal:section.settings.image_zoom_internal
         -%}
       </div>
 
@@ -367,7 +398,8 @@ assign css_video = true
             truncate_product_name: block.settings.truncate_product_name,
             show_price: block.settings.show_price,
             button_type_product: "hide",
-        	placeholder_name: placeholder_name
+        	placeholder_name: placeholder_name,
+            image_zoom_internal:section.settings.image_zoom_internal
         -%}
       </div>
       {%- endif -%}
@@ -549,7 +581,7 @@ assign css_video = true
                         data-media-id="{{ block.settings.video_url.id }}"
                         >
           <button id="Deferred-Poster-Modal-{{ block.settings.video_url.id }}"
-                  class="deferred-media__poster{% if settings.enable_zoom_animation %} image-hover-scaling-up{% endif %} border__radius"
+                  class="deferred-media__poster{% if settings.enable_zoom_animation %} image-hover-scaling-up{% if section.settings.image_zoom_internal %} image-hover-scaling-internal{% endif %}{% endif %} border__radius"
                   type="button"
                   >
             {{ image }}
@@ -637,6 +669,10 @@ assign css_video = true
         "id": "width",
         "options": [
           {
+            "value": "default",
+            "label": "t:sections.general.settings.width.options__default.label"
+          },
+          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -645,7 +681,7 @@ assign css_video = true
             "label": "t:sections.general.settings.width.options__wide.label"
           }
         ],
-        "default": "page-width",
+        "default": "default",
         "label": "t:sections.general.settings.width.label",
 		"info": "t:sections.general.settings.width.info"
       },
@@ -659,6 +695,12 @@ assign css_video = true
         "default": false,
         "label": "t:sections.general.settings.row_reverse.label",
 		"info": "t:sections.collage.settings.row_reverse.info"
+      },
+      {
+        "type": "checkbox",
+        "id": "image_zoom_internal",
+        "default": false,
+        "label": "t:sections.general.settings.image_zoom_internal.label"
       }
 	],
     "blocks": [
@@ -672,6 +714,21 @@ assign css_video = true
             "id": "image",
             "label": "t:sections.general.settings.image.label"
           },
+          {
+            "type": "range",
+            "id": "image_overlay_opacity",
+            "min": 0,
+            "max": 100,
+            "step": 10,
+            "unit": "%",
+            "label": "t:sections.banners.blocks.banner.settings.image_overlay_opacity.label",
+            "default": 0
+          },
+    	  {
+    		"type": "image_picker",
+    		"id": "image_mobile",
+    		"label": "t:sections.slideshow.settings.image_mobile.label"
+    	  },
           {
             "type": "select",
             "id": "image_ratio",
@@ -699,16 +756,6 @@ assign css_video = true
             ],
             "default": "auto",
             "label": "t:sections.general.settings.image_ratio.label"
-          },
-          {
-            "type": "range",
-            "id": "image_overlay_opacity",
-            "min": 0,
-            "max": 100,
-            "step": 10,
-            "unit": "%",
-            "label": "t:sections.banners.blocks.banner.settings.image_overlay_opacity.label",
-            "default": 0
           },
           {
             "type": "header",
@@ -795,6 +842,38 @@ assign css_video = true
           },
           {
             "type": "select",
+            "id": "content_aligment",
+            "options": [
+              {
+                "value": "align-items-start",
+				"label": "t:sections.banners.blocks.banner.settings.content_aligment.options__top_left.label"
+              },
+              {
+                "value": "align-items-start justify-content-center",
+				"label": "t:sections.banners.blocks.banner.settings.content_aligment.options__top_center.label"
+              },
+              {
+                "value": "align-items-center",
+				"label": "t:sections.banners.blocks.banner.settings.content_aligment.options__center_left.label"
+              },
+              {
+                "value": "align-items-center justify-content-center",
+				"label": "t:sections.banners.blocks.banner.settings.content_aligment.options__center.label"
+              },
+              {
+                "value": "align-items-end",
+				"label": "t:sections.banners.blocks.banner.settings.content_aligment.options__bottom_left.label"
+              },
+              {
+                "value": "align-items-end justify-content-center",
+				"label": "t:sections.banners.blocks.banner.settings.content_aligment.options__bottom_center.label"
+              }
+            ],
+            "default": "align-items-end",
+			"label": "t:sections.banners.blocks.banner.settings.content_aligment.label"
+          },
+          {
+            "type": "select",
             "id": "texts_aligment",
             "options": [
               {
@@ -835,15 +914,43 @@ assign css_video = true
               },
               {
                 "value": "h2",
-                "label": "t:sections.general.settings.heading_tag.options__medium.label"
+                "label": "t:sections.general.settings.heading_tag.options__normal.label"
               },
               {
                 "value": "h3",
+                "label": "t:sections.general.settings.heading_tag.options__medium.label"
+              },
+              {
+                "value": "h4",
                 "label": "t:sections.general.settings.heading_tag.options__small.label"
               }
             ],
             "default": "h2",
-            "label": "t:sections.general.settings.heading_tag.label"
+			"label": "t:sections.general.settings.heading_tag.label"
+          },
+          {
+            "type": "select",
+            "id": "heading_tag_mobile",
+            "options": [
+              {
+                "value": "h1--mobile",
+                "label": "t:sections.general.settings.heading_tag.options__big.label"
+              },
+              {
+                "value": "h2--mobile",
+                "label": "t:sections.general.settings.heading_tag.options__normal.label"
+              },
+              {
+                "value": "h3--mobile",
+                "label": "t:sections.general.settings.heading_tag.options__medium.label"
+              },
+              {
+                "value": "h4--mobile",
+                "label": "t:sections.general.settings.heading_tag.options__small.label"
+              }
+            ],
+            "default": "h2--mobile",
+            "label": "t:sections.general.settings.heading_tag_mobile.label"
           },
           {
             "type": "select",
@@ -862,42 +969,20 @@ assign css_video = true
             "label": "t:sections.general.settings.description_size.label"
           },
           {
-            "type": "select",
-            "id": "content_aligment",
-            "options": [
-              {
-                "value": "align-items-start",
-				"label": "t:sections.banners.blocks.banner.settings.content_aligment.options__top_left.label"
-              },
-              {
-                "value": "align-items-start justify-content-center",
-				"label": "t:sections.banners.blocks.banner.settings.content_aligment.options__top_center.label"
-              },
-              {
-                "value": "align-items-center",
-				"label": "t:sections.banners.blocks.banner.settings.content_aligment.options__center_left.label"
-              },
-              {
-                "value": "align-items-center justify-content-center",
-				"label": "t:sections.banners.blocks.banner.settings.content_aligment.options__center.label"
-              },
-              {
-                "value": "align-items-end",
-				"label": "t:sections.banners.blocks.banner.settings.content_aligment.options__bottom_left.label"
-              },
-              {
-                "value": "align-items-end justify-content-center",
-				"label": "t:sections.banners.blocks.banner.settings.content_aligment.options__bottom_center.label"
-              }
-            ],
-            "default": "align-items-end",
-			"label": "t:sections.banners.blocks.banner.settings.content_aligment.label"
-          },
-          {
             "type": "checkbox",
             "id": "show_background",
             "default": false,
             "label": "t:sections.banners.blocks.banner.settings.show_background.label"
+          },
+          {
+            "type": "range",
+            "id": "background_overlay_opacity",
+            "min": 0,
+            "max": 100,
+            "step": 10,
+            "unit": "%",
+            "label": "t:sections.banners.blocks.banner.settings.background_overlay_opacity.label",
+            "default": 90
           },
           {
             "type": "checkbox",
@@ -1026,13 +1111,6 @@ assign css_video = true
             ],
             "default": "body2",
             "label": "t:sections.featured-collection.settings.product_name_size.label"
-          },
-          {
-            "type": "checkbox",
-            "id": "show_rating",
-            "default": false,
-            "label": "t:sections.featured-collection.settings.show_rating.label",
-            "info": "t:sections.featured-collection.settings.show_rating.info"
           },
           {
             "type": "checkbox",

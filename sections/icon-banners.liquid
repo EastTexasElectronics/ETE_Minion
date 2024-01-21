@@ -35,7 +35,7 @@
 
 <div id="icon-banners-{{ section.id }}" class="top-spacing-{{ section.settings.top_spacing }}"
      data-section-name="icon-banners">
-  <div class="{{ section.settings.width }} mb--last-child-0">
+  <div class="{% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %} mb--last-child-0">
 
     {%- render "section-heading" section:section -%}
     
@@ -155,7 +155,7 @@
 	  },
       {
         "type": "header",
-        "content": "t:sections.general.settings.name_link.label"
+        "content": "t:sections.general.settings.header_layout.content"
       },
       {
         "type": "select",
@@ -186,6 +186,10 @@
         "id": "width",
         "options": [
           {
+            "value": "default",
+            "label": "t:sections.general.settings.width.options__default.label"
+          },
+          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -194,7 +198,7 @@
             "label": "t:sections.general.settings.width.options__wide.label"
           }
         ],
-        "default": "page-width",
+        "default": "default",
         "label": "t:sections.general.settings.width.label",
 		"info": "t:sections.general.settings.width.info"
       },

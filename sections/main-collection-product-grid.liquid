@@ -1,7 +1,7 @@
 {%- liquid
 assign enable_products_count = section.settings.enable_products_count
 assign enable_sorting = section.settings.enable_sorting
-if section.settings.enable_filtering == 'enable'
+if section.settings.enable_filtering contains 'enable'
 assign enable_filtering = true
 assign horizontal_filters = false
 elsif section.settings.enable_filtering == 'horizontal'
@@ -15,10 +15,8 @@ endif
 {%- if settings.animate_content_show -%}
 
 <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-rating.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-product-card.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-rating.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-product-card.css' | asset_url | stylesheet_tag }}</noscript>
 {%- if settings.swatches_design != 'none' and settings.enable_color_swatches -%}
 <link rel="stylesheet" href="{{ 'product-card-variants.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -47,7 +45,6 @@ endif
 {%- else -%}
 
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
-{{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-product-card.css' | asset_url | stylesheet_tag }}
 {%- if settings.swatches_design != 'none' and settings.enable_color_swatches -%}
 {{ 'product-card-variants.css' | asset_url | stylesheet_tag }}
@@ -72,7 +69,8 @@ endif
 <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
-<div class="top-spacing-{{ section.settings.top_spacing }} {{ section.settings.width }}">
+{%- capture page_width -%}{%- if section.settings.width != "default" %}{{ section.settings.width }}{%- else -%}{{ settings.page_width_main }}{%- endif -%}{%- endcapture -%}
+<div class="top-spacing-{{ section.settings.top_spacing }} {{ page_width }}">
 
   <div class="grid">
     
@@ -108,7 +106,7 @@ endif
         {%- for product in collection.products -%}
         <div class="col-sp-{{ section.settings.mobile_grid }} {{ section.settings.grid }}">
           {%- liquid
-              if section.settings.width == "page-wide"
+              if page_width == "page-wide"
               assign page_is_wide = true
               else
               assign page_is_wide = false
@@ -127,7 +125,6 @@ endif
               product_name_size: section.settings.product_name_size,
               hover_underline: section.settings.hover_underline,
               truncate_product_name: section.settings.truncate_product_name,
-              show_rating: section.settings.show_rating,
               show_price: section.settings.show_price,
               button_type_product: section.settings.button_type_product,
           	  page_is_wide: page_is_wide,
@@ -246,6 +243,10 @@ endif
         "id": "width",
         "options": [
           {
+            "value": "default",
+            "label": "t:sections.general.settings.width.options__default.label"
+          },
+          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -313,6 +314,10 @@ endif
           {
             "value": "enable",
             "label": "t:sections.main-collection-product-grid.settings.enable_filtering.options__2.label"
+          },
+          {
+            "value": "enable_closed",
+            "label": "t:sections.main-collection-product-grid.settings.enable_filtering.options__2_1.label"
           },
           {
             "value": "horizontal",
@@ -451,13 +456,6 @@ endif
         "id": "show_type",
         "default": true,
 		"label": "t:sections.featured-collection.settings.show_type.label"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_rating",
-        "default": false,
-		"label": "t:sections.featured-collection.settings.show_rating.label",
-		"info": "t:sections.featured-collection.settings.show_rating.info"
       },
       {
         "type": "checkbox",

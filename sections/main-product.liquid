@@ -2,13 +2,9 @@
   {%- if settings.animate_content_show -%}
   <link rel="stylesheet" href="{{ 'section-main-product.css' | asset_url }}" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="{{ 'component-rating.css' | asset_url }}" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="{{ 'component-rating-form.css' | asset_url }}" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="{{ 'component-inputs.css' | asset_url }}" media="print" onload="this.media='all'">
   <noscript>{{ 'section-main-product.css' | asset_url | stylesheet_tag }}</noscript>
   <noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
-  <noscript>{{ 'component-rating.css' | asset_url | stylesheet_tag }}</noscript>
-  <noscript>{{ 'component-rating-form.css' | asset_url | stylesheet_tag }}</noscript>
   <noscript>{{ 'component-inputs.css' | asset_url | stylesheet_tag }}</noscript>
   {%- if section.settings.use_accordion -%}
   <link rel="stylesheet" href="{{ 'component-toggle.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -26,8 +22,6 @@
 
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
-  {{ 'component-rating.css' | asset_url | stylesheet_tag }}
-  {{ 'component-rating-form.css' | asset_url | stylesheet_tag }}
   {{ 'component-inputs.css' | asset_url | stylesheet_tag }}
   {%- if section.settings.use_accordion -%}
   {{ 'component-toggle.css' | asset_url | stylesheet_tag }}
@@ -66,8 +60,9 @@
   {%- endif -%}
 
   {%- assign current_variant = product.selected_or_first_available_variant -%}
+  {%- capture page_width -%}{%- if section.settings.width != "default" %}{{ section.settings.width }}{%- else -%}{{ settings.page_width_main }}{%- endif -%}{%- endcapture -%}
 
-  <section class="top-spacing-{{ section.settings.top_spacing }} {{ section.settings.width }} product-page-section">
+  <section class="top-spacing-{{ section.settings.top_spacing }} {{ page_width }} product-page-section">
     <div class="grid{% if product.media.size == 0 %} justify-content-center{% endif %}{% if section.settings.gallery_position == "to right" %} flip-product-content{% endif %}">
       {% if product.media.size > 0 %}
       <div class="col-sp-12 col-st-6 {{ left_column }} product--thumbnail_slider">
@@ -261,7 +256,7 @@
           {%- render 'main-product-price', product: product, use_variant: true -%}
         </div>
 
-        {%- if shop.taxes_included and block.settings.show_tax -%}
+        {%- if cart.taxes_included and block.settings.show_tax -%}
         <div class="product__tax">
           {{ 'products.product.include_taxes' | t }}
         </div>
@@ -350,7 +345,7 @@
             case section.settings.media_size
             when 'small'
             assign text_grid_desktop = 5
-            if section.settings.width == 'page-wide'
+            if page_width == 'page-wide'
             assign color_grid_desktop = 18
             assign image_grid_desktop = 12
           	else
@@ -359,7 +354,7 @@
           	endif
             when 'medium'
             assign text_grid_desktop = 4
-            if section.settings.width == 'page-wide'
+            if page_width == 'page-wide'
             assign color_grid_desktop = 16
             assign image_grid_desktop = 10
           	else
@@ -368,7 +363,7 @@
 			endif
             when 'large'
             assign text_grid_desktop = 3
-            if section.settings.width == 'page-wide'
+            if page_width == 'page-wide'
             assign color_grid_desktop = 14
             assign image_grid_desktop = 8
           	else
@@ -424,6 +419,30 @@
             
             <div class="product-form__container {{ form_container_mobile }}" {{ grid_style }}>
               {%- for value in option.values -%}
+              {%- liquid
+                assign variants_available_arr = product.variants | map: 'available'
+                assign variants_option1_arr = product.variants | map: 'option1'
+                assign variants_option2_arr = product.variants | map: 'option2'
+                assign variants_option3_arr = product.variants | map: 'option3'
+                assign option_disabled = true
+            
+                for option1_name in variants_option1_arr
+                  case option.position
+                    when 1
+                      if variants_option1_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+                      assign option_disabled = false
+                      endif
+                    when 2
+                      if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+                      assign option_disabled = false
+                      endif
+                    when 3
+                      if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+                      assign option_disabled = false
+                      endif
+                  endcase
+                endfor
+              -%}
               {%- assign color_swatch = ',' | append: value | append: ':' | downcase -%}
               <div class="product-form__item product-form__item--zoom">
                 <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
@@ -431,8 +450,8 @@
                        value="{{ value | escape }}"
                        form="{{ product_form_id }}"
                        {% if option.selected_value == value %}checked{% endif %}
-                       >
-                
+                       {% if option_disabled %}class="disabled"{% endif %}
+                       >                
                 {%- if get_product_images_from_variants_options contains color_swatch and grop_options_type == 'image' -%}
                 {%- assign image_src = get_product_images_from_variants_options | split: color_swatch | last | split: '_%%_' | first -%}
                 {%- endif -%}
@@ -441,12 +460,33 @@
                 <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="color__swatch color__swatch--image">
                   <span>{{ value }}</span>
                   <img src="{{ image_src }}" loading="lazy" alt="">
+                  <div class="product-form__item__disabled-line">
+                    <div class="product-form__item__disabled-line-item"></div>
+                  </div>
                 </label>
-                
                 {%- elsif css_colors contains color_swatch and grop_options_type == 'color' -%}
                 {%- assign color = css_colors | split: color_swatch | last | split: ',' | first -%}
                 <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="color__swatch{% if settings.color_background == color %} swatch__color-background{% endif %}" style="--color-swatch-background:{{ color }};">
                   <span class="hidden">{{ value }}</span>
+                  {%- liquid
+                    assign color_style_inverse = false
+                    assign accent_brightness = color | color_extract: 'lightness'
+                    if accent_brightness < 50
+                    assign color_style = '#ffffff'
+                    assign color_style_inverse = true
+                    else
+                    assign accent_brightness = settings.color_base | color_extract: 'lightness'
+                    if accent_brightness < 50
+                    assign color_style = settings.color_base
+                    else
+                    assign color_style = '#000000'
+                    assign color_style_inverse = true
+                    endif
+                    endif
+                  -%}
+                  <div class="product-form__item__disabled-line{% if color_style_inverse %} product-form__item__disabled-line--inverse{% endif %}" style="--color-base:{{ color_style }};">
+                    <div class="product-form__item__disabled-line-item"></div>
+                  </div>
                 </label>
                 {%- else -%}
                 <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
@@ -489,7 +529,7 @@
                       >
                 {%- for value in option.values -%}
                 <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
-                  {{ value }}
+                  {{- value -}}
                 </option>
                 {%- endfor -%}
               </select>
@@ -534,31 +574,6 @@
           </div>
 
         </noscript>
-
-
-        {%- when "rating" -%}
-        {%- if product.metafields.reviews.rating.value != blank -%}
-        {% liquid
-                 assign rating_decimal = 0
-                 assign decimal = product.metafields.reviews.rating.value.rating | modulo: 1
-                 if decimal >= 0.3 and decimal <= 0.7
-                  assign rating_decimal = 0.5
-                elsif decimal > 0.7
-                  assign rating_decimal = 1
-                 endif
-                %}
-        <div class="product__rating" {{ block.shopify_attributes }}>
-          <div class="rating" role="img" aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: product.metafields.reviews.rating.value, rating_max: product.metafields.reviews.rating.value.scale_max }}">
-            <span aria-hidden="true" class="rating-star" style="--rating: {{ product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ product.metafields.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};"></span>
-          </div>
-          <p class="rating-text caption">
-            <span aria-hidden="true">{{ product.metafields.reviews.rating.value }} / {{ product.metafields.reviews.rating.value.scale_max }}</span>
-          </p>
-          <p class="rating-count caption">
-            <span aria-hidden="true">{{ "accessibility.total_reviews" | t: count: product.metafields.reviews.rating_count }}</span>
-          </p>
-        </div>
-        {%- endif -%}
 
         {%- when "buy_buttons" -%}
         {%- liquid
@@ -691,6 +706,21 @@
         </pickup-availability>
         <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
 
+        {%- when "description" -%}
+        {%- if product.description == blank or block.settings.description_property == "group" -%}
+        {%- continue -%}
+        {%- endif -%}
+
+        <div class="ungroup-description-tab{% if block.settings.description_property == "ungroup_background" %} ungroup-description-tab--background{% endif %}" {{ block.shopify_attributes }}>
+          <div class="ungroup-description-tab__heading" {{ block.shopify_attributes }}>
+          {%- render 'icons-list' icon_name: block.settings.icon_name -%}
+          {%- if block.settings.heading != blank -%}<h2 class="h4{% if section.settings.use_accordion %} h5{% endif %} mt0 mb0">{{ block.settings.heading }}</h2>{%- endif -%}
+          </div>
+          <div class="mt0 mt--first-child-0">
+            {{ product.description }}
+          </div>
+        </div>
+          
         {%- when "share" -%}
         <share-button id="Share-{{ section.id }}" class="share-button" {{ block.shopify_attributes }}>
           <button class="link share-button__button btn-medium btn-medium--type-small btn-medium--icon color-accent-to-base hidden">
@@ -793,11 +823,11 @@
         {%- endcase -%}
         {%- endfor -%}
 
-     {%- if section.settings.use_accordion -%}
-  {%- render "main-product-tabs--accordion", section: section, product: product, default_open: section.settings.default_accordion_open -%}
-{%- else -%}
-  {%- render "main-product-tabs", section: section, product: product -%}
-{%- endif -%}
+        {%- if section.settings.use_accordion -%}
+        {%- render "main-product-tabs--accordion" section: section, product: product -%}
+        {%- else -%}
+        {%- render "main-product-tabs" section: section, product: product -%}
+        {%- endif -%}
 
         {% assign complementary = section.blocks | where: "type", "complementary" %}
         {%- for block in complementary -%}
@@ -1161,6 +1191,10 @@
         "id": "width",
         "options": [
           {
+            "value": "default",
+            "label": "t:sections.general.settings.width.options__default.label"
+          },
+          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -1169,7 +1203,7 @@
             "label": "t:sections.general.settings.width.options__wide.label"
           }
         ],
-        "default": "page-width",
+        "default": "default",
         "label": "t:sections.general.settings.width.label",
 		"info": "t:sections.general.settings.width.info"
       },
@@ -1646,6 +1680,27 @@
             "id": "icon_name",
             "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.label",
 			"info": "info_sm"
+          },
+          {
+            "type": "select",
+            "id": "description_property",
+            "options": [
+              {
+                "value": "group",
+    			"label": "t:sections.main-product.blocks.description.settings.description_property.options__1.label"
+              },
+              {
+                "value": "ungroup",
+    			"label": "t:sections.main-product.blocks.description.settings.description_property.options__2.label"
+              },
+              {
+                "value": "ungroup_background",
+    			"label": "t:sections.main-product.blocks.description.settings.description_property.options__3.label"
+              }
+            ],
+            "default": "group",
+    		"label": "t:sections.main-product.blocks.description.settings.description_property.label",
+            "info": "t:sections.main-product.blocks.description.settings.description_property.info"
           }
         ]
       },
@@ -1712,12 +1767,6 @@
             "default": "Collapsible row",
             "info": "t:sections.main-product.blocks.collapsible_tab.settings.heading.info",
             "label": "t:sections.main-product.blocks.collapsible_tab.settings.heading.label"
-          },
-          {
-          "type": "checkbox",
-          "id": "collapsible_tab_default_open",
-          "label": "Open by default",
-          "default": false
           },
           {
             "type": "text",
@@ -1954,17 +2003,6 @@
             "step": 1,
 			"label": "t:sections.main-product.blocks.inventory.settings.inventory.label",
             "default": 8
-          }
-        ]
-      },
-      {
-        "type": "rating",
-        "name": "t:sections.main-product.blocks.rating.name",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "paragraph",
-            "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
           }
         ]
       },

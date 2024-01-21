@@ -107,7 +107,19 @@ class FacetFiltersForm extends HTMLElement {
     FacetFiltersForm.renderActiveFacets(parsedHTML);
     FacetFiltersForm.renderAdditionalElements(parsedHTML);
 
-    if (countsToRender) FacetFiltersForm.renderCounts(countsToRender, event.target.closest('.js-filter'));
+    if (countsToRender) {
+      const closestJSFilterID = event.target.closest('.js-filter').id;
+      if (closestJSFilterID) {
+        FacetFiltersForm.renderCounts(countsToRender, event.target.closest('.js-filter'));
+        const newElementSelector = document
+          .getElementById(closestJSFilterID)
+          .classList.contains('mobile-facets__details')
+          ? `#${closestJSFilterID} .mobile-facets__close-button`
+          : `#${closestJSFilterID} .facets__summary`;
+        const newElementToActivate = document.querySelector(newElementSelector);
+        if (newElementToActivate) newElementToActivate.focus();
+      }
+    }
   }
 
   static renderActiveFacets(html) {
@@ -136,9 +148,14 @@ class FacetFiltersForm extends HTMLElement {
   static renderCounts(source, target) {
     const targetElement = target.querySelector('.facets__selected');
     const sourceElement = source.querySelector('.facets__selected');
-
     if (sourceElement && targetElement) {
       target.querySelector('.facets__selected').outerHTML = source.querySelector('.facets__selected').outerHTML;
+    }
+
+    const targetWrapElement = target.querySelector('.facets-wrap');
+    const sourceWrapElement = source.querySelector('.facets-wrap');
+    if (sourceWrapElement && targetWrapElement) {
+      targetWrapElement.outerHTML = sourceWrapElement.outerHTML;
     }
   }
 

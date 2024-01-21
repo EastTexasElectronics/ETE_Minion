@@ -35,7 +35,7 @@
     transform: translate3d(0,4px,0);
   }
   .image-hover-scaling-up:hover .collection-list-type1-pad:before{
-    transform: scale(1.05) translateZ(0);
+    transform: scale(var(--zoom_scale,1.05)) translateZ(0);
   }
 }
 @media (max-width: 576px){

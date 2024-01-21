@@ -45,7 +45,7 @@ color:{{ section.settings.color_description }};
 
 <div id="progress-{{ section.id }}" class="top-spacing-{{ section.settings.top_spacing }}{% if section.settings.background != 'hide' and section.settings.background_width == "fullwidth" %} section-background section-background--{{ section.settings.background_spacing }}{% endif %}"
      data-section-name="progress">
-  <div class="{{ section.settings.width }} mb--last-child-0">
+  <div class="{% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %} mb--last-child-0">
     {% if section.settings.background != 'hide' and section.settings.background_width == "content_width" %}<div class="section-background section-background--{{ section.settings.background_spacing }} border__radius mb--last-child-0">{%- endif -%}
     
     {%- render "section-heading" section:section -%}
@@ -180,6 +180,10 @@ color:{{ section.settings.color_description }};
         "id": "width",
         "options": [
           {
+            "value": "default",
+            "label": "t:sections.general.settings.width.options__default.label"
+          },
+          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -188,7 +192,7 @@ color:{{ section.settings.color_description }};
             "label": "t:sections.general.settings.width.options__wide.label"
           }
         ],
-        "default": "page-width",
+        "default": "default",
         "label": "t:sections.general.settings.width.label",
 		"info": "t:sections.general.settings.width.info"
       },

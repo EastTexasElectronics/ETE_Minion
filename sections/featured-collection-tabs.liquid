@@ -1,10 +1,8 @@
 {{ 'section-featured-collection-tabs.css' | asset_url | stylesheet_tag }}
 {%- if settings.animate_content_show -%}
 <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-rating.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-product-card.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-rating.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-product-card.css' | asset_url | stylesheet_tag }}</noscript>
 {%- if settings.swatches_design != 'none' and settings.enable_color_swatches -%}
 <link rel="stylesheet" href="{{ 'product-card-variants.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -16,7 +14,6 @@
 {%- endif -%}
 {%- else -%}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
-{{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-product-card.css' | asset_url | stylesheet_tag }}
 {%- if settings.swatches_design != 'none' and settings.enable_color_swatches -%}
 {{ 'product-card-variants.css' | asset_url | stylesheet_tag }}
@@ -68,7 +65,7 @@
     </div>
     {%- endif -%}
     <featured-collection-tabs class="grid heading--mb featured-collection-tabs{% if section.settings.heading_aligment == "text-center" %} featured-collection-tabs--center{% endif %}"
-                              data-settings="{{ section.settings.texts_aligment }}___{{ section.settings.swipe_on_mobile }}___{% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %}___{{ section.settings.grid | replace: ' ', '--' }}___{{ section.settings.mobile_grid }}___{{ section.settings.image_ratio | replace: ', ', '--' }}___{{ section.settings.show_button_quickview }}___{{ section.settings.show_badge_sold_out }}___{{ section.settings.show_badge_on_sale }}___{{ section.settings.show_badge_feature }}___{{ section.settings.show_secondary_image }}___{{ section.settings.show_vendor }}___{{ section.settings.product_name_size }}___{{ section.settings.hover_underline }}___{{ section.settings.truncate_product_name }}___{{ section.settings.show_price }}___{{ section.id }}___{{ section.settings.heading_aligment }}___{{ section.settings.product_limit }}___{{ section.settings.show_rating }}___{{ section.settings.button_type_product }}___{{ section.settings.show_type }}___{{ section.settings.button_name }}___{{ section.settings.desktop_slider }}___{{ section.settings.desktop_slider_scroll_one }}___{{ section.settings.image_zoom_internal }}">
+                              data-settings="{{ section.settings.texts_aligment }}___{{ section.settings.swipe_on_mobile }}___{% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %}___{{ section.settings.grid | replace: ' ', '--' }}___{{ section.settings.mobile_grid }}___{{ section.settings.image_ratio | replace: ', ', '--' }}___{{ section.settings.show_button_quickview }}___{{ section.settings.show_badge_sold_out }}___{{ section.settings.show_badge_on_sale }}___{{ section.settings.show_badge_feature }}___{{ section.settings.show_secondary_image }}___{{ section.settings.show_vendor }}___{{ section.settings.product_name_size }}___{{ section.settings.hover_underline }}___{{ section.settings.truncate_product_name }}___{{ section.settings.show_price }}___{{ section.id }}___{{ section.settings.heading_aligment }}___{{ section.settings.product_limit }}___false___{{ section.settings.button_type_product }}___{{ section.settings.show_type }}___{{ section.settings.button_name }}___{{ section.settings.desktop_slider }}___{{ section.settings.desktop_slider_scroll_one }}___{{ section.settings.image_zoom_internal }}">
       <div class="col-st-12">
         <div class="featured-collection-tabs__container">
           <div class="featured-collection-tabs__container__content">
@@ -384,13 +381,6 @@
         "id": "show_type",
         "default": false,
 		"label": "t:sections.featured-collection.settings.show_type.label"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_rating",
-        "default": false,
-		"label": "t:sections.featured-collection.settings.show_rating.label",
-		"info": "t:sections.featured-collection.settings.show_rating.info"
       },
       {
         "type": "checkbox",

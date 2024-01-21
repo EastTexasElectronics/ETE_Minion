@@ -1,5 +1,5 @@
 {%- if section.settings.custom_liquid != blank -%}
-<div class="top-spacing-{{ section.settings.top_spacing }} {{ section.settings.width }}">
+<div class="top-spacing-{{ section.settings.top_spacing }} {% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %}">
   {{ section.settings.custom_liquid }}
 </div>
 {%- endif -%}
@@ -50,6 +50,10 @@
       "id": "width",
       "options": [
         {
+          "value": "default",
+          "label": "t:sections.general.settings.width.options__default.label"
+        },
+        {
           "value": "page-width",
           "label": "t:sections.general.settings.width.options__boxed.label"
         },
@@ -58,7 +62,7 @@
           "label": "t:sections.general.settings.width.options__wide.label"
         }
       ],
-      "default": "page-width",
+      "default": "default",
       "label": "t:sections.general.settings.width.label",
       "info": "t:sections.general.settings.width.info"
     }

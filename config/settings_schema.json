@@ -2,7 +2,7 @@
   {
     "name": "theme_info",
     "theme_name": "Minion",
-    "theme_version": "2.4.0",
+    "theme_version": "2.5.1",
     "theme_author": "SoftAli",
     "theme_documentation_url": "https:\/\/softalib4.gitbook.io\/minion-shopify-theme\/",
     "theme_support_url": "https:\/\/softalishopify.ticksy.com\/"
@@ -735,6 +735,57 @@
         "default": true,
         "label": "t:settings_schema.search_input.settings.predictive_search_show_price.label",
         "info": "t:settings_schema.search_input.settings.predictive_search_show_price.info"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.filter_tabs.name",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.filter_tabs.settings.paragraph_1.content"
+      },
+      {
+        "type": "textarea",
+        "id": "filter_tabs",
+        "label": "t:settings_schema.filter_tabs.settings.filter_tabs.label",
+        "info": "t:settings_schema.filter_tabs.settings.filter_tabs.info"
+      },
+      {
+        "type": "select",
+        "id": "filter_image_grid",
+        "options": [
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          }
+        ],
+        "default": "4",
+        "label": "t:settings_schema.filter_tabs.settings.filter_image_grid.label"
+      },
+      {
+        "type": "select",
+        "id": "filter_image",
+        "options": [
+          {
+            "value": "hide",
+            "label": "t:settings_schema.filter_tabs.settings.filter_image.option__1.label"
+          },
+          {
+            "value": "show",
+            "label": "t:settings_schema.filter_tabs.settings.filter_image.option__2.label"
+          },
+          {
+            "value": "show-center",
+            "label": "t:settings_schema.filter_tabs.settings.filter_image.option__3.label"
+          }
+        ],
+        "default": "show",
+        "label": "t:settings_schema.filter_tabs.settings.filter_image.label"
       }
     ]
   },

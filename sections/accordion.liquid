@@ -60,7 +60,7 @@
 {%- endif -%}
 
 <div id="accordion-{{ section.id }}" class="top-spacing-{{ section.settings.top_spacing }}{% if section.settings.background != 'hide' and section.settings.background_width == "fullwidth" %} section-background section-background--{{ section.settings.background_spacing }}{% endif %}" data-section-name="accordion">
-  <div class="{{ section.settings.width }} mb--last-child-0">
+  <div class="{% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %} mb--last-child-0">
     {% if section.settings.background != 'hide' and section.settings.background_width == "content_width" %}<div class="section-background section-background--{{ section.settings.background_spacing }} border__radius mb--last-child-0">{%- endif -%}
 
     {%- liquid
@@ -83,9 +83,9 @@
     {%- if section.blocks.size > 0 -%}
     <toggle-component class="grid justify-content-center{% unless section.settings.disable_accordion %} chm-toggle--accordion{% endunless %}{% if request.design_mode and section.settings.show_all_text_in_admin %} admin-panel--no-js{% endif %}">
       <div class="col-st-12 col-6">
-{%- for block in section.blocks -%}
-  <details class="chm-toggle" {{ block.settings.default_open | default: false | json | prepend: 'open=' | escape }} {{ block.shopify_attributes }}>
-    <summary>
+      {%- for block in section.blocks -%}
+        <details class="chm-toggle"{% if request.design_mode and section.settings.show_all_text_in_admin %} open{% endif %} {{ block.shopify_attributes }}>
+          <summary>
             <div class="chm-toggle__button">
               {{ '<' | append: section.settings.heading_tag }} class="mt0 mb0">
               {{ block.settings.heading }}
@@ -93,11 +93,11 @@
               {%- render "icon-arrow-down-small" -%}
             </div>
           </summary>
-              <div class="mt0 section__richtext__editor chm-toggle__content mt--first-child-0{% if section.settings.description_size != "normal" %} {{ section.settings.description_size }}{% endif %}">
-      {{ block.settings.description }}
-    </div>
-  </details>
-{%- endfor -%}
+          <div class="mt0 section__richtext__editor chm-toggle__content mt--first-child-0{% if section.settings.description_size != "normal" %} {{ section.settings.description_size }}{% endif %}">
+            {{ block.settings.description }}
+          </div>
+        </details>
+      {%- endfor -%}
       </div>
     </toggle-component>
     {%- endif -%}
@@ -181,6 +181,10 @@
         "id": "width",
         "options": [
           {
+            "value": "default",
+            "label": "t:sections.general.settings.width.options__default.label"
+          },
+          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -189,7 +193,7 @@
             "label": "t:sections.general.settings.width.options__wide.label"
           }
         ],
-        "default": "page-width",
+        "default": "default",
         "label": "t:sections.general.settings.width.label",
 		"info": "t:sections.general.settings.width.info"
       },
@@ -371,12 +375,6 @@
             "id": "description",
             "default": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
 			"label": "t:sections.general.settings.description.label"
-          },
-          {
-            "type": "checkbox",
-            "id": "default_open",
-            "default": false,
-            "label": "Open by default"
           }
         ]
       }
