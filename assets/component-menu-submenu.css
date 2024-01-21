@@ -12,7 +12,7 @@
   line-height: 18px;
   z-index: 9;
   box-shadow: var(--shadow);
-  border-radius: var(--radius-button);
+  border-radius: var(--radius-menu);
   background: var(--color-simple-dropdown);
   transition: opacity var(--duration-medium) ease,
     		  top var(--duration-medium) ease,

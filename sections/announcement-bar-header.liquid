@@ -15,7 +15,7 @@
   {%- endcase -%}
 {%- endfor -%}
 
-<div class="{{ section.settings.width }} {% if section.settings.slider_mode %} announcement-bar__slider{% endif %} {{ section.settings.text_size }}">
+<div class="{% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %} {% if section.settings.slider_mode %} announcement-bar__slider{% endif %} {{ section.settings.text_size }}">
   <{% if section.settings.slider_mode and section.blocks.size > 1 %}announcement-bar{% else %}div{% endif %} class="announcement-bar-container{% if section.settings.width != "page-fullwidth" %} border__radius{% endif %} section-background--xsmall"
     data-delay="{{ section.settings.bar_time }}">
 
@@ -84,6 +84,10 @@
       "type": "select",
       "id": "width",
       "options": [
+        {
+          "value": "default",
+          "label": "t:sections.general.settings.width.options__default.label"
+        },
         {
           "value": "page-width",
           "label": "t:sections.general.settings.width.options__boxed.label"

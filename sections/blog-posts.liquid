@@ -64,10 +64,11 @@
 <style>{{ section_styles }}</style>
 {%- endif -%}
 
+{%- capture page_width -%}{%- if section.settings.width != "default" %}{{ section.settings.width }}{%- else -%}{{ settings.page_width_main }}{%- endif -%}{%- endcapture -%}
 {%- assign last_characters = 'general.abbreviation_of_text_in_a_section.last_characters' | t -%}
 <div id="blog-posts-{{ section.id }}" class="top-spacing-{{ section.settings.top_spacing }}{% if section.settings.background != 'hide' and section.settings.background_width == "fullwidth" %} section-background section-background--{{ section.settings.background_spacing }}{% endif %}"
      data-section-name="blog-posts">
-  <div class="{{ section.settings.width }} mb--last-child-0">
+  <div class="{{ page_width }} mb--last-child-0">
     {% if section.settings.background != 'hide' and section.settings.background_width == "content_width" %}<div class="section-background section-background--{{ section.settings.background_spacing }} border__radius">{%- endif -%}
     
     {%- liquid
@@ -88,7 +89,8 @@
           <div class="blog-posts mt--first-child-0 mb--last-child-0 hover-area{% if settings.enable_zoom_animation %} image-hover-scaling-up{% endif %}">
 
             {%- if section.settings.show_image and article.image != blank -%}
-            <a href="{{ article.url }}" class="mb25 image-hover-scaling__image">
+            <div class="mb25 {% if section.settings.image_zoom_internal %} image-hover-scaling-internal{% if section.settings.image_ratio == '1, round-image' %} border__radius--circle{% endif %}{% endif %}">
+            <a href="{{ article.url }}" class="image-hover-scaling__image">
               {%- capture image_ratio -%}
               {%- if section.settings.image_ratio == 'auto' -%}
               {{ article.image.aspect_ratio }}
@@ -101,7 +103,7 @@
 
               <div class="border__radius{% if section.settings.image_ratio == '1, round-image' %} border__radius--circle{% endif %}" style="--aspect-ratio: {{image_ratio}};">                
                 {%- liquid
-                    if section.settings.width == "page-width"
+                    if page_width == "page-width"
                     assign page_is_wide = false
                     else
                     assign page_is_wide = true
@@ -122,6 +124,7 @@
                      >
               </div>
             </a>
+            </div>
             {%- endif -%}
 
             {%- liquid
@@ -303,6 +306,10 @@
         "id": "width",
         "options": [
           {
+            "value": "default",
+            "label": "t:sections.general.settings.width.options__default.label"
+          },
+          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -311,8 +318,9 @@
             "label": "t:sections.general.settings.width.options__wide.label"
           }
         ],
-        "default": "page-width",
-        "label": "t:sections.general.settings.width.label"
+        "default": "default",
+        "label": "t:sections.general.settings.width.label",
+		"info": "t:sections.general.settings.width.info"
       },
       {
         "type": "select",
@@ -380,6 +388,12 @@
         ],
         "default": "auto",
         "label": "t:sections.general.settings.image_ratio.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "image_zoom_internal",
+        "default": false,
+		"label": "t:sections.general.settings.image_zoom_internal.label"
       },
 	  {
 		"type": "select",

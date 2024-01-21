@@ -21,7 +21,8 @@
   .footer__accordion__heading>*{
     pointer-events:none;
   }
-  *:not(:first-child)>.footer__accordion__heading:first-child:after {
+  *:not(:first-child)>.footer__accordion__heading:first-child:after,
+  *:not(:first-child)>.footer-social .footer__accordion__heading:after{
     content: "";
     position: absolute;
     top: 0;

@@ -1,6 +1,5 @@
-{%- capture avada-seo-original -%}
 <!doctype html>
-<html class="no-js{% if settings.minion_rtl %} minion-rtl{% endif %}" lang="{{ request.locale.iso_code }}" data-role="{{ theme.role }}">
+<html class="no-js" lang="{{ request.locale.iso_code }}" data-role="{{ theme.role }}"{% if settings.minion_rtl or shop.locale == 'ar' %} dir="rtl"{% endif %}>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -320,7 +319,7 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
-    {% if settings.minion_rtl %}{{ 'base-rtl.css' | asset_url | stylesheet_tag }}{% endif %}
+    {% if settings.minion_rtl or shop.locale == 'ar' %}{{ 'base-rtl.css' | asset_url | stylesheet_tag }}{% endif %}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -343,11 +342,7 @@
         setTimeout(function(){document.querySelector('footer').classList.add('footer-loaded')}, 700);
       });
     </script>
-  
-	<!-- Added by AVADA SEO Suite -->
-	{% include 'avada-seo-social' %}
-	<!-- /Added by AVADA SEO Suite -->
-	</head>
+  </head>
 
   <body>
     <a class="skip-to-content-link btn visually-hidden" href="#MainContent">
@@ -437,13 +432,3 @@
     {%- endif -%}
   </body>
 </html>
-
-{%- endcapture -%}
-{%- capture avada-seo-minified -%}
-{%- include 'avada-seo-minifier', content: avada-seo-original -%}
-{%- endcapture -%}
-{%- if avada-seo-minified contains 'Liquid error' -%}
-  {{ avada-seo-original }}
-{%- else -%}
-  {{ avada-seo-minified }}
-{%- endif -%}

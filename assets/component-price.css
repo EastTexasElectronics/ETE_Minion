@@ -1,23 +1,19 @@
 .price{
   color: var(--color-price);
-  display: inline-block !important; 
 }
 .price__regular{
   text-decoration-line: line-through;
-  display: inline-block !important; 
 }
 .price__sale{
   color: var(--color-old-price);
-  display: inline-block !important; 
-  margin-right: 10px; 
 }
 .product-card .unit-price{
   display: inline-flex;
   margin-top: 3px;
 }
 .price__container{
-  display: inline-block !important; 
-  
+  display: flex;
+  align-items: flex-end;
 }
 .price__container .unit-price{
   position: relative;

@@ -2,13 +2,9 @@
 {%- if settings.animate_content_show -%}
 <link rel="stylesheet" href="{{ 'section-main-product.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-rating.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-rating-form.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-inputs.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'section-main-product.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-rating.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-rating-form.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-inputs.css' | asset_url | stylesheet_tag }}</noscript>
 {%- if section.settings.use_accordion -%}
 <link rel="stylesheet" href="{{ 'component-toggle.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -24,8 +20,6 @@
 {%- else -%}
 {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
-{{ 'component-rating.css' | asset_url | stylesheet_tag }}
-{{ 'component-rating-form.css' | asset_url | stylesheet_tag }}
 {{ 'component-inputs.css' | asset_url | stylesheet_tag }}
 {%- if section.settings.use_accordion -%}
 {{ 'component-toggle.css' | asset_url | stylesheet_tag }}
@@ -50,7 +44,7 @@
 
 {%- if product == blank -%}
 
-<section class="top-spacing-{{ section.settings.top_spacing }} {{ section.settings.width }} product-page-section--dynamic"
+<section class="top-spacing-{{ section.settings.top_spacing }} {% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %} product-page-section--dynamic"
          data-section-name="featured-product">
   <div class="grid">   
     <div class="col-sp-12 col-st-6 {{ left_column }} product--thumbnail_slider">
@@ -80,7 +74,7 @@
 
 {%- assign current_variant = product.selected_or_first_available_variant -%}
 
-<section class="top-spacing-{{ section.settings.top_spacing }} {{ section.settings.width }} product-page-section product-page-section--dynamic">
+<section class="top-spacing-{{ section.settings.top_spacing }} {% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %} product-page-section product-page-section--dynamic">
   <div class="grid{% if section.settings.gallery_position == "to right" %} flip-product-content{% endif %}">   
     <div class="col-sp-12 col-st-6 {{ left_column }} product--thumbnail_slider">
       <media-gallery id="MediaGallery-{{ section.id }}"
@@ -190,7 +184,7 @@
         {%- render 'main-product-price', product: product, use_variant: true -%}
       </div>
 
-      {%- if shop.taxes_included and block.settings.show_tax -%}
+      {%- if cart.taxes_included and block.settings.show_tax -%}
       <div class="product__tax">
         {{ 'products.product.include_taxes' | t }}
       </div>
@@ -249,16 +243,16 @@
       {%- assign v_headings = v_headings | append: variant_name | append: "||" -%}
       {%- endif -%}
       {%- endfor -%}
-
+        
       {%- assign swatches_design = settings.swatches_design -%}
       {%- assign variants_names = settings.variants_names -%}
       {%- assign css_colors = settings.css_colors -%}
-
+      
       {%- liquid 
           if swatches_design != 'none'
           assign variants_names = '||' | append:variants_names | strip_newlines | downcase | strip | replace: ', ', ',' | replace: ',', '||' | append: '||'
           assign css_colors = ',' | append:css_colors | strip_newlines | downcase | strip | replace: ': ', ':'
-
+          
           if swatches_design == 'image'
           for option in product.options_with_values
           assign option_name = '||' | append: option.name | append: '||' | downcase
@@ -275,7 +269,7 @@
           assign variants_names = ''
           assign css_colors = ''
           endif
-
+          
           case section.settings.media_size
           when 'small'
           assign text_grid_desktop = 5
@@ -329,7 +323,7 @@
               {%- endif -%}
             </div>
           </legend>
-
+          
           {%- liquid
               assign grop_options_type = 'button'
               assign option_name = option_name | downcase
@@ -350,9 +344,33 @@
               assign form_container_mobile = ""
               endif
           -%}
-
+          
           <div class="product-form__container {{ form_container_mobile }}" {{ grid_style }}>
             {%- for value in option.values -%}
+            {%- liquid
+              assign variants_available_arr = product.variants | map: 'available'
+              assign variants_option1_arr = product.variants | map: 'option1'
+              assign variants_option2_arr = product.variants | map: 'option2'
+              assign variants_option3_arr = product.variants | map: 'option3'
+              assign option_disabled = true
+          
+              for option1_name in variants_option1_arr
+                case option.position
+                  when 1
+                    if variants_option1_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+                    assign option_disabled = false
+                    endif
+                  when 2
+                    if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+                    assign option_disabled = false
+                    endif
+                  when 3
+                    if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+                    assign option_disabled = false
+                    endif
+                endcase
+              endfor
+            -%}
             {%- assign color_swatch = ',' | append: value | append: ':' | downcase -%}
             <div class="product-form__item product-form__item--zoom">
               <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
@@ -360,22 +378,43 @@
                      value="{{ value | escape }}"
                      form="{{ product_form_id }}"
                      {% if option.selected_value == value %}checked{% endif %}
-                     >
-
+                     {% if option_disabled %}class="disabled"{% endif %}
+                     >                
               {%- if get_product_images_from_variants_options contains color_swatch and grop_options_type == 'image' -%}
               {%- assign image_src = get_product_images_from_variants_options | split: color_swatch | last | split: '_%%_' | first -%}
               {%- endif -%}
-
+              
               {%- if get_product_images_from_variants_options contains color_swatch and grop_options_type == 'image' and image_src != blank -%}
               <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="color__swatch color__swatch--image">
                 <span>{{ value }}</span>
                 <img src="{{ image_src }}" loading="lazy" alt="">
+                <div class="product-form__item__disabled-line">
+                  <div class="product-form__item__disabled-line-item"></div>
+                </div>
               </label>
-
               {%- elsif css_colors contains color_swatch and grop_options_type == 'color' -%}
               {%- assign color = css_colors | split: color_swatch | last | split: ',' | first -%}
               <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="color__swatch{% if settings.color_background == color %} swatch__color-background{% endif %}" style="--color-swatch-background:{{ color }};">
                 <span class="hidden">{{ value }}</span>
+                {%- liquid
+                  assign color_style_inverse = false
+                  assign accent_brightness = color | color_extract: 'lightness'
+                  if accent_brightness < 50
+                  assign color_style = '#ffffff'
+                  assign color_style_inverse = true
+                  else
+                  assign accent_brightness = settings.color_base | color_extract: 'lightness'
+                  if accent_brightness < 50
+                  assign color_style = settings.color_base
+                  else
+                  assign color_style = '#000000'
+                  assign color_style_inverse = true
+                  endif
+                  endif
+                -%}
+                <div class="product-form__item__disabled-line{% if color_style_inverse %} product-form__item__disabled-line--inverse{% endif %}" style="--color-base:{{ color_style }};">
+                  <div class="product-form__item__disabled-line-item"></div>
+                </div>
               </label>
               {%- else -%}
               <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
@@ -400,7 +439,7 @@
             {%- if v_headings contains option_name -%}
             <modal-opener class="variants-modal__button no-js-hidden" data-modal="#PopupModal-{{ block.id }}{{ forloop.index }}">
               <button id="ProductPopup-{{ block.id }}{{ forloop.index }}"
-                      class="link link-only-svg"
+                      class="link link-only-svg"                      
                       type="button"
                       aria-haspopup="dialog"
                       aria-label="{{ 'general.aria_label.slide' | t }}"
@@ -418,7 +457,7 @@
                     >
               {%- for value in option.values -%}
               <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
-                {{ value }}
+                {{- value -}}
               </option>
               {%- endfor -%}
             </select>
@@ -434,10 +473,10 @@
       </variant-selects>
       {%- endif -%}
       {%- endunless -%}
-      
-      
+
+
       <noscript class="product-form__noscript-wrapper-{{ section.id }}{% if product.has_only_default_variant %} hidden{% endif %} mt20 display-block">
-        
+
         <label class="variants-label" for="Variants-{{ section.id }}">{{ 'products.product.product_variants' | t }}</label>
         <div class="field w-full">
           <select id="Variants-{{ section.id }}"
@@ -461,33 +500,8 @@
             {% render 'icon-arrow-down-small' %}
           </div>
         </div>
-        
+
       </noscript>
-      
-      
-      {%- when "rating" -%}
-      {%- if product.metafields.reviews.rating.value != blank -%}
-      {% liquid
-               assign rating_decimal = 0
-               assign decimal = product.metafields.reviews.rating.value.rating | modulo: 1
-               if decimal >= 0.3 and decimal <= 0.7
-                assign rating_decimal = 0.5
-              elsif decimal > 0.7
-                assign rating_decimal = 1
-               endif
-              %}
-      <div class="product__rating" {{ block.shopify_attributes }}>
-        <div class="rating" role="img" aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: product.metafields.reviews.rating.value, rating_max: product.metafields.reviews.rating.value.scale_max }}">
-          <span aria-hidden="true" class="rating-star" style="--rating: {{ product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ product.metafields.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};"></span>
-        </div>
-        <p class="rating-text caption">
-          <span aria-hidden="true">{{ product.metafields.reviews.rating.value }} / {{ product.metafields.reviews.rating.value.scale_max }}</span>
-        </p>
-        <p class="rating-count caption">
-          <span aria-hidden="true">{{ "accessibility.total_reviews" | t: count: product.metafields.reviews.rating_count }}</span>
-        </p>
-      </div>
-      {%- endif -%}
 
 	  {%- when "buy_buttons" -%}
       {%- liquid
@@ -611,7 +625,22 @@
         </template>
       </pickup-availability>
       <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
-      
+
+      {%- when "description" -%}
+      {%- if product.description == blank or block.settings.description_property == "group" -%}
+      {%- continue -%}
+      {%- endif -%}
+
+      <div class="ungroup-description-tab{% if block.settings.description_property == "ungroup_background" %} ungroup-description-tab--background{% endif %}" {{ block.shopify_attributes }}>
+        <div class="ungroup-description-tab__heading" {{ block.shopify_attributes }}>
+        {%- render 'icons-list' icon_name: block.settings.icon_name -%}
+        {%- if block.settings.heading != blank -%}<h2 class="h4{% if section.settings.use_accordion %} h5{% endif %} mt0 mb0">{{ block.settings.heading }}</h2>{%- endif -%}
+        </div>
+        <div class="mt0 mt--first-child-0">
+          {{ product.description }}
+        </div>
+      </div>
+
       {%- when "share" -%}
       <share-button id="Share-{{ section.id }}" class="share-button" {{ block.shopify_attributes }}>
         <button class="link share-button__button btn-medium btn-medium--type-small btn-medium--icon color-accent-to-base hidden">
@@ -1017,6 +1046,10 @@
         "id": "width",
         "options": [
           {
+            "value": "default",
+            "label": "t:sections.general.settings.width.options__default.label"
+          },
+          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -1025,7 +1058,7 @@
             "label": "t:sections.general.settings.width.options__wide.label"
           }
         ],
-        "default": "page-width",
+        "default": "default",
         "label": "t:sections.general.settings.width.label",
 		"info": "t:sections.general.settings.width.info"
       },
@@ -1480,6 +1513,27 @@
             "id": "icon_name",
             "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.label",
 			"info": "info_sm"
+          },
+          {
+            "type": "select",
+            "id": "description_property",
+            "options": [
+              {
+                "value": "group",
+    			"label": "t:sections.main-product.blocks.description.settings.description_property.options__1.label"
+              },
+              {
+                "value": "ungroup",
+    			"label": "t:sections.main-product.blocks.description.settings.description_property.options__2.label"
+              },
+              {
+                "value": "ungroup_background",
+    			"label": "t:sections.main-product.blocks.description.settings.description_property.options__3.label"
+              }
+            ],
+            "default": "group",
+    		"label": "t:sections.main-product.blocks.description.settings.description_property.label",
+            "info": "t:sections.main-product.blocks.description.settings.description_property.info"
           }
         ]
       },
@@ -1780,17 +1834,6 @@
         ]
       },
       {
-        "type": "rating",
-        "name": "t:sections.main-product.blocks.rating.name",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "paragraph",
-            "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
-          }
-        ]
-      },
-      {
         "type": "@app"
       },
       {
@@ -1909,11 +1952,6 @@
             "type": "title",
             "settings": {
               "text_size": "emptyclass"
-            }
-          },
-          {
-            "type": "rating",
-            "settings": {
             }
           },
           {
