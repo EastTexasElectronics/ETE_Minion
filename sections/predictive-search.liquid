@@ -83,7 +83,7 @@
                 {%- if product.featured_media != blank -%}
                 <div class="image-hover-scaling__image">
                   <div class="border__radius" style="--aspect-ratio: {{product.featured_media.aspect_ratio }};">
-                    <img class="predictive-search__image"
+                    <img loading="lazy" class="predictive-search__image"
                       src="{{ product.featured_media | image_url: width: 150 }}"
                       alt="{{ product.featured_media.alt }}"
                       width="50"

@@ -7,7 +7,6 @@
 {{ 'section-image-with-text-bg.css' | asset_url | stylesheet_tag }}
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
-{%- capture page_width -%}{%- if section.settings.width != "default" %}{{ section.settings.width }}{%- else -%}{{ settings.page_width_main }}{%- endif -%}{%- endcapture -%}
 {%- capture section_styles -%}
 {%- if section.settings.background != 'hide' -%}
 {%- liquid
@@ -25,7 +24,7 @@
   --color-section-background: {{ color }};
   {%- endif -%}
 }
-{%- if page_width == "page-wide" -%}
+{%- if section.settings.width == "page-wide" -%}
 {%- assign delta_percente = 9 -%}
 {%- assign delta_percente_mobile = 15 -%}
 {%- else -%}
@@ -95,7 +94,7 @@
 
 <div id="image-with-text-bg-{{ section.id }}" class="image-with-text-bg top-spacing-{{ section.settings.top_spacing }}{% if section.settings.background != 'hide' and section.settings.background_width == "fullwidth" %} section-background section-background--{{ section.settings.background_spacing }}{% endif %}"
      data-section-name="image-with-text-bg">
-  <div class="{{ page_width }} hover-area">
+  <div class="{{ section.settings.width }} hover-area">
     {% if section.settings.background != 'hide' and section.settings.background_width == "content_width" %}<div class="section-background section-background--{{ section.settings.background_spacing }}">{%- endif -%}
 	<div class="grid{% if section.settings.column_reverse %} image-with-text-bg--reverse align-items-center{% else %} justify-content-center{% endif %}">
       
@@ -293,10 +292,6 @@
         "id": "width",
         "options": [
           {
-            "value": "default",
-            "label": "t:sections.general.settings.width.options__default.label"
-          },
-          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -305,7 +300,7 @@
             "label": "t:sections.general.settings.width.options__wide.label"
           }
         ],
-        "default": "default",
+        "default": "page-width",
         "label": "t:sections.general.settings.width.label",
 		"info": "t:sections.general.settings.width.info"
       },

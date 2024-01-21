@@ -62,7 +62,7 @@
 {%- endif -%}
 
 <div id="big-image-with-text-{{ section.id }}" class="loading--fadein top-spacing-{{ section.settings.top_spacing }}">
-  <div class="{% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %}">
+  <div class="{{ section.settings.width }}">
    
     {%- if section.blocks.size == 0 or collection.image == blank -%}
     <div class="grid{% if section.settings.texts_aligment == "text-center" %} justify-content-center{% endif %}">
@@ -164,10 +164,6 @@
         "id": "width",
         "options": [
           {
-            "value": "default",
-            "label": "t:sections.general.settings.width.options__default.label"
-          },
-          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -180,7 +176,7 @@
             "label": "t:sections.general.settings.width.options__fullwidth.label"
           }
         ],
-        "default": "default",
+        "default": "page-width",
         "label": "t:sections.general.settings.width.label",
 		"info": "t:sections.general.settings.width.info"
       },

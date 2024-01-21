@@ -65,10 +65,10 @@
 {%- if section_styles != blank -%}
 <style>{{ section_styles }}</style>
 {%- endif -%}
-{%- capture page_width -%}{%- if section.settings.width != "default" %}{{ section.settings.width }}{%- else -%}{{ settings.page_width_main }}{%- endif -%}{%- endcapture -%}
+
 <div id="image-with-text-{{ section.id }}" class="image-with-text top-spacing-{{ section.settings.top_spacing }}{% if section.settings.background != 'hide' and section.settings.background_width == "fullwidth" %} section-background section-background--{{ section.settings.background_spacing }}{% endif %}"
      data-section-name="image-with-text">
-  <div class="{{ page_width }} hover-area">
+  <div class="{{ section.settings.width }} hover-area">
     {% if section.settings.background != 'hide' and section.settings.background_width == "content_width" %}<div class="section-background section-background--{{ section.settings.background_spacing }} border__radius">{%- endif -%}
     
     <div class="grid{% if section.settings.row_reverse %} image-with-text--reverse{% endif %}">
@@ -103,7 +103,7 @@
         {%- assign html_tag_open = '<div' -%}
         {%- assign html_tag_close = '</div>' -%}
         {%- endif -%}
-        <div class="w-full {% if settings.enable_zoom_animation and section.settings.url != blank and block.settings.content_type == 'image' and block.settings.content_type == 'image' %} image-hover-scaling-up{% if section.settings.image_zoom_internal %} image-hover-scaling-internal{% endif %}{% endif %}" {{ block.shopify_attributes }}>
+        <div class="w-full {% if settings.enable_zoom_animation and section.settings.url != blank and block.settings.content_type == 'image' %} image-hover-scaling-up{% endif %}" {{ block.shopify_attributes }}>
           {{ html_tag_open }} class="image-hover-scaling__image">
             {%- if block.settings.image == blank -%}
 
@@ -161,7 +161,7 @@
                         data-media-id="{{ block.settings.video_url.id }}"
                         >
           <button id="Deferred-Poster-Modal-{{ block.settings.video_url.id }}"
-                  class="deferred-media__poster{% if settings.enable_zoom_animation %} image-hover-scaling-up{% if section.settings.image_zoom_internal %} image-hover-scaling-internal{% endif %}{% endif %}"
+                  class="deferred-media__poster{% if settings.enable_zoom_animation %} image-hover-scaling-up{% endif %}"
                   type="button"
                   aria-label="{{ 'general.aria_label.play' | t }}"
                   >
@@ -213,7 +213,7 @@
         {%- if block.settings.show_icon == 'image' and block.settings.image != blank -%}
         <div class="image-with-text__icon">
           {%- liquid
-                if page_width == "page-width"
+                if section.settings.width == "page-width"
 		   	    assign page_is_wide = false
                 else
                 assign page_is_wide = true
@@ -326,10 +326,6 @@
         "id": "width",
         "options": [
           {
-            "value": "default",
-            "label": "t:sections.general.settings.width.options__default.label"
-          },
-          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -338,7 +334,7 @@
             "label": "t:sections.general.settings.width.options__wide.label"
           }
         ],
-        "default": "default",
+        "default": "page-width",
         "label": "t:sections.general.settings.width.label",
 		"info": "t:sections.general.settings.width.info"
       },
@@ -436,12 +432,6 @@
 		"default": "normal",
 		"label": "t:sections.general.settings.description_size.label"
 	  },
-      {
-        "type": "checkbox",
-        "id": "image_zoom_internal",
-        "default": false,
-		"label": "t:sections.general.settings.image_zoom_internal.label"
-      },
       {
         "type": "checkbox",
         "id": "hover_underline",

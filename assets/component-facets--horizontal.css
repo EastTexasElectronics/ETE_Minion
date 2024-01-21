@@ -24,11 +24,6 @@
 .disclosure-has-popup[open] > summary + * {
   z-index: 100;
 }
-.facets__selected__box{
-  display:flex;
-  flex-direction:column;
-  padding: 15px 0;
-}
 @media screen and (min-width: 750px) {
   .disclosure-has-popup[open] > summary + * {
     z-index: 4;
@@ -64,12 +59,6 @@
   max-height: 370px;
   overflow-y: auto;
   padding: calc(20px - var(--facets-padding)) 20px 4px;
-}
-.facets__display.parent-visual-display-parent{
-  padding-bottom:20px;
-}
-.parent-visual-display-parent .facets__display__content{
-  padding: 20px 20px 5px 20px;
 }
 .facets__horizontal .facets__wrapper .facets__disclosure-no-js{
   display: flex;

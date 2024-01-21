@@ -15,11 +15,7 @@
   }
   .header.logo-to-left{
     grid-template-columns: auto 1fr auto;
-    row-gap: 30px;
-    column-gap: 40px;
-  }
-  .header-layout-classic .header.logo-to-left{
-    grid-template-columns: auto 1fr 1fr;
+    gap: 30px;
   }
   .header>*{
     display: flex;
@@ -76,36 +72,6 @@
       --color-base:{{ section.settings.icons_color }};
     }
   {%- endif -%}
-  .vertical-menu-item{
-    --vertical-menu-item-padding:{{ section.settings.vertical_menu_item_padding | minus: 1 }}px 10px {{ section.settings.vertical_menu_item_padding }}px;
-  }
-  .vertical-menu__show-more{
-    --vertical-menu-item-padding:{{ section.settings.vertical_menu_item_padding | minus: 1 }}px;
-  }
-  .vertical-menu__items .vertical-menu-item img{
-    width:20px;
-    max-height:20px;
-    object-fit: contain;
-  }
-  {% assign phone = section.blocks | where: "type", "phone" %}
-  {%- for block in phone -%}
-  {%- if block.settings.text_color != "rgba(0,0,0,0)" -%}
-  .header-phone-number__desktop .h4,
-  .header-phone-number__mobile .h4{
-    color:{{ block.settings.text_color }};
-  }
-  .header-phone-number__desktop .phone-slogan,
-  .header-phone-number__mobile .phone-slogan{
-    color:var(--color-base);
-  }
-  {%- endif -%}
-  {%- if block.settings.icons_color != "rgba(0,0,0,0)" -%}
-  .header-phone-number__desktop svg path,
-  .header-phone-number__mobile svg path{
-    fill:{{ block.settings.icons_color }};
-  }
-  {%- endif -%}
-  {%- endfor -%}
 </style>
 
 <link rel="stylesheet" href="{{ 'component-inputs.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -265,7 +231,7 @@
 
           <summary class="main-menu-button">
             <div class="drawer__icon-menu">
-              {%- render "icon-mobile-menu" -%}
+              {%- render "icon-hamburger" -%}
             </div>
           </summary>
 
@@ -305,33 +271,9 @@
                     </span>
                   </a>
                   {%- endif -%}
+
                 </div>
               </div>
-              {% assign phone = section.blocks | where: "type", "phone" %}
-              {%- for block in phone -%}
-              <div class="header-phone-number__mobile__box">
-                <div class="header-phone-number__mobile__top-line"></div>
-                <div{% if block.settings.icon_1 != blank or block.settings.icon_2 != blank %} class="header-phone-number__mobile"{% endif %}>
-                  {%- if block.settings.icon_1 != blank -%}<div class="phone_area1">{%- render 'icons-list' icon_name: block.settings.icon_1 -%}</div>{%- endif -%}
-                  {%- if block.settings.phone_1 != blank -%}
-                    {%- if block.settings.phone_1_as_link -%}
-                    <a href="tel:{{ block.settings.phone_1 | replace:" ", "" }}" class="mt0 h4 clear-underline phone_area2">{{ block.settings.phone_1 }}</a>
-                    {%- else -%}
-                    <p class="mt0 h4 phone_area2">{{ block.settings.phone_1 }}</p>
-                    {%- endif -%}
-                  {%- endif -%}
-                  {%- if block.settings.icon_2 != blank -%}<div class="phone_area3">{%- render 'icons-list' icon_name: block.settings.icon_2 -%}</div>{%- endif -%}
-                  {%- if block.settings.phone_2 != blank -%}
-                    {%- if block.settings.phone_2_as_link -%}
-                    <a href="tel:{{ block.settings.phone_2 | replace:" ", "" }}" class="mt0 h4 clear-underline phone_area4">{{ block.settings.phone_2 }}</a>
-                    {%- else -%}
-                    <p class="mt0 h4 phone_area4">{{ block.settings.phone_2 }}</p>
-                    {%- endif -%}
-                  {%- endif -%}
-                  {%- if block.settings.info != blank -%}<p class="mt0 {{ block.settings.info_text_size }} phone_area5 phone-slogan">{{ block.settings.info }}</p>{%- endif -%}
-                </div>
-              </div>
-              {%- endfor -%}
             </div>
           </div>
           <button class="drawer__outer-background close-menu-js"></button>
@@ -361,15 +303,14 @@
 
     {%- if section.settings.secondary_menu != blank and section.settings.header_layout == 'header-layout-classic' -%}
     <div class="header__secondary-menu display-flex align-items-center">
-      <div class="{% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %}">
+      <div class="{{ section.settings.width }}">
         {% render 'header-menu-secondary' linklist: section.settings.secondary_menu.links animation: 'menu--animation-underline' %}
       </div>
     </div>
     {%- endif -%}
-    <div class="{{ section.settings.header_layout }} {% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %}"
-         {%- if section.settings.width == 'page-wide' -%}data-header-wide="true"
-         {%- elsif section.settings.width == "default" and settings.page_width_main == 'page-wide' -%}data-header-wide="true"{%- endif -%}>
-      <div class="header{% if section.settings.logo_position == 'left' %} logo-to-left{% endif %}">
+    <div class="{{ section.settings.header_layout }} {{ section.settings.width }}"
+         {%- if section.settings.width == 'page-wide' -%}data-header-wide="true"{%- endif -%}>
+      <div class="header{% if section.settings.logo_position == 'left' %} logo-to-left{% endif %}{% if section.settings.header_layout == 'header-layout-vertical' %} menu-to-right{% endif %}">
         {%- capture logo -%}
         {%- if request.page_type == 'index' -%}
         <h1 class="header__heading">
@@ -431,27 +372,6 @@
         {% if section.settings.logo_position == 'center' %}{{ logo }}{% endif %}
 
         <div class="header__icons">
-          {% assign phone = section.blocks | where: "type", "phone" %}
-          {%- for block in phone -%}
-          <div class="header-phone-number__desktop">
-            {%- if block.settings.phone_1 != blank or block.settings.icon_1 != blank -%}
-              {%- if block.settings.phone_1_as_link -%}
-              <a href="tel:{{ block.settings.phone_1 | replace:" ", "" }}" class="mt0 h4 clear-underline header-phone-number__icon">{%- render 'icons-list' icon_name: block.settings.icon_1 -%}{{ block.settings.phone_1 }}</a>
-              {%- else -%}
-              <p class="mt0 h4 header-phone-number__icon">{%- render 'icons-list' icon_name: block.settings.icon_1 -%}{{ block.settings.phone_1 }}</p>
-              {%- endif -%}
-            {%- endif -%}
-            {%- if block.settings.phone_2 != blank or block.settings.icon_2 != blank -%}
-              {%- if block.settings.phone_2_as_link -%}
-              <a href="tel:{{ block.settings.phone_2 | replace:" ", "" }}" class="mt0 h4 clear-underline header-phone-number__icon">{%- render 'icons-list' icon_name: block.settings.icon_2 -%}{{ block.settings.phone_2 }}</a>
-              {%- else -%}
-              <p class="mt0 h4 header-phone-number__icon">{%- render 'icons-list' icon_name: block.settings.icon_2 -%}{{ block.settings.phone_2 }}</p>
-              {%- endif -%}
-            {%- endif -%}
-            {%- if block.settings.info != blank -%}<p class="mt0 {{ block.settings.info_text_size }} phone-slogan">{{ block.settings.info }}</p>{%- endif -%}
-          </div>
-          {%- endfor -%}
-    
           {%- if section.settings.header_layout != 'header-layout-vertical' -%}
           {%- render "header-search" show_search:section.settings.show_search, fullwidth: false -%}
           {%- endif -%}
@@ -486,7 +406,7 @@
     
     {%- if section.settings.header_layout == 'header-layout-vertical' -%}
     {%- if section.settings.menu != blank or section.settings.show_search -%}
-    <div class="{% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %} header-menu-vertical-container">
+    <div class="{{ section.settings.width }} header-menu-vertical-container">
       <div class="grid">
         {%- if section.settings.menu != blank -%}
         <div class="col-one_fifth">
@@ -511,7 +431,7 @@
     {%- endif -%}
     {%- elsif section.settings.header_layout == 'header-layout-tiles' and section.settings.menu != blank -%}
     <header-menu-tiles class="header-tiles-container" data-items="{{ visible_items_count }}">
-      <div class="{% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %}">
+      <div class="{{ section.settings.width }}">
         {%- render "header-menu-tiles",
         	linklist:section.settings.menu.links,
             mega_menu_index:mega_menu_index,
@@ -798,10 +718,6 @@
       "id": "width",
       "options": [
         {
-          "value": "default",
-          "label": "t:sections.general.settings.width.options__default.label"
-        },
-        {
           "value": "page-width",
           "label": "t:sections.general.settings.width.options__boxed.label"
         },
@@ -810,7 +726,7 @@
           "label": "t:sections.general.settings.width.options__wide.label"
         }
       ],
-      "default": "default",
+      "default": "page-width",
       "label": "t:sections.general.settings.width.label",
       "info": "t:sections.general.settings.width.info"
     },
@@ -943,7 +859,7 @@
       ],
       "default": "center",
       "label": "t:sections.header.settings.logo_aligment.label"
-    },
+    },    
     {
       "type": "header",
 	  "content": "t:sections.header.settings.header_tiles.content"
@@ -984,15 +900,6 @@
       "content": "t:sections.header.settings.header_vertical.content"
     },
     {
-      "type": "range",
-      "id": "vertical_menu_item_padding",
-      "min": 5,
-      "max": 20,
-      "step": 1,
-      "default": 15,
-      "label": "t:sections.header.settings.vertical_menu_item_padding.label"
-    },
-    {
       "type": "color",
       "id": "color_button",
       "default": "rgba(0,0,0,0)",
@@ -1020,87 +927,6 @@
     }
   ],
   "blocks": [
-    {
-      "type": "phone",
-      "name": "t:sections.header.blocks.phone.name",
-      "settings": [
-        {
-          "type": "text",
-          "id": "icon_1",
-          "default": "phone_sm",
-          "label": "t:sections.header.blocks.phone.settings.icon_1.label"
-        },
-        {
-          "type": "text",
-          "id": "phone_1",
-          "default": "+1 939 234 9214",
-          "label": "t:sections.header.blocks.phone.settings.phone_1.label",
-          "info": "t:sections.header.blocks.phone.settings.phone_1.info"
-        },
-        {
-          "type": "checkbox",
-          "id": "phone_1_as_link",
-          "default": true,
-    	  "label": "t:sections.header.blocks.phone.settings.phone_1_as_link.label"
-        },
-        {
-          "type": "text",
-          "id": "icon_2",
-          "label": "t:sections.header.blocks.phone.settings.icon_2.label"
-        },
-        {
-          "type": "text",
-          "id": "phone_2",
-          "default": "+1 939 234 9214",
-          "label": "t:sections.header.blocks.phone.settings.phone_2.label",
-          "info": "t:sections.header.blocks.phone.settings.phone_2.info"
-        },
-        {
-          "type": "checkbox",
-          "id": "phone_2_as_link",
-          "default": true,
-    	  "label": "t:sections.header.blocks.phone.settings.phone_2_as_link.label"
-        },
-        {
-          "type": "select",
-          "id": "info_text_size",
-          "options": [
-            {
-              "value": "normal-text-size",
-              "label": "t:sections.general.settings.description_size.options__normal.label"
-            },
-            {
-              "value": "body3",
-              "label": "t:sections.general.settings.description_size.options__small.label"
-            }
-          ],
-          "default": "body3",
-          "label": "Info size"
-        },
-        {
-          "type": "textarea",
-          "id": "info",
-          "default": "Monday-Sunday: 10 AM-7 PM EST",
-          "label": "Info"
-        },
-        {
-          "type": "header",
-    	  "content": "t:sections.general.settings.header_colors.content"
-        },
-        {
-          "type": "color",
-          "id": "icons_color",
-          "label": "t:sections.header.settings.icons_color.label",
-          "default": "rgba(0,0,0,0)"
-        },
-        {
-          "type": "color",
-          "id": "text_color",
-          "label": "Text",
-          "default": "rgba(0,0,0,0)"
-        }
-      ]
-    },
     {
       "type": "mega_menu",
       "name": "t:sections.header.blocks.mega_menu.name",

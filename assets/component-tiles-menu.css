@@ -38,7 +38,7 @@
   left: 0;
   background: var(--color-secondary-background);
   z-index:-1;
-  border-radius: var(--radius-menu);
+  border-radius: var(--radius-button);
   transition: top var(--animation-time) var(--animation-type),
     		  left var(--animation-time) var(--animation-type),
       		  width var(--animation-time) var(--animation-type),

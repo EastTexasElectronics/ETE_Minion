@@ -212,33 +212,6 @@
         }
       }
     },
-    "filter_tabs": {
-      "name": "Filter tabs",
-      "settings": {
-        "paragraph_1": {
-          "content": "Works with filters on the collection page and search page."
-        },
-        "filter_tabs": {
-          "label": "Tabs",
-          "info": "Separate tabs with comma. Try not use spaces after and before commas"
-        },
-        "filter_image_grid": {
-          "label": "Image grid"
-        },
-        "filter_image": {
-          "label": "Image text",
-          "option__1": {
-            "label": "Hide"
-          },
-          "option__2": {
-            "label": "Show"
-          },
-          "option__3": {
-            "label": "Show in center"
-          }
-        }
-      }
-    },
     "favicon": {
       "name": "Favicon",
       "settings": {
@@ -1422,7 +1395,8 @@
       "blocks": {
         "banner": {
           "name": "Banner",
-          "settings": {}
+          "settings": {
+          }
         },
         "products": {
           "name": "Products",
@@ -1582,6 +1556,10 @@
         },
         "show_type": {
           "label": "Show type"
+        },
+        "show_rating": {
+          "label": "Show product rating",
+          "info": "To display a rating, add a product rating app."
         },
         "show_price": {
           "label": "Show price"
@@ -2039,7 +2017,8 @@
       "blocks": {
         "blurb": {
           "name": "Blurb",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "presets": {
@@ -2901,6 +2880,14 @@
             },
             "show_type": {
               "label": "Show type"
+            }
+          }
+        },
+        "rating": {
+          "name": "Product rating",
+          "settings": {
+            "paragraph": {
+              "content": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/page-types#product-rating-block)"
             }
           }
         },

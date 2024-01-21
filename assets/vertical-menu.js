@@ -3,7 +3,7 @@ class headerMenuHandler extends HTMLElement {
     super();
     this.menuholder = this.querySelector('.vertical-menu__items');
     this.button = this.querySelector('.vertical-menu__show-more');
-    Shopify.designMode?setTimeout(this.resizeMenu.bind(this), 400):setTimeout(this.resizeMenu.bind(this), 200);
+    setTimeout(this.resizeMenu.bind(this), 200);
     this.createEvents();
   }
   resizeMenu(){
@@ -13,7 +13,7 @@ class headerMenuHandler extends HTMLElement {
     if(!main_content.children.length) return;
     
     this.querySelectorAll('.hidden-menu-item').forEach((item) => {item.classList.remove('hidden-menu-item')});
-
+    
     if(main_content.hasAttribute('data-menu-in-content') || main_content.classList.contains('menu-opened-by-default')){
       const index = Number(main_content.getAttribute('data-menu-in-content')) - 1,
       		section_height = window.scrollY + main_content.children[index].getBoundingClientRect().bottom,
@@ -24,6 +24,7 @@ class headerMenuHandler extends HTMLElement {
         height = Math.min(height, this.menuholder.offsetHeight + 20);
 		height = height < -1 ? this.menuholder.offsetHeight + 20 : height;
       }
+      
       this.style.height = '100%';
       this.style.minHeight = height+'px';
       this.renderItems(items_top_position,height);
@@ -35,10 +36,9 @@ class headerMenuHandler extends HTMLElement {
   }
   renderItems(items_top_position,height){
     var hide_item = true;
-    var offsetmain = this.menuholder.children[0].offsetTop;
     for(var i=this.menuholder.children.length-1; i>=0; i--){
       var item = this.menuholder.children[i],
-          y = item.offsetTop + offsetmain + item.offsetHeight;
+          y = window.scrollY+item.getBoundingClientRect().bottom-items_top_position;
       if(this.menuholder.children.length-1 == i && y <= height){
         this.button.classList.add('hide');
         return 'break';
@@ -55,13 +55,8 @@ class headerMenuHandler extends HTMLElement {
       }
     }
   }
-  resizeMenuEvent(){
-    //if(Shopify.designMode){
-
-    setTimeout(this.resizeMenu.bind(this), 800);
-  }
   createEvents(){
-    window.addEventListener('resize', this.resizeMenuEvent.bind(this));
+    window.addEventListener('resize', this.resizeMenu.bind(this));
     this.button.addEventListener('click', this.clickHandler.bind(this));
   }
   clickHandler(event){

@@ -70,9 +70,8 @@
 {%- endif -%}
 {%- endif -%}
 
-{%- capture page_width -%}{%- if section.settings.width != "default" %}{{ section.settings.width }}{%- else -%}{{ settings.page_width_main }}{%- endif -%}{%- endcapture -%}
 <div id="collection-list-{{ colection_type }}-{{ section.id }}" class="top-spacing-{{ section.settings.top_spacing }}">
-  <div class="{{ page_width }} mb--last-child-0">
+  <div class="{{ section.settings.width }} mb--last-child-0">
 
     {%- if section.settings.heading != blank -%}
     <div class="grid{% if section.settings.heading_aligment == "text-center" %} justify-content-center{% endif %} heading--mb">
@@ -113,7 +112,7 @@
             <div class="image-hover-scaling__image border__radius{% if section.settings.design_type == "text-below-image" %}-top{% endif %}" style="--aspect-ratio: {{image_ratio}};">
               
               {%- liquid
-                  if page_width == "page-wide"
+                  if section.settings.width == "page-wide"
                   assign page_is_wide = true
                   else
                   assign page_is_wide = false
@@ -221,10 +220,6 @@
         "id": "width",
         "options": [
           {
-            "value": "default",
-            "label": "t:sections.general.settings.width.options__default.label"
-          },
-          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -233,7 +228,7 @@
             "label": "t:sections.general.settings.width.options__wide.label"
           }
         ],
-        "default": "default",
+        "default": "page-width",
         "label": "t:sections.general.settings.width.label",
 		"info": "t:sections.general.settings.width.info"
       },
