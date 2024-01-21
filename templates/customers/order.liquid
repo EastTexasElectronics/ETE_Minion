@@ -1,6 +1,6 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
-<div class="top-spacing-normal page-width customer account">
+<div class="top-spacing-normal {{ settings.page_width_main }} customer account">
   <div class="grid">
     <div class="col-12 text-center">
       <h1 class="mt0 mb0">{{ 'customer.account.title' | t }}</h1>

@@ -18,7 +18,7 @@ options[15] - show_price: true / false
 options[16] - section_id: section.id
 options[17] - heading_aligment: text-left, text-center
 options[18] - product_limit: Number
-options[19] - show_rating: true / false
+options[19] - empty
 options[20] - button_type_product: String
 options[21] - show_type: true / false
 options[22] - button_name: String
@@ -44,7 +44,6 @@ options[26] - placeholder: true / false
 {%- if options[13] == "true" -%}{%- assign hover_underline = true -%}{%- else -%}{%- assign hover_underline = false -%}{%- endif -%}
 {%- if options[14] == "true" -%}{%- assign truncate_product_name = true -%}{%- else -%}{%- assign truncate_product_name = false -%}{%- endif -%}
 {%- if options[15] == "true" -%}{%- assign show_price = true -%}{%- else -%}{%- assign show_price = false -%}{%- endif -%}
-{%- if options[19] == "true" -%}{%- assign show_rating= true -%}{%- else -%}{%- assign show_rating = false -%}{%- endif -%}
 {%- if options[21] == "true" -%}{%- assign show_type= true -%}{%- else -%}{%- assign show_type = false -%}{%- endif -%}
 {%- if options[24] == "true" -%}{%- assign desktop_slider_scroll= true -%}{%- else -%}{%- assign desktop_slider_scroll = false -%}{%- endif -%}
 {%- if options[25] == "true" -%}{%- assign image_zoom_internal = true -%}{%- else -%}{%- assign image_zoom_internal = false -%}{%- endif -%}
@@ -91,7 +90,6 @@ options[26] - placeholder: true / false
           product_name_size: options[12],
           hover_underline: hover_underline,
           truncate_product_name: truncate_product_name,
-          show_rating: show_rating,
           show_price: show_price,
           button_type_product: options[20],
           page_is_wide: page_is_wide,

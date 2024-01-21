@@ -1,26 +1,23 @@
 {%- if settings.animate_content_show -%}
 <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-rating.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-product-card.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-rating.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-product-card.css' | asset_url | stylesheet_tag }}</noscript>
 {%- if settings.swatches_design != 'none' and settings.enable_color_swatches -%}
 <link rel="stylesheet" href="{{ 'product-card-variants.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'product-card-variants.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%}
-{%- if section.settings.swipe_on_mobile -%}
+{%- if section.settings.swipe_on_mobile or section.settings.desktop_slider contains "show" -%}
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%}
 {%- else -%}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
-{{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-product-card.css' | asset_url | stylesheet_tag }}
 {%- if settings.swatches_design != 'none' and settings.enable_color_swatches -%}
 {{ 'product-card-variants.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
-{%- if section.settings.swipe_on_mobile -%}
+{%- if section.settings.swipe_on_mobile or section.settings.desktop_slider contains "show" -%}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
 {%- endif -%}
@@ -36,12 +33,13 @@
 <style>{{ section_styles }}</style>
 {%- endif -%}
 
+{%- capture page_width -%}{%- if section.settings.width != "default" %}{{ section.settings.width }}{%- else -%}{{ settings.page_width_main }}{%- endif -%}{%- endcapture -%}
 <recently-viewed-products id="recently-viewed-products-{{ section.id }}"
                           class="top-spacing-{{ section.settings.top_spacing }} display-block hide"
-                          data-settings="{{ section.settings.texts_aligment }}___{{ section.settings.swipe_on_mobile }}___{{ section.settings.width }}___{{ section.settings.grid | replace: ' ', '--' }}___{{ section.settings.mobile_grid }}___{{ section.settings.image_ratio | replace: ', ', '--' }}___{{ section.settings.show_button_quickview }}___{{ section.settings.show_badge_sold_out }}___{{ section.settings.show_badge_on_sale }}___{{ section.settings.show_badge_feature }}___{{ section.settings.show_secondary_image }}___{{ section.settings.show_vendor }}___{{ section.settings.product_name_size }}___{{ section.settings.hover_underline }}___{{ section.settings.truncate_product_name }}___{{ section.settings.show_price }}___{{ section.id }}___{{ section.settings.heading_aligment }}___{{ settings.recently_viewed_products_limit }}"
+                          data-settings="{{ section.settings.texts_aligment }}___{{ section.settings.swipe_on_mobile }}___{{ page_width }}___{{ section.settings.grid | replace: ' ', '--' }}___{{ section.settings.mobile_grid }}___{{ section.settings.image_ratio | replace: ', ', '--' }}___{{ section.settings.show_button_quickview }}___{{ section.settings.show_badge_sold_out }}___{{ section.settings.show_badge_on_sale }}___{{ section.settings.show_badge_feature }}___{{ section.settings.show_secondary_image }}___{{ section.settings.show_vendor }}___{{ section.settings.product_name_size }}___{{ section.settings.hover_underline }}___{{ section.settings.truncate_product_name }}___{{ section.settings.show_price }}___{{ section.id }}___{{ section.settings.heading_aligment }}___{{ settings.recently_viewed_products_limit }}___{{ section.settings.desktop_slider }}___{{ section.settings.desktop_slider_scroll_one }}___{{ section.settings.image_zoom_internal }}"
                           data-count="{{ settings.recently_viewed_products_limit }}"
                           >
-  <div class="{{ section.settings.width }} mb--last-child-0 recently-viewed-products-content">
+  <div class="{{ page_width }} mb--last-child-0 recently-viewed-products-content">
     
     {%- render "section-heading" -%}
 
@@ -131,6 +129,10 @@
         "id": "width",
         "options": [
           {
+            "value": "default",
+            "label": "t:sections.general.settings.width.options__default.label"
+          },
+          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -139,7 +141,7 @@
             "label": "t:sections.general.settings.width.options__wide.label"
           }
         ],
-        "default": "page-width",
+        "default": "default",
         "label": "t:sections.general.settings.width.label",
 		"info": "t:sections.general.settings.width.info"
       },
@@ -170,6 +172,32 @@
         ],
         "default": "col-md-4 col-one_fifth",
         "label": "t:sections.general.settings.grid.label"
+      },
+      {
+        "type": "select",
+        "id": "desktop_slider",
+        "options": [
+          {
+            "value": "none",
+            "label": "t:sections.featured-collection.settings.desktop_slider.options__1.label"
+          },
+          {
+            "value": "show",
+            "label": "t:sections.featured-collection.settings.desktop_slider.options__2.label"
+          },
+          {
+            "value": "show_mask",
+            "label": "t:sections.featured-collection.settings.desktop_slider.options__3.label"
+          }
+        ],
+        "default": "none",
+        "label": "t:sections.featured-collection.settings.desktop_slider.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "desktop_slider_scroll_one",
+        "default": false,
+        "label": "t:sections.featured-collection.settings.desktop_slider_scroll_one.label"
       },
       {
         "type": "select",
@@ -224,6 +252,12 @@
         ],
         "default": "1",
         "label": "t:sections.general.settings.image_ratio.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "image_zoom_internal",
+        "default": false,
+		"label": "t:sections.general.settings.image_zoom_internal.label"
       },
       {
         "type": "checkbox",

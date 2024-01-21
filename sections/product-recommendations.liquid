@@ -1,9 +1,7 @@
 {%- if settings.animate_content_show -%}
 <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-rating.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-product-card.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-rating.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-product-card.css' | asset_url | stylesheet_tag }}</noscript>
 {%- if settings.swatches_design != 'none' and settings.enable_color_swatches -%}
 <link rel="stylesheet" href="{{ 'product-card-variants.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -11,11 +9,13 @@
 {%- endif -%}
 {%- else -%}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
-{{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-product-card.css' | asset_url | stylesheet_tag }}
 {%- if settings.swatches_design != 'none' and settings.enable_color_swatches -%}
 {{ 'product-card-variants.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
+{%- endif -%}
+{%- if section.settings.swipe_on_mobile or section.settings.desktop_slider contains "show" -%}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
 
 {%- capture section_styles -%}
@@ -45,35 +45,72 @@
 <product-recommendations data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.product_limit }}">
   {%- if recommendations.performed and recommendations.products_count > 0 -%}
   <div id="featured-collection-{{ section.id }}" class="top-spacing-{{ section.settings.top_spacing }}">
-    <div class="{{ section.settings.width }} mb--last-child-0">
+    <div class="{% if section.settings.width != "default" %}{{ section.settings.width }}{% else %}{{ settings.page_width_main }}{% endif %} mb--last-child-0">
 
       {%- render "section-heading" -%}
 
-      <div class="grid el_mt_40 {{ section.settings.texts_aligment }}{% if section.settings.heading_aligment == "text-center" %} justify-content-center--no-phone{% endif %}">
-        {%- for product in recommendations.products -%}
-        <div class="col-sp-{{ section.settings.mobile_grid }} {{ section.settings.grid }}">
-          {%- render "product-card",
-              product_card_product: product,
-          settings_image_ratio: section.settings.image_ratio,
-          show_button_quickview: section.settings.show_button_quickview,
-          show_badge_sold_out: section.settings.show_badge_sold_out,
-          show_badge_on_sale: section.settings.show_badge_on_sale,
-          show_badge_feature: section.settings.show_badge_feature,
-          show_secondary_image: section.settings.show_secondary_image,
-          show_vendor: section.settings.show_vendor,
-          show_type: section.settings.show_type,
-          product_name_size: section.settings.product_name_size,
-          hover_underline: section.settings.hover_underline,
-          truncate_product_name: section.settings.truncate_product_name,
-          show_rating: section.settings.show_rating,
-          show_price: section.settings.show_price,
-          button_type_product: section.settings.button_type_product,
-       	  section_id: section.id
-          -%}
+      <div class="featured-collection-items{% if section.settings.desktop_slider == "show_mask" %} slider-desktop__mask{% endif %}">
+        {%- if section.settings.desktop_slider contains "show" -%}
+        <div class="slider-desktop__buttons__prev slider-desktop__buttons__hide">
+          <div class="btn btn_zoom">{%- render "icon-arrow-left" -%}</div>
         </div>
-        {%- endfor -%}
+        <div class="slider-desktop__buttons__next slider-desktop__buttons__hide">
+          <div class="btn btn_zoom">{%- render "icon-arrow-right" -%}</div>
+        </div>
+        {%- endif -%}
+        <slider-component class="grid el_mt_40 {{ section.settings.texts_aligment }}{% if section.settings.desktop_slider contains "show" %} slider-desktop{% if section.settings.desktop_slider_scroll_one %} slider-desktop--scroll-one{% endif %}{% endif %}{% if section.settings.swipe_on_mobile %} slider slider--phone{% endif %}{% if section.settings.heading_aligment == "text-center" %} justify-content-center--no-phone{% endif %}">
+          {%- for product in recommendations.products -%}
+          <div class="col-sp-{{ section.settings.mobile_grid }} {{ section.settings.grid }}{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}">
+            {%- render "product-card",
+                product_card_product: product,
+            settings_image_ratio: section.settings.image_ratio,
+            show_button_quickview: section.settings.show_button_quickview,
+            show_badge_sold_out: section.settings.show_badge_sold_out,
+            show_badge_on_sale: section.settings.show_badge_on_sale,
+            show_badge_feature: section.settings.show_badge_feature,
+            show_secondary_image: section.settings.show_secondary_image,
+            show_vendor: section.settings.show_vendor,
+            show_type: section.settings.show_type,
+            product_name_size: section.settings.product_name_size,
+            hover_underline: section.settings.hover_underline,
+            truncate_product_name: section.settings.truncate_product_name,
+            show_price: section.settings.show_price,
+            button_type_product: section.settings.button_type_product,
+            section_id: section.id,
+            image_zoom_internal:section.settings.image_zoom_internal
+            -%}
+          </div>
+          {%- endfor -%}
+        </slider-component>
       </div>
 
+      {%- liquid
+          assign at_most = recommendations.products.size | at_most: section.settings.product_limit
+          assign devider = 1.0
+      -%}
+      {%- liquid
+      	if section.settings.mobile_grid == "6"
+          assign devider = 2.0
+          else
+          assign devider = 1.0
+          endif
+      -%}
+      {%- assign length = at_most | divided_by: devider | ceil -%}
+      {%- if section.settings.swipe_on_mobile and length > 1 -%}
+      <div class="mt40 grid slider__buttons slider--phone">
+        <div class="col-12">
+          {%- liquid
+              capture alignment
+              if section.settings.heading_aligment == "text-center"
+              echo "justify-content-center"
+              endif
+            	endcapture
+            	render "slider-buttons", alignment:alignment, length:length
+          -%}
+        </div>
+      </div>
+      {%- endif -%}
+      
     </div>
   </div>
   {%- endif -%}
@@ -157,6 +194,10 @@
         "id": "width",
         "options": [
           {
+            "value": "default",
+            "label": "t:sections.general.settings.width.options__default.label"
+          },
+          {
             "value": "page-width",
             "label": "t:sections.general.settings.width.options__boxed.label"
           },
@@ -165,7 +206,7 @@
             "label": "t:sections.general.settings.width.options__wide.label"
           }
         ],
-        "default": "page-width",
+        "default": "default",
         "label": "t:sections.general.settings.width.label",
 		"info": "t:sections.general.settings.width.info"
       },
@@ -199,6 +240,32 @@
       },
       {
         "type": "select",
+        "id": "desktop_slider",
+        "options": [
+          {
+            "value": "none",
+            "label": "t:sections.featured-collection.settings.desktop_slider.options__1.label"
+          },
+          {
+            "value": "show",
+            "label": "t:sections.featured-collection.settings.desktop_slider.options__2.label"
+          },
+          {
+            "value": "show_mask",
+            "label": "t:sections.featured-collection.settings.desktop_slider.options__3.label"
+          }
+        ],
+        "default": "none",
+        "label": "t:sections.featured-collection.settings.desktop_slider.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "desktop_slider_scroll_one",
+        "default": false,
+        "label": "t:sections.featured-collection.settings.desktop_slider_scroll_one.label"
+      },
+      {
+        "type": "select",
         "id": "mobile_grid",
         "options": [
           {
@@ -212,6 +279,12 @@
         ],
         "default": "6",
         "label": "t:sections.general.settings.mobile_grid.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "swipe_on_mobile",
+        "default": false,
+        "label": "t:sections.general.settings.swipe_on_mobile.label"
       },
       {
         "type": "header",
@@ -253,6 +326,12 @@
         ],
         "default": "auto",
         "label": "t:sections.general.settings.image_ratio.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "image_zoom_internal",
+        "default": false,
+		"label": "t:sections.general.settings.image_zoom_internal.label"
       },
       {
         "type": "checkbox",
@@ -303,13 +382,6 @@
         "id": "show_type",
         "default": true,
 		"label": "t:sections.featured-collection.settings.show_type.label"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_rating",
-        "default": false,
-		"label": "t:sections.featured-collection.settings.show_rating.label",
-		"info": "t:sections.featured-collection.settings.show_rating.info"
       },
       {
         "type": "checkbox",

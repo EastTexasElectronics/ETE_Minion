@@ -16,7 +16,7 @@
 </style>
 
 <article class="top-spacing-{{ section.settings.top_spacing }}" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="page-width">
+  <div class="{{ settings.page_width_main }}">
     
     <div class="grid justify-content-center">
       {%- if article.image != blank and section.settings.show_featured_image -%}
