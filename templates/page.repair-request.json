@@ -1,10 +1,82 @@
 {
   "sections": {
+    "text_columns_with_images_8EH4kR": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "blurb_icon_zU6iKG": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/REPAIR_BADGE_96X96_RESULT_1.webp",
+            "icon_name": "check",
+            "url": "",
+            "heading": "Drop-Off",
+            "description": "<p>Live close by?  Stop by and say hi, we would be happy to talk about your service in-person.<\/p>"
+          }
+        },
+        "blurb_icon_GRzxbh": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/DELIVERY_VAN_RESULT.webp",
+            "icon_name": "advertising",
+            "url": "",
+            "heading": "Mail-In",
+            "description": "<p>Can't make it to the shop?  No problem, we offer shipping labels for most of our mail-in services. <\/p>"
+          }
+        },
+        "blurb_icon_9qLd7r": {
+          "type": "blurb_icon",
+          "settings": {
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/MAP_PIN_RESULT.webp",
+            "icon_name": "",
+            "url": "",
+            "heading": "On-Site",
+            "description": "<p>Have a big project you can't bring in?  We are happy to come to you and get your project started.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "blurb_icon_zU6iKG",
+        "blurb_icon_GRzxbh",
+        "blurb_icon_9qLd7r"
+      ],
+      "settings": {
+        "subheading": "PROFESSIONAL",
+        "heading": "Services Your Way",
+        "heading_aligment": "text-center",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "grid": "col-4",
+        "swipe_on_mobile": false,
+        "image_ratio": "auto",
+        "texts_aligment": "text-center",
+        "heading_tag": "h4",
+        "description_size": "normal",
+        "hover_underline": false,
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "color_swipe_buttons": "rgba(0,0,0,0)",
+        "color_heading_blurb": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_svg": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
+      }
+    },
     "d1c01dac-0713-42b1-85c7-1742843534e2": {
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "<iframe src=\"https:\/\/bookings.hubtiger.com\/bikes?shop=HUB.BB6C3F047E004144BAD025698A2B65658B182D9764A143F6880ED99FAEE55F07.TIGER&lang=en\" frameborder=\"0\" allow=\"geolocation\" style=\"width: 100%; height: 825px;\"><\/iframe>",
-        "top_spacing": "normal",
+        "top_spacing": "small",
         "width": "page-width"
       }
     },
@@ -150,7 +222,8 @@
         "blurb_icon_NbzzJH": {
           "type": "blurb_icon",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/APPOINTMENT_RESULT.webp",
             "icon_name": "clock",
             "url": "",
             "heading": "Book an Appointment",
@@ -160,7 +233,8 @@
         "blurb_icon_XdHCWx": {
           "type": "blurb_icon",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/PACKAGE_RESULT.webp",
             "icon_name": "box",
             "url": "",
             "heading": "Pack & Ship",
@@ -170,7 +244,8 @@
         "blurb_icon_e4YN9w": {
           "type": "blurb_icon",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/FREE_ESTIMATE_RESULT.webp",
             "icon_name": "mail",
             "url": "",
             "heading": "Receive a Free Repair Quote",
@@ -180,7 +255,8 @@
         "blurb_icon_YnhVCD": {
           "type": "blurb_icon",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/NEW_UPDATE_RESULT.webp",
             "icon_name": "chat",
             "url": "",
             "heading": "Stay Up-to-Date with Status Updates",
@@ -190,7 +266,8 @@
         "blurb_icon_VYt3X4": {
           "type": "blurb_icon",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/PAY_RESULT.webp",
             "icon_name": "money_back",
             "url": "",
             "heading": "Payment",
@@ -200,7 +277,8 @@
         "blurb_icon_M7TeCL": {
           "type": "blurb_icon",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/FAST_DELIVERY_RESULT.webp",
             "icon_name": "delivery",
             "url": "",
             "heading": "We Mail Back Your Device",
@@ -248,6 +326,7 @@
     }
   },
   "order": [
+    "text_columns_with_images_8EH4kR",
     "d1c01dac-0713-42b1-85c7-1742843534e2",
     "c16803f0-0e80-49c7-bdd2-55dad8b106a1",
     "main",
