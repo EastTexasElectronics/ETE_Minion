@@ -9,8 +9,11 @@
           "type": "main_menu_icons",
           "settings": {
             "icon1": "service",
+            "icon_image1": "shopify:\/\/shop_images\/SERVICE_RESULT.webp",
             "icon2": "cart",
+            "icon_image2": "shopify:\/\/shop_images\/SHOPPINGBAGS_RESULT.webp",
             "icon3": "basket",
+            "icon_image3": "shopify:\/\/shop_images\/PAY_RESULT.webp",
             "icon4": "sale",
             "icon5": "box",
             "icon6": "gaming",
