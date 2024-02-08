@@ -240,7 +240,7 @@
           "settings": {
             "show_image": "show",
             "image": "shopify:\/\/shop_images\/Commercial_result.webp",
-            "url": "shopify:\/\/pages\/get-a-quote",
+            "url": "shopify:\/\/pages\/request-a-repair",
             "heading": "Commercial Services",
             "description": "<p>Reach out to us today to establish your account and unlock a new level of service.<\/p>",
             "button_name": "Get A Quote"
@@ -396,7 +396,7 @@
         "product_name_size": "normal",
         "show_vendor": false,
         "show_type": false,
-        "show_rating": true,
+        "show_rating": false,
         "show_price": true,
         "truncate_product_name": false,
         "hover_underline": true,
@@ -413,6 +413,7 @@
     },
     "eb943663-1dd2-412a-875e-a6107a50c4e4": {
       "type": "blog-posts",
+      "disabled": true,
       "settings": {
         "blog": "guides",
         "subheading": "",
