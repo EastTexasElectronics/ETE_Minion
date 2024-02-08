@@ -220,7 +220,7 @@
             "show_icon": "image",
             "image": "shopify:\/\/shop_images\/GAMING_PC_RESULT.webp",
             "icon_name": "delivery",
-            "url": "shopify:\/\/pages\/get-a-quote",
+            "url": "shopify:\/\/pages\/request-a-repair",
             "heading": "Custom PC Builds",
             "description": "From budget-friendly builds to top-of-the-line hardline water-cooled gaming PCs, our skilled team has the expertise to bring your vision to life.",
             "button_name": "Get a Quote"
@@ -283,7 +283,8 @@
         "template--20039351337238__456789e6-4515-42c2-ae88-646164492c64-text-1": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/PCB_RESULT.webp",
             "icon_name": "chip",
             "text": "<p><strong>Hardware Issues:<\/strong> Encountering problems with your hardware? Our expert team is here to diagnose and resolve your issues efficiently.<\/p>"
           }
@@ -291,7 +292,8 @@
         "template--20039351337238__456789e6-4515-42c2-ae88-646164492c64-text-2": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/PROGRAMMING_RESULT.webp",
             "icon_name": "hard_drive-2",
             "text": "<p><strong>Software:<\/strong> Whether it's full operating system formatting, virus scanning, or malware removal, our experienced team has you covered.<\/p>"
           }
@@ -299,7 +301,8 @@
         "325b5f5a-1282-4461-973e-d1535a77c102": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/CLEAN_RESULT.webp",
             "icon_name": "service",
             "text": "<p><strong>Cleaning Services: <\/strong>Internal dirt in computers can lead to poor airflow, overheating, and reduced performance, or even permanent damage. Our specialized cleaning ensures optimal functionality.<\/p>"
           }
@@ -320,7 +323,7 @@
         "template--20039351337238__456789e6-4515-42c2-ae88-646164492c64-button-1"
       ],
       "settings": {
-        "url": "shopify:\/\/pages\/get-a-quote",
+        "url": "shopify:\/\/pages\/request-a-repair",
         "top_spacing": "small",
         "width": "page-width",
         "row_reverse": false,
@@ -366,7 +369,8 @@
         "cea448a3-4870-4520-aec1-a67d806ff76e": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/HDD_1__RESULT.webp",
             "icon_name": "gaming",
             "text": "<p>Some descriptive text for your store. For better alignment, it is better to use text in several lines<\/p>"
           }
@@ -374,7 +378,8 @@
         "c83b5def-10e7-4431-adf5-cc46083ae0d7": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/HDD_RESULT.webp",
             "icon_name": "speed",
             "text": "<p><strong>Disk Repair:<\/strong> Experiencing scratches or issues with your game disk? We can restore it to near-new condition!<\/p>"
           }
@@ -382,7 +387,8 @@
         "c91388f3-fddc-437a-baeb-c5172645924d": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/CLEAN_RESULT.webp",
             "icon_name": "service",
             "text": "<p><strong>Cleaning Services:<\/strong> Internal dirt in systems can lead to poor airflow, overheating, and reduced performance, or even permanent damage. Our specialized cleaning ensures optimal functionality.<\/p>"
           }
@@ -403,7 +409,7 @@
         "0957c633-5846-4641-9c37-3ed0b3284de7"
       ],
       "settings": {
-        "url": "shopify:\/\/pages\/get-a-quote",
+        "url": "shopify:\/\/pages\/request-a-repair",
         "top_spacing": "small",
         "width": "page-width",
         "row_reverse": true,
@@ -449,7 +455,8 @@
         "d3105504-f79e-40e0-9dbc-2de0c6fc49a1": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/SPEAKER_RESULT.webp",
             "icon_name": "speakers",
             "text": "<p><strong>Speakers: <\/strong>While we do not provide cone repairs, our team is readily available to assist with any other speaker-related issues.<\/p>"
           }
@@ -457,7 +464,8 @@
         "b0db5920-aa46-4659-b1a5-58367f600a87": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/AMP_RESULT.webp",
             "icon_name": "portable_speakers",
             "text": "<p><strong>Amplifiers:<\/strong> Whether dealing with car amplifiers or top-of-the-line professional models, we are prepared to restore them to peak performance.<\/p>"
           }
@@ -465,7 +473,8 @@
         "97f8701b-0cb6-4ed5-a65f-922aa380a029": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/CAP_RESULT.webp",
             "icon_name": "service",
             "text": "<p><strong>Capacitor Upgrades:<\/strong> If you're looking to replace or upgrade the old capacitors in your devices, our expert team is here to provide seamless service.<\/p>"
           }
@@ -486,7 +495,7 @@
         "1712c967-593f-4993-9605-2165f94beec6"
       ],
       "settings": {
-        "url": "shopify:\/\/pages\/get-a-quote",
+        "url": "shopify:\/\/pages\/request-a-repair",
         "top_spacing": "small",
         "width": "page-width",
         "row_reverse": false,
@@ -532,7 +541,8 @@
         "20053b57-7cfc-4df6-9607-3bc9e48abf27": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/HAPPY_LAPTOP_RESULT.webp",
             "icon_name": "Chip",
             "text": "<p><strong>Consumer Devices:<\/strong> Ranging from Motherboards to Remote-Controlled Cars.<\/p>"
           }
@@ -540,7 +550,8 @@
         "dcb59bd1-eaeb-462f-ba4e-88528e8cedf2": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/HARD_HAT_RESULT.webp",
             "icon_name": "memory",
             "text": "<p><strong>Commercial Devices: <\/strong>All Sizes, All Types.<\/p>"
           }
@@ -548,7 +559,8 @@
         "8383b724-b3d6-4447-8b2a-ff859c8766b9": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/QUALITY_RESULT.webp",
             "icon_name": "certified",
             "text": "<p><strong>Quality Parts:<\/strong> In repairing your devices, we utilize only the highest-quality components, ensuring durability and an extended lifespan.<\/p>"
           }
@@ -569,7 +581,7 @@
         "b8d095d6-49d7-452a-8c81-1adb29b787e8"
       ],
       "settings": {
-        "url": "shopify:\/\/pages\/get-a-quote",
+        "url": "shopify:\/\/pages\/request-a-repair",
         "top_spacing": "small",
         "width": "page-width",
         "row_reverse": true,
@@ -615,7 +627,8 @@
         "133876a5-6be4-4842-b285-39b9df22470a": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/CLEAN_RESULT.webp",
             "icon_name": "box",
             "text": "<p><strong>Restore: <\/strong>Transform your aging device into a condition that closely resembles its original, new state.<\/p>"
           }
@@ -623,7 +636,8 @@
         "3419b3bf-8684-4455-95d6-c800182b2868": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/HOUR_GLASS_RESULT.webp",
             "icon_name": "lightning",
             "text": "<p>Extend the Lifespan of Your Device Without Compromising on Aesthetics.<\/p>"
           }
@@ -652,7 +666,7 @@
         "8aa6d1f3-1186-4dd1-9343-32502d3d6ac1"
       ],
       "settings": {
-        "url": "shopify:\/\/pages\/get-a-quote",
+        "url": "shopify:\/\/pages\/request-a-repair",
         "top_spacing": "small",
         "width": "page-width",
         "row_reverse": false,
@@ -698,7 +712,8 @@
         "36fb5df1-8e51-4b61-b8f2-56abade17c89": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/FUNCTIONALITY_RESULT.webp",
             "icon_name": "new",
             "text": "<p><strong>Functionality:<\/strong> Restore Your Device to Its Original Appearance and Performance.<\/p>"
           }
@@ -706,7 +721,8 @@
         "e1d979d3-4cdb-47dc-9468-757ab0b3b96f": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/SAFE_RESULT.webp",
             "icon_name": "Eco",
             "text": "<p><strong>Safe<\/strong>: For most unpainted materials and products including IC chips<\/p>"
           }
@@ -714,7 +730,8 @@
         "f4f88bc4-b4df-4287-8e51-545aacdbb75d": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/CLOSE_RESULT.webp",
             "icon_name": "no_artificial",
             "text": "<p><strong>Eliminates:<\/strong> Rust, Paint, Grease, Dirt, Dust, and More<\/p>"
           }
@@ -735,7 +752,7 @@
         "33e37a49-c234-4fe8-9730-8b45a1fe6df3"
       ],
       "settings": {
-        "url": "shopify:\/\/pages\/get-a-quote",
+        "url": "shopify:\/\/pages\/request-a-repair",
         "top_spacing": "small",
         "width": "page-width",
         "row_reverse": true,
@@ -781,7 +798,8 @@
         "7d883a8c-73de-464a-b814-c4c2c6c80095": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/PCB2_RESULT.webp",
             "icon_name": "Chip",
             "text": "<p><strong>PCBs:<\/strong> Offering Repair or Replacement Services for Circuit Boards in Your TV\/Monitor.<\/p>"
           }
@@ -789,7 +807,8 @@
         "050b80f1-5db3-4efb-9e12-c87017819240": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/TV_RESULT.webp",
             "icon_name": "monitor",
             "text": "<p><strong>Monitors:<\/strong> We Offer Screen Replacements, but Please Note that TV Screens and Backlights Are Not Included in Our Services.<\/p>"
           }
@@ -797,7 +816,8 @@
         "3ef3baad-7a99-499c-b837-5970e8f7dd5f": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/HDD_1__RESULT.webp",
             "icon_name": "gaming",
             "text": "<p><strong>Remote Controllers:<\/strong> Specializing in the Repair and Servicing of a Wide Range of Controllers.<\/p>"
           }
@@ -818,7 +838,7 @@
         "02314184-cf60-4216-830c-95ab8e9ffd25"
       ],
       "settings": {
-        "url": "shopify:\/\/pages\/get-a-quote",
+        "url": "shopify:\/\/pages\/request-a-repair",
         "top_spacing": "small",
         "width": "page-width",
         "row_reverse": false,
@@ -864,7 +884,8 @@
         "9d36ffe1-0b57-4b05-be60-31c0de6b9aa5": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/BESPOKE_RESULT.webp",
             "icon_name": "Face_id",
             "text": "<p><strong>Tailored Solutions: <\/strong>Catering to Organizations of All Sizes, No Matter How Small or Large.<\/p>"
           }
@@ -872,7 +893,8 @@
         "ad9bea4f-68ec-46db-a506-e5ac15ed763f": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/FAST_RESULT.webp",
             "icon_name": "lightning",
             "text": "<p><strong>Expedited: <\/strong>Priority Service Available for All Commercial Customers.<\/p>"
           }
@@ -880,7 +902,8 @@
         "62a15287-921b-4633-a5ae-8e5e026ffa11": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/RELIABLE_RESULT.webp",
             "icon_name": "certified",
             "text": "<p><strong>Reliable:<\/strong> Count on Us for Accurate and Efficient Service Execution.<\/p>"
           }
@@ -901,7 +924,7 @@
         "7e452c66-9cc1-4d51-bc1b-d56ef3982565"
       ],
       "settings": {
-        "url": "#shopify-section-template--20544239829270__54a50fb0-b974-423f-9fa0-8596ecdca556",
+        "url": "shopify:\/\/pages\/request-a-repair",
         "top_spacing": "small",
         "width": "page-width",
         "row_reverse": true,
@@ -947,7 +970,8 @@
         "4c515347-6ce6-430f-9e47-b1fdd8570d5b": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/BESPOKE_RESULT.webp",
             "icon_name": "Info",
             "text": "<p><strong>Tailored: <\/strong>Accommodating Devices of Any Size, Shape, and Gaming Capability.<\/p>"
           }
@@ -955,7 +979,8 @@
         "676fc66a-793a-4ba9-a6c0-36b904c3dfdd": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/QUALITY_RESULT.webp",
             "icon_name": "certified",
             "text": "<p><strong>Quality:<\/strong> Engineered for Longevity with Premium Components and Stable Software.<\/p>"
           }
@@ -963,7 +988,8 @@
         "7177c7a2-5722-43f1-9040-b0aa17cfb42a": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/EASY_RESULT.webp",
             "icon_name": "Smile",
             "text": "<p><strong>User-Friendly:<\/strong> Intuitive Design Ensures Enjoyment for Users of All Ages, Including Children.<\/p>"
           }
@@ -984,7 +1010,7 @@
         "2557817e-2859-44fc-ae2d-c16a1971ce89"
       ],
       "settings": {
-        "url": "shopify:\/\/pages\/get-a-quote",
+        "url": "shopify:\/\/pages\/request-a-repair",
         "top_spacing": "small",
         "width": "page-width",
         "row_reverse": false,
@@ -1014,7 +1040,7 @@
           "type": "image",
           "settings": {
             "content_type": "image",
-            "image": "shopify:\/\/shop_images\/webdesign_service.webp",
+            "image": "shopify:\/\/shop_images\/Web_Design.png",
             "image_ratio": "1.333333",
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "description": ""
@@ -1030,7 +1056,8 @@
         "fdc60e27-7311-44df-b56e-b5c2d11644c2": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/WEB_DESIGN_RESULT.webp",
             "icon_name": "monitor",
             "text": "<p><strong>Websites:<\/strong> Offering Solutions Ranging from Personal Portfolios to Comprehensive eCommerce Platforms.<\/p>"
           }
@@ -1038,7 +1065,8 @@
         "42de696c-8d2c-4b3a-97a1-cdae34505144": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/APP_RESULT.webp",
             "icon_name": "smartphone",
             "text": "<p><strong>Applications:<\/strong> Regardless of Platform or Scale, We Have the Expertise to Bring Your Dream App to Life.<\/p>"
           }
@@ -1046,7 +1074,8 @@
         "07222486-f72c-4dd6-b834-3aebc02445e6": {
           "type": "text",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/BESPOKE_RESULT.webp",
             "icon_name": "Face_id",
             "text": "<p><strong>Your Way: <\/strong>Whether Utilizing Your Existing Platform or Identifying a New One, We Tailor Solutions to Meet Your Specific Needs.<\/p>"
           }
@@ -1067,7 +1096,7 @@
         "9d7cb4de-5bf3-4eb3-b783-d0d256e7170f"
       ],
       "settings": {
-        "url": "shopify:\/\/pages\/get-a-quote",
+        "url": "shopify:\/\/pages\/request-a-repair",
         "top_spacing": "small",
         "width": "page-width",
         "row_reverse": true,
@@ -1076,7 +1105,7 @@
         "texts_aligment": "text-left",
         "heading_tag": "h2",
         "text_size": "normal",
-        "hover_underline": false,
+        "hover_underline": true,
         "color_subheading": "rgba(0,0,0,0)",
         "color_heading": "rgba(0,0,0,0)",
         "color_svg": "rgba(0,0,0,0)",
