@@ -8,7 +8,7 @@
 {
 "@context": "https://schema.org/",
 "@type": "Product",
-"@id": "{{ canonical_url | default product.id }}",
+"@id": "{{ canonical_url | default: product.id }}",
 "name": "{{ product.title | strip_html | strip_newlines | strip | escape }}",
 "description": "{{ product.description | strip_html | strip_newlines | strip | escape }}",
 "brand": {
@@ -36,18 +36,18 @@
 
 {%- assign ryviu = product.metafields.ryviu -%}
 {%- if ryviu -%}
-  {%- assign aggregateRating = ryviu.product_reviews_info | split: ";" -%}
-  {%- assign r_avg = aggregateRating[1] | plus: 0 -%}
-  {%- assign r_count = aggregateRating[0] | plus: 0 -%}
-  {%- if r_count > 0 and avada_product_review == false -%}
-  {%- assign avada_product_review = true -%}
+{%- assign aggregateRating = ryviu.product_reviews_info | split: ";" -%}
+{%- assign r_avg = aggregateRating[1] | plus: 0 -%}
+{%- assign r_count = aggregateRating[0] | plus: 0 -%}
+{%- if r_count > 0 and avada_product_review == false -%}
+{%- assign avada_product_review = true -%}
 ,
 "aggregateRating": {
  "@type": "AggregateRating",
  "ratingValue": "{{ r_avg }}",
  "reviewCount": "{{ r_count }}"
 }
-  {%- endif -%}
+{%- endif -%}
 {%- endif -%}
 
 {%- capture ssw_rich_snippet -%}{% render 'ssw-widget-avg-rate-rich', rich_snippet_type: 'json' %}{%- endcapture -%}
@@ -69,14 +69,16 @@
 }
 {%- endif -%}
 
-{% assign countAverage = product.metafields.scm_review_importer.reviewsData.reviewCountInfo.average | plus: 0 %}
-{%- if countAverage > 0 %}
+{%- assign ratingValue = product.metafields.scm_review_importer.reviewsData.reviewCountInfo.average | plus: 0 -%}
+{%- assign reviewCount = product.metafields.scm_review_importer.reviewsData.reviewCountInfo.total | plus: 0 -%}
+{%- if ratingValue > 0 and avada_product_review == false %}
+{%- assign avada_product_review = true -%}
 ,
 "review": {{ product.metafields.scm_review_importer.reviewsData.seoReviews }},
 "aggregateRating": {
   "@type": "AggregateRating",
-  "ratingValue": "{{ product.metafields.scm_review_importer.reviewsData.reviewCountInfo.average }}",
-  "ratingCount": "{{ product.metafields.scm_review_importer.reviewsData.reviewCountInfo.total }}"
+  "ratingValue": {{ ratingValue }},
+  "ratingCount": {{ reviewCount }}
 }
 {%- endif -%}
 
