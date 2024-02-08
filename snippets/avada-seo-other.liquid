@@ -36,11 +36,11 @@
 {%- endunless -%}
 
 {{ tw_social_image }}
-<script>window.FPConfig = {};window.FPConfig.ignoreKeywords=["/cart","/account"]</script>
+<script>window.FPConfig = {};window.FPConfig.ignoreKeywords=["/cart","/account"]</script><link rel="canonical" href="{{ canonical_url }}">
 
 
 <script>
-    const avadaLightJsExclude = [];
+    const avadaLightJsExclude = ['cdn.nfcube.com'];
     const avadaLightJsInclude = ['https://cdn.shopify.com/extensions/'];
     window.AVADA_SPEED_BLACKLIST = avadaLightJsInclude.map(item => new RegExp(item, 'i'));
     window.AVADA_SPEED_WHITELIST = avadaLightJsExclude.map(item => new RegExp(item, 'i'));
