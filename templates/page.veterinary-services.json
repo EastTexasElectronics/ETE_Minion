@@ -17,7 +17,6 @@
           "type": "blurb",
           "settings": {
             "show_image": "show",
-            "image": "shopify:\/\/shop_images\/software-developer-on-php-code.jpg",
             "url": "",
             "heading": "Hardware & Software Issues",
             "description": "<p>No matter your device or issue we are here to find a solution for you.  We work on almost anything including custom projects.  If we have the tools, and ability we make it work! The only devices we do not work on are phones, tablets, smart watches, and wireless earbuds.<\/p>",
@@ -44,7 +43,6 @@
         "template--20039351337238__a0db958b-bad4-4285-87bc-c9cf7b134ad2-brand_image-2": {
           "type": "brand_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/woman-replaces-fine-saw-blade.jpg"
           }
         }
       },
@@ -87,7 +85,8 @@
         "16540890413a2fd1cd-0": {
           "type": "banner",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/HAPPY_LAPTOP_RESULT.webp",
             "icon_name": "laptop",
             "url": "#image-with-text-template--20544239829270__456789e6-4515-42c2-ae88-646164492c64",
             "heading": "Desktop & Laptop Computers",
@@ -98,7 +97,8 @@
         "16540890413a2fd1cd-1": {
           "type": "banner",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/PS5_SKETCH_RESULT.webp",
             "icon_name": "gaming",
             "url": "#image-with-text-template--20544239829270__2bec9cac-08c4-4748-a985-4fa7856ae20f",
             "heading": "Video Game Systems & Accessories",
@@ -109,7 +109,8 @@
         "16540890413a2fd1cd-2": {
           "type": "banner",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/SPEAKER_RESULT.webp",
             "icon_name": "speakers",
             "url": "#image-with-text-template--20544239829270__7115137b-d78f-45e0-a356-8667357e7096",
             "heading": "Audio Equipment",
@@ -120,7 +121,8 @@
         "8b236a71-ddb4-454e-9cd4-14a68d0f6179": {
           "type": "banner",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/PCB_RESULT.webp",
             "icon_name": "chip",
             "url": "#image-with-text-template--20544239829270__8ff56e8d-b05d-4548-9a5e-95823f20149d",
             "heading": "Circuit Board Repair",
@@ -131,7 +133,8 @@
         "abc5d0f5-e92e-4d0c-865a-21cbafaf2f81": {
           "type": "banner",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/CLEAN_RESULT.webp",
             "icon_name": "box",
             "url": "#shopify-section-template--20544239829270__b8630f45-ee57-4d34-b1d0-d4557e6305d7",
             "heading": "Restorations",
@@ -142,7 +145,8 @@
         "cb08c1d1-b681-457a-a5b7-994d8e3e2484": {
           "type": "banner",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/SOUND_WAVES_RESULT.webp",
             "icon_name": "power",
             "url": "#image-with-text-template--20544239829270__54a50fb0-b974-423f-9fa0-8596ecdca556",
             "heading": "Ultrasonic Cleaning",
@@ -153,7 +157,8 @@
         "fb5f85b5-e7be-4ea4-89d2-7edc98227c54": {
           "type": "banner",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/HARD_HAT_RESULT.webp",
             "icon_name": "clock",
             "url": "#image-with-text-template--20544239829270__c0d4cd17-f302-4577-8d79-0728fd211fb3",
             "heading": "Commercial Equipment",
@@ -164,7 +169,8 @@
         "bd1be297-7c65-4b16-86a1-78200c064b51": {
           "type": "banner",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/TV_RESULT.webp",
             "icon_name": "tv",
             "url": "#image-with-text-template--20544239829270__1fc0ba76-559d-4b8b-93b8-039d1edee4c5",
             "heading": "Monitors & TV's",
@@ -175,7 +181,8 @@
         "54e850ee-da5c-41be-9d4e-4e4d21e4f4a6": {
           "type": "banner",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/ARCADE_RESULT.webp",
             "icon_name": "tv",
             "url": "#image-with-text-template--20544239829270__57f8f89f-be2b-4478-869c-76a54e842ce8",
             "heading": "Custom Arcade Machine Builds",
@@ -186,7 +193,8 @@
         "25ce2953-d2b4-4570-bbac-fbcfc0228632": {
           "type": "banner",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/PROGRAMMING_RESULT.webp",
             "icon_name": "tv",
             "url": "shopify:\/\/pages\/web-development",
             "heading": "Web & App Development",
@@ -197,7 +205,8 @@
         "e5036780-2fa5-4009-afad-f38385ac1ca9": {
           "type": "banner",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/MAP_PIN_RESULT.webp",
             "icon_name": "delivery",
             "url": "shopify:\/\/pages\/contact-us",
             "heading": "On-Site Service",
@@ -208,7 +217,8 @@
         "e8a448d9-2cbd-4b6e-a690-738dffd13f9b": {
           "type": "banner",
           "settings": {
-            "show_icon": "svg",
+            "show_icon": "image",
+            "image": "shopify:\/\/shop_images\/GAMING_PC_RESULT.webp",
             "icon_name": "delivery",
             "url": "shopify:\/\/pages\/get-a-quote",
             "heading": "Custom PC Builds",
