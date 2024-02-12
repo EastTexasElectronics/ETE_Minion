@@ -1,0 +1,23 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "top_spacing": "none",
+        "width": "page-width",
+        "show_heading": true,
+        "heading_aligment": "text-center"
+      }
+    },
+    "page-icons": {
+      "type": "page-icons",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "page-icons"
+  ]
+}
