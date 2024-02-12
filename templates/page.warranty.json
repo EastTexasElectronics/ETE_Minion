@@ -12,12 +12,39 @@
     },
     "page-icons": {
       "type": "page-icons",
+      "disabled": true,
       "settings": {
+      }
+    },
+    "text_Y6iEVf": {
+      "type": "text",
+      "settings": {
+        "subheading": "East Texas Electronics, LLC.",
+        "heading": "Service Warranty Policy",
+        "description": "<p>At East Texas Electronics, we stand behind the quality of our parts and labor. We offer a 1-Year Limited Warranty (the \"Warranty\") on all services we provide, unless we've discussed otherwise with you before starting your project. A project is considered started at or before the time you approve our quote.<br\/><br\/><strong>What Our Warranty Covers<\/strong><br\/><strong>Covered Services: <\/strong>This Warranty covers any defects in parts we've supplied and the labor we've performed for your device's repair service.<br\/><br\/><strong>Exclusions:<\/strong><br\/>This Warranty does not cover issues arising from misuse, abuse, accidents, unauthorized repairs, or maintenance not performed by us.<br\/>We're not responsible for software issues, data loss, or data corruption unless it's a direct result of our repair.<br\/>Components or services not performed by the Company, including but not limited to parts supplied by the customer or any third-party services.<br\/>Normal wear and tear and any consequential damages or incidental expenses resulting from a breach of this Warranty are excluded.<br\/>Any consequential damages or incidental expenses resulting from any breach of this Warranty.<br\/><br\/><strong>Making a Warranty Claim<\/strong><br\/><strong>How to Claim:<\/strong> If you encounter an issue with our service or parts within the Warranty period, please reach out to us with a detailed description of the problem. <br\/><br\/><strong>Our Responsibility:<\/strong> If the issue is covered by our Warranty, we will, at our discretion, fix the device using new or refurbished parts, replace it with a similar device, or refund the service charge. Any parts or devices replaced will become our property.<br\/><strong><br\/>Limitations: <\/strong>This Warranty is for you, the original customer, and cannot be transferred. Service under this Warranty does not extend its duration.<br\/><br\/><strong>General Terms<br\/>Limit of Our Liability:<\/strong> Our responsibility under this Warranty is limited to repair, replacement, or refund. We're not liable for indirect, incidental, or consequential damages from using or being unable to use your device.<br\/><br\/><strong>Governing Law:<\/strong> This Warranty is governed by the laws of Texas, without giving effect to any principles of conflicts of law.<br\/><strong><br\/>Changes to the Warranty:<\/strong> We may update this Warranty's terms at any time, but the terms in place when you received your service will apply to any claim you make.<br\/><br\/><strong>Severability:<\/strong> If any part of this Warranty is deemed unlawful or unenforceable, the rest remains in effect.<\/p>",
+        "button_name": "",
+        "button_url": "",
+        "top_spacing": "normal",
+        "width": "page-width",
+        "texts_aligment": "text-center",
+        "heading_tag": "h2",
+        "description_size": "normal",
+        "color_subheading": "rgba(0,0,0,0)",
+        "color_heading": "rgba(0,0,0,0)",
+        "color_description": "rgba(0,0,0,0)",
+        "color_button": "rgba(0,0,0,0)",
+        "background": "hide",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient": "",
+        "background_width": "fullwidth",
+        "background_spacing": "normal",
+        "remove_bottom_spacing": false
       }
     }
   },
   "order": [
     "main",
-    "page-icons"
+    "page-icons",
+    "text_Y6iEVf"
   ]
 }
