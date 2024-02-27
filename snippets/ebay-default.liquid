@@ -4,7 +4,7 @@
 
 <div id="ebay-description" class="nojs">
 		<div class="container">
-				<img class="logo" src="{CDNUrl}/images/logo.png?width=501&amp;nostretch&etag={LogoEtag}" />
+				<img loading="lazy" class="logo" src="{CDNUrl}/images/logo.png?width=501&amp;nostretch&etag={LogoEtag}" />
 		</div>
 		<div class="container">
 				<div class="block">
@@ -23,17 +23,17 @@
 						<div class="row">
 								<div class="span12 text-center">
 										<a href="#img1">
-										  <img class="logo" src="{CDNUrl}/productimages/{ProductID}.png?width=547&amp;etag={etag}">
+										  <img loading="lazy" class="logo" src="{CDNUrl}/productimages/{ProductID}.png?width=547&amp;etag={etag}">
 										</a>
 										<a href="#_" class="lightbox" id="img1">
 											<div class="close-img">&times</div>
-											<img src="{CDNUrl}/productimages/{ProductID}.png?width=800&amp;etag={etag}" />
+											<img loading="lazy" src="{CDNUrl}/productimages/{ProductID}.png?width=800&amp;etag={etag}" />
 										</a>
 
 										{for images}
 											<a href="#_" class="lightbox" id="img{position+1}">
 												<div class="close-img">&times</div>
-												<img src="{cdnurl}{images.src}&width=800&amp;height=600&amp;nostretch">
+												<img loading="lazy" src="{cdnurl}{images.src}&width=800&amp;height=600&amp;nostretch">
 											</a>
 										{/for}
 
@@ -42,7 +42,7 @@
 										{for images step=4}
 												<div class="row image-row text-center">
 														{for Images count=4 start={position}}
-														<div class="span2"><a class="image fancybox" href="#img{position+1}"><img src="{cdnurl}{images.src}&width=200&amp;height=200"/></a></div>
+														<div class="span2"><a class="image fancybox" href="#img{position+1}"><img loading="lazy" src="{cdnurl}{images.src}&width=200&amp;height=200"/></a></div>
 														{/for}
 												</div>
 										{/for}
@@ -75,7 +75,7 @@
 						<p><a href="https://contact.{EbaySiteURL}/ws/eBayISAPI.dll?FindAnswers&frm=284&requested={EbayUserID}&iid={EbayItemID}" target="_blank">Contact Us</a> for more details!</p>
 					</div>
 					{for overview}
-						<img src="{CDNUrl}{src}" />
+						<img loading="lazy" src="{CDNUrl}{src}" />
 					{/for}
 				</div>
 			</div>
@@ -99,7 +99,7 @@
 					<div class="row">
 						{for specimage count=2 start={position}}
 							<div class="span3">
-								<a class="fancybox image" href="{CDNUrl}{specimage.src}"><img src="{CDNUrl}{specimage.src}" /></a>
+								<a class="fancybox image" href="{CDNUrl}{specimage.src}"><img loading="lazy" src="{CDNUrl}{specimage.src}" /></a>
 							</div>
 						{/for}
 					</div>
@@ -177,7 +177,7 @@
 
 									</div>
 
-									<h3 class="icon"><img src="{CDNUrl}/ebay/images/icn-delivery.jpg" />Additional delivery notes</h3>
+									<h3 class="icon"><img loading="lazy" src="{CDNUrl}/ebay/images/icn-delivery.jpg" />Additional delivery notes</h3>
 
 									{if PickupOption}
 										<p><strong>PICK UP OPTION</strong></p>
@@ -196,7 +196,7 @@
 									<table>
 										<tr>
 											<td style="width: 50px;vertical-align: top;">
-												<img src="{CDNUrl}/ebay/images/icn-paypal.jpg" />
+												<img loading="lazy" src="{CDNUrl}/ebay/images/icn-paypal.jpg" />
 											</td>
 										<td><h3 class="icon">PAYMENT</h3></td></tr>
 									</table>
@@ -220,7 +220,7 @@
 									{/if}
 
 									{if MoneyOrderAccepted}
-											<h3 class="icon"><img src="{CDNUrl}/ebay/images/icn-moneyorder.jpg" />Paying via money order</h3>
+											<h3 class="icon"><img loading="lazy" src="{CDNUrl}/ebay/images/icn-moneyorder.jpg" />Paying via money order</h3>
 											<p>Simply add the freight cost to the item cost and forward the total amount to the address to be provided following your purchase.</p>
 									{/if}
 
@@ -231,7 +231,7 @@
 
 								</div>
 								<div class="span4">
-										<h3 class="icon"><img src="{CDNUrl}/ebay/images/icn-info.jpg" />Additional Information</h3>
+										<h3 class="icon"><img loading="lazy" src="{CDNUrl}/ebay/images/icn-info.jpg" />Additional Information</h3>
 										{if AdditionalInfo}
 										<p>{AdditionalInfo}</p>
 										{else}
@@ -254,7 +254,7 @@
 							{for SuggestedProducts}
 								<div class="span3">
 									<div class="imagecenter">
-										<a target="_blank" href="https://cgi.{EbaySiteURL}/{EbayItemID}"><img src="{CDNUrl}/productimages/{ID}.jpg?width=170&height=170" /></a>
+										<a target="_blank" href="https://cgi.{EbaySiteURL}/{EbayItemID}"><img loading="lazy" src="{CDNUrl}/productimages/{ID}.jpg?width=170&height=170" /></a>
 									</div>
 									<h4><a target="_blank" href="https://cgi.{EbaySiteURL}/{EbayItemID}">{Name}</a></h4>
 								</div>
@@ -383,8 +383,8 @@
 				-->
 				<div class="pull-right logo">
 						<span class="muted"> eBay integration</span> by
-						<img class="baseline" src="{CDNUrl}/images/codisto-connect.png?width=200&amp;nostretch&amp;v=2022" />
+						<img loading="lazy" class="baseline" src="{CDNUrl}/images/codisto-connect.png?width=200&amp;nostretch&amp;v=2022" />
 				</div>
-				<img class="logo" src="{CDNUrl}/images/logo.png?width=201&nostretch&etag={LogoEtag}" />
+				<img loading="lazy" class="logo" src="{CDNUrl}/images/logo.png?width=201&nostretch&etag={LogoEtag}" />
 		</div>
 </div>
