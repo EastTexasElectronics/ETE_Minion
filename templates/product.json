@@ -238,6 +238,7 @@
         "16540789797fa73dd3-2",
         "16540789797fa73dd3-3"
       ],
+      "disabled": true,
       "settings": {
         "url": "",
         "top_spacing": "normal",
@@ -261,8 +262,8 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "subheading": "BEST SELLING PRODUCTS",
-        "heading": "Product recommendations",
+        "subheading": "",
+        "heading": "Product Recommendations",
         "heading_aligment": "text-center",
         "top_spacing": "normal",
         "width": "default",
@@ -360,6 +361,7 @@
         "165407911824ee5498-1",
         "165407911824ee5498-2"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "YOUR SUBHEADING GOES HERE",
         "heading": "Icon banners",
@@ -441,6 +443,7 @@
         "16540791227c6814a2-0",
         "16540791227c6814a2-1"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "SUBHEADING",
         "heading": "Banners",
