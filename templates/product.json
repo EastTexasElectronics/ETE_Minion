@@ -293,6 +293,7 @@
     },
     "d9e76fef-44b1-4d90-8089-0ec23f11533b": {
       "type": "recently-viewed-products",
+      "disabled": true,
       "settings": {
         "subheading": "SUBHEADING",
         "heading": "Recently viewed products",
